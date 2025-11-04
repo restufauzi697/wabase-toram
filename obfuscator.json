@@ -1,0 +1,17 @@
+{
+    "compact": true,
+    "deadCodeInjection": true,
+    "deadCodeInjectionThreshold": 1,
+    "stringArrayThreshold": 1,
+    "renameGlobals": true,
+    "identifierNamesGenerator": "dictionary",
+    "identifiersDictionary": ["joaijd", "awdaw", "awdwad", "awda", "hjaowdijoi"],
+    "identifiersPrefix": "awdaw",
+    "selfDefending": true,
+    "splitStrings": true,
+    "stringArray": true,
+    "stringArrayCallsTransform": true,
+    "stringArrayEncoding": ["base64"],
+    "target": "browser-no-eval",
+    "simplify": false
+}

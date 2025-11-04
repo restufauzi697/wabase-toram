@@ -1,0 +1,29 @@
+{
+    "name": "wabase-toram",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "nodemon -- --dev",
+        "release": "rimraf release release.tar.gz && mkdir release && cp -r dist database setting.json package.json release/ && javascript-obfuscator release --output release --config obfuscator.json && tar -czvf release.tar.gz release/",
+        "test": "node release/dist/index.js",
+        "start": "node dist/index.js"
+    },
+    "keywords": [],
+    "author": "Rz",
+    "license": "ISC",
+    "description": "Script Base WhatsApp",
+    "devDependencies": {
+        "javascript-obfuscator": "^4.1.1",
+        "nodemon": "^3.1.9",
+        "rimraf": "^6.0.1"
+    },
+    "dependencies": {
+        "axios": "^1.9.0",
+        "baileys": "^7.0.0-rc.6",
+        "console-clear": "^1.1.1",
+        "node-cache": "^5.1.2",
+        "pino-pretty": "^13.1.2",
+        "qrcode-terminal": "^0.12.0"
+    }
+}
