@@ -1,10 +1,12 @@
 import './global.js'
 import {
     makeWASocket,
+    delay,
     useMultiFileAuthState,
     fetchLatestBaileysVersion,
     isJidNewsletter,
     jidDecode,
+    isPnUser,
     getContentType,
     jidNormalizedUser,
     isJidGroup,
@@ -16,10 +18,12 @@ import fs from 'fs'
 import { pathToFileURL } from 'url'
 import NodeCache from 'node-cache'
 
-import fetchJSONFromGithubRaw from './utils/fetchJSONFromGithubRaw.js'
+import fetchJSON from './utils/fetchJSON.js'
 import question from './utils/question.js'
 import logger from './utils/logger.js'
 import consoleClear from 'console-clear'
+
+import nexttick from "./events/nexttick.js";
 
 async function start() {
     const session = await useMultiFileAuthState('session')
@@ -43,19 +47,9 @@ async function start() {
         /// VALIDASI WA Number
         if (global.bot.number && global.bot.number !== waNumber) {
             logger.error(
-                `\x1b[35;1mNomor ini tidak memiliki akses untuk menggunakan script whatsapp bot ini\x1b[0m\n-> SILAHKAN MEMESAN SCRIPT INI KE ${global.owner.name} WA ${global.owner.number}`
+                `\x1b[35;1mNomor ini tidak memiliki akses untuk menggunakan script whatsapp bot ini\x1b[0m`
             )
             return process.exit()
-        }
-
-        if (global.rawJSONNumbersGithubURL) {
-            const numbers = await fetchJSONFromGithubRaw(global.rawJSONNumbersGithubURL)
-            if (!numbers.some(number => number == waNumber)) {
-                logger.error(
-                    `\x1b[35;1mNomor ini tidak memiliki akses untuk menggunakan script whatsapp bot ini\x1b[0m\n-> SILAHKAN MEMESAN SCRIPT INI KE ${global.owner.name} WA ${global.owner.number}`
-                )
-                return process.exit()
-            }
         }
 
         const code = await bot.requestPairingCode(waNumber)
@@ -78,32 +72,16 @@ async function start() {
             /// VALIDASI WA Number
             if (global.bot.number && global.bot.number !== jidDecode(bot.user?.id)?.user) {
                 logger.error(
-                    `\x1b[35;1mNomor ini tidak memiliki akses untuk menggunakan script whatsapp bot ini\x1b[0m\n-> SILAHKAN MEMESAN SCRIPT INI KE ${global.owner.name} WA ${global.owner.number}`
+                    `\x1b[35;1mNomor ini tidak memiliki akses untuk menggunakan script whatsapp bot ini\x1b[0m`
                 )
                 return process.exit()
-            }
-
-            if (global.rawJSONNumbersGithubURL) {
-                const numbers = await fetchJSONFromGithubRaw(global.rawJSONNumbersGithubURL)
-                const nuser = jidDecode(bot.user?.id)?.user
-                if (!numbers.some(number => number == nuser)) {
-                    logger.error(
-                        `\x1b[35;1mNomor ini tidak memiliki akses untuk menggunakan script whatsapp bot ini\x1b[0m\n-> SILAHKAN MEMESAN SCRIPT INI KE ${global.owner.name} WA ${global.owner.number}`
-                    )
-                    return process.exit()
-                }
-            }
-
-            if (global.rawJSONVipsGithubURL) {
-                const vips = await fetchJSONFromGithubRaw(global.rawJSONVipsGithubURL)
-                global.bot.isVip = vips.some(num => num === jidDecode(bot.user?.id)?.user)
             }
 
             logger.info('Berhasil terhubung ' + jidDecode(bot.user?.id)?.user)
         }
     })
     bot.ev.on('creds.update', session.saveCreds)
-    bot.ev.on('messages.upsert', arg => {
+    bot.ev.on('messages.upsert', async (arg) => {
         const msg = arg.messages[0]
         if (!msg?.message) return
         msg.id = msg.key.id
@@ -116,6 +94,15 @@ async function start() {
             msg.isGroup || msg.isStory
                 ? msg.key.participant || jidNormalizedUser(msg.participant)
                 : msg.chat
+        msg.senderPn = isPnUser( msg.sender )
+            ? msg.sender
+            : msg.isGroup
+            ? msg.key.participantAlt || (
+                await bot.findParticipantFromGrup(msg.chat, msg.sender)
+            )
+            ?.phoneNumber || ''
+            : '' // aku menyerah...
+            
         msg.isOwner = jidDecode(msg.sender)?.user === global.owner.number
         msg.isPremium = !!global.database.premium.find(prem => prem == jidDecode(msg.sender)?.user)
         msg.type = getContentType(msg.message)
@@ -181,12 +168,26 @@ async function start() {
             msg.message?.imageMessage?.contextInfo?.quotedMessage ||
             msg.message?.videoMessage?.contextInfo?.quotedMessage
 
-        msg.reply = text =>
-            bot.sendMessage(
-                msg.chat,
+        msg.reply = async (text, typing = true) => {
+            const jid = msg.chat
+            
+            if(typing) {
+                await bot.presenceSubscribe(jid)
+                await delay(500)
+            
+                await bot.sendPresenceUpdate('composing', jid)
+                await delay(2000)
+            
+                await bot.sendPresenceUpdate('paused', jid)
+            }
+            
+            const ret = !text ? null
+             : await bot.sendMessage(
+                jid,
+                typeof text == 'string'?
                 {
                     text,
-                },
+                } : text,
                 {
                     quoted: {
                         key: {
@@ -196,26 +197,26 @@ async function start() {
                             remoteJid: 'status@broadcast',
                         },
                         message: {
-                            conversation: `💬 ${msg.text}`,
+                            contactMessage: {
+                                displayName: msg.pushName,
+                                vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${msg.pushName}\nTEL;type=CELL;waid=${msg.senderPn.split('@')[0]}:${msg.senderPn.split('@')[0]}\nEND:VCARD`
+                            },
+                            //conversation: `💬 ${msg.text}`,
                         },
                     },
                 }
             )
+            return ret
+        }
+        
+        bot.findParticipantFromGrup = async (grup, lid) => (await bot.groupMetadata(grup))
+            .participants.find(
+                participant => participant.id === lid
+            )
 
         if (global.devMode) logger.info(msg)
 
-        const command = global.bot.commands.find(c => c.command === msg.command)
-        if (command) {
-            if (command.onlyVip && !global.bot.isVip)
-                return msg.reply('Perintah ini hanya bisa digunakan oleh bot vip!')
-            if (command.onlyOwner && !msg.isOwner && !msg.fromMe)
-                return msg.reply('Perintah ini hanya bisa digunakan oleh owner!')
-            if (command.onlyPremium && !msg.isPremium && !msg.isOwner && !msg.fromMe)
-                return msg.reply('Perintah ini hanya bisa digunakan oleh user premium!')
-            if (command.onlyGroup && !msg.isGroup)
-                return msg.reply('Perintah ini hanya bisa digunakan didalam group!')
-            return command.handle(bot, msg)
-        }
+        return nexttick(bot, msg)
     })
 }
 

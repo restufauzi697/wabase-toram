@@ -1,6 +1,5 @@
 export const command = {
     command: 'menu',
-    onlyVip: false,
     onlyOwner: false,
     onlyPremium: false,
     onlyGroup: false,

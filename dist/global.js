@@ -4,10 +4,6 @@ import path from 'path'
 const pkg = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), 'package.json'), 'utf-8'))
 
 global.devMode = process.argv.some(arg => arg.includes('-d') || arg.includes('--dev'))
-global.rawJSONNumbersGithubURL = ''
-    //'https://raw.githubusercontent.com/sibaycodes/wabase-data/refs/heads/main/numbers.json' // 'https://raw.githubusercontent.com/sibaycodes/wabase-data/refs/heads/main/numbers.json'
-global.rawJSONVipsGithubURL = ''
-    //'https://raw.githubusercontent.com/sibaycodes/wabase-data/refs/heads/main/vips.json' // 'https://raw.githubusercontent.com/sibaycodes/wabase-data/refs/heads/main/vips.json'
 
 global.bot = {
     name: 'robzbot',
@@ -20,7 +16,7 @@ global.bot = {
     adsUrl: 'https://youtube.com/@bayumahadika',
     newsletterJid: '',
     commands: [],
-    isVip: false,
+    isVip: true,
 }
 
 global.owner = {

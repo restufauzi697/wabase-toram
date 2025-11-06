@@ -12,7 +12,7 @@
     "keywords": [],
     "author": "Rz",
     "license": "ISC",
-    "description": "Script Base WhatsApp",
+    "description": "Script Base WhatsApp with toram info",
     "devDependencies": {
         "javascript-obfuscator": "^4.1.1",
         "nodemon": "^3.1.9",
