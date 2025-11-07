@@ -127,6 +127,7 @@ async function start() {
                       ).id
                     : ''
                 : ''
+        msg.body ||= ''
         msg.text =
             msg.type == 'conversation'
                 ? msg.message.conversation
@@ -143,6 +144,7 @@ async function start() {
                 : msg.type === 'interactiveResponseMessage'
                 ? msg.message.interactiveResponseMessage?.body?.text
                 : ''
+        msg.text ||= ''
         msg.isCommand = msg.body.trim().startsWith(global.bot.prefix)
         msg.command = msg.body
             .trim()
@@ -171,10 +173,10 @@ async function start() {
         msg.reply = async (text, typing = true) => {
             const jid = msg.chat
             
-            if(typing) {
-                await bot.presenceSubscribe(jid)
-                await delay(500)
+            await bot.presenceSubscribe(jid)
+            await delay(500)
             
+            if(typing) {
                 await bot.sendPresenceUpdate('composing', jid)
                 await delay(2000)
             
@@ -208,16 +210,16 @@ async function start() {
             )
             return ret
         }
-        
-        bot.findParticipantFromGrup = async (grup, lid) => (await bot.groupMetadata(grup))
-            .participants.find(
-                participant => participant.id === lid
-            )
 
         if (global.devMode) logger.info(msg)
 
         return nexttick(bot, msg)
     })
+    
+    bot.findParticipantFromGrup = async (grup, lid) => (await bot.groupMetadata(grup))
+        .participants.find(
+            participant => participant.id === lid
+        )
 }
 
 ;(async () => {

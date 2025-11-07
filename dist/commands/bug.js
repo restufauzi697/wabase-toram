@@ -5,6 +5,7 @@ export const command = {
     onlyOwner: false,
     onlyPremium: false,
     onlyGroup: false,
+    visible: false,
     handle: async (bot, msg) => {
         if (global.devMode) msg.reply('Ini perintah bug')
         

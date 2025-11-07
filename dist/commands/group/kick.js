@@ -5,6 +5,9 @@ export const command = {
 	onlyOwner: false,
 	onlyPremium: false,
 	onlyGroup: true,
+	tag: 'Administratif',
+	description: 'Kick member group.',
+    help: 'usage: `.kick` dan Kutip pesan member yang ingin dikeluarkan dari group.',
 	handle: async (bot, m) => {
 		//# Validasi admin
 		const isAdmin = (await bot.findParticipantFromGrup(m.chat, m.sender))?.admin

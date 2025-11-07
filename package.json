@@ -1,6 +1,6 @@
 {
     "name": "wabase-toram",
-    "version": "1.0.0",
+    "version": "1.1.1",
     "main": "dist/index.js",
     "type": "module",
     "scripts": {
@@ -21,6 +21,7 @@
     "dependencies": {
         "axios": "^1.9.0",
         "baileys": "^7.0.0-rc.6",
+        "cheerio": "^1.1.2",
         "console-clear": "^1.1.1",
         "node-cache": "^5.1.2",
         "pino-pretty": "^13.1.2",
