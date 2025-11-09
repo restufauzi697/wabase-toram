@@ -8,9 +8,9 @@ async function leveling(m,cmd) {
     cmd = cmd.map(a=>parseInt(a)).filter(a=>!isNaN(a))
     const lvl = cmd[0]||150;
     const gap = cmd[1]|| 9 ;
-    const XPG = cmd[2]|| 150;
+    const XPG = cmd[2]||150;
     const response = await axios.get(`https://coryn.club/leveling.php?lv=${lvl}&gap=${gap}&bonusEXP=${XPG}`)
-    console.log(`Status Code: ${response.status}`);
+    if (global.devMode) console.log(`Status Code: ${response.status}`);
     
     const $ = cheerio.load(response.data)
       let ilfp = $('.item-leveling')
@@ -35,7 +35,7 @@ async function leveling(m,cmd) {
       reply += '\n_sumber: coryn.club_'
       return m.reply(reply)
   } catch({code,status}) {
-    console.error(`Status: ${status}/${code}`);
+    if (global.devMode) console.error(`Status: ${status}/${code}`);
     return m.reply(`Status: ${status}/${code}`);
   }
 }

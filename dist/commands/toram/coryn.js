@@ -25,7 +25,7 @@ contoh:
 			if(exec[tool])
 				await exec[tool](m, cmd.slice(1), bot)
 			else
-				await m.reply()
+				await m.reply(command.help)
 		} catch(e) {
 			
 		}
