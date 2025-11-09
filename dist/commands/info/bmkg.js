@@ -130,7 +130,7 @@ function formatMMI(dateTime) {
 const ntfound = [
 	'maaf,/sepertinya/kok/kayanya'.split('/'),
 	'data/sekarang/info'.split('/'),
-	'tidak dutemukan./ngga ketemu../sudah hilang./...'.split('/'),
+	'tidak ditemukan./ngga ketemu../sudah hilang./...'.split('/'),
 	]
 function tidak_ketemu() {
 	return ntfound.map(a=>a[Math.floor(Math.random()*a.length)]).join(' ')

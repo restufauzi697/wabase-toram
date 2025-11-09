@@ -10,7 +10,7 @@ export const command = {
 	},
 	handle: async (bot, m) => {
 		if (!m.arguments.length)
-			m.arguments[0] = command.command
+			m.arguments[0] = 'help'
 		
 		const command = global.bot.commands.find(c => c.command === m.arguments[0])
 		if (command && command.help)
