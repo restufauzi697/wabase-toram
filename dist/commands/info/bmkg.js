@@ -97,7 +97,6 @@ ${
 }
 ${Dirasakan?'🏘 *Wilayah yang Merasakan*:' + Dirasakan.split(',').map(a=>'\n		• '+a.trim()).join('') : '' }
 
-
 Semoga informasi ini bermanfaat!\n_BMKG_`
 	}
 }
@@ -128,7 +127,7 @@ function formatMMI(dateTime) {
 }
 
 const ntfound = [
-	'maaf,/sepertinya/kok/kayanya'.split('/'),
+	'maaf,/sepertinya/kok/kayanya/gagal mengambil'.split('/'),
 	'data/sekarang/info'.split('/'),
 	'tidak ditemukan./ngga ketemu../sudah hilang./...'.split('/'),
 	]

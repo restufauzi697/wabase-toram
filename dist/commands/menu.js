@@ -10,7 +10,7 @@ export const command = {
     },
     handle: async (bot, m) => {
         !menu[1].length && _ ( );
-        m.reply(`*ALL MENU*${menu[m.isGroup|0].join('\n')}`);
+        m.sendThum(global.bot.name, `*ALL MENU*${menu[m.isGroup|0].join('\n')}`, global.bot.thumb, global.bot.adsUrl, false, true);
     },
 }
 
@@ -30,10 +30,10 @@ const _ = ⁿ =>
 				ⁿ = a.tag
 			}
 			
-			menu[1].push(`*.${a.command}* ${a.description}`)
+			menu[1].push(`- *.${a.command}* ${a.description}`)
 			
 			if (!a.onlyGroup)
-				menu[0].push(`*.${a.command}* ${a.description}`)
+				menu[0].push(`- *.${a.command}* ${a.description}`)
 		})
 	_.a = (a,b) => a-b || -(a<b)|(a>b)
 const menu = [[],[]]

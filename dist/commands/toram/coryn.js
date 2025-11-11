@@ -9,7 +9,7 @@ export const command = {
 	tag: '_Toram Online_',
 	description: 'Tools untuk player Toram Online.',
 	get help() {
-		return `coryn: gunakan .coryn <tool> argument...
+		return `usage: .coryn <tool> argument...
 tools:
 - leveling [level] [gap] [XPGain]
 

@@ -170,7 +170,7 @@ async function start() {
             msg.message?.imageMessage?.contextInfo?.quotedMessage ||
             msg.message?.videoMessage?.contextInfo?.quotedMessage
 
-        msg.reply = async (text, typing = true) => {
+        msg.reply = async (text, typing = true, ops) => {
             const jid = msg.chat
             
             await bot.presenceSubscribe(jid)
@@ -178,7 +178,7 @@ async function start() {
             
             if(typing) {
                 await bot.sendPresenceUpdate('composing', jid)
-                await delay(2000)
+                await delay(1000)
             
                 await bot.sendPresenceUpdate('paused', jid)
             }
@@ -191,7 +191,8 @@ async function start() {
                     text,
                 } : text,
                 {
-                    quoted: {
+                	...ops,
+                    quoted: msg,/*{
                         key: {
                             fromMe: true,
                             id: msg.id,
@@ -205,10 +206,28 @@ async function start() {
                             },
                             //conversation: `💬 ${msg.text}`,
                         },
-                    },
+                    },*/
+                    ...ops
                 }
             )
             return ret
+        }
+        msg.sendThum = async (title, text, thumbnailUrl, sourceUrl, AdAttribution=true, LargerThumbnail=true) => {
+            return await msg.reply ({
+	            contextInfo: {
+					externalAdReply: {
+						title: title,
+						body: null,
+						mediaType: 1,
+						previewType: 0,
+						showAdAttribution: AdAttribution,
+						renderLargerThumbnail: LargerThumbnail,
+						thumbnailUrl: thumbnailUrl,
+						sourceUrl: sourceUrl
+					},
+				},
+				text
+            }, true, { backgroundColor: '', ephemeralExpiration: 86400 })
         }
 
         if (global.devMode) logger.info(msg)

@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 const pkg = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), 'package.json'), 'utf-8'))
+const repoAssets = "https://raw.githubusercontent.com/restufauzi697/wabase-toram/7ad88cf9b40d8e4bfc900cc3a753699f0dd03775/assets"
 
 global.devMode = process.argv.some(arg => arg.includes('-d') || arg.includes('--dev'))
 
@@ -13,7 +14,10 @@ global.bot = {
     splitArgs: ',',
     locale: 'id',
     timezone: 'Asia/Jakarta',
-    adsUrl: 'https://youtube.com/@bayumahadika',
+    adsUrl: 'https://chat.whatsapp.com/FCJxARRNFBEFPDuYqMOc6b',
+    get thumb() { return `${repoAssets}/toram/texture/toram-${Math.floor(Math.random()*4)}.jpg`},
+    icon: `${repoAssets}/toram/texture/rf_acme.jpg`,
+    banner: `${repoAssets}/toram/texture/yuki.jpg`,
     newsletterJid: '',
     commands: [],
     isVip: true,
@@ -33,6 +37,9 @@ global.database = {
     ),
     group: JSON.parse(
         fs.readFileSync(path.resolve(process.cwd(), 'database', 'group.json'), 'utf-8')
+    ),
+    toram: JSON.parse(
+        fs.readFileSync(path.resolve(process.cwd(), 'database', 'toram.json'), 'utf-8')
     ),
     save: async function (dbName) {
         fs.writeFileSync(
