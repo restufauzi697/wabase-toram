@@ -7,7 +7,6 @@ export const command = {
 	onlyOwner: false,
 	onlyPremium: false,
 	onlyGroup: false,
-	visible: false,
 	tag: '_Toram Online_',
 	description: 'Guide dan info Toram Online.',
 	get help() {
@@ -16,7 +15,7 @@ export const command = {
 - addbuff <stat> <kode> <lvl>
 - buff [stat]
 - guide <nama|nomor>
-- leveling_list
+- leveling
 - list [page]
 
 contoh:
@@ -38,7 +37,7 @@ contoh:
 const action = {
 	async addbuff(bot, m, buff) {
 		
-		if(/^\d{7}$/.test(buff[1]) && (buff[2]<11&&0<buff[2]) && _.buff.includes(buff[0])) {
+		if(/^\d{7}$/.test(buff[1]) && (buff[2]<11&&0<buff[2]) && lang_stat_buff[buff[0]]) {
 			
 			const axist = toram.Buff.find(([stat,code])=> code == buff[1])
 			if (axist)
@@ -47,7 +46,7 @@ const action = {
 			else
 				toram.Buff.push(buff)
 				toram.Buff.sort(([,,a],[,,b])=>sort(a,b))
-				toram.Buff.sort(([a],[b])=>sort(a,b))
+				toram.Buff.sort(([a],[b])=>sort(_.buff[a],_.buff[b]))
 			save()
 			
 			await m.reply('Buff ditambahkan!')
@@ -83,7 +82,8 @@ const action = {
 					'- .toram buff *[stat]*\n\n'+
 					'List stat buff:\n- '+
 					Object.entries(lang_stat_buff)
-					 .map(([a,b])=>`\`${a}\`: ${b}`)
+					 .sort(([a],[b])=>_.buff[a]-_.buff[b])
+					 .map(([a,b])=>`*${a}* → ${b}`)
 					 .join('\n- ')
 				)
 				break;
@@ -111,12 +111,12 @@ const action = {
 				await m.reply('Halaman tidak ditemukan')
 		}
 	},
-	leveling_list(bot, m, [page]) {
+	leveling(bot, m, [page]) {
 		m.arguments[0] = 'list leveling'
 		action.guide(bot, m, ['list','leveling'])
 	},
 	async guide(bot, m, page) {
-		page = m.text.replace('.toram guide ','').toLowerCase().trim()
+		page = m.text.replace('.toram guide','').toLowerCase().trim()
 		page = _.list[page] ||_.list.find(([name])=>name==page)
 		if(!page)
 			return await m.reply('Panduan tidak ditemukan')
@@ -138,7 +138,7 @@ const action = {
 						img = _.thumb[id]
 					if(img == '!art' || !img)
 						img = global.bot.thumb
-					await m.sendThum("Toram Online", page, _.thumb[id], 'https://id.toram.jp/', false, false)
+					await m.sendThum("Toram Online", page, img, 'https://id.toram.jp/', false, false)
 				}
 			else
 				await m.reply(page)
@@ -191,7 +191,7 @@ const lang_stat_buff = {
 	"matk": "MATK",
 	"maxhp": "MaxHP",
 	"maxmp": "MaxMP",
-	"mbarier": "magical Barrier",
+	"mbarier": "Magical Barrier",
 	"mdef": "MDEF",
 	"mresist": "Magic Resistance",
 	"pbarier": "Physical Barrier",
@@ -218,7 +218,7 @@ const _ = {
 	random: () => Math.floor(Math.random()*_.tips.length),
 	tips: JSON.parse(fs.readFileSync(path.join(assets,"guide/tips.list"))),
 	thumb: JSON.parse(fs.readFileSync(path.join(assets,"guide/tips.img.list"))),
-	buff: Object.keys(lang_stat_buff),
+	buff: ["maxhp", "maxmp", "str", "dex", "int", "agi", "vit", "atk", "matk", "watk", "presist", "mresist", "aggro+", "aggro-", "ampr", "cr", "acc", "dodge", "def", "mdef", "drop_rate", "pbarier", "mbarier", "frac_barier", "dte_neutral", "dte_fire", "dte_water", "dte_earth", "dte_wind", "dte_light", "dte_dark", "rte_neutral", "rte_fire", "rte_water", "rte_earth", "rte_wind", "rte_light", "rte_dark"],
 	get list() {
 		const folderPath = path.join(assets,'guide'), files = fs
 		  .readdirSync(folderPath, { recursive: true })
@@ -233,3 +233,5 @@ const _ = {
 		}).list
 	},
 }
+
+_.buff.forEach((a,i)=>(_.buff[a]=i))

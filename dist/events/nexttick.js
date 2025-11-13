@@ -22,10 +22,7 @@ export default async function messagesUpsert(bot, m) {
 			else if(m.command == "credits")
 				m.reply(`*${global.bot.name}* 2025`);
 			else if(m.command == "author")
-				m.sendThum(global.bot.name, //`Author:
-/*- */'Created by _@Rfeasutzui_',
-//- Base script by _@BayuMahadika_`, 
-global.bot.banner, global.bot.adsUrl, false, true);
+				m.sendThum(global.bot.name, 'Created by _@Rfeasutzui_', global.bot.banner, global.bot.adsUrl, false, true);
 			else void 0
 		}
 		

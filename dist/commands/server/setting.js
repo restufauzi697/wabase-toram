@@ -1,6 +1,7 @@
 import fs from 'fs'
 import AdmZip from 'adm-zip'
 import { getContentType, downloadContentFromMessage } from "baileys";
+import {command as cmd} from './restart.js'
 
 let ant = 0
 
@@ -74,6 +75,7 @@ send or quote file zip to restore settings.`
 							zip.extractEntryTo('setting.json', '.', false, true);
 							
 							await m.reply('Restore selesai')
+							cmd.handle(bot, m)
 						} else await m.reply('Restore dibatalkan')
 					} else await m.reply('Format tidak didukung')
 				} else await m.reply('File backup dibutuhkan untuk restore')
