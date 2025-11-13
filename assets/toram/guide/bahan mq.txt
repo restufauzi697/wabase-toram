@@ -1,0 +1,50 @@
+@img[!art]
+*🔮🔮BAHAN QUEST UTAMA🔮🔮*
+
+*🟤Daun Colon 5 pcs*
+- Boss : Boss Colon (Tanah Pembamgunan)
+- Mob : Colon (Tanah Pembangunan)
+*🟤Sisik Naga 2 pcs*
+- Mob : Piedra (Padang Garam Reug : Kamp Pengelana)
+- Mob : Cobre (Danau Icule)
+*🟤Daging Domba 1 pcs*
+- Mob : Wooly (Padang Garam Reug : Kamp Pengelana)
+*🟤Sayap Peri 3 pcs*
+- Mob : Roar (Kuil Runtuh : Area 2)
+*🟤Paruh Tebal 3 pcs*
+- Mob : Beak (Kuil Runtuh : Area 1)
+*🟤Sulur 3 pcs*
+- Mob : Pain Leaf (Tanah Genting Kaus)
+*🟤Koin Ksatria 20 pcs*
+- Mob : Boneka Pendekar (Kastil Setan Bulan : Ruang ke 1)
+*🟤Daging Tikus Pasir 1 pcs*
+- Mob : Tikus Pasir (Tanah Tinggi Centerio)
+*🟤Cakar Binatang Buas 3 pcs*
+- Mob : Foxiger (Tanah Tinggi Centerio)
+*🟤Kulit Kodok Pasir 5 pcs*
+- Mob : Sand Frosch (Tanah Tinggi Centerio)
+*🟤Taring Bergerigi 10 pcs*
+- Mob : Miwi (Danau Icule)
+- Mob : Rutin (Gunung Nisel : Lereng)
+*🟤Kristal Saham 5 pcs*
+- Mob : Rotta Nemico (Gua Bawah Tanah Saham : B1)
+*🟤Permata Jiwa 1 pcs*
+- Mob : Cassy (Makam Ratu Kuno Area 2)
+*🟤Anggur Rokoko 5 pcs*
+- Mob : Kijimu (Dataran Rokoko)
+*🟤Kayu Labilans 10 pcs*
+- Mob : Toretta (Distrik Labilan : Area 2)
+*🟤Tanduk Patah 20 pcs*
+- Mob : Rinoceros (Danau Rawa Pelarian : Area 2)
+*🟤Bijih Berkembang 5 pcs*
+- Mob : Orictoceras (Kabla Jabali)
+*🟤Batu Jabali 5 pcs*
+- Mob : Gemare (Kabla Jabali)
+*🟤Kulit Tebal Berlendir 20 pcs*
+- Mob: Romyzon (Lahan Basah Latum)
+*🟤Akar Melilit 10 pcs*
+- Mob: Lileaf (Lahan Tandus Perdida)
+*🟤Kayu Menabra 10 pcs*
+- Mob: Delphi (Dataran Menabra)
+
+@splash

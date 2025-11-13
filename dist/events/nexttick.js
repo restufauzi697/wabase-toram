@@ -15,12 +15,17 @@ export default async function messagesUpsert(bot, m) {
 					return m.reply('Perintah ini hanya bisa digunakan oleh owner!')
 				if (command.onlyPremium && !m.isPremium && !m.isOwner && !m.fromMe)
 					return m.reply('Perintah ini hanya bisa digunakan oleh user premium!')
-				if (command.onlyGroup && !m.isGroup)
+				if (command.onlyGroup && !m.isGroup && !m.fromMe)
 					return m.reply('Perintah ini hanya bisa digunakan didalam group!')
 				return command.handle(bot, m)
 			}
 			else if(m.command == "credits")
 				m.reply(`*${global.bot.name}* 2025`);
+			else if(m.command == "author")
+				m.sendThum(global.bot.name, //`Author:
+/*- */'Created by _@Rfeasutzui_',
+//- Base script by _@BayuMahadika_`, 
+global.bot.banner, global.bot.adsUrl, false, true);
 			else void 0
 		}
 		

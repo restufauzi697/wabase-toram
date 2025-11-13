@@ -1,0 +1,10 @@
+@img[!splash]
+@splash
+
+Ikuti cara ku:
+
+1. Buka Menu > Terminal > Kamar Ku > Serikat
+2. Klik ikon pencarian, Gunakan kode simple dan masukan kode buff.
+3. Cari Kompor/Kulkas yang digunakan pemain untuk memasak Buff.
+
+Pastikan kamu sudah membuat room sendiri.

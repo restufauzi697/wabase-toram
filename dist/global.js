@@ -14,7 +14,7 @@ global.bot = {
     splitArgs: ',',
     locale: 'id',
     timezone: 'Asia/Jakarta',
-    adsUrl: 'https://chat.whatsapp.com/FCJxARRNFBEFPDuYqMOc6b',
+    adsUrl: 'http://robz.bot/',
     get thumb() { return `${repoAssets}/toram/texture/toram-${Math.floor(Math.random()*4)}.jpg`},
     icon: `${repoAssets}/toram/texture/rf_acme.jpg`,
     banner: `${repoAssets}/toram/texture/yuki.jpg`,

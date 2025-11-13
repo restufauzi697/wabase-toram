@@ -1,0 +1,8 @@
+@img[!splash]
+@splash
+
+Info: cara skip cerita MQ
+
+Menu > Setting > Sistem > [Lewatkan Misi Perdana]
+
+*Aktifkan* dan tombol skip tiap dialog bisa muncul.

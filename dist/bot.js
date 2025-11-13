@@ -60,7 +60,7 @@ async function start() {
         if (connection === 'close') {
             logger.error(lastDisconnect.error)
             const { statusCode, error } = lastDisconnect.error.output.payload
-            if (statusCode === 401 && error === 'Unauthorized') {
+            if (statusCode === 401 && error === 'Unauthorized' || statusCode === 403) {
                 await fs.promises.rm('session', {
                     recursive: true,
                     force: true,
@@ -115,6 +115,8 @@ async function start() {
                 ? msg.message.imageMessage?.caption
                 : msg.type === 'videoMessage'
                 ? msg.message.videoMessage?.caption
+                : msg.type === 'documentMessage'
+                ? msg.message.documentMessage?.caption
                 : msg.type === 'listResponseMessage'
                 ? msg.message?.listResponseMessage?.singleSelectReply?.selectedRowId
                 : msg.type === 'buttonsResponseMessage'
@@ -137,6 +139,8 @@ async function start() {
                 ? msg.message.imageMessage?.caption
                 : msg.type === 'videoMessage'
                 ? msg.message.videoMessage?.caption
+                : msg.type === 'documentMessage'
+                ? msg.message.documentMessage?.caption
                 : msg.type === 'listResponseMessage'
                 ? msg.message?.listResponseMessage?.description
                 : msg.type === 'buttonsResponseMessage'
