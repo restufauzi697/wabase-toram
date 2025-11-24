@@ -41,5 +41,8 @@ async function leveling(m,cmd) {
 }
 
 export default {
-	leveling
+	leveling,
+	async search(m) {
+		await m.reply('Fitur sedang dalam perbaikan!')
+	}
 };

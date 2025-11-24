@@ -20,6 +20,6 @@ export const command = {
 		if (!isLidUser(target))
 			return m.reply("Kutip pesan member yang ingin dikeluarkan dari group")
 		
-		await bot.groupParticipantsUpdate(m.chatId, [target], "remove");
+		await bot.groupParticipantsUpdate(m.chat, [target], "remove");
 	},
 }

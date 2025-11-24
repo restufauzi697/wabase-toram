@@ -1,8 +1,32 @@
 import fs from 'fs'
 import path from 'path'
 import logger from '../../utils/logger.js'
+import addcmd from '../../utils/cmd_msg.js'
 
-export const command = {
+const sortcut = [
+	{
+		command: "addbuff",
+		param: "<stat> <kode> <lvl>",
+		description: 'Menambah kode buff.',
+	},
+	{
+		command: "buff",
+		param: "[stat]",
+		description: 'List kode buff.',
+	},
+	{
+		command: "deletebuff",
+		param: "<kode> [stat]",
+		description: 'Hapus kode buff.',
+	},
+	{
+		command: "guide",
+		param: "<nama|nomor>",
+		description: 'Panduan Toram Online.',
+	}
+]
+
+const commandModule = {
 	command: 'toram',
 	onlyOwner: false,
 	onlyPremium: false,
@@ -12,9 +36,7 @@ export const command = {
 	get help() {
 		return `usage: .toram <action> [arg...]
 \`<action>\`:
-- addbuff <stat> <kode> <lvl>
-- buff [stat]
-- guide <nama|nomor>
+- ${this.sortcut.map(({command,param})=>command+' '+param).join('\n- ')}
 - leveling
 - list [page]
 
@@ -32,20 +54,37 @@ contoh:
 		
 		await action[act]?.(bot, m, arg)
 	},
+	sortcut
 }
+
+sortcut.map(({command,param, description}) => {
+	addcmd(
+		command,
+		async (bot, m) => {
+			const arg = m.arguments[0]?.toLowerCase().split(' ')||[]
+			await action[command]?.(bot, m, arg)
+		},
+		{
+			tag: '_Toram Online_',
+			description,
+			help: `usage: ${command} ${param}`
+		}
+	)
+});
+
+export const command = commandModule
 
 const action = {
 	async addbuff(bot, m, buff) {
 		
-		if(/^\d{7}$/.test(buff[1]) && (buff[2]<11&&0<buff[2]) && lang_stat_buff[buff[0]]) {
-			
-			const axist = toram.Buff.find(([stat,code])=> code == buff[1])
-			if (axist)
-				axist[0] = buff[0],
-				axist[2] = buff[2]
-			else
-				toram.Buff.push(buff)
-				toram.Buff.sort(([,,a],[,,b])=>sort(a,b))
+		const axist = toram.Buff.filter(([stat,code])=> code == buff[1])
+		
+		if (axist.length > 1) {
+			await m.reply(`Kode ${buff[1]} terdaftar memasak buff _${axist.map(([stat, lvl])=>stat+'_ lvl '+lvl).join(' dan _')}. Hapus salah satu untuk mengubah.`)
+		
+		} else if (/^\d{7}$/.test(buff[1]) && (buff[2]<11&&0<buff[2]) && lang_stat_buff[buff[0]]) {
+			toram.Buff.push(buff)
+				toram.Buff.sort(([,,a],[,,b])=>-sort(a,b))
 				toram.Buff.sort(([a],[b])=>sort(_.buff[a],_.buff[b]))
 			save()
 			
@@ -55,8 +94,12 @@ const action = {
 	async buff(bot, m, [buff]) {
 		let list = toram.Buff, title
 		var text = '*ᴋᴏᴅᴇ ʙᴜꜰꜰ ᴛᴏʀᴀᴍ ᴏɴʟɪɴᴇ*\n\n'
+		
 		if(buff)
-			list = list.filter(([a])=>a==buff)
+			if(buff)
+				return await action.list(bot, m, ['buff'])
+			else
+				list = list.filter(([a])=>a==buff)
 		
 		if(list.length)
 			list.forEach ( ([stat,code,lvl])=> {
@@ -73,13 +116,30 @@ const action = {
 		else
 			await m.sendThum("Toram Online", text, global.bot.banner, 'https://id.toram.jp/', false, false)
 	},
+	async deletebuff(bot, m, [_a, _b]) {
+		var fn = ([b,a])=> a == _a
+		if (_b)
+			fn = ([b,a])=> a == _a && b == _b
+		var index = toram.Buff.findIndex(fn)
+		if (index < 0)
+			await m.reply('Gagal menghapus buff')
+		else while (index >= 0) {
+			toram.Buff.splice(index, 1)
+			await m.reply(`Buffland ${_a} ${_b||''} telah dihapus`)
+			
+			index = toram.Buff.findIndex(fn)
+		}
+		save()
+	},
 	async list(bot, m, [page]) {
 		switch(true) {
+			case page == 'buff':
 			case page == 'stat':
 				await m.reply('*ᴋᴏᴅᴇ ʙᴜꜰꜰ ᴛᴏʀᴀᴍ ᴏɴʟɪɴᴇ*\n\n'+
-					'Gunakan pada 2 cmd ini:\n'+
+					'Gunakan pada 3 cmd ini:\n'+
 					'- .toram addbuff *<stat>* <code> <lvl>\n'+
-					'- .toram buff *[stat]*\n\n'+
+					'- .toram buff *[stat]*\n'+
+					'- .toram deleteBuff <code> *[stat]*\n\n'+
 					'List stat buff:\n- '+
 					Object.entries(lang_stat_buff)
 					 .sort(([a],[b])=>_.buff[a]-_.buff[b])
@@ -98,7 +158,7 @@ const action = {
 					await m.reply(
 						'*Panduan Toram Online*\n'+
 						(!page?'\nGunakan: .toram list <page>\n':'')+
-						(!page?'- stat\n':'')+
+						(!page?'- _buff_ / _stat_\n':'')+
 						'\nGunakan: .toram guide <nama|nomor>\n'+
 						_.list
 						 .slice(start, start+21)
@@ -112,8 +172,8 @@ const action = {
 		}
 	},
 	leveling(bot, m, [page]) {
-		m.arguments[0] = 'list leveling'
-		action.guide(bot, m, ['list','leveling'])
+		m.text = 'list leveling'
+		action.guide(bot, m)
 	},
 	async guide(bot, m, page) {
 		page = m.text.replace('.toram guide','').toLowerCase().trim()

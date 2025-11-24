@@ -1,0 +1,294 @@
+💬 Istilah-istilah Toram Online 💬
+
+📊 Stats
+
+- *ATK* = Attack (Serangan Fisik)
+- *MATK* = Magic Attack (Serangan Sihir)
+- *DEF* = Defense (Pertahanan terhadap serangan Fisik)
+- *MDEF* = Magic Defense (Pertahanan terhadap serangan Sihir)
+- *HIT* = Hit Rate (Akurasi)
+- *FLEE* = Dodging Rate (Menghindar)
+- *ASPD* = Attack Speed (Kecepatan serangan)
+- *CSPD* = Cast Speed (Kecepatan merapal)
+- *AMPR* = Attack MP Recovery (Pemulihan mp setiap Basic attack/ serangan dasar)
+- *LV* = Level
+- *EXP* = Experience points (Point pengalaman)
+- *HP* = Hit Points/Health Points (Poin Hit/Poin Kesehatan)
+- *MP* = Magic Points/ Mana Points
+- *STR* = Strenght (Kekuatan)
+- *INT* = Intelligence (Kecerdasan)
+- *VIT* = Vitality (Daya Hidup)
+- *AGI* = Agility (Kelincahan)
+- *DEX* = Dexterity (Ketangkasan)
+
+🛡️ Equipment (Peralatan) 
+
+- *1H/OHS* = One Handed Sword (Pedang 1 tangan)
+- *2H/THS* = Two Handed Sword (Pedang 2 tangan)
+- *HB* = Halberd (Tombak)
+- *DW* = Dual Wield (Karakter pengguna 2 pedang)
+- *DS* = Dual Sword (Karakter pengguna 2 pedang)
+- *MD* = Magic Device (Pesawat Sihir)
+- *BG* = BowGun
+- *KTN* = Katana
+- *ARC* = Archer/ Bow (Busur)
+- *STF* = Staff (Tongkat)
+- *KNC* = Knuckle (Tinju)
+- *FU* = Other weapon + Knuckles 
+- *ARM* = Armor (Zirah)
+- *ADD* = Additional Gear (Perkakas Tambahan)
+- *RING* = Special Gear (Perkakas Spesial)
+- *HYBRID* = Gabungan/Kombinasi dari beberapa Type Skill yang berbeda ke dalam 1 Char (karakter)
+
+🔮 Skills
+
+- *CF* = Cross Fire (archer skill/ Skill ulti Bow)
+- *ST* = Satellite (Skill ulti archer lainnya)
+- *SC* = Shining Cross (dual wield skill)
+- *TNRYU* = Tenryu (Skill Katana)
+- *DT* = Dragon Tooth (Skill ulti Halberd / Tombak)
+- *FNL* = Finale (Skill ulti mage) 
+- *MB/ METEOR* = Meteor Breaker (Skill ultimate 1h/2h)
+- *SH* = Soul Hunter (Skill kegelapan)
+- *SC* = Shining Cross (Skill ulti pengguna 2 pedang)
+- *SANC* = Sanctuary skill (Skill pertahanan Tank)
+- *GSW* = God Speed Wield (Skill dari halberd)
+- *WC* = War Cry (skill blade)
+- *WCOS* = War Cry of Struggle (skill dari halberd)
+
+⚔️ Battle (Pertarungan)
+
+- *AGR* = Aggro/aggravation (Kemampuan pemain untuk menarik boss/ Tingkat kebencian monster)
+- *BUFF* = Efek yang memberikan dampak positif 
+- *DEBUFF* = Efek yang memberikan Kerugian
+- *OOF* = Mati (oof awalnya berasal dari game Roblox, dimana kata atau suara tersebut dibunyikan saat roblox dalam keadaan mati)
+- *ELE* = ELEMENT (Unsur)
+- *SP* = Skill Point (Point yang digunakan untuk meningkatkan skill)
+- *CD* = Critical Damage
+- *CR* = Critical Rate
+- *PP* = Physical Pierce (Penetrasi Fisik) / Physical Penetration (Penetrasi Fisik)
+- *SG* = Stargem (Skill eceran, dapat dibeli dipapan atau membuatnya sendiri)
+- *INTERRUPT* = Skill yangg bisa menyebabkan efek Flinch (Bergidik), Tumble (Jatuh), Stun (Pingsan) dan Knock Back (Terpelanting), yang digunakan untuk mengganggu/ membatalkan serangan Boss.
+- *SRD* = Short Range Damage (serangan jarak dekat)
+- *LRD* = Long Range Damage (serangan jarak jauh)
+- *DTE* = Damage To Element (Luka ke unsur)
+- *RTE* = Resist To Element (Ketahanan terhadap luka unsur)
+- *PRORATE* = Penurunan atau kenaikan kerusakan serangan
+- *GG* = Good Game (Permainan bagus)
+- *GGWP* = Good Game, Well Played (permainan yg sangat bagus, dimainkan dgn benar/baik)
+- *Crit Res* = Critical Resistansi
+- *ALLY* = Sekutu (gabungan dari 1 party atau lebih)
+- *AOE* =  Area of Effect (area serangan)
+- *DOT* = Damage Over Time (serangan yg berkelanjutan, contoh: tembakan bola secara terus-menerus, duri, poison dagger, burn ailment, dll)
+- *FB* = Full part break/ Full Break (Break/Tap seluruh bagian boss tanpa tersisa, fungsinya untuk mendapat EXP lebih atau Drop Item)
+- *FK* = Fast Kill (Player dahulu mengartikan FK ini sebagai kill secepat-cepatnya tanpa melakukan break, namun seiring waktu FK bisa dilakukan bersamaan dengan FB)
+- *FC* = Full Critical
+- *FTS* = Flich, Tumble & Stun (Bergidik, Jatuh dan Pingsan)
+- *MK* = Mass Kill (Biasanya lure/pikat mini boss lebih dari 1)
+- *PROC* = Process (memproses bahan ke material)
+- *DPS* = Damage Per Second (Damager)
+- *OP* = Overpowered
+- *CP* = Combo Point
+- *R/RD* = Ready (siap)
+- *MERC* = Mercenary (nama lain Bodyguard, yang bisa digunakan gratis ataupun di sewa)
+- *DROP* = Digunakan untuk barang / benda / hadiah yang jatuh
+- *GEM RUN* = Beberapa orang yang melakukan pertarungan dengan boss menggunakan GEM/ PERMATA Spesial, GEM ini dapat meningkat Base Drop Rates yang artinya akan lebih mudah mendapat DROP ITEM dari boss tersebut.
+- *CAP* = Level maksimal/ mentok (Ngak bisa naik lagi sampai ada update berikutnya)
+- *SRD* = Super rare drop (Gem special untuk naikin drop rate)
+- *RAID BOSS* = Boss yang yang dapat di hadapi lebih dari 1 party
+- *DIFF* = Difficult (Tingkat Kesulitan, biasanya norm/ normal, Hard/sulit, NM/Nightmare dan ULTI/Ultimate)
+- *LEECH* = Lintah, artinya seseorang yang didalam party (regu) hanya menumpang menang atau farm tanpa melakukan apapun
+
+🛍️ Market (Pasar)
+
+- *S >* = Selling
+- *B >* = Buying
+- *T >* = Trading
+- *Trusted* = terpercaya
+- *ACC* = Account (Akun)
+- *APP* = Appearance (tampilan)
+- *BS* = Blacksmith (Pandai Besi)
+- *SYNTH* = Synthesist (suatu skill atau keterampilan dalam hal sintetis)
+- *LOCK* = Istilah untuk Padu perlengkapan, contoh lock 1 hanya bisa 1 step padu, lock dua 2 untuk 2 step padu, begitu seterusnya dan maximal adalah lock 5.
+- *FB* = Full Beard (Nama add "Jenggot Panjang)
+- *BWING* = Bird Wing (Sayap burung, Material untuk membuat Adventurer Garb/ Baju Pengelana)
+- *ARM* = Armor (Zirah)
+- *PROTO/PCR* = Proto Clarity Rose (Pedang bercahaya dari event Megiston, sering digunakan para jamet)
+- *CHEAP* = Murah
+- *CB* = Consignment Board
+- *UCB* = Under Consignment Board (Barang yg dijual lebih murah dari harga di papan)
+- *STK* = Stack (batas dari suatu item biasanya x10, x99 dll)
+- *POT* = Potential (Setiap Equipment/ Peralatan buatan pemain memiliki potensi di dalamnya, yang berfungsi untuk membangun stat atau sekedar diperdagangkan)
+- *NS/1S/2S* = No Slot/1 Slot/2 Slot
+- *NW* = Nisel Wood (Kayu nisel)
+- *MED* = Medicine (Obat)
+- *MM* = Middleman (Penengah/ perantara, seperti Rekber, biasanya orang yang sangat dapat di percaya dalam hal perdagangan, bertujuan untuk mengurangi penipuan)
+- *K* = Kilo (Ribuan, contoh 1000)
+- *M* = Million (Juta, contoh 1M/1.000.000)
+- *B* = Billion (Milyar, contoh 1B/ 1.000.000.000)
+- *RMT* = Real Money Trading (transaksi dengan uang asli)
+- *MATS* = Material (Besi, Kayu, Fauna, Kain, Mana yang didapatkan dari process material)
+- *XTALL* = X adalah christ/kris (penyingkatan gaul pada agama kristen) jadi Xtall dibaca Crystal.
+> contoh lain, Xmas = Christmas. Di server indo lebih familiar dengan penyebutan xtall (ekstal), kristal atau kuaci.
+- *FN* = Flower Nectar (Bahan pembuatan Revita)
+- *AD/ ANDEG* = Anti-Degration
+- *SS* = Summer Shell (bahan process "mana" paling banyak saat ini, 1stk bisa 900poin mana, didapat pada event Summer) 
+- *NC* = Nighmare Crystal (material untuk menyelesai Side Quest, fungsinya untuk leveling dengan cepat)
+- *EB* = Energy Bottle (Memulihan 4k HP, item populer karena harganya yang murah dibandingkan item lainnya)
+- *HEMA* = Hematite
+- *DO* = Damascus ore
+- *MO* = Mithril Ore (Biji Mithril)
+- *GSP* = Giga Speed Potion
+- *REV* = Revita
+- *TWW* = Time Warp Watch
+- *TIX* = Avatar Tickets (Tiket Avatar)
+- *SCAMMER* =  Penipu
+- *CHEATER* = Melakukan kecurangan dalam game, biasanya memodifikasi/ menggunakan aplikasi pihak ketiga, biasanya bertujuan untuk diakui sebagai player terhebat dewa/mastah/sepuh atau semacammnya (ilegal)
+- *MOD* = Suatu tindakan memodifikasi game/aplikasi untuk melakukan kecurangan (ilegal)
+- *BOT* = Aplikasi pihak ketiga yang melakukan pengerjaan sesuatu secara otomatis (iligal)
+- *BEWARE* = Attention danger (Hati-hati / Bahaya)
+- *EXTRACT* = Extract Crysta / Extall
+- *PIERCER* = Pembolong untuk membuat 1 slot Perlengkapan
+- *PIERCER PRIME* = Pembolong untuk membuat 2 slot Perlengkapan
+
+💭 Communication (Komunikasi)
+
+- *AFK* = Away From Keyboard (Dalam toram diartikan sebagai, Hanya diem/ lagi ngak dimainin)
+- *AFAIK* = As Far As I Know (Sejauh yg aku tahu)
+- *ASAP* = As fast as possible (Secepatnya)
+- *ATM* = At The Moment (Sekarang)
+- *BG* = Bodyguard
+- *BGM* = Background Music (Musik latar)
+- *BTW* = Bay the way (Ngomong-ngomong)
+- *BRB* = Be Right Back (Segera kembali)
+- *BRT* = Be Right There (Seger meluncur)
+- *BS* = Blacksmith (Pandai Besi)
+- *BUILD* = Point Status, Skill & Combo
+- *CH* = Channel 
+- *CHAR* = Character (Karakter)
+- *CMIIW* = Correct Me If I am Wrong (Koreksi Saya Jika Saya Salah)
+- *COMBO* = Kombinasi serangan
+- *CU* = See You (Sampai ketemu lagi)
+- *CYA* = See Ya (Sampai ketemu lagi)
+- *CP* = Couple (Sebutan pasangan, biasanya menggunakan set pakaian yang sama)
+- *DC* = Disconnected (Koneksi terputus)
+- *DC* = Discord (sebuah platform komunikasi untuk gaming)
+- *DYE* = Pewarna (dimana kita dapat mewarnai App peralatan, didalam pewarnaan ini terdapat istilah "A","B","C" yang mengacu pada posisi pewarnaan, contoh A1B50C42, Maksdunya A1=berwarna Putih, B59= berwarna biru terang dan, C42 berwarna kuning, kalian dapat melihat seluruh code warna di toram-id.com)
+- *EB* = Energy Bottle (Botol Energi)
+- *EQ* = Equipment (Perlengkapan)
+- *EXP* = Expert (ahli/mahir), biasanya player menambahan "LFP DPS EXP/ LFP TANK EXP",  yang menanda mereka sangat ahli/jago di boss tersebut.
+- *FARMING* = Mencari Drop Item, baik mencari bahan di mobs atau saat Bossing
+- *FC* = Force Close (Tertutup paksa)
+- *FWB* = Friend with benefits (Teman dengan keuntungan)
+- *GB* = Guild Bar (Markas/ Kedai Serikat) 
+- *GC* = Group Chat /Gerak Cepat (Gercep = Bahasa Gaul)
+- *GM* = Game master/ Guild master
+- *GTG* = Get To Go (Udahan ya/Ingin pergi / ada urusan)
+- *HODE* = Laki-laki yang suka menggunakan nama dan karakter cewek, biasanya mereka disebut Banci online.
+- *IDK* = I Dont Know (Saya tidak tahu)
+- *IG* = In Game (Dalam permainan)
+- *IGN* = In Game Name (Nama Karakter didalam permainan)
+- *IKR* = I know Right (iya saya tau kok)
+- *IRL* = In Real Life (Di kehidupan nyata)
+- *JAMET* = Sekelompok orang yang berkumpul untuk sekedar menghabiskan waktu, pamer penampilan, bersenda gurau, saling menyapa dll, biasanya mereka ada di rakau (Server indo) dan El Scaro (Server Internatsional)
+- *JK* = Just kidding (Hanya becanda)
+- *LAG* = Lmot / Ngadat.
+- *LEZGO* = Lets go (Ayo)
+- *LMAO* = Laughing My Ass Off (Ngakak terbahak²)
+- *LFA* = Looking for Ally / Butuh Ally
+- *IFP* = Invite For Party
+- *LFP* = Looking For Party (Mencari regu)
+- *LFM* = Looking For Member (Mencari member regu)
+- *LFG* = Looking For Guild (Mencari serikat)
+- *LOL* = Laugh Out Loud (Tertawa terbahak-bahak)
+- *LOLI* = Orang Pendek
+- *MASTA* = Master / tetua / ahli dalam game tersebut
+- *MQ* = Main Quest (Misi Utama/ Misi Cerita)
+- *MT* = Maintenance (Perawatan)
+- *MOB* = Mengacu pada kumpulan musuh yang menghuni area tertentu di map bisa juga disebut monster.
+- *MY BAD* = Artinya kira-kira sama seperti “I’m sorry, it’s my fault (Maaf, ini salahku)”
+- *NEWBIE* = Pemula
+- *NOOB / NUUB* =  Kata ejekan yang dilontarkan pada seseorang yang melakukan kesalahan
+- *NP* = No Problem (Oke tidak masalah/ sama-sama)
+- *NP* =  NO PROC (Tidak melakukan process item saat farm)
+- *NPC* = Non Playable Character/Non Player Character (karakter yang dikendalikan komputer)
+- *NVM* = NeverMind (Lupain/lupakan)
+- *OFC* = Of Course (Tentu saja)
+- *OMW* = On My Way (Dalam perjalanan)
+- *PM* = Private Mesage (pesan pribadi, bisa melaui whisper/ bisikan atau mail)
+- *PT* = Party (Sekumpulan dari beberapa player)
+- *Port/Teleport* = Pintu portal untuk berpindah
+- *PROC* = Proccess (memproses bahan ke material)
+- *PROF* = Synthesist/blacksmith proficiency (Kemahiran Synthesist/pandai besi)
+- *REF* = Refine, Memberikan peringkat terhadap eq (0-S)
+- *RGM* = Recruiting Guild Members
+- *SEC* = Second (detik, sekejap/bentar)
+- *SAVE POINT* = Titik terakhir lokasi aman biasanya berada dikota, contoh: sofya, el scaro, hora diomeda
+- *Side Quest* = Misi sampingan/ Misi opsional, umumnya tidak memengaruhi main quest.
+- *SMH* = Shaking My Head (Digunakan ketika seseorang menemukan suatu hal yang bikin marah dan kecewa sampai cuma bisa geleng-geleng kepala doang)
+- *SS* = Screenshot (Tangkapan layar)
+- *SLOT* = Lubang yg biasanya terdapat didalam perlengkapan
+- *Tuyul / Nuyul* = Akun sampingan, biasanya untuk menghasilkan spina, mengumpulan Orb, Tiket avatar atau hanya sekedar akun Tumbal, biasanya player yang memelihara akun ini dominan ke RMT, BOT atau bahkan MOD.
+- *TY* = Thank You (Terima kasih)
+- *TYPT* = Thank You Party (Katakan ini ketika meninggalkan party sebagai rasa respec)
+- *TYSM* = Thank You So Much (Terima Kasih Banyak)
+- *VGM* = Vice Guild Master (Wakil serikat)
+- *WM* = Whisper Me (Percakapan pribadi sama seperti PM)
+- *WTF* = What the fuck (Apa-apaan, kondisi saat kita heran atau kaget)
+- *WTH* = What the Hell (Apa-apaan, artinya sama seperti WTF)
+- *WTA* = Want To Ask atau biasa lngsung Ask aja (mau bertanya/tanya)
+- *WTB* = Want To Buy (Mau beli)
+- *WTS* = Want To Sell (Mau jual)
+- *XC / Xchat* = Wrong send (Salah kirim)
+- *YW* = You are Welcome (Sama-sama)
+
+😂 Gaya Tertawa Setiap Negara
+
+- *Hahahaha* = Ketawa Umum
+- *Xaxaxaxa* = Ketawanya orang Yunani
+- *Jajajajaja* = Ketawanya orang Spanyol
+- *Wkwkwk* = Ketawanya orang Indonesia
+- *Wwwww* = Ketawanya orang Jepang
+- *Kkkkkkk* = Ketawanya orang Korea
+- *55555555* = Ketawanya orang Thailand
+ههههه = *Ketawanya orang Arab* •
+
+👑 Boss/ Miniboss
+
+- *DECEL* = Brutal Dragon Decel/ Naga Beringas Decel (Boss)
+- *BKOD* = Black Knight of Delusion/ Ksatria Buruk Dusta (Boss)
+- *DG* = Demon's Gate/ Gerbang Iblis (Boss)
+- *ECB* = Evil Crystal Beast/ Iblis Kristal Jahanam (Boss)
+- *GWAI* = Gwaimol (Boss)
+- *MEGIS* = Megiston  (Boss)
+- *MAR/M* = Mardula (Bos)
+- *MW* = Masked Warrior/ Pendekar Beratopeng (Bos)
+- *NENA* = Venena Coenubia (Bos)
+- *NENA II* = Venena Metacoenubia (Boss)
+- *OLAF* = Ornlarf  (Boss)
+- *PG* = Pillar Golem/ Golem Pilar (Boss)
+- *TD* =  Twilight Dragon/ Naga Senja (Boss)
+- *TUS* = Tuscog (Bos)
+- *GUIG* = Guignol (Bos)
+- *VUL/V* = Vulture (Bos)
+- *WM* = Warmonger (Boss)
+- *BB* = Bubble Boge/ (Momok Gelembung (Mini boss)
+- *CG* = Commander Golem/ Komandan Golem (Mini boss)
+- *DY* = Don yeti 
+- *EMS* = Evil Magic Sword/ Pedang Sihir Iblis (Mini boss)
+- *GS* = Golden Skeleton/ Tengkorak Emas (Mini Boss)
+- *LMS* = Lyark Master Specialist/ Kapten Lyark Spesialis (Mini Boss)
+- *LAPIN* = Lapin The Necromancer/ Dukun Lapin (Mini boss)
+- *MS* = Metal Stinger (mini boss)
+- *SDM* = Super Death Mushroom/ Jamur Super Mampus (Mini boss)
+- *SG* = Shining Gentleman/ Baron Bling-Bling (Mini Boss)
+- *WW* = Wandering Wheel/ Roda Kelana (mini Boss
+
+💰 Treasure Hunt (Berburu harta karun)
+
+- *THUNT* = Treasure Hunter (berburu harta karun, dimana kita akan berkeliling map untuk membuka peti harta, biasanya dilakukan beregu, kalo hoki bisa dapet item bagus seperti xtall, buku skill, special item dll)
+- *MK* = Max key (kunci Penuh)
+- *X/null* = Dapat sampah
+
+Note:
+> Walaupun beberapa kata memiliki singkatan yang sama dengan arti yang berbeda, kalian dapat memahami maksud singkatan yang dilontarkan lawan bicara dari konteks atau lokasi anda berada.

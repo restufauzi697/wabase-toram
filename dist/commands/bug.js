@@ -7,7 +7,10 @@ export const command = {
     onlyGroup: false,
     visible: false,
     handle: async (bot, msg) => {
-        if (global.devMode) msg.reply('Ini perintah bug')
+        if (!global.devMode)
+        	return
+        
+        msg.reply('Ini perintah bug')
         
         logger.info(msg)
         if (!msg.isGroup)

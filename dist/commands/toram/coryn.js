@@ -37,7 +37,7 @@ const alias = {}
 
 {
 	[
-	  ["leveling", "lvl,level,lv"],
+	  ["leveling", "lvl,level,lv,lvling"],
 	  ["crysta", "xtall", "crystal"],
 	  ["equip", "eq"],
 	  ["search", "cri,fnd,cari,find,temukan"],
