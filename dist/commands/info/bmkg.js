@@ -57,8 +57,8 @@ async function gempa(info, mg) {
 		Dirasakan,  //: "III - IV Muna Barat, III - IV Muna",
 		Shakemap = formatMMI(DateTime) + '.mmi.jpg',   //: "20251013050858.mmi.jpg"
 	} = Infogempa?.gempa?.sort
-		?.((a,b) => a.Magnitude - b.Magnitude)
-		 .find(a => mg ? a.Magnitude>= mg : true) || Infogempa?.gempa || {},
+		?.(mg ?a=>0:(a,b) => a.Magnitude - b.Magnitude)
+		 .find(mg ? a=>true:a => a.Magnitude>= mg) || Infogempa?.gempa || {},
 	txt_koordinat= {'LS':'Lintang Selatan','LU':'Lintang Utara', 'BT':'Bujur Timur','BB':'Bujur Barat'},
 	[Tanggal, Jam] = formatDate(DateTime).split(' | ');
 	

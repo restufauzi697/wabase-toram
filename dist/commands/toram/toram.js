@@ -75,15 +75,18 @@ sortcut.map(({command,param, description}) => {
 export const command = commandModule
 
 const action = {
-	async addbuff(bot, m, buff) {
+	async addbuff(bot, m, [stat,code,lvl]) {
 		
-		const axist = toram.Buff.filter(([stat,code])=> code == buff[1])
+		const axist = toram.Buff.filter(([stat,_code])=> _code == buff[1])
 		
 		if (axist.length > 1) {
-			await m.reply(`Kode ${buff[1]} terdaftar memasak buff _${axist.map(([stat, lvl])=>stat+'_ lvl '+lvl).join(' dan _')}. Hapus salah satu untuk mengubah.`)
+			await m.reply(`Kode ${code} terdaftar memasak buff _${axist.map(([stat, lvl])=>stat+'_ lvl '+lvl).join(' dan _')}. Hapus salah satu untuk mengubah.`)
 		
-		} else if (/^\d{7}$/.test(buff[1]) && (buff[2]<11&&0<buff[2]) && lang_stat_buff[buff[0]]) {
-			toram.Buff.push(buff)
+		} else if (/^\d{7}$/.test(code) && (lvl<11&&0<lvl) && lang_stat_buff[stat]) {
+			if(axist[0]?.[0] == stat)
+				axist[0][2] = lvl
+			else
+				toram.Buff.push([stat,code,lvl])
 				toram.Buff.sort(([,,a],[,,b])=>-sort(a,b))
 				toram.Buff.sort(([a],[b])=>sort(_.buff[a],_.buff[b]))
 			save()
@@ -93,10 +96,10 @@ const action = {
 	},
 	async buff(bot, m, [buff]) {
 		let list = toram.Buff, title
-		var text = '*ᴋᴏᴅᴇ ʙᴜꜰꜰ ᴛᴏʀᴀᴍ ᴏɴʟɪɴᴇ*\n\n'
+		var text = '*ᴋᴏᴅᴇ ʙᴜꜰꜰ ᴛᴏʀᴀᴍ ᴏɴʟɪɴᴇ*\n'
 		
 		if(buff)
-			if(buff)
+			if(buff=='list')
 				return await action.list(bot, m, ['buff'])
 			else
 				list = list.filter(([a])=>a==buff)
@@ -110,7 +113,7 @@ const action = {
 				text += `${code} ${stat.replace(/_/g,' ')} Lv ${lvl}\n`
 			})
 		else
-			text += '--empty--'
+			text += '\n--empty--'
 		if(buff)
 			await m.reply(text)
 		else
