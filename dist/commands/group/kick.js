@@ -12,7 +12,7 @@ export const command = {
 		//# Validasi admin
 		const isAdmin = (await bot.findParticipantFromGrup(m.chat, m.sender))?.admin
 		
-		if (!isAdmin)
+		if (!isAdmin && !m.fromMe)
 			return m.reply(`Perintah ini hanya bisa dijalankan oleh admin group`)
 		
 		//# Target kick member

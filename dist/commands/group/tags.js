@@ -16,7 +16,7 @@ export const command = {
 			participant => participant.id === m.sender && participant.admin
 		)
 		
-		if (!isAdmin)
+		if (!isAdmin && !m.fromMe)
 			return m.reply(`Perintah ini hanya bisa dijalankan oleh admin group`)
 		
 		const mentionedJid = participants.map((x) => x.id)
