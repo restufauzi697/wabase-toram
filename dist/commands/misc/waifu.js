@@ -6,6 +6,7 @@ import path from 'path';
 import { v4 } from 'uuid';
 
 import Waifu from 'waifu.pics';
+import { jidDecode } from 'baileys';
 import logger from '../../utils/logger.js';
 //last_endpoints
 var endpoints = {"sfw":["waifu","neko","shinobu","megumin","bully","cuddle","cry","hug","awoo","kiss","lick","pat","smug","bonk","yeet","blush","smile","wave","highfive","handhold","nom","bite","glomp","slap","kill","kick","happy","wink","poke","dance","cringe"]}
@@ -29,11 +30,12 @@ export const command = {
 		
 		await m.reply({ react: { text: '⏳', key: m.key } }, false)
 		
-		var reply
+		var reply = {}
 		if(tag == 'listtags') {
 			reply = await get_endpoints()
 			reply = '*Tags waifu*\n\n- '
 			+ reply.sfw.join('\n- ')
+			reply = { text: reply }
 		} else
 		try {
 			reply = endpoints.sfw.includes(tag) ? tag : 'waifu'
@@ -46,14 +48,46 @@ export const command = {
 				image: { url: reply.url}
 			}
 		} catch (err) {
-			logger.warn(err)
-			reply = 'Not Found'
+			if(!reply.url)
+				logger.warn(err),
+				reply = { text: 'Not Found' }
+			else
+				reply = {
+					document: { url: reply.url },
+					fileName: path.basename(reply.url),
+					mimetype: 'image/gif',
+					caption: 'Animated'
+				}
 		}
-		await m.reply({ react: { text: '', key: m.key } }, false)
-		
-		await m.reply(reply, true, reply.image ? { backgroundColor: '', ephemeralExpiration: 86400 } : null)
+		const pn = jidDecode(m.senderPn)?.user
+		await m.reply( {
+			...{
+				contextInfo: {
+					mentionedJid: [m.sender]
+				}
+			},
+			...reply
+		}, true, reply.document ? null: {
+			backgroundColor: '',
+			ephemeralExpiration: 86400,
+			quoted: {
+				key: {
+					fromMe: true,
+					id: m.id,
+					participant: m.sender,
+					remoteJid: m.senderPn,
+				},
+				message: {
+					contactMessage: {
+						displayName: m.pushName,
+						vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${m.pushName}\nTEL;type=CELL;waid=${pn}:${pn}\nEND:VCARD`
+					},
+				},
+			},
+		})
 		if(reply.video)
-			setTimeout(()=> fs.unlink(reply.video.url), 10000)
+			setTimeout(()=> fs.unlinkSync(reply.video.url), 10000)
+		await m.reply({ react: { text: '', key: m.key } }, false)
 	},
 }
 
@@ -96,6 +130,9 @@ const convertGifToMp4 = async (url) => {
 
 const tmpDir = path.resolve(process.cwd(),'tmp');
 
-if (!fs.existsSync(tmpDir)) {
-  fs.mkdirSync(tmpDir);
-}
+!async function main() {
+	if (!fs.existsSync(tmpDir))
+		fs.mkdirSync(tmpDir);
+	else
+		fs.rm(tmpDir, { recursive: true, force: true }, () => fs.mkdirSync(tmpDir))
+}()
