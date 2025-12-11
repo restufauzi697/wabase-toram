@@ -77,7 +77,7 @@ export const command = commandModule
 const action = {
 	async addbuff(bot, m, [stat,code,lvl]) {
 		
-		const axist = toram.Buff.filter(([stat,_code])=> _code == buff[1])
+		const axist = toram.Buff.filter(([stat,_code])=> _code == code)
 		
 		if (axist.length > 1) {
 			await m.reply(`Kode ${code} terdaftar memasak buff _${axist.map(([stat, lvl])=>stat+'_ lvl '+lvl).join(' dan _')}. Hapus salah satu untuk mengubah.`)

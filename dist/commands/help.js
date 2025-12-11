@@ -3,8 +3,8 @@ export const command = {
 	onlyOwner: false,
 	onlyPremium: false,
 	onlyGroup: false,
-	tag: '',
-	description: 'gunakan: `.help <command>`',
+	tag: `Menu ${global.bot.name}`,
+	description: '',
 	get help() {
 		return 'usage: `.help <command>`\n\n`.menu` Menampilkan semua perintah.'
 	},
@@ -14,7 +14,7 @@ export const command = {
 		
 		const command = global.bot.commands.find(c => c.command === m.arguments[0])
 		if (command && command.help)
-			m.reply(`*Help for ._${command.command}_*\n\n${command.help}`)
+			m.reply(`*Help for ._${command.command}_*\n\n${command.description||''}\n${command.help}`)
 		else
 			m.reply({ react: { text: '❌', key: m.key } }, false)
 	},

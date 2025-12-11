@@ -7,7 +7,7 @@ const repoAssets = "https://raw.githubusercontent.com/restufauzi697/wabase-toram
 global.devMode = process.argv.some(arg => arg.includes('-d') || arg.includes('--dev'))
 
 global.bot = {
-    name: 'robzbot',
+    name: 'RobzBot',
     number: '',
     version: pkg['version'],
     prefix: '.',

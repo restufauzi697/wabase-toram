@@ -3,14 +3,15 @@ export const command = {
     onlyOwner: false,
     onlyPremium: false,
     onlyGroup: false,
-    tag: '',
+    tag: `Menu ${global.bot.name}`,
     description: 'Menampilkan semua perintah.',
     get help() {
         return 'usage: `.menu`'
     },
     handle: async (bot, m) => {
-        !menu[1].length && _ ( );
-        m.sendThum(global.bot.name, `*ALL MENU*${menu[m.isGroup|0].join('\n')}`, global.bot.thumb, global.bot.adsUrl, false, true);
+        //!menu[1].length && _ ( );
+        //m.sendThum(global.bot.name, `${menu[m.isGroup|0].join('\n')}\n╚════════════════❍`, global.bot.thumb, global.bot.adsUrl, false, true);
+        m.sendThum(global.bot.name, Menu, global.bot.thumb, global.bot.adsUrl, false, true);
     },
 }
 
@@ -21,19 +22,21 @@ const _ = ⁿ =>
 		 .sort((a,b) => _.a(a.tag, b.tag) )
 		 .map(a => {
 			if (ⁿ != a.tag) {
-				if(`\n*${ⁿ}*` == menu[0].slice(-1)[0])
+				if(`\n╔══ 「 ${ⁿ} 」` == menu[0].slice(-1)[0])
 					menu[0].pop()
 				
-				menu[0].push(`\n*${a.tag}*`)
-				menu[1].push(`\n*${a.tag}*`)
+				menu[0].push(`╚════════════════❍\n`)
+				menu[1].push(`╚════════════════❍\n`)
+				menu[0].push(`\n╔══ 「 ${a.tag} 」`)
+				menu[1].push(`\n╔══ 「 ${a.tag} 」`)
 				
 				ⁿ = a.tag
 			}
 			
-			menu[1].push(`- *.${a.command}* ${a.description}`)
+			menu[1].push(`║⧐ .${a.command}`)
 			
 			if (!a.onlyGroup)
-				menu[0].push(`- *.${a.command}* ${a.description}`)
+				menu[0].push(`║⧐ .${a.command}`)
 		})
 	_.a = (a,b) => a-b || -(a<b)|(a>b)
 const menu = [[],[]]
@@ -59,3 +62,36 @@ ${m.isGroup ? `
 *.info*  informasi bot dan lainnya.
 *.info-gempa* informasi gempa terbaru dari BMKG
 `;
+
+
+const Menu = `
+╔══ 「 Menu RobzBot 」
+║⧐ ⸨ .help ⸩
+║⧐ ⸨ .menu ⸩
+╚════════════════❍
+
+╔══ Administratif
+║⧐ .kick
+║⧐ .tags
+╚════════════════❍
+
+╔══ Generator
+║⧐ .waifu
+║⧐ .waifu-ai
+╚════════════════❍
+
+
+╔══ Informasi
+║⧐ .bmkg
+║⧐ .inf-gempa
+╚════════════════❍
+
+╔══ Toram Online
+║⧐ .buff
+║⧐ .addbuff
+║⧐ .deletebuff
+║⧐ .coryn
+║⧐ .guide
+║⧐ .toram
+╚════════════════❍
+`.trim()
