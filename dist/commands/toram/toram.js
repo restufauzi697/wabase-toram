@@ -179,7 +179,9 @@ const action = {
 		action.guide(bot, m)
 	},
 	async guide(bot, m, page) {
-		page = m.text.replace('.toram guide','').toLowerCase().trim()
+		if(page[0] == 'list')
+			return await action.list(bot, m, [page[1]])
+		page = m.text.replace(/^.(toram )*guide/,'').toLowerCase().trim()
 		page = _.list[page] ||_.list.find(([name])=>name==page)
 		if(!page)
 			return await m.reply('Panduan tidak ditemukan')
