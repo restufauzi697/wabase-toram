@@ -24,7 +24,7 @@ global.bot = {
 }
 
 global.owner = {
-    name: 'robzbot',
+    name: 'RobzBot',
     number: '',
 }
 

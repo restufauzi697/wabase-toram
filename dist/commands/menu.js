@@ -65,28 +65,27 @@ ${m.isGroup ? `
 
 
 const Menu = `
-╔══ 「 Menu RobzBot 」
+╔══『 Menu RobzBot 』
 ║⧐ ⸨ .help ⸩
 ║⧐ ⸨ .menu ⸩
 ╚════════════════❍
 
-╔══ Administratif
+╔══❨ Administratif ❩
 ║⧐ .kick
 ║⧐ .tags
 ╚════════════════❍
 
-╔══ Generator
+╔══❨ Generator ❩
 ║⧐ .waifu
 ║⧐ .waifu-ai
 ╚════════════════❍
 
-
-╔══ Informasi
+╔══❨ Informasi ❩
 ║⧐ .bmkg
 ║⧐ .inf-gempa
 ╚════════════════❍
 
-╔══ Toram Online
+╔══❨ Toram Online ❩
 ║⧐ .buff
 ║⧐ .addbuff
 ║⧐ .deletebuff

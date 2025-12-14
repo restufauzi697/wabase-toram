@@ -20,9 +20,12 @@ export default async function messagesUpsert(bot, m) {
 				return command.handle(bot, m)
 			}
 			else if(m.command == "credits")
-				m.reply(`*${global.bot.name}* 2025`);
+				m.reply(
+`*${global.bot.name}* 2025
+@Rfeasutzui | RobbyRz | @alsocube`
+				);
 			else if(m.command == "author")
-				m.sendThum(global.bot.name, 'Created by _@Rfeasutzui_', global.bot.banner, global.bot.adsUrl, false, true);
+				m.sendThum(global.bot.name, 'Created by _@Rfeasutzui_ ©${global.bot.name} 2025', global.bot.banner, global.bot.adsUrl, false, true);
 			else void 0
 		}
 		
