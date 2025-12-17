@@ -18,7 +18,7 @@ export const command = {
 		const result = find_crystal(name)
 		
 		if(result)
-			await m.reply(`Hasil dari ${m.arguments[0]}\n\n${result}`)
+			await m.reply(`Hasil dari ${m.arguments[0]||'apa nih?'}\n\n${result}`)
 		else
 			await m.reply('Tidak ada nama xtall yang cocok')
 	}
@@ -34,9 +34,9 @@ function find_crystal(name) {
 		name1 = name1.toLowerCase()
 		name2 = name2.toLowerCase()
 		
-		if(name1.search(name) > -1)
+		if(name1.includes(name))
 			point = Math.abs(name1.length - name.length)
-		else if(name2.search(name) > -1)
+		else if(name2.includes(name))
 			point = Math.abs(name2.length - name.length)
 			
 		if(point == 0) {
@@ -81,8 +81,8 @@ async function getData(DataPath) {
 	const response = await fetch(DataPath)
 	if(!response.ok)
 		return []
-	const data = await response.text()
-	const csv = data.split('\n').map(row=>row.split(',').map(cell=>cell.trim()))
+	const data = (await response.text()).replace(/".*?"/g,a=>a.replace(/,/g,'%2C'))
+	const csv = data.split('\n').map(row=>row.split(',').map(cell=>cell.replace(/%2C/g,',').trim()))
 	return csv
 }
 
@@ -173,6 +173,18 @@ function crystal_details(xtall) {
 			return (value2? '*'+value2+'*\n': '')+ `- ${key.replace(/_/g,' ')} ${value3||value1}`
 		}).join('\n')||''
 	}`
+	if (xtall.data.recipe)
+		result += `\n*Recipe:* \n${
+			xtall.data.recipe.map(({key,value1,value2,value3}) => {
+				return `- ${key.replace(/_/g,' ')} ${value3||value1||'`No data`'}`
+			}).join('\n')||''
+		}`; else
+	if (xtall.data.obtain)
+		result += `\n*Obtain:* \n${
+			xtall.data.obtain.map(({key,value1,value2,value3}) => {
+				return `- ${key.replace(/_/g,' ')} ${value3||value1||'`_`'}`
+			}).join('\n')||''
+		}`
 	if (route.length > 0)
 		result += `\n*Related:* ${
 			route.up
