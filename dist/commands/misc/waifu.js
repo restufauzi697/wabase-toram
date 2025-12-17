@@ -131,8 +131,12 @@ const convertGifToMp4 = async (url) => {
 const tmpDir = path.resolve(process.cwd(),'tmp');
 
 !async function main() {
-	if (!fs.existsSync(tmpDir))
-		fs.mkdirSync(tmpDir);
-	else
-		fs.rm(tmpDir, { recursive: true, force: true }, () => fs.mkdirSync(tmpDir))
+	try {
+		if (!fs.existsSync(tmpDir))
+			fs.mkdirSync(tmpDir);
+		else
+			fs.rm(tmpDir, { recursive: true, force: true }, () => fs.mkdirSync(tmpDir))
+	} catch (e) {
+		logger.error(e)
+	}
 }()

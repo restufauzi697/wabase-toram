@@ -90,6 +90,7 @@ const Menu = `
 ║⧐ .addbuff
 ║⧐ .deletebuff
 ║⧐ .coryn
+║⧐ .xtall
 ║⧐ .guide
 ║⧐ .toram
 ╚════════════════❍
