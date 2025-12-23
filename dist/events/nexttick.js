@@ -21,11 +21,11 @@ export default async function messagesUpsert(bot, m) {
 			}
 			else if(m.command == "credits")
 				m.reply(
-`*${global.bot.name}* 2025
+`*${global.bot.name}* v${process.env.npm_package_version} | 2025
 @Rfeasutzui | RobbyRz | @alsocube`
 				);
 			else if(m.command == "author")
-				m.sendThum(global.bot.name, 'Created by _@Rfeasutzui_ ©${global.bot.name} 2025', global.bot.banner, global.bot.adsUrl, false, true);
+				m.sendThum(global.bot.name, `Created by _@Rfeasutzui_ ©${global.bot.name} 2025`, global.bot.banner, global.bot.adsUrl, false, true);
 			else void 0
 		}
 		

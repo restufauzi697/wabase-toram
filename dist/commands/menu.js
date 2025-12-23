@@ -85,6 +85,11 @@ const Menu = `
 ║⧐ .inf-gempa
 ╚════════════════❍
 
+╔══❨ Toram Market ❩
+║⧐ .sell
+║⧐ .buy
+╚════════════════❍
+
 ╔══❨ Toram Online ❩
 ║⧐ .buff
 ║⧐ .addbuff

@@ -23,11 +23,11 @@ export const command = {
 		
 		if (! m.isQuote)
 		
-		if (!m.arguments[0])
+		if (!m.text)
 			return m.reply("Pesan dibutuhkan");
 		else
 			return m.reply({
-				text: m.arguments[0],
+				text: m.text.replace(/^\S*\b/g, ''),
 				mentions: mentionedJid,
 			})
 		
