@@ -156,17 +156,6 @@ const Waifu = {
   }
 }
 
-get_endpoints()
-async function get_endpoints() {
-	try {
-		const res = await Waifu.endpoints()
-		return endpoints = res
-	} catch (err) {
-		logger.warn(err)
-		return endpoints
-	}
-}
-
 const tmpDir = path.resolve(process.cwd(),'tmp');
 
 !async function main() {
