@@ -1,8 +1,5 @@
-import path from 'path';
 import { jidDecode } from 'baileys';
 import logger from '../../utils/logger.js';
-//last_endpoints
-var endpoints = {"sfw":["waifu","neko","shinobu","megumin","bully","cuddle","cry","hug","awoo","kiss","lick","pat","smug","bonk","yeet","blush","smile","wave","highfive","handhold","nom","bite","glomp","slap","kill","kick","happy","wink","poke","dance","cringe"]}
 
 export const command = {
 	command: 'waifu',
@@ -13,8 +10,7 @@ export const command = {
 	description: 'waifu siapa ini?.',
 	get help() {
 		return 'usage:'
-		+'\n`.waifu [tags]`, random waifu kamu.'
-		+'\n`.waifu listtags`, daftar _tags_ tersedia.`'
+		+'\n`.waifu`, random waifu kamu.'
 	},
 	handle: async (bot, m) => {
 		const tag = m.arguments[0]?.toLowerCase()
@@ -22,23 +18,16 @@ export const command = {
 		await m.reply({ react: { text: '⏳', key: m.key } }, false)
 		
 		var reply = {}
-		if(tag == 'listtags') {
-			reply = await get_endpoints()
-			reply = '*Tags waifu*\n\n- '
-			+ reply.sfw.join('\n- ')
-			reply = { text: reply }
-		} else
 		try {
-			reply = endpoints.sfw.includes(tag) ? tag : 'waifu'
-			reply = await Waifu.fetch('/sfw/'+reply)
-			reply = reply.url.endsWith('.gif')
+			reply = await Pics.random()
+			reply = reply.endsWith('.gif')
 			 ? {
-				document: { url: reply.url },
-				fileName: path.basename(reply.url),
+				document: { url: reply },
+				fileName: path.basename(reply),
 				mimetype: 'image/gif',
 				caption: 'Animated'
 			} : {
-				image: { url: reply.url}
+				image: { url: reply}
 			}
 		} catch (err) {
 			logger.warn(err),
@@ -76,42 +65,93 @@ export const command = {
 	},
 }
 
-const API_URL = 'https://api.waifu.pics'
-
-async function parseResponse (response) {
-  if (!response.ok) {
-    const failure = await response.text()
-
-    throw new Error(failure)
-  }
-
-  return response.json()
+const API_URL = {
+	waifu_pics: 'https://api.waifu.pics',
+	 n_sfw_com: 'https://api.n-sfw.com',
+	  waifu_im: 'https://api.waifu.im',
+	nekos_best: 'https://nekos.best/api/v2',
+	    pic_re: 'https://pic.re/image',
 }
+const endpoints = {}
 
-const Waifu = {
-  /**
-   * @param {string} endpoint An endpoint contained in {@link https://waifu.pics/api/endpoints}
-   * @returns {Promise}
-   */
-  fetch (endpoint) {
-    return fetch(`${API_URL}${!endpoint.startsWith('/') ? `/${endpoint}` : endpoint}`).then(parseResponse)
-  },
-
-  /**
-   * @returns {Promise<string[]>}
-   */
-  endpoints () {
-    return this.fetch('/endpoints')
-  }
-}
-
-get_endpoints()
-async function get_endpoints() {
-	try {
-		const res = await Waifu.endpoints()
-		return endpoints = res
-	} catch (err) {
-		logger.warn(err)
+const Pics = {
+	fetch (url) {
+		return fetch(url).then(this.parseResponse)
+	},
+	endpoints (host) {
+		if (host == 'pic_re')
+			return {}
+		return this.fetch(`${API_URL[host]}${host=='waifu_im'?'/tags':'/endpoints'}`)
+	},
+	proxy (url) {
+		if (url.includes('n-sfw.com'))
+			return 'https://proxy.n-sfw.com/?url='+url
+		return url
+	},
+	randomize_host() {
+		let host = Object.keys(API_URL)
+		return [...host, ...host][Math.floor(Math.random() * (host.length * 2 -1))]
+	},
+	randomize_img_url (host) {
+		var path = '', query = ''
+		switch (host) {
+			case 'pic_re':
+			break
+			case 'waifu_im':
+				path = '/search'
+				query = `?excluded_tags=oppai&height=<=2000&byte_size=<=2084000`
+			break
+			case 'waifu_pics':
+			case 'n_sfw_com':
+				path = endpoints[host].sfw
+				path = [...path,...path][Math.floor(Math.random() * (path.length * 2 -1))]
+				path = '/sfw/'+path
+			break
+			case 'nekos_best':
+				path = Object.keys(endpoints[host])
+				path = [...path,...path][Math.floor(Math.random() * (path.length * 2 -1))]
+				path = '/'+path
+			break
+			default:
+				host = 'https://picsum.photos/200'
+		}
+		host = API_URL[host] || host
+		return {
+			host, path, query,
+			url:`${host}${path}${query}`
+		}
+	},
+	async random() {
+		const host = this.randomize_host()
+		const request  = this.randomize_img_url(host)
+		
+		if(host == 'pic_re' || !API_URL[host])
+			return request.url
+		
+		const response = await this.fetch(request.url)
+		const proxy = host == 'n_sfw_com'? 'https://proxy.n-sfw.com/?url=' : ''
+		
+		return proxy + (response.url || response.results?.[0]?.url || response.images?.[0]?.url)
+	},
+	async parseResponse (response) {
+		if (!response.ok) {
+			const failure = await response.text()
+	
+			throw new Error(failure)
+		}
+	
+		return response.json()
+	},
+	async load_endpoints() {
+		host = Object.keys(API_URL)
+		for(host of host) try {
+			endpoints[host] = await this.endpoints (host)
+		} catch (e) {
+			delete API_URL[host]
+			console.warn(e)
+		}
 		return endpoints
 	}
 }
+
+Pics.load_endpoints()
