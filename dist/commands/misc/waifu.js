@@ -143,12 +143,12 @@ const Pics = {
 		return response.json()
 	},
 	async load_endpoints() {
-		host = Object.keys(API_URL)
+		var host = Object.keys(API_URL)
 		for(host of host) try {
 			endpoints[host] = await this.endpoints (host)
 		} catch (e) {
 			delete API_URL[host]
-			console.warn(e)
+			console.warn(host, ': ', e)
 		}
 		return endpoints
 	}
