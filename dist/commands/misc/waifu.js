@@ -10,8 +10,6 @@ import logger from '../../utils/logger.js';
 //last_endpoints
 var endpoints = {"sfw":["waifu","neko","shinobu","megumin","bully","cuddle","cry","hug","awoo","kiss","lick","pat","smug","bonk","yeet","blush","smile","wave","highfive","handhold","nom","bite","glomp","slap","kill","kick","happy","wink","poke","dance","cringe"]}
 
-get_endpoints()
-
 export const command = {
 	command: 'waifu',
 	onlyOwner: false,
@@ -155,6 +153,8 @@ const Waifu = {
     return this.fetch('/endpoints')
   }
 }
+
+get_endpoints()
 
 const tmpDir = path.resolve(process.cwd(),'tmp');
 
