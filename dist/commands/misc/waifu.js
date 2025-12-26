@@ -1,3 +1,4 @@
+import path from 'path';
 import { jidDecode } from 'baileys';
 import logger from '../../utils/logger.js';
 
