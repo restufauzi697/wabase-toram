@@ -1,10 +1,4 @@
-import axios from 'axios';
-import ffmpeg from 'fluent-ffmpeg';
-
-import fs from 'fs';
 import path from 'path';
-import { v4 } from 'uuid';
-
 import { jidDecode } from 'baileys';
 import logger from '../../utils/logger.js';
 //last_endpoints
@@ -39,22 +33,16 @@ export const command = {
 			reply = await Waifu.fetch('/sfw/'+reply)
 			reply = reply.url.endsWith('.gif')
 			 ? {
-				video: { url: await convertGifToMp4(reply.url) },
-				gifPlayback: true
+				document: { url: reply.url },
+				fileName: path.basename(reply.url),
+				mimetype: 'image/gif',
+				caption: 'Animated'
 			} : {
 				image: { url: reply.url}
 			}
 		} catch (err) {
-			if(!reply.url)
-				logger.warn(err),
-				reply = { text: 'Not Found' }
-			else
-				reply = {
-					document: { url: reply.url },
-					fileName: path.basename(reply.url),
-					mimetype: 'image/gif',
-					caption: 'Animated'
-				}
+			logger.warn(err),
+			reply = { text: 'Not Found' }
 		}
 		const pn = jidDecode(m.senderPn)?.user
 		await m.reply( {
@@ -88,43 +76,6 @@ export const command = {
 	},
 }
 
-async function get_endpoints() {
-	try {
-		const res = await Waifu.endpoints()
-		return endpoints = res
-	} catch (err) {
-		logger.warn(err)
-		return endpoints
-	}
-}
-
-const convertGifToMp4 = async (url) => {
-	const response = await axios.get(url, { responseType: 'stream' });
-	const gifStream = response.data;
-	const uniqueFileName = `${v4()}.mp4`;
-	const mp4Path = path.join(tmpDir, uniqueFileName);
-
-	const videoBuffer = await new Promise((resolve, reject) => {
-		ffmpeg(gifStream)
-			.output(mp4Path)
-			.outputFormat('mp4')
-			.outputOptions([
-				'-c:v libx264',
-				'-crf 18',
-				'-pix_fmt yuv420p',
-			])
-			.on('end', () => {
-				resolve()
-			})
-			.on('error', (err) => {
-				reject(err)
-			})
-			.run();
-	})
-
-	return mp4Path;
-};
-
 const API_URL = 'https://api.waifu.pics'
 
 async function parseResponse (response) {
@@ -155,16 +106,12 @@ const Waifu = {
 }
 
 get_endpoints()
-
-const tmpDir = path.resolve(process.cwd(),'tmp');
-
-!async function main() {
+async function get_endpoints() {
 	try {
-		if (!fs.existsSync(tmpDir))
-			fs.mkdirSync(tmpDir);
-		else
-			fs.rm(tmpDir, { recursive: true, force: true }, () => fs.mkdirSync(tmpDir))
-	} catch (e) {
-		logger.error(e)
+		const res = await Waifu.endpoints()
+		return endpoints = res
+	} catch (err) {
+		logger.warn(err)
+		return endpoints
 	}
-}()
+}
