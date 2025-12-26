@@ -31,6 +31,7 @@ export const command = {
 				image: { url: reply}
 			}
 		} catch (err) {
+			logger.info(reply)
 			logger.warn(err),
 			reply = { text: 'Not Found' }
 		}
@@ -149,7 +150,8 @@ const Pics = {
 			endpoints[host] = await this.endpoints (host)
 		} catch (e) {
 			delete API_URL[host]
-			console.warn(host, ': ', e)
+			logger.warn('Failed to get endpoints for '+host)
+			logger.warn(e)
 		}
 		return endpoints
 	}
