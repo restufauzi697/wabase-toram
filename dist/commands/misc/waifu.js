@@ -5,7 +5,6 @@ import fs from 'fs';
 import path from 'path';
 import { v4 } from 'uuid';
 
-import Waifu from 'waifu.pics';
 import { jidDecode } from 'baileys';
 import logger from '../../utils/logger.js';
 //last_endpoints
@@ -127,6 +126,46 @@ const convertGifToMp4 = async (url) => {
 
 	return mp4Path;
 };
+
+const API_URL = 'https://api.waifu.pics'
+
+async function parseResponse (response) {
+  if (!response.ok) {
+    const failure = await response.text()
+
+    throw new Error(failure)
+  }
+
+  return response.json()
+}
+
+const Waifu = {
+  /**
+   * @param {string} endpoint An endpoint contained in {@link https://waifu.pics/api/endpoints}
+   * @returns {Promise}
+   */
+  fetch (endpoint) {
+    return fetch(`${API_URL}${!endpoint.startsWith('/') ? `/${endpoint}` : endpoint}`).then(parseResponse)
+  },
+
+  /**
+   * @returns {Promise<string[]>}
+   */
+  endpoints () {
+    return this.fetch('/endpoints')
+  }
+}
+
+get_endpoints()
+async function get_endpoints() {
+	try {
+		const res = await Waifu.endpoints()
+		return endpoints = res
+	} catch (err) {
+		logger.warn(err)
+		return endpoints
+	}
+}
 
 const tmpDir = path.resolve(process.cwd(),'tmp');
 

@@ -15,7 +15,7 @@ global.bot = {
     locale: 'id',
     timezone: 'Asia/Jakarta',
     adsUrl: 'http://robz.bot/',
-    get thumb() { return `${repoAssets}/toram/texture/toram-${Math.floor(Math.random()*4)}.jpg`},
+    get thumb() { return `${repoAssets}/toram/texture/toram-${Math.floor(Math.random()*8)}.jpg`},
     icon: `${repoAssets}/toram/texture/rf_acme.jpg`,
     banner: `${repoAssets}/toram/texture/yuki.jpg`,
     newsletterJid: '',

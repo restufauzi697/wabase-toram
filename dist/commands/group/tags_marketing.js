@@ -50,7 +50,7 @@ async function handle (bot, m) {
 	const isMarketingGroup = global.database.group[m.chat]?.mark_as_marketing_group
 	
 	if (!isMarketingGroup)
-		return m.reply(`Perintah ini hanya bisa dijalankan di group tertentu`)
+		return m.reply(`Perintah ini hanya bisa dijalankan di grup tertentu`)
 	
 	const mentionedJid = participants.map((x) => x.id)
 	
