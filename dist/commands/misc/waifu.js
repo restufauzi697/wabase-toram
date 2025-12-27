@@ -31,7 +31,6 @@ export const command = {
 				image: { url: reply}
 			}
 		} catch (err) {
-			logger.info(reply)
 			logger.warn(err),
 			reply = { text: 'Not Found' }
 		}
@@ -61,8 +60,6 @@ export const command = {
 				},
 			},
 		})
-		if(reply.video)
-			setTimeout(()=> fs.unlinkSync(reply.video.url), 10000)
 		await m.reply({ react: { text: '', key: m.key } }, false)
 	},
 }
