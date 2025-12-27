@@ -1,3 +1,5 @@
+import main from "../../utils/toram/Crystal-translated.js"
+
 var _ready = false;
 
 export const command = {
@@ -28,7 +30,7 @@ function find_crystal(name) {
 	const find = []
 	var match
 	for(const xtall of Crystal.List) {
-		let { name1, name2 } = xtall
+		let { name:name1, name2 } = xtall
 		let point = -1
 		
 		name1 = name1.toLowerCase()
@@ -69,7 +71,7 @@ function find_crystal(name) {
 		result += 'hmm.. yang mana nih..\n'
 		result += find
 		 . sort(({point:a},{point:b})=>a-b)
-		 . map(({xtall:{name1}})=>'- '+name1)
+		 . map(({xtall:{name}})=>'- '+name)
 		 . join('\n')
 	} else {
 		result = 'Tidak ketemu..'
@@ -77,6 +79,7 @@ function find_crystal(name) {
 	return result
 }
 
+/*
 async function getData(DataPath) {
 	const response = await fetch(DataPath)
 	if(!response.ok)
@@ -158,15 +161,15 @@ async function main () {
 const DataPath = {
 	Crystal: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRwaGM9CClGkSw-6iUFmdOyIeI-_9i5RvIuHdSCTCUgFCk7GV4v1evt5C79JSG5P66ZGopM2-ZJJaEA/pub?gid=1665548440&single=true&output=csv', // '&range=A:E'
 }
+*/
 
 const Crystal = {List:null}
 
-!main().then(result => {Crystal.List = result})
-
+!main().then(result => {Crystal.List = result.List, _ready = true})
 
 function crystal_details(xtall) {
 	const route = related(xtall)
-	let result = `*Name:* ${xtall.name1}\n*Type:* ${
+	let result = `*Name:* ${xtall.name}\n*Type:* ${
 		['','Upgrade '][enhancer(xtall)?.value1|0]
 	} ${xtall.category}\n*Stats:* \n${
 		xtall.data.stats?.map(({key,value1,value2,value3}) => {
@@ -190,7 +193,7 @@ function crystal_details(xtall) {
 			route.up
 			 . map(a=>'\n- '+a)
 			 . join('')
-		}\n- ${xtall.name1}${
+		}\n- ${xtall.name}${
 			route.down
 			 . map(a=>'\n- '+a)
 			 . join('')
@@ -216,11 +219,11 @@ function related(xtall) {
 	var find
 	while(find = enchMap.get(name)) {
 		name = find.name2
-		up.unshift(find.name1)
+		up.unshift(find.name)
 	}
 	
 	while(find = nameMap.get(target)) {
-		down.push(find.name1)
+		down.push(find.name)
 		target = enhancer(find)?.value1
 	}
 	
