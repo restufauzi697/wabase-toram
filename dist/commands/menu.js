@@ -76,8 +76,10 @@ const Menu = `
 ╚════════════════❍
 
 ╔══❨ Generator ❩
+║⧐ .husbu
 ║⧐ .waifu
 ║⧐ .waifu-ai
+║⧐ .waifu-random
 ╚════════════════❍
 
 ╔══❨ Informasi ❩

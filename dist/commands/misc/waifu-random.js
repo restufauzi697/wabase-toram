@@ -3,15 +3,15 @@ import { jidDecode } from 'baileys';
 import logger from '../../utils/logger.js';
 
 export const command = {
-	command: 'waifu',
+	command: 'waifu-random',
 	onlyOwner: false,
 	onlyPremium: false,
 	onlyGroup: false,
 	tag: 'Generator',
-	description: 'waifu siapa ini?.',
+	description: 'waifu apa ini?.',
 	get help() {
 		return 'usage:'
-		+'\n`.waifu`, random waifu kamu.'
+		+'\n`.waifu-random` 90% waifu, 10% husbando.'
 	},
 	handle: async (bot, m) => {
 		const tag = m.arguments[0]?.toLowerCase()
@@ -22,7 +22,7 @@ export const command = {
 		try {
 			reply = await Pics.random()
 			if(!reply)
-				throw new Error('gagal mendapatkan img waifu!')
+				throw new Error('gagal mendapatkan gambar!')
 			reply = reply.endsWith('.gif')
 			 ? {
 				image: { url: reply},
@@ -38,7 +38,7 @@ export const command = {
 		} catch (err) {
 			logger.warn(err),
 			reply = {
-				image: { url: 'https://pic.re/image'},
+				image: { url: API_URL['pic_re']},
 				caption: 'anime™'
 			}
 		}
@@ -75,11 +75,11 @@ export const command = {
 
 const API_URL = {
 	 waifu_pics: 'https://api.waifu.pics',
-	//  n_sfw_com: 'https://api.n-sfw.com',
+	  n_sfw_com: 'https://api.n-sfw.com',
 	   waifu_im: 'https://api.waifu.im',
 	 nekos_best: 'https://nekos.best/api/v2',
 	nekosia_cat: 'https://api.nekosia.cat/api/v1',
-	//     pic_re: 'https://pic.re/image',
+	     pic_re: 'https://pic.re/image',
 }
 const endpoints = {}
 
@@ -161,9 +161,11 @@ const Pics = {
 			
 			// filter .gif dan nsfw
 			if ( host == 'nekos_best')
-				endpoints[host] = Object.fromEntries(Object.entries(endpoints[host]).filter(a=>a[1]?.format=='png'&&a[0]!='husbando'))
+				endpoints[host] = Object.fromEntries(Object.entries(endpoints[host]).filter(a=>a[1]?.format=='png'))
 			if ( host == 'waifu_pics')
-				endpoints[host] = {sfw: ['neko']}
+				endpoints[host] = {sfw: ['waifu', 'neko', 'shinobu','megumin']}
+			if ( host == 'n_sfw_com')
+				endpoints[host] = {sfw: endpoints[host]?.sfw?.filter(a=>a!='memes')||[]}
 		} catch (e) {
 			delete API_URL[host]
 			logger.warn('Failed to get endpoints for '+host)
