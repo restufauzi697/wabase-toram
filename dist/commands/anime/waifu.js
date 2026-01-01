@@ -7,7 +7,7 @@ export const command = {
 	onlyOwner: false,
 	onlyPremium: false,
 	onlyGroup: false,
-	tag: 'Generator',
+	tag: 'Anime',
 	description: 'waifu siapa ini?.',
 	get help() {
 		return 'usage:'

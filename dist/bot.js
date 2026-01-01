@@ -238,6 +238,47 @@ async function start() {
 
         return nexttick(bot, msg)
     })
+   // if (global.devMode)
+   const say_gp_udt = {
+   	add: "Selamat Datang! @users\nPatuhi peraturan ya",
+   	remove: "Selamat Tinggal @users\nKami akan merindukanmu"
+   }
+	bot.ev.on('group-participants.update', async ({ id, author, participants, action }) => {
+		if (!say_gp_udt[action])
+			return
+		try {
+			const group = await bot.groupMetadata(id)
+			const pp = await bot.profilePictureUrl(id, 'image')
+			
+			let users = participants.length > 1? ' ':''
+			for (const {id, phoneNumber, admin} of participants) {
+				users += users? '\n- ':''
+				users += ' @'+jidDecode(id)?.user
+			}
+			await bot.sendPresenceUpdate('composing', id)
+			await delay(1000)
+			await bot.sendPresenceUpdate('paused', id)
+			bot.sendMessage(id, {
+				contextInfo: {
+					externalAdReply: {
+						title: group.subject,
+						body: null,
+						mediaType: 1,
+						previewType: 0,
+						showAdAttribution: false,
+						renderLargerThumbnail: true,
+						thumbnailUrl: pp || global.bot.thumb,
+						sourceUrl: global.bot.adsUrl
+					},
+				},
+				text: say_gp_udt[action].replace('@users', users),
+				mentions: participants.map((x) => x.id)
+			})
+		} catch(e) {
+			logger.warn(e)
+			bot.sendMessage(id, say_gp_udt[action].replace('@users', participants.map((x) => '@'+x.phoneNumber.replace(/@.+/,'')).join() ))
+		}
+	})
     
     bot.findParticipantFromGrup = async (grup, lid) => (await bot.groupMetadata(grup))
         .participants.find(

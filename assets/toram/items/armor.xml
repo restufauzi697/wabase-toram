@@ -1,0 +1,2638 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Armor>
+	<Item>
+		<Name>Adventurer's Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>9</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>100</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Adventurer's Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>9</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Adventurer's Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>9</Value></Stat>
+			<Stat><Type>AGI %</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Adventurer's Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>9</Value></Stat>
+			<Stat><Type>Potential</Type><Value>15</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Adventurer's Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>9</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Adventurer's Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>9</Value></Stat>
+			<Stat><Type>Weapon ATK %</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Anniversary Dress [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>75</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>900</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>6</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>6</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Anniversary Dress [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>75</Value></Stat>
+			<Stat><Type>Potential</Type><Value>31</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Anniversary Festive Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>150</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>1500</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>500</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Anniversary Festive Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>150</Value></Stat>
+			<Stat><Type>Potential</Type><Value>38</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Anniversary Festive Garb II [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>200</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>2100</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>700</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>14</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>14</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Anniversary Festive Garb II [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>200</Value></Stat>
+			<Stat><Type>Potential</Type><Value>45</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Anniversary Festive Garb III [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>250</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>2700</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>900</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>18</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>18</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Anniversary Festive Garb III [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>250</Value></Stat>
+			<Stat><Type>Potential</Type><Value>49</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Anniversary Festive Garb IV [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>300</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>3300</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>1100</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>22</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>22</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Anniversary Festive Garb IV [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>300</Value></Stat>
+			<Stat><Type>Potential</Type><Value>54</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Anniversary Festive Garb V [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>350</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>3900</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>1300</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>26</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>26</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Anniversary Festive Garb V [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>350</Value></Stat>
+			<Stat><Type>Potential</Type><Value>57</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Anniversary Festive Garb VI [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>400</Value></Stat>
+			<Stat><Type>Potential</Type><Value>60</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Antique Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>300</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>ASPD %</Type><Value>20</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>15</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>20</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>15</Value></Stat>
+			<Stat><Type>Reduce Dmg (Bullet) %</Type><Value>40</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Aqua Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>32</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>100</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>1</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>1</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Aqua Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>32</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>50</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>1</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>1</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>2</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Aqua Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>32</Value></Stat>
+			<Stat><Type>Potential</Type><Value>22</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Armigma [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>63</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>150</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>30</Value></Stat>
+			<Stat><Type>Water resistance %</Type><Value>-50</Value></Stat>
+			<Stat><Type>Motion Speed %</Type><Value>2</Value></Stat>
+			<Stat><Type>Weapon ATK %</Type><Value>20</Value></Stat>
+			<Stat><Type>Flinch Unavailable</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Armigma [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>63</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>100</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>40</Value></Stat>
+			<Stat><Type>Water resistance %</Type><Value>-50</Value></Stat>
+			<Stat><Type>Motion Speed %</Type><Value>3</Value></Stat>
+			<Stat><Type>Weapon ATK %</Type><Value>15</Value></Stat>
+			<Stat><Type>Flinch Unavailable</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Armigma [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>63</Value></Stat>
+			<Stat><Type>Potential</Type><Value>29</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Armigma [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>63</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>200</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>5</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>20</Value></Stat>
+			<Stat><Type>Water resistance %</Type><Value>-50</Value></Stat>
+			<Stat><Type>Motion Speed %</Type><Value>1</Value></Stat>
+			<Stat><Type>Weapon ATK %</Type><Value>25</Value></Stat>
+			<Stat><Type>Flinch Unavailable</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Assassin Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>38</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>15</Value></Stat>
+			<Stat><Type>Dodge</Type><Value>15</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>15</Value></Stat>
+			<Stat><Type>Evasion Recharge %</Type><Value>15</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-15</Value></Stat>
+			<Stat><Type>Anticipate %</Type><Value>15</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Assassin Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>38</Value></Stat>
+			<Stat><Type>Potential</Type><Value>31</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Aubergine Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>74</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>20</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>20</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>10</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>60</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>B.B. Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>11</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>-25</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>-25</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>30</Value></Stat>
+			<Stat><Type>Evasion Recharge %</Type><Value>6</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>9</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>-25</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>B.B. Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>11</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>-20</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>-15</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>3</Value></Stat>
+			<Stat><Type>Evasion Recharge %</Type><Value>3</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>6</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>-10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Bark Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>166</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>7</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>7</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-20</Value></Stat>
+			<Stat><Type>Additional Magic %</Type><Value>100</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Bark Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>166</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>7</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>7</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-30</Value></Stat>
+			<Stat><Type>Additional Magic %</Type><Value>25</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Bark Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>166</Value></Stat>
+			<Stat><Type>Potential</Type><Value>44</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Bark Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>166</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>2000</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>8</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-40</Value></Stat>
+			<Stat><Type>Long Range Damage %</Type><Value>4</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Blancanine Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>150</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>7</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>5</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>750</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>10</Value></Stat>
+			<Stat><Type>Evasion Recharge %</Type><Value>15</Value></Stat>
+			<Stat><Type>% stronger against Neutral</Type><Value>-10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Brigand Coat [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>175</Value></Stat>
+			<Stat><Type>ASPD %</Type><Value>30</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>30</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>10</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>15</Value></Stat>
+			<Stat><Type>Additional Melee %</Type><Value>100</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>900</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Brigandine [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>60</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>1400</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>-5</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>-20</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>-75</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>-75</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Brigandine [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>60</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>1000</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>-10</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>25</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>25</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>-30</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>-75</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>-75</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Brigandine [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>60</Value></Stat>
+			<Stat><Type>Potential</Type><Value>28</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Brutal Dragon Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>27</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>100</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>2</Value></Stat>
+			<Stat><Type>ASPD %</Type><Value>10</Value></Stat>
+			<Stat><Type>Critical Damage %</Type><Value>2</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Brutal Dragon Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>27</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>300</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>1</Value></Stat>
+			<Stat><Type>ASPD %</Type><Value>5</Value></Stat>
+			<Stat><Type>Critical Damage %</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Brutal Dragon Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>27</Value></Stat>
+			<Stat><Type>Potential</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Brutal Dragon Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>27</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>1000</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>4</Value></Stat>
+			<Stat><Type>ASPD %</Type><Value>20</Value></Stat>
+			<Stat><Type>Critical Damage %</Type><Value>4</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Clyde Luxen [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>130</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>-25</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>500</Value></Stat>
+			<Stat><Type>Accuracy %</Type><Value>25</Value></Stat>
+			<Stat><Type>Critical Damage</Type><Value>10</Value></Stat>
+			<Stat><Type>Tumble Unavailable</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Comfy Pom Knit Sweater [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>100</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>1000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>100</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>10</Value></Stat>
+			<Stat><Type>Dodge</Type><Value>10</Value></Stat>
+			<Stat><Type>ASPD %</Type><Value>10</Value></Stat>
+			<Stat><Type>CSPD %</Type><Value>10</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>10</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>10</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Cool Summer Yukata [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>100</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>1500</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>150</Value></Stat>
+			<Stat><Type>% stronger against Fire</Type><Value>3</Value></Stat>
+			<Stat><Type>Fire resistance %</Type><Value>9</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Cool Summer Yukata II [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>130</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>2000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>200</Value></Stat>
+			<Stat><Type>% stronger against Fire</Type><Value>3</Value></Stat>
+			<Stat><Type>Fire resistance %</Type><Value>9</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Crow Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>70</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>7</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>3</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>15</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>-15</Value></Stat>
+			<Stat><Type>Motion Speed %</Type><Value>1</Value></Stat>
+			<Stat><Type>Reduce Dmg (Bowling) %</Type><Value>30</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Curious Dress [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>166</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>1000</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>100</Value></Stat>
+			<Stat><Type>Critical Damage %</Type><Value>1</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Demon Empress Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>187</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>10000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>1000</Value></Stat>
+			<Stat><Type>Accuracy %</Type><Value>30</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>30</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Demon Empress Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>187</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>2500</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>250</Value></Stat>
+			<Stat><Type>Accuracy %</Type><Value>20</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>20</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Demon Empress Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>187</Value></Stat>
+			<Stat><Type>Potential</Type><Value>46</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Diomedea Suit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>48</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>5</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>5</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>5</Value></Stat>
+			<Stat><Type>Unsheathe Attack %</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Diomedea Suit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>48</Value></Stat>
+			<Stat><Type>Potential</Type><Value>33</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Dragoon Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>280</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>3000</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>20</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>-100</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>20</Value></Stat>
+			<Stat><Type>CSPD %</Type><Value>10</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>15</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Dragoon Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>200</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>2000</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>10</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>-100</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>40</Value></Stat>
+			<Stat><Type>ASPD %</Type><Value>20</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>4</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Dress of Wish [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>150</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>400</Value></Stat>
+			<Stat><Type>Accuracy %</Type><Value>30</Value></Stat>
+			<Stat><Type>CSPD %</Type><Value>20</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-40</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Elfin Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>130</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>6</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>6</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>15</Value></Stat>
+			<Stat><Type>Magic Barrier</Type><Value>1000</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Elfin Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>130</Value></Stat>
+			<Stat><Type>Potential</Type><Value>39</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Empress Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>100</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>8</Value></Stat>
+			<Stat><Type>MDEF %</Type><Value>16</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>4</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Empress Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>100</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>10</Value></Stat>
+			<Stat><Type>MDEF %</Type><Value>20</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>5</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>-40</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Erudite Uniform [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>75</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>8</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>8</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>30</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>30</Value></Stat>
+			<Stat><Type>Earth resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Gem Dust Drop Amount %</Type><Value>30</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Evil Garb of Death [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>120</Value></Stat>
+			<Stat><Type>MDEF %</Type><Value>-5</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>-10</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>30</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>15</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>30</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fighter Uniform [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>0</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>10</Value></Stat>
+			<Stat><Type>MDEF %</Type><Value>-30</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>10</Value></Stat>
+			<Stat><Type>Critical Damage</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fightwear [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>25</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>2</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fightwear [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>25</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>100</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fightwear [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>25</Value></Stat>
+			<Stat><Type>Potential</Type><Value>19</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fightwear [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>25</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>300</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Finpen Wet Suit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>100</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>10</Value></Stat>
+			<Stat><Type>Water resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>-60</Value></Stat>
+			<Stat><Type>Anticipate %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fluffy Kinaco Onesie [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>125</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>7500</Value></Stat>
+			<Stat><Type>Motion Speed %</Type><Value>1</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fluffy Rabbit Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>324</Value></Stat>
+			<Stat><Type>STR %</Type><Value>10</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>400</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>1100</Value></Stat>
+			<Stat><Type>Fire resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Unsheathe Attack %</Type><Value>11</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Forest Wolf Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>21</Value></Stat>
+			<Stat><Type>Dodge</Type><Value>4</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>200</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>4</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Forest Wolf Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>21</Value></Stat>
+			<Stat><Type>Dodge</Type><Value>3</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>100</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Forest Wolf Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>21</Value></Stat>
+			<Stat><Type>Potential</Type><Value>19</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fortistra [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>80</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>400</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>% stronger against Light</Type><Value>-36</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>4</Value></Stat>
+			<Stat><Type>Guard Break %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fortistra [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>80</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>% stronger against Light</Type><Value>-36</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>3</Value></Stat>
+			<Stat><Type>Guard Break %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fortistra [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>80</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>Potential</Type><Value>32</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fortistra [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>80</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>5</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>% stronger against Light</Type><Value>-30</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>5</Value></Stat>
+			<Stat><Type>Guard Break %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fortuita Vestibus [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>100</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>3000</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>50</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>-40</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fortuita Vestibus [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>100</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>2000</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>100</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>-30</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>15</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fortuita Vestibus [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>100</Value></Stat>
+			<Stat><Type>Potential</Type><Value>34</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fortuita Vestibus [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>100</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>4000</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>30</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>-20</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Fortuita Vestibus [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>100</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>5000</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>10</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>-10</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Gladiator Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>16</Value></Stat>
+			<Stat><Type>Guard Recharge %</Type><Value>10</Value></Stat>
+			<Stat><Type>Evasion Recharge %</Type><Value>10</Value></Stat>
+			<Stat><Type>Weapon ATK %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Gladiator Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>16</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>5</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>5</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Guard Recharge %</Type><Value>10</Value></Stat>
+			<Stat><Type>Evasion Recharge %</Type><Value>10</Value></Stat>
+			<Stat><Type>Weapon ATK %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Gladiator Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>16</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>6</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>6</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>12</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>12</Value></Stat>
+			<Stat><Type>Guard Recharge %</Type><Value>12</Value></Stat>
+			<Stat><Type>Evasion Recharge %</Type><Value>12</Value></Stat>
+			<Stat><Type>Weapon ATK %</Type><Value>12</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Green Dragon Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>30</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>1</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>-10</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>5</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Green Dragon Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>30</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>1</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>-5</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>3</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Green Dragon Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>30</Value></Stat>
+			<Stat><Type>Potential</Type><Value>21</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Halloween Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>20</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>1</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>1</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>1</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Halloween Garb II [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>90</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>Physical Barrier</Type><Value>3000</Value></Stat>
+			<Stat><Type>Magic Barrier</Type><Value>3000</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Halloween Garb III [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>194</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>250</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>8</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>8</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>750</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-25</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Heaven Feather Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>141</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>4000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>400</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>6</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>6</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Revive Time %</Type><Value>-30</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Heaven Feather Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>141</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>4000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>6</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>6</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Revive Time %</Type><Value>-3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Heaven Feather Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>141</Value></Stat>
+			<Stat><Type>Potential</Type><Value>41</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Holy Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>86</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>750</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>9</Value></Stat>
+			<Stat><Type>MATK UP (VIT %)</Type><Value>4</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Holy Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>86</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>500</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>25</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>7</Value></Stat>
+			<Stat><Type>MATK UP (VIT %)</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Holy Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>86</Value></Stat>
+			<Stat><Type>Potential</Type><Value>34</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Hunter's Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>18</Value></Stat>
+			<Stat><Type>AGI</Type><Value>2</Value></Stat>
+			<Stat><Type>DEX</Type><Value>2</Value></Stat>
+			<Stat><Type>Long Range Damage %</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Hunter's Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>18</Value></Stat>
+			<Stat><Type>AGI</Type><Value>1</Value></Stat>
+			<Stat><Type>DEX</Type><Value>1</Value></Stat>
+			<Stat><Type>Long Range Damage %</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Hunter's Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>18</Value></Stat>
+			<Stat><Type>Potential</Type><Value>18</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Iris Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>100</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>10</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>100</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Accuracy %</Type><Value>10</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>10</Value></Stat>
+			<Stat><Type>Weapon ATK %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Jeremiah Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>110</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>1000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>100</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Jeremiah Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>110</Value></Stat>
+			<Stat><Type>Potential</Type><Value>36</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Jumpsuit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>97</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>400</Value></Stat>
+			<Stat><Type>CSPD %</Type><Value>30</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-50</Value></Stat>
+			<Stat><Type>Invincible Aid (sec)</Type><Value>2</Value></Stat>
+			<Stat><Type>Item Cooldown</Type><Value>-1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Khalyps Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>180</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>7</Value></Stat>
+			<Stat><Type>Magic Pierce %</Type><Value>7</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>14</Value></Stat>
+			<Stat><Type>Critical Damage %</Type><Value>7</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>14</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Khalyps Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>180</Value></Stat>
+			<Stat><Type>Potential</Type><Value>45</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Killer Coat [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>43</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>2</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>6</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>10</Value></Stat>
+			<Stat><Type>ASPD %</Type><Value>10</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>10</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>4</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Killer Coat [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>43</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>1</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>2</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>20</Value></Stat>
+			<Stat><Type>ASPD %</Type><Value>20</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>5</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>4</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Killer Coat [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>43</Value></Stat>
+			<Stat><Type>Potential</Type><Value>24</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Killer Coat [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>43</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>-50</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>10</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>-100</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Knight Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>52</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>300</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>3</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>30</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>7</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Knight Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>50</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>300</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>15</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>MaxMP %</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Knight Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>50</Value></Stat>
+			<Stat><Type>Potential</Type><Value>24</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Knight Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>50</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>600</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>8</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>45</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Laureate Outfit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>280</Value></Stat>
+			<Stat><Type>AGI %</Type><Value>9</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>50</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Evasion Recharge %</Type><Value>20</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-40</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>9</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Leather Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>11</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>50</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Leather Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>11</Value></Stat>
+			<Stat><Type>Potential</Type><Value>16</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Legendary Raven Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>271</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>400</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>10</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>10</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>20</Value></Stat>
+			<Stat><Type>Motion Speed %</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Lil Devil Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>66</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>-30</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>1000</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>1000</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>-666</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>15</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Lil Empress Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>120</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>500</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>25</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>25</Value></Stat>
+			<Stat><Type>Water resistance %</Type><Value>-75</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-15</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Lil Empress Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>120</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>400</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Water resistance %</Type><Value>-30</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-10</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>8</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Lil Empress Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>120</Value></Stat>
+			<Stat><Type>Potential</Type><Value>38</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Lovely Bunny Hoodie [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>158</Value></Stat>
+			<Stat><Type>Accuracy %</Type><Value>100</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>20</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>15</Value></Stat>
+			<Stat><Type>Anticipate %</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Mad Doctor Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>50</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>400</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>-25</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>-25</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>6</Value></Stat>
+			<Stat><Type>Physical Barrier</Type><Value>666</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Mage Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>15</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>70</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Mage Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>15</Value></Stat>
+			<Stat><Type>INT</Type><Value>1</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>100</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Mage Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>15</Value></Stat>
+			<Stat><Type>Potential</Type><Value>17</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Magic Crystal Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>24</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>2</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>100</Value></Stat>
+			<Stat><Type>Evasion Recharge %</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Magic Crystal Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>24</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>1</Value></Stat>
+			<Stat><Type>Evasion Recharge %</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Magic Crystal Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>24</Value></Stat>
+			<Stat><Type>Potential</Type><Value>19</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Magic Crystal Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>24</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>750</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>-25</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>-25</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Magic Swordsman's Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>40</Value></Stat>
+			<Stat><Type>STR %</Type><Value>2</Value></Stat>
+			<Stat><Type>INT %</Type><Value>2</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>200</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>400</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>-10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Magic Swordsman's Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>40</Value></Stat>
+			<Stat><Type>Potential</Type><Value>24</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Magical Crimson Moon Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>135</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>10</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>10</Value></Stat>
+			<Stat><Type>Accuracy %</Type><Value>10</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>40</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>-60</Value></Stat>
+			<Stat><Type>Anticipate %</Type><Value>10</Value></Stat>
+			<Stat><Type>Guard Break %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Maiden [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>208</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>-20</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>7</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>20</Value></Stat>
+			<Stat><Type>Magic Pierce %</Type><Value>10</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>700</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>30</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>-70</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-10</Value></Stat>
+			<Stat><Type>Long Range Damage %</Type><Value>3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Maiden [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>208</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>-10</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>7</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>5</Value></Stat>
+			<Stat><Type>Magic Pierce %</Type><Value>10</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>750</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>25</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>-30</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-20</Value></Stat>
+			<Stat><Type>Long Range Damage %</Type><Value>3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Maiden [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>208</Value></Stat>
+			<Stat><Type>Potential</Type><Value>49</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Maple Coat [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>231</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>30</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>30</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>-15</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>30</Value></Stat>
+			<Stat><Type>Reduce Dmg (Charge) %</Type><Value>30</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Medic Coat [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>43</Value></Stat>
+			<Stat><Type>Natural MP Regen %</Type><Value>15</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-30</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Medic Coat [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>43</Value></Stat>
+			<Stat><Type>Potential</Type><Value>24</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Medic Coat [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>43</Value></Stat>
+			<Stat><Type>Natural HP Regen %</Type><Value>15</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>30</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Mozt Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>102</Value></Stat>
+			<Stat><Type>Natural MP Regen %</Type><Value>10</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>2000</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>5</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>5</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>-40</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>5</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Mozt Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>102</Value></Stat>
+			<Stat><Type>Natural MP Regen %</Type><Value>15</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>1000</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>5</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>5</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>-40</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Mozt Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>102</Value></Stat>
+			<Stat><Type>Potential</Type><Value>35</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Mulgoon Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>150</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>15000</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>11</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>11</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>80</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>5</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>20</Value></Stat>
+			<Stat><Type>Guard Break %</Type><Value>40</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Mummy Bandage Outfit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>111</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>600</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>40</Value></Stat>
+			<Stat><Type>Fire resistance %</Type><Value>-100</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Ninja Costume [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>83</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>600</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>500</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>500</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>50</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>4</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Ninja Costume [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>83</Value></Stat>
+			<Stat><Type>Potential</Type><Value>44</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Ocean Dancer [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>94</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>20</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>1000</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>-70</Value></Stat>
+			<Stat><Type>Evasion Recharge %</Type><Value>30</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>10</Value></Stat>
+			<Stat><Type>Absolute Dodge %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Ocean Explorer [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>279</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>4500</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>600</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>15</Value></Stat>
+			<Stat><Type>Accuracy %</Type><Value>30</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>600</Value></Stat>
+			<Stat><Type>Water resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-45</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Oni Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>117</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>10</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>-5</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>30</Value></Stat>
+			<Stat><Type>ATK UP (VIT %)</Type><Value>100</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Ooze Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>36</Value></Stat>
+			<Stat><Type>DEX</Type><Value>3</Value></Stat>
+			<Stat><Type>Critical Damage %</Type><Value>3</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>3</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Ooze Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>36</Value></Stat>
+			<Stat><Type>DEX %</Type><Value>2</Value></Stat>
+			<Stat><Type>Critical Damage %</Type><Value>1</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>4</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Ooze Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>36</Value></Stat>
+			<Stat><Type>Potential</Type><Value>23</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Ooze Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>36</Value></Stat>
+			<Stat><Type>DEX %</Type><Value>3</Value></Stat>
+			<Stat><Type>Critical Damage %</Type><Value>4</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>1</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>2</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Ooze Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>36</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>75</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>-25</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>-25</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Oracle Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>39</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>200</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>100</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>5</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Oracle Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>39</Value></Stat>
+			<Stat><Type>Potential</Type><Value>23</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Oracle Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>39</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>50</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>300</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>7</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Oracle Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>39</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>100</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>1</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>14</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Oriental Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>75</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>1000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>100</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>5</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Pet EXP %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Otsukimi Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>30</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>700</Value></Stat>
+			<Stat><Type>MDEF</Type><Value>150</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Outerworld Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>47</Value></Stat>
+			<Stat><Type>STR</Type><Value>6</Value></Stat>
+			<Stat><Type>INT</Type><Value>6</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>3</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>3</Value></Stat>
+			<Stat><Type>MDEF %</Type><Value>12</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>6</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>3</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Outerworld Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>47</Value></Stat>
+			<Stat><Type>STR</Type><Value>4</Value></Stat>
+			<Stat><Type>INT</Type><Value>4</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>3</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>3</Value></Stat>
+			<Stat><Type>MDEF %</Type><Value>24</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>12</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>3</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Outerworld Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>47</Value></Stat>
+			<Stat><Type>Potential</Type><Value>25</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Palanquin Carrier Garment [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>100</Value></Stat>
+			<Stat><Type>Natural HP Regen %</Type><Value>20</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>10000</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>15</Value></Stat>
+			<Stat><Type>DEF %</Type><Value>-99</Value></Stat>
+			<Stat><Type>MDEF %</Type><Value>-99</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>750</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>250</Value></Stat>
+			<Stat><Type>Revive Time %</Type><Value>-25</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Panda Costume [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>345</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>5000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>500</Value></Stat>
+			<Stat><Type>Dodge</Type><Value>50</Value></Stat>
+			<Stat><Type>EXP Gain %</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Party Costume [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>215</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>800</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>8</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>24</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>16</Value></Stat>
+			<Stat><Type>Tumble Unavailable</Type><Value>1</Value></Stat>
+			<Stat><Type>Guard Break %</Type><Value>4</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Phalanx (Armor) [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>90</Value></Stat>
+			<Stat><Type>Natural HP Regen %</Type><Value>30</Value></Stat>
+			<Stat><Type>Earth resistance %</Type><Value>-75</Value></Stat>
+			<Stat><Type>Physical Barrier</Type><Value>3000</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>20</Value></Stat>
+			<Stat><Type>Magic Barrier</Type><Value>3000</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Phantom Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>180</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>-30</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>10</Value></Stat>
+			<Stat><Type>Magic Pierce %</Type><Value>10</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>12</Value></Stat>
+			<Stat><Type>Absolute Dodge %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Plate Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>30</Value></Stat>
+			<Stat><Type>STR %</Type><Value>6</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>6</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>6</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Plate Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>30</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>10</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>10</Value></Stat>
+			<Stat><Type>Motion Speed %</Type><Value>-10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Plate Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>30</Value></Stat>
+			<Stat><Type>Potential</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Plate Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>30</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>7</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>7</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>7</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Plate Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>30</Value></Stat>
+			<Stat><Type>ATK UP (VIT %)</Type><Value>100</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Pom Loungewear [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>1</Value></Stat>
+			<Stat><Type>ASPD %</Type><Value>40</Value></Stat>
+			<Stat><Type>CSPD %</Type><Value>40</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>60</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Revive Time %</Type><Value>60</Value></Stat>
+			<Stat><Type>Pet EXP %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Potum Academy Tracksuit [Armor]</Name>
+		<Stats>
+			<Stat><Type>ATK %</Type><Value>5</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>5</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>5</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>15</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Praetor Suit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>67</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>500</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>3</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>10</Value></Stat>
+			<Stat><Type>ASPD %</Type><Value>30</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>-25</Value></Stat>
+			<Stat><Type>Tumble Unavailable</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Praetor Suit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>67</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>300</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>10</Value></Stat>
+			<Stat><Type>ASPD %</Type><Value>20</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>-25</Value></Stat>
+			<Stat><Type>Tumble Unavailable</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Praetor Suit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>67</Value></Stat>
+			<Stat><Type>Potential</Type><Value>29</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Reindeer Suit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>46</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>250</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>250</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>-150</Value></Stat>
+			<Stat><Type>Unsheathe Attack</Type><Value>25</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Resort Swimsuit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>76</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>10</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>10</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>-15</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Ritual Dress [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>75</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>5000</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>4</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Sacred Ice Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>135</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>50</Value></Stat>
+			<Stat><Type>% stronger against Water</Type><Value>-10</Value></Stat>
+			<Stat><Type>% stronger against Light</Type><Value>-5</Value></Stat>
+			<Stat><Type>Fire resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Additional Melee %</Type><Value>100</Value></Stat>
+			<Stat><Type>ATK UP (INT %)</Type><Value>100</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Sakura Kimono [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>20</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>700</Value></Stat>
+			<Stat><Type>Fire resistance %</Type><Value>3</Value></Stat>
+			<Stat><Type>Water resistance %</Type><Value>3</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>3</Value></Stat>
+			<Stat><Type>Earth resistance %</Type><Value>3</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>3</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Sakura Kimono [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>20</Value></Stat>
+			<Stat><Type>Potential</Type><Value>23</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Sakura Kimono [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>40</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>10</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>5</Value></Stat>
+			<Stat><Type>DEF %</Type><Value>20</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Accuracy %</Type><Value>10</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>-75</Value></Stat>
+			<Stat><Type>Physical Barrier</Type><Value>500</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Sakura Kimono II [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>40</Value></Stat>
+			<Stat><Type>Potential</Type><Value>30</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Sakura Kimono II [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>60</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>500</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>5</Value></Stat>
+			<Stat><Type>MDEF %</Type><Value>20</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Accuracy %</Type><Value>10</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>-75</Value></Stat>
+			<Stat><Type>Magic Barrier</Type><Value>500</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Sakura Kimono III [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>60</Value></Stat>
+			<Stat><Type>Potential</Type><Value>35</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Sakura Kimono III [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>80</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>3000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Revive Time %</Type><Value>-30</Value></Stat>
+			<Stat><Type>Invincible Aid (sec)</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Sakura Kimono IV [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>80</Value></Stat>
+			<Stat><Type>Potential</Type><Value>41</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Sakura Kimono IV [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>160</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>20</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Revive Time %</Type><Value>-10</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Sakura Kimono V [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>240</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>5000</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>15</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-25</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>10</Value></Stat>
+			<Stat><Type>Tumble Unavailable</Type><Value>1</Value></Stat>
+			<Stat><Type>Anticipate %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Sakura Kimono VI [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>10</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>200</Value></Stat>
+			<Stat><Type>% stronger against Dark</Type><Value>2</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>4</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Santa Suit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>20</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>300</Value></Stat>
+			<Stat><Type>% stronger against Dark</Type><Value>3</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Santa Suit II [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>30</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>400</Value></Stat>
+			<Stat><Type>% stronger against Dark</Type><Value>4</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>2</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Santa Suit III [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>40</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>500</Value></Stat>
+			<Stat><Type>% stronger against Dark</Type><Value>5</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Santa Suit IV [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>50</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>600</Value></Stat>
+			<Stat><Type>% stronger against Water</Type><Value>1</Value></Stat>
+			<Stat><Type>% stronger against Dark</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Santa Suit V [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>60</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>700</Value></Stat>
+			<Stat><Type>% stronger against Water</Type><Value>2</Value></Stat>
+			<Stat><Type>% stronger against Dark</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Santa Suit VI [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>150</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>3000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>-400</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>2</Value></Stat>
+			<Stat><Type>Critical Damage</Type><Value>8</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Satan Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>114</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>5</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>10</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>5</Value></Stat>
+			<Stat><Type>Additional Melee %</Type><Value>100</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Savage Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>114</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>1000</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>5</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>10</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>20</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>5</Value></Stat>
+			<Stat><Type>Physical Barrier</Type><Value>1000</Value></Stat>
+			<Stat><Type>Additional Melee %</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Savage Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>43</Value></Stat>
+			<Stat><Type>DEF %</Type><Value>5</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>5</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Guard Power %</Type><Value>5</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Scale Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>43</Value></Stat>
+			<Stat><Type>DEF %</Type><Value>5</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>5</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Scale Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>34</Value></Stat>
+			<Stat><Type>Potential</Type><Value>23</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Scale Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>250</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>4000</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>40</Value></Stat>
+			<Stat><Type>Fire resistance %</Type><Value>-40</Value></Stat>
+			<Stat><Type>Guard Power %</Type><Value>20</Value></Stat>
+			<Stat><Type>Guard Recharge %</Type><Value>20</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>7</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Scuba Ranger Suit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>130</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>10</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>10</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>-200</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>-100</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>100</Value></Stat>
+			<Stat><Type>Dodge</Type><Value>100</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>-300</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Seashell [Armor]</Name>
+		<Stats>
+			<Stat><Type>AGI %</Type><Value>11</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>20</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>50</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>120</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-50</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>10</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>11</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Shadow Suit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>256</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>1200</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>20</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>60</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>4</Value></Stat>
+			<Stat><Type>Motion Speed %</Type><Value>1</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Shiny Viridian Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>171</Value></Stat>
+			<Stat><Type>AGI %</Type><Value>10</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>600</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>12</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>30</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>40</Value></Stat>
+			<Stat><Type>Motion Speed %</Type><Value>3</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>30</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Shiny Viridian Garb (Power) [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>342</Value></Stat>
+			<Stat><Type>VIT %</Type><Value>10</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>600</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>40</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>20</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>12</Value></Stat>
+			<Stat><Type>Motion Speed %</Type><Value>5</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>40</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Shiny Viridian Garb (Robust) [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>171</Value></Stat>
+			<Stat><Type>DEX %</Type><Value>10</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>600</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>12</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>30</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>40</Value></Stat>
+			<Stat><Type>Motion Speed %</Type><Value>3</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>30</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Shiny Viridian Garb (Smart) [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>92</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>7000</Value></Stat>
+			<Stat><Type>% stronger against Fire</Type><Value>3</Value></Stat>
+			<Stat><Type>Fire resistance %</Type><Value>-70</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Snowman Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>160</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>3000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>Accuracy %</Type><Value>15</Value></Stat>
+			<Stat><Type>Water resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Anticipate %</Type><Value>15</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Snowwear [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>1</Value></Stat>
+			<Stat><Type>Natural HP Regen %</Type><Value>5</Value></Stat>
+			<Stat><Type>Natural MP Regen %</Type><Value>5</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>-15</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Soda Swimsuit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>1</Value></Stat>
+			<Stat><Type>Natural HP Regen %</Type><Value>10</Value></Stat>
+			<Stat><Type>Natural MP Regen %</Type><Value>10</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>-10</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Soda Swimsuit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>123</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>5</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>10</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>500</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>500</Value></Stat>
+			<Stat><Type>Evasion Recharge %</Type><Value>4</Value></Stat>
+			<Stat><Type>Anticipate %</Type><Value>6</Value></Stat>
+			<Stat><Type>Absolute Dodge %</Type><Value>2</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Soldier Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>123</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>5</Value></Stat>
+			<Stat><Type>Dodge %</Type><Value>5</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>500</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>500</Value></Stat>
+			<Stat><Type>Evasion Recharge %</Type><Value>3</Value></Stat>
+			<Stat><Type>Anticipate %</Type><Value>5</Value></Stat>
+			<Stat><Type>Absolute Dodge %</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Soldier Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>123</Value></Stat>
+			<Stat><Type>Potential</Type><Value>37</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Soldier Armor [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>75</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>500</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>6</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>4</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>-75</Value></Stat>
+			<Stat><Type>Physical Barrier</Type><Value>3000</Value></Stat>
+			<Stat><Type>Tumble Unavailable</Type><Value>1</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Sorcery Dress [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>30</Value></Stat>
+			<Stat><Type>Natural MP Regen %</Type><Value>30</Value></Stat>
+			<Stat><Type>Accuracy %</Type><Value>20</Value></Stat>
+			<Stat><Type>CSPD %</Type><Value>60</Value></Stat>
+			<Stat><Type>Water resistance %</Type><Value>25</Value></Stat>
+			<Stat><Type>Earth resistance %</Type><Value>-25</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>20</Value></Stat>
+			<Stat><Type>Weapon ATK %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Spa Wear [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>128</Value></Stat>
+			<Stat><Type>INT %</Type><Value>11</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>10</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>50</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>-50</Value></Stat>
+			<Stat><Type>Reduce Dmg (Bowling) %</Type><Value>30</Value></Stat>
+			<Stat><Type>Absolute Dodge %</Type><Value>9</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Steel Mail M [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>128</Value></Stat>
+			<Stat><Type>STR %</Type><Value>11</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>10</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>50</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>10</Value></Stat>
+			<Stat><Type>Wind resistance %</Type><Value>-50</Value></Stat>
+			<Stat><Type>Reduce Dmg (Floor) %</Type><Value>30</Value></Stat>
+			<Stat><Type>Absolute Accuracy %</Type><Value>9</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Steel Mail P [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>306</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>15000</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>25</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Stellar Fighter [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>256</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>7500</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>5</Value></Stat>
+			<Stat><Type>Magic Pierce %</Type><Value>5</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>25</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Long Range Damage %</Type><Value>10</Value></Stat>
+			<Stat><Type>Guard Break %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Stellar Fighter (LRA) [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>256</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>7500</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>5</Value></Stat>
+			<Stat><Type>Magic Pierce %</Type><Value>5</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>25</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>10</Value></Stat>
+			<Stat><Type>Anticipate %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Stellar Fighter (SRA) [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>80</Value></Stat>
+			<Stat><Type>INT %</Type><Value>10</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>ASPD %</Type><Value>-20</Value></Stat>
+			<Stat><Type>CSPD %</Type><Value>-20</Value></Stat>
+			<Stat><Type>% stronger against Neutral</Type><Value>10</Value></Stat>
+			<Stat><Type>Pet EXP %</Type><Value>20</Value></Stat>
+			<Stat><Type>Gem Dust Drop Amount %</Type><Value>50</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Stoodie's Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>80</Value></Stat>
+			<Stat><Type>Potential</Type><Value>43</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Stoodie's Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>18</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>100</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>100</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Straye Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>18</Value></Stat>
+			<Stat><Type>Potential</Type><Value>18</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Straye Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>18</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>5000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>1000</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Straye Garb [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>100</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>ATK</Type><Value>100</Value></Stat>
+			<Stat><Type>MATK</Type><Value>100</Value></Stat>
+			<Stat><Type>Magic Pierce %</Type><Value>15</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>100</Value></Stat>
+			<Stat><Type>Fire resistance %</Type><Value>5</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Summer Outfit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>255</Value></Stat>
+			<Stat><Type>Natural MP Regen %</Type><Value>20</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>-9</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>600</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>9</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>9</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>9</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>-18</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-75</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>3</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Test1 [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>255</Value></Stat>
+			<Stat><Type>Natural MP Regen %</Type><Value>20</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>-9</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>300</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>9</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>9</Value></Stat>
+			<Stat><Type>Stability %</Type><Value>9</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>-4</Value></Stat>
+			<Stat><Type>Aggro %</Type><Value>-25</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>6</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Trickster Costume [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>255</Value></Stat>
+			<Stat><Type>Potential</Type><Value>54</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Trickster Costume [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>200</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>10000</Value></Stat>
+			<Stat><Type>Accuracy</Type><Value>50</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>25</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>-25</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Trickster Costume [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>70</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>500</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>-500</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>500</Value></Stat>
+			<Stat><Type>Fire resistance %</Type><Value>-50</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Magic Barrier</Type><Value>1000</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Tuxedo [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>70</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>500</Value></Stat>
+			<Stat><Type>ASPD</Type><Value>-250</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>500</Value></Stat>
+			<Stat><Type>Fire resistance %</Type><Value>-50</Value></Stat>
+			<Stat><Type>Light resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>15</Value></Stat>
+			<Stat><Type>Magic Barrier</Type><Value>500</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Twilight Dress [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>70</Value></Stat>
+			<Stat><Type>Potential</Type><Value>30</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Twilight Dress [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>263</Value></Stat>
+			<Stat><Type>AGI %</Type><Value>6</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>200</Value></Stat>
+			<Stat><Type>ASPD %</Type><Value>40</Value></Stat>
+			<Stat><Type>Long Range Damage %</Type><Value>8</Value></Stat>
+			<Stat><Type>% stronger against Neutral</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Twilight Dress [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>90</Value></Stat>
+			<Stat><Type>DEX %</Type><Value>6</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>25</Value></Stat>
+			<Stat><Type>Earth resistance %</Type><Value>-40</Value></Stat>
+			<Stat><Type>Unsheathe Attack %</Type><Value>6</Value></Stat>
+			<Stat><Type>Guard Break %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Valentine's Day Apron [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>15</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>70</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Valentine's Day Costume [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>15</Value></Stat>
+			<Stat><Type>STR</Type><Value>1</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>100</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Warrior Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>15</Value></Stat>
+			<Stat><Type>Potential</Type><Value>17</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Warrior Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>140</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>25</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>25</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>25</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>600</Value></Stat>
+			<Stat><Type>CSPD %</Type><Value>40</Value></Stat>
+			<Stat><Type>Water resistance %</Type><Value>20</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Warrior Mail [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>140</Value></Stat>
+			<Stat><Type>MaxHP %</Type><Value>25</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>25</Value></Stat>
+			<Stat><Type>CSPD</Type><Value>600</Value></Stat>
+			<Stat><Type>CSPD %</Type><Value>20</Value></Stat>
+			<Stat><Type>Water resistance %</Type><Value>40</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>25</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Water Priest Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>140</Value></Stat>
+			<Stat><Type>Potential</Type><Value>56</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Water Priest Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>200</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>1000</Value></Stat>
+			<Stat><Type>Dodge</Type><Value>50</Value></Stat>
+			<Stat><Type>Critical Rate</Type><Value>25</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>-25</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Water Priest Robe [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>231</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>500</Value></Stat>
+			<Stat><Type>Physical Resistance %</Type><Value>25</Value></Stat>
+			<Stat><Type>Magic Resistance %</Type><Value>25</Value></Stat>
+			<Stat><Type>CSPD %</Type><Value>25</Value></Stat>
+			<Stat><Type>Reduce Dmg (Meteor) %</Type><Value>25</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Wedding Dress [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>270</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>5000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>500</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>10</Value></Stat>
+			<Stat><Type>Magic Pierce %</Type><Value>10</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>40</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>5</Value></Stat>
+			<Stat><Type>Weapon ATK %</Type><Value>10</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>-30</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Winter Outfit [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>270</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>7000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>700</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>10</Value></Stat>
+			<Stat><Type>Magic Pierce %</Type><Value>10</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>40</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>7</Value></Stat>
+			<Stat><Type>Weapon ATK %</Type><Value>10</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>-30</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Winter Outfit II [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>270</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>9000</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>900</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>10</Value></Stat>
+			<Stat><Type>Magic Pierce %</Type><Value>10</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>40</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>9</Value></Stat>
+			<Stat><Type>Weapon ATK %</Type><Value>10</Value></Stat>
+			<Stat><Type>Neutral Resistance %</Type><Value>-30</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Winter Outfit II [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>200</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>400</Value></Stat>
+			<Stat><Type>Physical Pierce %</Type><Value>20</Value></Stat>
+			<Stat><Type>Magic Pierce %</Type><Value>20</Value></Stat>
+			<Stat><Type>Water resistance %</Type><Value>30</Value></Stat>
+			<Stat><Type>Attack MP Recovery</Type><Value>4</Value></Stat>
+			<Stat><Type>Fractional Barrier %</Type><Value>10</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Winter Outfit II [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>111</Value></Stat>
+			<Stat><Type>MaxMP</Type><Value>400</Value></Stat>
+			<Stat><Type>MATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>Critical Rate %</Type><Value>50</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>5</Value></Stat>
+			<Stat><Type>Long Range Damage %</Type><Value>4</Value></Stat>
+		</Stats>
+	</Item>
+	<Item>
+		<Name>Zega Onesie [Armor]</Name>
+		<Stats>
+			<Stat><Type>Base DEF</Type><Value>222</Value></Stat>
+			<Stat><Type>MaxHP</Type><Value>4000</Value></Stat>
+			<Stat><Type>ATK %</Type><Value>4</Value></Stat>
+			<Stat><Type>Accuracy %</Type><Value>50</Value></Stat>
+			<Stat><Type>Dark resistance %</Type><Value>20</Value></Stat>
+			<Stat><Type>Ailment Resistance %</Type><Value>5</Value></Stat>
+			<Stat><Type>Short Range Damage %</Type><Value>4</Value></Stat>
+		</Stats>
+	</Item></Armor>

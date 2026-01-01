@@ -1,0 +1,1739 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Items>
+	<Item>
+		<Name>Adaro [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP</Type>
+			<Value>1000</Value>
+	</Stat>
+	<Stat>
+			<Type>MATK %</Type>
+			<Value>6</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Damage</Type>
+			<Value>6</Value>
+	</Stat>
+	<Stat>
+			<Special>Heavy Armor only:</Special>
+			<Type>Aggro %</Type>
+			<Value>10</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Alfenix [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>18</Value>
+	</Stat>
+	<Stat>
+			<Type>ATK %</Type>
+			<Value>3</Value>
+	</Stat>
+	<Stat>
+			<Type>Physical Pierce %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Aggro %</Type>
+			<Value>-15</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Handmade Cookie</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Altoblepas [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>DEX %</Type>
+			<Value>1</Value>
+	</Stat>
+	<Stat>
+			<Type>Accuracy %</Type>
+			<Value>-20</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Damage</Type>
+			<Value>4</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Amargon [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>30</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>-300</Value>
+	</Stat>
+	<Stat>
+			<Type>ASPD</Type>
+			<Value>800</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Candela II</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Ancient Empress [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MATK %</Type>
+			<Value>3</Value>
+	</Stat>
+	<Stat>
+			<Type>CSPD %</Type>
+			<Value>50</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>-10</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Ancient Empress II [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MATK %</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Type>CSPD %</Type>
+			<Value>30</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>-20</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Ancient Empress</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Baphomela [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>6</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>6</Value>
+	</Stat>
+	<Stat>
+			<Type>Unsheathe Attack %</Type>
+			<Value>6</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Twilight Dragon</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Bovinio [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>Drop Rate %</Type>
+			<Value>1</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Burning Dragon Igneus [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>AGI %</Type>
+			<Value>3</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>15</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Damage</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>King Piton</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Candela [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>-200</Value>
+	</Stat>
+	<Stat>
+			<Type>ASPD</Type>
+			<Value>500</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Candela II [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>20</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>-250</Value>
+	</Stat>
+	<Stat>
+			<Type>ASPD</Type>
+			<Value>600</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Candela</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Castilia [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>Accuracy %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>ASPD</Type>
+			<Value>-900</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>12</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>6</Value>
+	</Stat>
+	<Stat>
+			<Special>Magic Device only:</Special>
+			<Type>Motion Speed %</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Special>Ninjutsu Scroll only:</Special>
+			<Type>Magic Pierce %</Type>
+			<Value>10</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Chocolate Ooze [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>-10</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>200</Value>
+	</Stat>
+	<Stat>
+			<Type>CSPD</Type>
+			<Value>500</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Chocolate Ooze II [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>-15</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>300</Value>
+	</Stat>
+	<Stat>
+			<Type>CSPD</Type>
+			<Value>600</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Chocolate Ooze</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Corroded Knight Captain [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>DEF</Type>
+			<Value>100</Value>
+	</Stat>
+	<Stat>
+			<Type>MDEF</Type>
+			<Value>100</Value>
+	</Stat>
+	<Stat>
+			<Type>Physical Barrier</Type>
+			<Value>500</Value>
+	</Stat>
+	<Stat>
+			<Type>Magic Barrier</Type>
+			<Value>500</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Dusk Machina [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>20</Value>
+	</Stat>
+	<Stat>
+			<Type>Aggro %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>-10</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Eidenliebe [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>12</Value>
+	</Stat>
+	<Stat>
+			<Type>Magic Pierce %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Aggro %</Type>
+			<Value>-15</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Eripmav [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>Critical Damage</Type>
+			<Value>6</Value>
+	</Stat>
+	<Stat>
+			<Type>Fire resistance %</Type>
+			<Value>12</Value>
+	</Stat>
+	<Stat>
+			<Type>Attack MP Recovery</Type>
+			<Value>18</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Neewollah</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Erkuch [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>24</Value>
+	</Stat>
+	<Stat>
+			<Type>MATK %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Magic Pierce %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Aggro %</Type>
+			<Value>-15</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Garnache</Value>
+	</Stat>
+	<Stat>
+			<Special>Staff only:</Special>
+			<Type>Motion Speed %</Type>
+			<Value>1</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Evil Lefina [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>ATK %</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>MATK %</Type>
+			<Value>-4</Value>
+	</Stat>
+	<Stat>
+			<Type>Physical Pierce %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Physical Resistance %</Type>
+			<Value>-20</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>12</Value>
+	</Stat>
+	<Stat>
+			<Special>Heavy Armor only:</Special>
+			<Type>Physical Resistance %</Type>
+			<Value>24</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Exdocus [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>DEF</Type>
+			<Value>150</Value>
+	</Stat>
+	<Stat>
+			<Type>MDEF</Type>
+			<Value>150</Value>
+	</Stat>
+	<Stat>
+			<Type>Physical Barrier</Type>
+			<Value>1500</Value>
+	</Stat>
+	<Stat>
+			<Type>Magic Barrier</Type>
+			<Value>1500</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Corroded Knight Captain</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Falburrows [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>200</Value>
+	</Stat>
+	<Stat>
+			<Type>Dodge %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>9</Value>
+	</Stat>
+	<Stat>
+			<Type>Absolute Dodge %</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Special>Bowgun only:</Special>
+			<Type>Short Range Damage %</Type>
+			<Value>9</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Fantica [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP</Type>
+			<Value>5000</Value>
+	</Stat>
+	<Stat>
+			<Type>DEF %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Guard Power %</Type>
+			<Value>15</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Grylle</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Felicitoad [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP</Type>
+			<Value>2000</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>G. Iconos</Value>
+	</Stat>
+	<Stat>
+			<Type>Reduce Dmg (Charge) %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Reduce Dmg (Straight Line) %</Type>
+			<Value>10</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Forbidden Shawle [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>-200</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Unsheathe Attack %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Prudent Blue Shadow</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>G. Iconos [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP</Type>
+			<Value>1000</Value>
+	</Stat>
+	<Stat>
+			<Type>Reduce Dmg (Charge) %</Type>
+			<Value>10</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Garnache [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>18</Value>
+	</Stat>
+	<Stat>
+			<Type>MATK %</Type>
+			<Value>3</Value>
+	</Stat>
+	<Stat>
+			<Type>Magic Pierce %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Aggro %</Type>
+			<Value>-15</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Eidenliebe</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Gespenst II [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>200</Value>
+	</Stat>
+	<Stat>
+			<Type>Accuracy</Type>
+			<Value>30</Value>
+	</Stat>
+	<Stat>
+			<Type>CSPD</Type>
+			<Value>400</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>10</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Giant Boar [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP</Type>
+			<Value>50</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>50</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>1</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Giant Pelulu [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>30</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>-100</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate %</Type>
+			<Value>50</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Special>Light Armor only:</Special>
+			<Type>Physical Pierce %</Type>
+			<Value>-10</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Goblin Zucotto [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>24</Value>
+	</Stat>
+	<Stat>
+			<Type>ATK %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Physical Pierce %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Aggro %</Type>
+			<Value>-15</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Alfenix</Value>
+	</Stat>
+	<Stat>
+			<Special>Shield only:</Special>
+			<Type>Motion Speed %</Type>
+			<Value>1</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Golden Skeleton [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>-10</Value>
+	</Stat>
+	<Stat>
+			<Type>ASPD</Type>
+			<Value>300</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Goldenia [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP</Type>
+			<Value>2000</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>-300</Value>
+	</Stat>
+	<Stat>
+			<Type>Fractional Barrier %</Type>
+			<Value>10</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Goldigem [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP</Type>
+			<Value>3000</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Felicitoad</Value>
+	</Stat>
+	<Stat>
+			<Type>Reduce Dmg (Player Epicenter) %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Reduce Dmg (Charge) %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Reduce Dmg (Straight Line) %</Type>
+			<Value>10</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Gordo [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>ATK %</Type>
+			<Value>7</Value>
+	</Stat>
+	<Stat>
+			<Type>ASPD %</Type>
+			<Value>80</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>-15</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Wandering Wheel</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Grand Pojo [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>Drop Rate %</Type>
+			<Value>1</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Grass Dragon Yelb [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>ATK %</Type>
+			<Value>3</Value>
+	</Stat>
+	<Stat>
+			<Type>ASPD %</Type>
+			<Value>50</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>-10</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Grylle [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP</Type>
+			<Value>500</Value>
+	</Stat>
+	<Stat>
+			<Type>DEF %</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Type>Guard Power %</Type>
+			<Value>5</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Gula [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>200</Value>
+	</Stat>
+	<Stat>
+			<Type>ATK %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>15</Value>
+	</Stat>
+	<Stat>
+			<Type>Guard Break %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Junior Dragon Zyvio</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Handmade Cookie [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>12</Value>
+	</Stat>
+	<Stat>
+			<Type>Physical Pierce %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Aggro %</Type>
+			<Value>-15</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Jeila [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>Critical Damage</Type>
+			<Value>2</Value>
+	</Stat>
+	<Stat>
+			<Type>Fire resistance %</Type>
+			<Value>4</Value>
+	</Stat>
+	<Stat>
+			<Type>Attack MP Recovery</Type>
+			<Value>6</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Pumpking</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Jibril [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>Natural MP Regen</Type>
+			<Value>2</Value>
+	</Stat>
+	<Stat>
+			<Type>Natural MP Regen %</Type>
+			<Value>4</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>100</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>3</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Type>Anticipate %</Type>
+			<Value>1</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Jibril II [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>Natural MP Regen</Type>
+			<Value>4</Value>
+	</Stat>
+	<Stat>
+			<Type>Natural MP Regen %</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>100</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>12</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>6</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>Anticipate %</Type>
+			<Value>2</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Jibril</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Jibril III [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>Natural MP Regen</Type>
+			<Value>6</Value>
+	</Stat>
+	<Stat>
+			<Type>Natural MP Regen %</Type>
+			<Value>12</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>100</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>16</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>9</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>11</Value>
+	</Stat>
+	<Stat>
+			<Type>Anticipate %</Type>
+			<Value>3</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Jibril II</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Jiva [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>DEX %</Type>
+			<Value>3</Value>
+	</Stat>
+	<Stat>
+			<Type>MATK %</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>Accuracy %</Type>
+			<Value>-20</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Damage</Type>
+			<Value>6</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Junior Dragon Zyvio [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>100</Value>
+	</Stat>
+	<Stat>
+			<Type>ATK %</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>15</Value>
+	</Stat>
+	<Stat>
+			<Type>Guard Break %</Type>
+			<Value>5</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>King Piton [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Damage</Type>
+			<Value>4</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Proto Leon</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Lord of Nezim [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>VIT %</Type>
+			<Value>2</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxHP</Type>
+			<Value>3000</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Special>Knuckle only:</Special>
+			<Type>Short Range Damage %</Type>
+			<Value>3</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Lunadore [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>Drop Rate %</Type>
+			<Value>1</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Mage Filecia [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>INT %</Type>
+			<Value>3</Value>
+	</Stat>
+	<Stat>
+			<Type>MATK %</Type>
+			<Value>9</Value>
+	</Stat>
+	<Stat>
+			<Type>Stability %</Type>
+			<Value>6</Value>
+	</Stat>
+	<Stat>
+			<Special>Magic Device only:</Special>
+			<Type>Reduce Dmg (Bowling) %</Type>
+			<Value>20</Value>
+	</Stat>
+	<Stat>
+			<Special>Staff only:</Special>
+			<Type>Guard Break %</Type>
+			<Value>10</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Mega Alpoca [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP</Type>
+			<Value>300</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>300</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>6</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Giant Boar</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Mercy [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>15</Value>
+	</Stat>
+	<Stat>
+			<Type>Aggro %</Type>
+			<Value>-15</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Mieli [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>-20</Value>
+	</Stat>
+	<Stat>
+			<Type>Magic Pierce %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>ASPD</Type>
+			<Value>400</Value>
+	</Stat>
+	<Stat>
+			<Type>CSPD</Type>
+			<Value>400</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate %</Type>
+			<Value>20</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Narumi Hina [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MATK %</Type>
+			<Value>4</Value>
+	</Stat>
+	<Stat>
+			<Type>CSPD %</Type>
+			<Value>20</Value>
+	</Stat>
+	<Stat>
+			<Type>Aggro %</Type>
+			<Value>-10</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>3</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Neewollah [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>Critical Damage</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Type>Fire resistance %</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Attack MP Recovery</Type>
+			<Value>15</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Zarth</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Neo Wandering Wheel [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MATK %</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Type>CSPD %</Type>
+			<Value>75</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>-16</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Wandering Wheel</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Omochi [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>Drop Rate %</Type>
+			<Value>1</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Ox King [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>Aggro %</Type>
+			<Value>-20</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Perro [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>Drop Rate %</Type>
+			<Value>1</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Pillorocas [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>Physical Resistance %</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Type>Magic Resistance %</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>-5</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate %</Type>
+			<Value>50</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Pillow Kitagawa [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP</Type>
+			<Value>2000</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>4</Value>
+	</Stat>
+	<Stat>
+			<Type>Revive Time %</Type>
+			<Value>20</Value>
+	</Stat>
+	<Stat>
+			<Type>Unsheathe Attack %</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Ox King</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Proto Leon [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Damage</Type>
+			<Value>3</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Warmonger</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Prudent Blue Shadow [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>-150</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>Unsheathe Attack %</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Baphomela</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Pumpking [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>Critical Damage</Type>
+			<Value>1</Value>
+	</Stat>
+	<Stat>
+			<Type>Fire resistance %</Type>
+			<Value>2</Value>
+	</Stat>
+	<Stat>
+			<Type>Attack MP Recovery</Type>
+			<Value>3</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Purro [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>Drop Rate %</Type>
+			<Value>1</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Royal Ox King [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>-20</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>200</Value>
+	</Stat>
+	<Stat>
+			<Type>Accuracy</Type>
+			<Value>40</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Ox King</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Royal Ox King II [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>-30</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>200</Value>
+	</Stat>
+	<Stat>
+			<Type>Accuracy</Type>
+			<Value>50</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>12</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Royal Ox King</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Seltirios [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>-150</Value>
+	</Stat>
+	<Stat>
+			<Type>CSPD</Type>
+			<Value>300</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Soldner [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>-20</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>400</Value>
+	</Stat>
+	<Stat>
+			<Type>CSPD</Type>
+			<Value>800</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Chocolate Ooze II</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Solopy [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>-15</Value>
+	</Stat>
+	<Stat>
+			<Type>ASPD</Type>
+			<Value>450</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Golden Skeleton</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Stellar Ooze [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>300</Value>
+	</Stat>
+	<Stat>
+			<Type>Accuracy</Type>
+			<Value>60</Value>
+	</Stat>
+	<Stat>
+			<Type>CSPD</Type>
+			<Value>600</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>20</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Gespenst II</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Sunlight Potum [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>-5</Value>
+	</Stat>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>-75</Value>
+	</Stat>
+	<Stat>
+			<Type>ASPD</Type>
+			<Value>300</Value>
+	</Stat>
+	<Stat>
+			<Type>CSPD</Type>
+			<Value>300</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Tardigrademon [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxMP</Type>
+			<Value>-200</Value>
+	</Stat>
+	<Stat>
+			<Type>CSPD</Type>
+			<Value>450</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Seltirios</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Trocostida [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP %</Type>
+			<Value>20</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Type>Aggro %</Type>
+			<Value>15</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>-10</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Dusk Machina</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Twilight Dragon [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>4</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>4</Value>
+	</Stat>
+	<Stat>
+			<Type>Unsheathe Attack %</Type>
+			<Value>4</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Underwater Ruins Monster [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MaxHP</Type>
+			<Value>1000</Value>
+	</Stat>
+	<Stat>
+			<Type>MATK %</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Damage</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Adaro</Value>
+	</Stat>
+	<Stat>
+			<Special>Heavy Armor only:</Special>
+			<Type>Aggro %</Type>
+			<Value>20</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Wandering Wheel [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>ATK %</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Type>ASPD %</Type>
+			<Value>75</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>-14</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Grass Dragon Yelb</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Warmonger [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>6</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Damage</Type>
+			<Value>2</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Yashiro Azuki's Dad [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>ATK %</Type>
+			<Value>4</Value>
+	</Stat>
+	<Stat>
+			<Type>ASPD %</Type>
+			<Value>20</Value>
+	</Stat>
+	<Stat>
+			<Type>Aggro %</Type>
+			<Value>-10</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>3</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Yashiro Azuki's Mom [Additional Crysta]</Name>
+	<Stats>
+	<Stat>
+			<Type>Physical Resistance %</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Type>Magic Resistance %</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Type>Critical Rate</Type>
+			<Value>10</Value>
+	</Stat>
+	<Stat>
+			<Type>Reduce Dmg (Bullet) %</Type>
+			<Value>10</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Yashiro Azuki's Mom II [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>MATK %</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Type>CSPD %</Type>
+			<Value>20</Value>
+	</Stat>
+	<Stat>
+			<Type>Aggro %</Type>
+			<Value>-10</Value>
+	</Stat>
+	<Stat>
+			<Type>Long Range Damage %</Type>
+			<Value>3</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Narumi Hina</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Zarth [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>Critical Damage</Type>
+			<Value>4</Value>
+	</Stat>
+	<Stat>
+			<Type>Fire resistance %</Type>
+			<Value>8</Value>
+	</Stat>
+	<Stat>
+			<Type>Attack MP Recovery</Type>
+			<Value>12</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Zoe</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>Zoe [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>Critical Damage</Type>
+			<Value>3</Value>
+	</Stat>
+	<Stat>
+			<Type>Fire resistance %</Type>
+			<Value>6</Value>
+	</Stat>
+	<Stat>
+			<Type>Attack MP Recovery</Type>
+			<Value>9</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Jeila</Value>
+	</Stat>
+	</Stats>
+	</Item>
+	<Item>
+		<Name>†Dark Lord† [Enhancer Crysta (Yellow)]</Name>
+	<Stats>
+	<Stat>
+			<Type>ATK %</Type>
+			<Value>5</Value>
+	</Stat>
+	<Stat>
+			<Type>ASPD %</Type>
+			<Value>20</Value>
+	</Stat>
+	<Stat>
+			<Type>Aggro %</Type>
+			<Value>-10</Value>
+	</Stat>
+	<Stat>
+			<Type>Short Range Damage %</Type>
+			<Value>3</Value>
+	</Stat>
+	<Stat>
+			<Type>Upgrade for</Type>
+			<Value>Yashiro Azuki's Dad</Value>
+	</Stat>
+	</Stats>
+	</Item>
+</Items>

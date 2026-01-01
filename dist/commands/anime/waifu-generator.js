@@ -3,7 +3,7 @@ export const command = {
     onlyOwner: false,
     onlyPremium: false,
     onlyGroup: false,
-    tag: 'Generator',
+    tag: 'Anime',
     description: 'gak yakin ini waifu kamu.',
     get help() {
         return 'usage: `.nowaifu [ai]`\nGambar anime random dari galery AI.'

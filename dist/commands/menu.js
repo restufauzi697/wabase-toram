@@ -75,7 +75,7 @@ const Menu = `
 ║⧐ .tags
 ╚════════════════❍
 
-╔══❨ Generator ❩
+╔══❨ Anime ❩
 ║⧐ .husbu
 ║⧐ .waifu
 ║⧐ .waifu-ai
@@ -100,5 +100,12 @@ const Menu = `
 ║⧐ .xtall
 ║⧐ .guide
 ║⧐ .toram
+╚════════════════❍
+
+╔══❨ Utilitas ❩
+║⧐ .ytd
+║⧐ .ytm
+║⧐ .ytv
+║⧐ .yts
 ╚════════════════❍
 `.trim()

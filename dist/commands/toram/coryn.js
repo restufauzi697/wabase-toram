@@ -12,6 +12,7 @@ export const command = {
 		return `usage: .coryn <tool> argument...
 tools:
 - leveling [level] [gap] [XPGain]
+- search [nama | kategori] [show <number>] [page <halaman>] stats <stat> [>|<|=] <value> ...
 
 contoh:
 .coryn leveling 76 9`
