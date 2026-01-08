@@ -2,6 +2,40 @@ import path from 'path';
 import { jidDecode } from 'baileys';
 import logger from '../../utils/logger.js';
 
+class Gacha {
+	constructor(items) {
+		this.items = items;
+		this.totalPercent = items.reduce((acc, item) => acc + item.percent, 0);
+	}
+
+	draw() {
+		const random = Math.random() * this.totalPercent;
+		let cumulativePercent = 0;
+
+		for (const item of this.items) {
+			cumulativePercent += item.percent;
+			if (random <= cumulativePercent) {
+				return item;
+			}
+		}
+	}
+
+	addItem(item) {
+		this.items.push(item);
+		this.totalPercent += item.percent;
+	}
+
+	removeItem(itemName) {
+		const index = this.items.findIndex(item => item.name === itemName);
+		if (index !== -1) {
+			this.totalPercent -= this.items[index].percent;
+			this.items.splice(index, 1);
+		}
+	}
+}
+
+const _rep = ['not found.', 'tidak ditemukan.', 'Error: 500']
+
 export const command = {
 	command: 'waifu',
 	onlyOwner: false,
@@ -44,31 +78,35 @@ export const command = {
 		}
 		const pn = jidDecode(m.senderPn)?.user
 		await m.reply({ react: { text: '🏷️', key: m.key } }, false)
-		await m.reply( {
-			...{
-				contextInfo: {
-					mentionedJid: [m.sender]
-				}
-			},
-			...reply
-		}, true, /*reply.document ? null:*/ {
-			backgroundColor: '',
-			ephemeralExpiration: 86400,
-			quoted: {
-				key: {
-					fromMe: true,
-					id: m.id,
-					participant: m.sender,
-					remoteJid: m.senderPn,
+		try {
+			await m.reply( {
+				...{
+					contextInfo: {
+						mentionedJid: [m.sender]
+					}
 				},
-				message: {
-					contactMessage: {
-						displayName: m.pushName,
-						vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${m.pushName}\nTEL;type=CELL;waid=${pn}:${pn}\nEND:VCARD`
+				...reply
+			}, true, /*reply.document ? null:*/ {
+				backgroundColor: '',
+				ephemeralExpiration: 86400,
+				quoted: {
+					key: {
+						fromMe: true,
+						id: m.id,
+						participant: m.sender,
+						remoteJid: m.senderPn,
+					},
+					message: {
+						contactMessage: {
+							displayName: m.pushName,
+							vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${m.pushName}\nTEL;type=CELL;waid=${pn}:${pn}\nEND:VCARD`
+						},
 					},
 				},
-			},
-		})
+			})
+		} catch(e) {
+			await m.reply(_rep[Math.floor(Math.random()*_rep.length)]||'')
+		}
 		await m.reply({ react: { text: '', key: m.key } }, false)
 	},
 }
@@ -81,7 +119,16 @@ const API_URL = {
 	nekosia_cat: 'https://api.nekosia.cat/api/v1',
 	//     pic_re: 'https://pic.re/image',
 }
-const endpoints = {}
+
+const tags = new Gacha([
+	{ name: 'shinobu', percent: 10, host: new Gacha(arr2i(['waifu_pics'            ])) },
+	{ name: 'megumin', percent: 15, host: new Gacha(arr2i(['waifu_pics'            ])) },
+	{ name: 'waifu',   percent: 50, host: new Gacha(arr2i([{n:'waifu_pics',p:40}, {n:'waifu_im',p:40}, {n:'nekos_best',p:20}])) },
+	{ name: 'oppai',   percent: 40, host: new Gacha(arr2i([              'waifu_im'              ])) },
+	{ name: 'neko',    percent: 20, host: new Gacha(arr2i(['waifu_pics',             'nekos_best', 'nekosia_cat'])) },
+	{ name: 'maid',    percent: 20, host: new Gacha(arr2i([              'waifu_im'])) },
+	{ name: 'kitsune', percent: 20, host: new Gacha(arr2i([                          'nekos_best'])) },
+])
 
 const Pics = {
 	fetch (url) {
@@ -98,33 +145,29 @@ const Pics = {
 		return url
 	},
 	randomize_host() {
-		let host = Object.keys(API_URL)
-		return [...host, ...host, ...host, ...host][Math.floor(Math.random() * (host.length * 4))]
+		let tag = tags.draw()
+		return {
+			endpoints: tag.name,
+			host: tag.host.draw().name
+		}
 	},
-	randomize_img_url (host) {
+	request_img_url ({ host, endpoints }) {
 		var path = '', query = ''
 		switch (host) {
-			case 'pic_re':
-			break
 			case 'nekosia_cat':
 				path = '/images/random'
 			break
 			case 'waifu_im':
 				path = '/search'
-				query = `?excluded_tags=oppai&height=<=2000&byte_size=<=2084000&gif=false`
+				query = `?included_tags=${endpoints}&height=<=2048&byte_size=<=2084000&gif=false`
 			break
 			case 'waifu_pics':
-			case 'n_sfw_com':
-				path = endpoints[host].sfw
-				path = [...path,...path,...path][Math.floor(Math.random() * (path.length * 3))]
-				path = '/sfw/'+path
-			break
+				path += '/sfw'
 			case 'nekos_best':
-				path = Object.keys(endpoints[host])
-				path = [...path,...path,...path][Math.floor(Math.random() * (path.length * 3))]
-				path = '/'+path
+				path += '/'+endpoints
 			break
 			default:
+				logger.warn({ host, endpoints })
 				host = 'https://picsum.photos/200'
 		}
 		host = API_URL[host] || host
@@ -135,13 +178,13 @@ const Pics = {
 	},
 	async random() {
 		const host = this.randomize_host()
-		const request  = this.randomize_img_url(host)
+		const request  = this.request_img_url(host)
 		
-		if(host == 'pic_re' || !API_URL[host])
+		if(host.host == 'pic_re' || !API_URL[host.host])
 			return request.url
 		
-		const response = await this.fetch(request.url)
-		const proxy = host == 'n_sfw_com'? 'https://proxy.n-sfw.com/?url=' : ''
+		const response = await this.fetch(request.url).catch(a=>logger.warn(request))
+		const proxy = host.host == 'n_sfw_com'? 'https://proxy.n-sfw.com/?url=' : ''
 		
 		return proxy + (response.url || response.results?.[0]?.url || response.images?.[0]?.url || response.image?.compressed?.url || response.images?.[0]?.image?.compressed?.url)
 	},
@@ -153,24 +196,12 @@ const Pics = {
 		}
 	
 		return response.json()
-	},
-	async load_endpoints() {
-		var host = Object.keys(API_URL)
-		for(host of host) try {
-			endpoints[host] = await this.endpoints (host)
-			
-			// filter .gif dan nsfw
-			if ( host == 'nekos_best')
-				endpoints[host] = Object.fromEntries(Object.entries(endpoints[host]).filter(a=>a[1]?.format=='png'&&a[0]!='husbando'))
-			if ( host == 'waifu_pics')
-				endpoints[host] = {sfw: ['neko']}
-		} catch (e) {
-			delete API_URL[host]
-			logger.warn('Failed to get endpoints for '+host)
-			logger.warn(e)
-		}
-		return endpoints
 	}
 }
 
-Pics.load_endpoints()
+function arr2i (arr) {
+	return arr.map(i =>
+		({ name: i.n||i,   percent: i.p||Math.round(100 / arr.length)})
+	)
+}
+

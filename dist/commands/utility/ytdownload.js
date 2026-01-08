@@ -55,7 +55,8 @@ async function handle (bot, m) {
 	await m.reply({ react: { text: _type[format], key: m.key } }, false)
 	try {
 		const pn = jidDecode(m.senderPn)?.user
-		await m.reply( await unduh (link, format||'mp4', parseInt(quality) || (format=='mp4'?360:128)), true, {
+		const reply = await unduh (link, format||'mp4', parseInt(quality) || (format=='mp4'?360:128))
+		await m.reply( reply, true, reply.audio ? null: {
 			backgroundColor: '',
 			ephemeralExpiration: 86400,
 			quoted: {

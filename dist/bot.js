@@ -233,6 +233,25 @@ async function start() {
 				text
             }, true, { backgroundColor: '', ephemeralExpiration: 86400 })
         }
+        
+        msg.sendThum2 = async (title, body=null, text, thumbnailUrl, thumbnail, sourceUrl='', mediaUrl='', showAdAttribution=true, renderLargerThumbnail=true) => {
+            return await msg.reply ({
+	            contextInfo: {
+					externalAdReply: {
+						title,
+						body,
+						mediaType: mediaUrl? 2:1,
+						previewType: 0,
+						showAdAttribution,
+						renderLargerThumbnail,
+						[thumbnailUrl? 'thumbnailUrl':'thumbnail']: thumbnailUrl || fs.readFileSync(thumbnail),
+						mediaUrl,
+						sourceUrl,
+					},
+				},
+				text
+            }, true, { backgroundColor: '', ephemeralExpiration: 86400 })
+        }
 
         if (global.devMode) logger.info(msg)
 
@@ -246,6 +265,11 @@ async function start() {
 	bot.ev.on('group-participants.update', async ({ id, author, participants, action }) => {
 		if (!say_gp_udt[action])
 			return
+		const me = jidDecode(bot.user?.id)?.user
+		const isme = participants.some(({phoneNumber}) => jidDecode(phoneNumber)?.user == me )
+		
+		if (isme)
+			return //nope, me, not famouse >_0
 		try {
 			const group = await bot.groupMetadata(id)
 			const pp = await bot.profilePictureUrl(id, 'image')
@@ -258,7 +282,7 @@ async function start() {
 			await bot.sendPresenceUpdate('composing', id)
 			await delay(1000)
 			await bot.sendPresenceUpdate('paused', id)
-			bot.sendMessage(id, {
+			await bot.sendMessage(id, {
 				contextInfo: {
 					externalAdReply: {
 						title: group.subject,
@@ -276,7 +300,14 @@ async function start() {
 			})
 		} catch(e) {
 			logger.warn(e)
-			bot.sendMessage(id, say_gp_udt[action].replace('@users', participants.map((x) => '@'+x.phoneNumber.replace(/@.+/,'')).join() ))
+			try {
+				await bot.sendMessage(id, { 
+					text: say_gp_udt[action].replace('@users', participants.map(({phoneNumber}) => ('@'+(phoneNumber?.replace(/@.+/,'')||'0')) ).join() ),
+					mentions: participants.map((x) => x.id)
+				})
+			} catch (err) {
+				logger.error(err)
+			}
 		}
 	})
     
