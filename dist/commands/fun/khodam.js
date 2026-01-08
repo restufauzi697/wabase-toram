@@ -64,6 +64,6 @@ function hashCode(str) {
 }
 
 function getKhodamByName(name) {
-    const index = Math.abs(hashCode(name)) % khodams.length;
-    return khodams[index];
+    const index = Math.abs(hashCode(name)) % khodam_s.length;
+    return khodam_s[index];
 }
