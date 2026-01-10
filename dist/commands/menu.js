@@ -82,6 +82,10 @@ const Menu = `
 ║⧐ .waifu-random
 ╚════════════════❍
 
+╔══❨ Game & Fun ❩
+║⧐ .khodam
+╚════════════════❍
+
 ╔══❨ Informasi ❩
 ║⧐ .bmkg
 ║⧐ .inf-gempa

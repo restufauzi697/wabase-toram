@@ -10,19 +10,23 @@ export const command = {
         if (!global.devMode)
         	return
         
-        msg.reply('Ini perintah bug')
+        // msg.reply('Ini perintah bug')
+        
+        // ujicoba: 120363420491866540@g.us
         
         msg.sendThum2
         (
-        	"Toram Online",
-        	"Departure of Iruna",
-			"I have no idea",
-			null,
+        	"RZ2",
+        	"hai _^)//",
+			"Bergabung dalam ujicoba Beta tester disini",
 			`./assets/toram/texture/toram-${Math.floor(Math.random()*8)}.jpg`,
-			'',
-			'https://www.instagram.com/reel/C5Ju9hCvlQ8/?igsh=czFqeWFqY25sejk5',//'https://youtube.com/watch?v=sWVN8g2RRhY',
+			'https://chat.whatsapp.com/JOr16TMdbrG9L7smaVzN66',
+			'https://chat.whatsapp.com/JOr16TMdbrG9L7smaVzN66?abc='+Date.now().toString(16),
+			//'https://www.instagram.com/reel/C5Ju9hCvlQ8/?igsh=czFqeWFqY25sejk5',
+			//'https://youtube.com/watch?v=sWVN8g2RRhY',
 			false,
-			true
+			true,
+			bot.quoteContact(msg)
 		).then(a=>logger.info)
 // (0, page, img, 'https://id.toram.jp/', false, false)
         

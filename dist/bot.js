@@ -41,7 +41,7 @@ async function start() {
     })
 
     if (!bot.user && !bot.authState.creds.registered) {
-        await new Promise(resolve => resolve(consoleClear()))
+        await new Promise(resolve => resolve())
         const waNumber = (await question('Masukkan nomor WhatsApp anda: +')).replace(/\/D/g, '')
 
         /// VALIDASI WA Number
@@ -234,23 +234,37 @@ async function start() {
             }, true, { backgroundColor: '', ephemeralExpiration: 86400 })
         }
         
-        msg.sendThum2 = async (title, body=null, text, thumbnailUrl, thumbnail, sourceUrl='', mediaUrl='', showAdAttribution=true, renderLargerThumbnail=true) => {
+        msg.sendThum2 = async (title, body=null, text, thumbnail, sourceUrl='', mediaUrl='', showAdAttribution=true, renderLargerThumbnail=true, quoted=msg) => {
+			let thumbnailUrl = ''
+			if (thumbnail && !Buffer.isBuffer(thumbnail))
+				if (thumbnail instanceof ArrayBuffer)
+					thumbnail = thumbnail.toBuffer()
+				else if (fs.existsSync(thumbnail))
+					thumbnail = fs.readFileSync(thumbnail)
+				else if (/^https?:\/\//.test(thumbnail)) {
+					thumbnailUrl = thumbnail
+					thumbnail = ''
+					
+				}
             return await msg.reply ({
 	            contextInfo: {
+					mentionedJid: [msg.sender],
 					externalAdReply: {
 						title,
 						body,
-						mediaType: mediaUrl? 2:1,
+						mediaType: !thumbnail? 0: ( !mediaUrl||mediaUrl?.includes('robz.bot') )? 1:2,
 						previewType: 0,
 						showAdAttribution,
 						renderLargerThumbnail,
-						[thumbnailUrl? 'thumbnailUrl':'thumbnail']: thumbnailUrl || fs.readFileSync(thumbnail),
+						thumbnailUrl,
+						thumbnail,
+						//[? 'thumbnailUrl':'']: thumbnailUrl || thumbnail,
 						mediaUrl,
 						sourceUrl,
 					},
 				},
 				text
-            }, true, { backgroundColor: '', ephemeralExpiration: 86400 })
+            }, true, { backgroundColor: '', ephemeralExpiration: 86400, quoted })
         }
 
         if (global.devMode) logger.info(msg)
@@ -272,7 +286,7 @@ async function start() {
 			return //nope, me, not famouse >_0
 		try {
 			const group = await bot.groupMetadata(id)
-			const pp = await bot.profilePictureUrl(id, 'image')
+			const pp = await bot.profilePictureUrl(id, 'image').catch(e=>logger.warn(e))
 			
 			let users = participants.length > 1? ' ':''
 			for (const {id, phoneNumber, admin} of participants) {
@@ -286,13 +300,13 @@ async function start() {
 				contextInfo: {
 					externalAdReply: {
 						title: group.subject,
-						body: null,
+						body: global.bot.name,
 						mediaType: 1,
 						previewType: 0,
 						showAdAttribution: false,
-						renderLargerThumbnail: true,
+						renderLargerThumbnail: !!pp,
 						thumbnailUrl: pp || global.bot.thumb,
-						sourceUrl: global.bot.adsUrl
+						//sourceUrl: global.bot.adsUrl
 					},
 				},
 				text: say_gp_udt[action].replace('@users', users),
@@ -315,6 +329,23 @@ async function start() {
         .participants.find(
             participant => participant.id === lid
         )
+    bot.quoteContact = (m) => {
+    		const pn = jidDecode(m.senderPn)?.user
+	    	return {
+				key: {
+					fromMe: true,
+					id: m.id,
+					participant: m.sender,
+					remoteJid: m.senderPn,
+				},
+				message: {
+					contactMessage: {
+						displayName: m.pushName,
+						vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${m.pushName}\nTEL;type=CELL;waid=${pn}:${pn}\nEND:VCARD`
+					},
+				},
+			}
+	    }
 }
 
 ;(async () => {

@@ -1,4 +1,3 @@
-import { jidDecode } from 'baileys';
 import yt from '@vreden/youtube_scraper'
 import addcmd from '../../utils/cmd_msg.js'
 import logger from '../../utils/logger.js';
@@ -54,25 +53,11 @@ async function handle (bot, m) {
 	
 	await m.reply({ react: { text: _type[format], key: m.key } }, false)
 	try {
-		const pn = jidDecode(m.senderPn)?.user
 		const reply = await unduh (link, format||'mp4', parseInt(quality) || (format=='mp4'?360:128))
 		await m.reply( reply, true, reply.audio ? null: {
 			backgroundColor: '',
 			ephemeralExpiration: 86400,
-			quoted: {
-				key: {
-					fromMe: true,
-					id: m.id,
-					participant: m.sender,
-					remoteJid: m.senderPn,
-				},
-				message: {
-					contactMessage: {
-						displayName: m.pushName,
-						vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${m.pushName}\nTEL;type=CELL;waid=${pn}:${pn}\nEND:VCARD`
-					},
-				},
-			},
+			quoted: bot.quoteContact(m)
 		} )
 	} catch (e) {
 		logger.error(e)
@@ -87,6 +72,8 @@ async function unduh (link, format='mp4', quality=360) {
 	  --job
 	if (!r.status)
 		return {text: r.message}
+	if (!r.download.status)
+		return {text: r.download.message}
 	if (format == 'mp4')
 		return {
 			caption:`\u{1F3AC} ${ r.metadata.views } views | ${ r.metadata.title } (${ r.metadata.timestamp }) | by ${ r.metadata.author.name } \u{1F3B5}`,

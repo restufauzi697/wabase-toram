@@ -1,12 +1,52 @@
+import logger from '../logger.js';
+import fetch from 'node-fetch';
+import axios from "axios";
+import path from "path";
+import fs from "fs";
 var _ready = false;
 
 async function getData(DataPath) {
+	try {
+		return await axio_getData(DataPath)
+	} catch (e) {
+		logger.warn('filed get Crystal with axio.', e.message)
+	}
+	try {
+		return await fetchData(DataPath)
+	} catch (e) {
+		logger.warn('filed get Crystal with node-fetch.', e.message)
+	}
+	logger.warn("can't fetch Crystal update. return from local db.")
+	return readXtall()
+}
+
+function parser_csv(text) {
+	const data = (text).replace(/".*?"/g,a=>a.replace(/,/g,'%2C'))
+	const csv = data.split('\n').map(row=>row.split(',').map(cell=>cell.replace(/%2C/g,',').trim()))
+	return csv
+}
+
+async function fetchData(DataPath) {
 	const response = await fetch(DataPath)
 	if(!response.ok)
 		return []
-	const data = (await response.text()).replace(/".*?"/g,a=>a.replace(/,/g,'%2C'))
-	const csv = data.split('\n').map(row=>row.split(',').map(cell=>cell.replace(/%2C/g,',').trim()))
-	return csv
+	const arr = parser_csv(await response.text())
+	return arr
+}
+
+async function axio_getData(DataPath) {
+	const response = await axios.get(DataPath)
+	const arr = parser_csv(response.data||'')
+	return arr
+}
+
+function readXtall() {
+	try {
+		const text = fs.readFileSync(path.resolve(process.cwd(), 'assets','toram/items', 'Xtal List.csv'), 'utf-8')
+		return parser_csv(text)
+	} catch (e) {
+		return []
+	}
 }
 
 export async function load () {

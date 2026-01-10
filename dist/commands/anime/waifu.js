@@ -1,5 +1,4 @@
 import path from 'path';
-import { jidDecode } from 'baileys';
 import logger from '../../utils/logger.js';
 
 class Gacha {
@@ -76,7 +75,6 @@ export const command = {
 				caption: 'anime™'
 			}
 		}
-		const pn = jidDecode(m.senderPn)?.user
 		await m.reply({ react: { text: '🏷️', key: m.key } }, false)
 		try {
 			await m.reply( {
@@ -89,20 +87,7 @@ export const command = {
 			}, true, /*reply.document ? null:*/ {
 				backgroundColor: '',
 				ephemeralExpiration: 86400,
-				quoted: {
-					key: {
-						fromMe: true,
-						id: m.id,
-						participant: m.sender,
-						remoteJid: m.senderPn,
-					},
-					message: {
-						contactMessage: {
-							displayName: m.pushName,
-							vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${m.pushName}\nTEL;type=CELL;waid=${pn}:${pn}\nEND:VCARD`
-						},
-					},
-				},
+				quoted: bot.quoteContact(m)
 			})
 		} catch(e) {
 			await m.reply(_rep[Math.floor(Math.random()*_rep.length)]||'')
