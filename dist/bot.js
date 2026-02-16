@@ -82,8 +82,16 @@ async function start() {
     })
     bot.ev.on('creds.update', session.saveCreds)
     bot.ev.on('messages.upsert', async (arg) => {
-        const msg = arg.messages[0]
-        if (!msg?.message) return
+    	const msg = arg.messages[0]
+		const timestamp = msg.messageTimestamp;
+		const now = Math.floor(Date.now() / 1000);
+		const diffInSeconds = now - timestamp;
+
+		if (diffInSeconds > 30) return;
+		if (arg.type === "append") return;
+		if (!msg?.message) return;
+		if (global.setting.autoread)
+			await bot.readMessages([msg.key])
         msg.id = msg.key.id
         msg.chat = msg.key.remoteJid
         msg.isGroup = isJidGroup(msg.chat)
@@ -272,12 +280,12 @@ async function start() {
         return nexttick(bot, msg)
     })
    // if (global.devMode)
-   const say_gp_udt = {
-   	add: "Selamat Datang! @users\nPatuhi peraturan ya",
-   	remove: "Selamat Tinggal @users\nKami akan merindukanmu"
-   }
 	bot.ev.on('group-participants.update', async ({ id, author, participants, action }) => {
-		if (!say_gp_udt[action])
+		const greeting_word = { 
+			...global.group.greeting_word,
+			...global.database.group[id]?.greeting_word
+		}
+		if (!greeting_word[action])
 			return
 		const me = jidDecode(bot.user?.id)?.user
 		const isme = participants.some(({phoneNumber}) => jidDecode(phoneNumber)?.user == me )
@@ -287,11 +295,13 @@ async function start() {
 		try {
 			const group = await bot.groupMetadata(id)
 			const pp = await bot.profilePictureUrl(id, 'image').catch(e=>logger.warn(e))
+			var { subject, desc } = group
+			
 			
 			let users = participants.length > 1? ' ':''
 			for (const {id, phoneNumber, admin} of participants) {
 				users += users? '\n- ':''
-				users += ' @'+jidDecode(id)?.user
+				users += '@'+jidDecode(id)?.user
 			}
 			await bot.sendPresenceUpdate('composing', id)
 			await delay(1000)
@@ -304,19 +314,21 @@ async function start() {
 						mediaType: 1,
 						previewType: 0,
 						showAdAttribution: false,
-						renderLargerThumbnail: !!pp,
+						renderLargerThumbnail: pp && !/^(promote|demote)$/i.test(action),
 						thumbnailUrl: pp || global.bot.thumb,
 						//sourceUrl: global.bot.adsUrl
 					},
 				},
-				text: say_gp_udt[action].replace('@users', users),
+				text: greeting_word[action].replace('@users', users).replace('@subject', subject).replace('@desc', desc),
 				mentions: participants.map((x) => x.id)
 			})
 		} catch(e) {
 			logger.warn(e)
 			try {
+				const $subject = typeof subject == 'string' ?subject:''
+				const $desc = typeof desc == 'string' ?desc:''
 				await bot.sendMessage(id, { 
-					text: say_gp_udt[action].replace('@users', participants.map(({phoneNumber}) => ('@'+(phoneNumber?.replace(/@.+/,'')||'0')) ).join() ),
+					text: greeting_word[action].replace('@users', participants.map(({id}) => ('@'+jidDecode(id)?.user) ).join() ).replace('@subject', $subject).replace('@desc', $desc),
 					mentions: participants.map((x) => x.id)
 				})
 			} catch (err) {

@@ -24,6 +24,15 @@ global.bot = {
     isVip: true,
 }
 
+global.group = {
+	greeting_word: {
+		add: "Selamat Datang! @users\nPatuhi peraturan ya",
+		remove: "Selamat Tinggal @users\nKami akan merindukanmu",
+		promote: "@users ```sekarang menjadi admin```",
+		demote: "@users ```bukan lagi admin```",
+	}
+}
+
 global.owner = {
     name: 'RobzBot',
     number: '',

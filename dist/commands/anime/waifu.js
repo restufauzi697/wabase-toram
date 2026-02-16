@@ -71,7 +71,7 @@ export const command = {
 		} catch (err) {
 			logger.warn(err),
 			reply = {
-				image: { url: 'https://pic.re/image'},
+				image: { url: API_URL.pic_re},
 				caption: 'anime™'
 			}
 		}
@@ -99,20 +99,21 @@ export const command = {
 const API_URL = {
 	 waifu_pics: 'https://api.waifu.pics',
 	//  n_sfw_com: 'https://api.n-sfw.com',
-	   waifu_im: 'https://api.waifu.im',
+	//   waifu_im: 'https://api.waifu.im',
 	 nekos_best: 'https://nekos.best/api/v2',
 	nekosia_cat: 'https://api.nekosia.cat/api/v1',
-	//     pic_re: 'https://pic.re/image',
+	pic_re: 'https://pic.re/image',
 }
 
 const tags = new Gacha([
 	{ name: 'shinobu', percent: 10, host: new Gacha(arr2i(['waifu_pics'            ])) },
 	{ name: 'megumin', percent: 15, host: new Gacha(arr2i(['waifu_pics'            ])) },
-	{ name: 'waifu',   percent: 50, host: new Gacha(arr2i([{n:'waifu_pics',p:40}, {n:'waifu_im',p:40}, {n:'nekos_best',p:20}])) },
-	{ name: 'oppai',   percent: 40, host: new Gacha(arr2i([              'waifu_im'              ])) },
+	{ name: 'waifu',   percent: 60, host: new Gacha(arr2i([{n:'waifu_pics',p:40}, /*{n:'waifu_im',p:40}*/, {n:'nekos_best',p:20}])) },
+	//{ name: 'oppai',   percent: 40, host: new Gacha(arr2i([              'waifu_im'              ])) },
 	{ name: 'neko',    percent: 20, host: new Gacha(arr2i(['waifu_pics',             'nekos_best', 'nekosia_cat'])) },
-	{ name: 'maid',    percent: 20, host: new Gacha(arr2i([              'waifu_im'])) },
+	//{ name: 'maid',    percent: 20, host: new Gacha(arr2i([              'waifu_im'])) },
 	{ name: 'kitsune', percent: 20, host: new Gacha(arr2i([                          'nekos_best'])) },
+	{ name: 'art',     percent: 10, host: new Gacha(arr2i(['pic_re'])) },
 ])
 
 const Pics = {
@@ -139,12 +140,17 @@ const Pics = {
 	request_img_url ({ host, endpoints }) {
 		var path = '', query = ''
 		switch (host) {
+			case 'pic_re':
+				throw 404
+			break
 			case 'nekosia_cat':
 				path = '/images/random'
 			break
+			/*deprecated*//*
 			case 'waifu_im':
 				path = '/search'
 				query = `?included_tags=${endpoints}&height=<=2048&byte_size=<=2084000&gif=false`
+			*/
 			break
 			case 'waifu_pics':
 				path += '/sfw'

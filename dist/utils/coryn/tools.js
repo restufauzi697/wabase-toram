@@ -101,5 +101,5 @@ async function search(m, args) {
 
 export default {
 	leveling,
-	search
+	search//(m,arg){return m.reply('Fitur ini sedang dalam proses perawatan.')}
 };

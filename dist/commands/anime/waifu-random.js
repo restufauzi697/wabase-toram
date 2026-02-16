@@ -76,7 +76,7 @@ export const command = {
 const API_URL = {
 	 waifu_pics: 'https://api.waifu.pics',
 	  n_sfw_com: 'https://api.n-sfw.com',
-	   waifu_im: 'https://api.waifu.im',
+	//   waifu_im: 'https://api.waifu.im',
 	 nekos_best: 'https://nekos.best/api/v2',
 	nekosia_cat: 'https://api.nekosia.cat/api/v1',
 	     pic_re: 'https://pic.re/image',

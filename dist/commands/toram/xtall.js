@@ -27,7 +27,7 @@ export const command = {
 }
 
 function find_crystal(name) {
-	const find = []
+	var find = new Map
 	var match
 	for(const xtall of Crystal.List) {
 		let { name:name1, name2 } = xtall
@@ -41,16 +41,19 @@ function find_crystal(name) {
 		else if(name2.includes(name))
 			point = Math.abs(name2.length - name.length)
 			
-		if(point == 0) {
+		if(point == 0)
 			match = xtall
-			break
-		} else if(point > 0) {
-			find.push({
+		if(point >= 0)
+			find.set(name1, {
 				xtall,
 				point
 			})
-		}
 	}
+	
+	find = find.values().toArray()
+	
+	if (!name)
+		match = null
 	
 	let result = ''
 	if (find.length == 1) {
@@ -67,13 +70,18 @@ function find_crystal(name) {
 		}[match.category]
 		result += `XTall untuk ${category}\n`
 		result += crystal_details(match)
-	} else if(find.length) {
-		result += 'hmm.. yang mana nih..\n'
+	}
+	if(find.length) {
+		if (!match)
+			result += 'hmm.. yang mana nih..\n'
+		else
+			result += '\n*Related:*\n'
 		result += find
 		 . sort(({point:a},{point:b})=>a-b)
 		 . map(({xtall:{name}})=>'- '+name)
 		 . join('\n')
-	} else {
+	}
+	if (!match && !find.length){
 		result = 'Tidak ketemu..'
 	}
 	return result
@@ -166,6 +174,22 @@ const DataPath = {
 const Crystal = {List:null}
 
 !main().then(result => {Crystal.List = result.List, _ready = true})
+/*.then(dara => {
+	Crystal.List.push(
+	{
+		name : 'Shawle',
+		name1: 'Shawle',
+		name2: '',
+		category: 'normal',
+		bossCategory: 'boss',
+		data: {
+			'anticipate': '5%',
+			'guard_break': '5%',
+			'accuracy': '20%',
+			'aggro': '10%',
+		}
+	})
+})*/
 
 function crystal_details(xtall) {
 	const route = related(xtall)
@@ -189,7 +213,7 @@ function crystal_details(xtall) {
 			}).join('\n')||''
 		}`
 	if (route.length > 0)
-		result += `\n*Related:* ${
+		result += `\n*Upgrade:* ${
 			route.up
 			 . map(a=>'\n- '+a)
 			 . join('')
