@@ -242,7 +242,7 @@ async function start() {
             }, true, { backgroundColor: '', ephemeralExpiration: 86400 })
         }
         
-        msg.sendThum2 = async (title, body=null, text, thumbnail, sourceUrl='', mediaUrl='', showAdAttribution=true, renderLargerThumbnail=true, quoted=msg) => {
+        msg.sendThum2 = async (title, body=null, text, thumbnail, sourceUrl='', mediaUrl='', showAdAttribution=true, renderLargerThumbnail=true, quoted=msg, ops) => {
 			let thumbnailUrl = ''
 			if (thumbnail && !Buffer.isBuffer(thumbnail))
 				if (thumbnail instanceof ArrayBuffer)
@@ -256,7 +256,7 @@ async function start() {
 				}
             return await msg.reply ({
 	            contextInfo: {
-					mentionedJid: [msg.sender],
+					mentionedJid: Array.from(new Set([msg.sender, ...bot.getMentions(text)])),
 					externalAdReply: {
 						title,
 						body,
@@ -272,7 +272,7 @@ async function start() {
 					},
 				},
 				text
-            }, true, { backgroundColor: '', ephemeralExpiration: 86400, quoted })
+            }, true, { backgroundColor: '', ephemeralExpiration: 86400, quoted, ...ops})
         }
 
         if (global.devMode) logger.info(msg)
@@ -358,6 +358,9 @@ async function start() {
 				},
 			}
 	    }
+	bot.getMentions = (text) =>
+		[...text.matchAll(/@([0-9]{5,16}|0)/g)]
+			 . map(a => a[1] + '@lid')
 }
 
 ;(async () => {

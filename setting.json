@@ -1,5 +1,6 @@
 {
     "anticall": false,
     "antilink": false,
-    "seed_khodam": 685279
+    "seed_khodam": 685279,
+    "timezone": "Asia/Jakarta"
 }

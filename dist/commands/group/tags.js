@@ -21,9 +21,9 @@ export const command = {
 		
 		const mentionedJid = participants.map((x) => x.id)
 		
-		if (! m.isQuote)
+		if (!m.isQuote)
 		
-		if (!m.text)
+		if (!m.arguments.length)
 			return m.reply("Pesan dibutuhkan");
 		else
 			return m.reply({
@@ -51,7 +51,7 @@ export const command = {
 				{},
 			 )
 			 : generateWAMessageFromContent(
-				m.chatId,
+				m.chat,
 				{
 					[qmType]: {
 						...m.quote[qmType],

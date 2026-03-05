@@ -49,6 +49,17 @@ function readXtall() {
 	}
 }
 
+function readDBXtall() {
+	try {
+		const data = JSON.parse( fs.readFileSync(path.resolve(process.cwd(), 'assets/toram/items', 'Xtall-db.json'), 'utf-8'))
+		return data
+	} catch (e) {
+		logger.warn('Xtall-DB error:')
+		logger.error(e)
+		return []
+	}
+}
+
 export async function load () {
 	const RawCrystal = (await getData(DataPath.Crystal)).slice(1)
 	const DataCrystal = []
@@ -65,7 +76,6 @@ export async function load () {
 		["exchange","交換所"],
 		["unknow","未知"],
 	]
-	
 	var fokus_key, part_value;
 	var crystal, category, bossCategory;
 	
@@ -82,7 +92,10 @@ export async function load () {
 				category = ['weapon', 'body', 'additional', 'special', 'normal'][B]
 				continue
 			} else if (a === 1) {
+				c = /活動王（(.+)）/.test(C)? ' event':''
+				C = RegExp.$1 || C
 				bossCategory = type.find(([a,b]) => b == C)?.[0] || C
+				bossCategory+= c
 				continue
 			} else {
 				crystal = {
@@ -100,6 +113,9 @@ export async function load () {
 			fokus_key = B
 			crystal.data[fokus_key] = []
 		}
+		
+		if (B == 'obtain' &&  !C)
+			C = 'name'
 		
 		if (C) {
 			if (C == 'name' && fokus_key == 'stats')
@@ -119,7 +135,7 @@ export async function load () {
 	crystal = null
 	
 	_ready = true
-	return Crystal.List = DataCrystal
+	return Crystal.List = readDBXtall().concat(DataCrystal)
 }
 
 const DataPath = {

@@ -425,6 +425,11 @@
  "波尼耶": "Ponier",
  "闇針獸": "Dark Spinebore",
  "焦科": "Gioco",
+ "澤普菲爾": "Zeegard",
+ "庫貝龍": "Velcaroy",
+ "死星安塔雷斯": "Mortares",
+ "巴拉托克": "Baratok",
+ "霰石拉戈": "Aralago",
  "STR+1": "STR+1",
  "STR+2": "STR+2",
  "STR+3": "STR+3",
@@ -517,5 +522,21 @@
  "暴擊率+2": "Critical Rate+2",
  "暴擊率+3": "Critical Rate+3",
  "暴擊率+4": "Critical Rate+4",
- "暴擊率+5": "Critical Rate+5"
+ "暴擊率+5": "Critical Rate+5",
+ 
+ 
+ "":"@info(caption)",
+ "不可交易": "untradable",
+ "":"@info(event)",
+ "夏日活動任務獎勵": "Summer Event Mission Rewards",
+ "新年參拜":"Hatsumode Event",
+ "馬奇史東@三周年": "Road of Megiston@3rd Anniversary",
+ "馬奇史東@四周年": "Road of Megiston@4th Anniversary",
+ "馬奇史東@五周年": "Road of Megiston@5th Anniversary",
+ "馬奇史東@六周年": "Road of Megiston@6th Anniversary",
+ "馬奇史東@七周年": "Road of Megiston@7th Anniversary",
+ "馬奇史東@八周年": "Road of Megiston@8th Anniversary",
+ "馬奇史東@九周年": "Road of Megiston@9th Anniversary",
+ "馬奇史東@十周年": "Road of Megiston@10th Anniversary",
+ "":""
 }

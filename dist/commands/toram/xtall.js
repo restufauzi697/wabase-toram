@@ -52,8 +52,18 @@ function find_crystal(name) {
 	
 	find = find.values().toArray()
 	
-	if (!name)
-		match = null
+	if (!name) {
+		const c = {w:0,b:1,a:2,s:3,n:4}
+		match = null, find
+		 . sort(({xtall:{name:a}},{xtall:{name:b}})=>sort(a,b))
+		 . sort(({xtall:{category:a}},{xtall:{category:b}})=>sort(c[a[0]],c[b[0]]))
+		 . forEach(({xtall:{category}},i,arr)=>
+			(c.c != category)
+				&& (c.c = category)
+				| arr.splice(i,0,{xtall:{name:`-----\n*Xtall ${category}*\n`, category}})
+		 )
+	} else
+		find.sort(({point:a},{point:b})=>a-b)
 	
 	let result = ''
 	if (find.length == 1) {
@@ -66,7 +76,7 @@ function find_crystal(name) {
 			body: 'Armor',
 			additional: 'Perkakas tambahan',
 			special: 'Ring',
-			normal: 'Semua'
+			normal: 'Semua Equipment'
 		}[match.category]
 		result += `XTall untuk ${category}\n`
 		result += crystal_details(match)
@@ -77,7 +87,6 @@ function find_crystal(name) {
 		else
 			result += '\n*Related:*\n'
 		result += find
-		 . sort(({point:a},{point:b})=>a-b)
 		 . map(({xtall:{name}})=>'- '+name)
 		 . join('\n')
 	}
@@ -171,6 +180,8 @@ const DataPath = {
 }
 */
 
+const sort = (a,b) => a-b || -(a<b)|(a>b)
+
 const Crystal = {List:null}
 
 !main().then(result => {Crystal.List = result.List, _ready = true})
@@ -195,7 +206,7 @@ function crystal_details(xtall) {
 	const route = related(xtall)
 	let result = `*Name:* ${xtall.name}\n*Type:* ${
 		['','Upgrade '][enhancer(xtall)?.value1|0]
-	} ${xtall.category}\n*Stats:* \n${
+	} ${xtall.category}\n*Drop:* ${xtall.bossCategory.replace(/_/g,' ')}\n*Stats:* \n${
 		xtall.data.stats?.map(({key,value1,value2,value3}) => {
 			return (value2? '*'+value2+'*\n': '')+ `- ${key.replace(/_/g,' ')} ${value3||value1}`
 		}).join('\n')||''

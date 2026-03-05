@@ -1,0 +1,23 @@
+[
+	{
+		"name" : "STR+1",
+		"name1": "STR+1",
+		"name2": "STR+1",
+		"category": "normal",
+		"bossCategory": "mobs",
+		"data": {
+			"stats": [
+				{
+					"key": "str",
+					"value1": "1", "value2": "", "value3": ""
+				}
+			],
+			"other": [
+				{
+					"key": "name",
+					"value1": "比克鳥", "value2": "", "value3": ""
+				}
+			]
+		}
+	}
+]

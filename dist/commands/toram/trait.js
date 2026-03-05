@@ -40,18 +40,20 @@ export const command = {
 }
 
 function search(query) {
-	var index, page = 0
+	var index, page = 0, tier
 	
-	query = query.replace(/page:(\d+)/i,(a,b)=>(page = Math.max(0, b-1)|0, '')).trim()
-	if (/(tier)[\s:-]([1-5])/i.test(query))
-		query = `${RegExp.$1}-${RegExp.$2}`
+	query = query.replace(/page[\s:-](\d+)/,(a,b)=>(page = Math.max(0, b-1)|0, ''))
+	query = query.replace(/tier[\s:-]([1-5])/,(a,b)=>(tier = Number(b), ''))
+	query = query.trim()
 	
 	if (!/trait-(\d+)/.test(query)) {
 		const filtered = allData.filter(
-			(item) =>
+			(item) => (
 				item.name.toLowerCase().includes(query) ||
-				item.effect.toLowerCase().includes(query) ||
-				'tier-'+Number(item.tier) == query
+				item.effect.toLowerCase().includes(query)
+				) && (
+				tier ? Number(item.tier) == tier : true
+				)
 		)
 		if (filtered.length>1)
 			return renderTraits(filtered, page);
@@ -76,9 +78,10 @@ function readData() {
 }
 
 const _tips = `*Tips*
-* Gunakan ${`.trait <query> [page:N]`}
-* Contoh ${`.trait vengeful mana page:1`}
-* Perhatian, jangan ada spasi diantara titik dua (:) pada ${`page:N`}
+* Gunakan ${`_.trait <query> [tier:N] [page:N]_`}
+* Gunakan ${`_.trait <tier:N> [page:N]_`}
+* Contoh ${`_.trait vengeful mana page:1_`}
+* Perhatian, jangan ada spasi diantara titik dua (:).
 
 *Catatan tentang Abiliti (Trait)*
 
@@ -139,12 +142,13 @@ function renderTraits(data, page) {
 	const footer = ["#toram_online", "semangat gais!!", "preciousdelta__", "2 + 2 = 4", "#toram_online #asobimo"]
 	
 	const text = [
-		`*Tips: ${_tips2[++_ran % _tips2.length].slice(2)}*`,
+		`*Tips*`,
+		`- ${_tips2[++_ran % _tips2.length].slice(2)}`,
 		``,
 		`*Ditemukan (${data.length}) hasil*`,
 		result.trim(),
 		``,
-		`Page ${page+1} dari ${Math.ceil(data.length / perPage)} > `+footer[Math.floor(Math.random()*footer.length)]
+		`Page ${page+1} dari ${Math.ceil(data.length / perPage)} > _${footer[Math.floor(Math.random()*footer.length)]}_`
 	].join('\n')
 	
 	const reply = {

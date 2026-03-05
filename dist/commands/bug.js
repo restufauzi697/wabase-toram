@@ -1,3 +1,4 @@
+import { delay } from 'baileys'
 import logger from '../utils/logger.js'
 
 export const command = {
@@ -7,13 +8,20 @@ export const command = {
     onlyGroup: false,
     visible: false,
     handle: async (bot, msg) => {
+    	const m = msg
+    private_:{ break private_;
+    	const jid = m.chat
+    	const msg = await bot.sendMessage(jid, { text: 'ㅤ' })
+    	await bot.sendMessage(jid, { delete: msg.key })
+    }
+
         if (!global.devMode)
         	return
         
         // msg.reply('Ini perintah bug')
         
         // ujicoba: 120363420491866540@g.us
-        
+        /*  **
         msg.sendThum2
         (
         	"RZ2",
@@ -29,7 +37,7 @@ export const command = {
 			bot.quoteContact(msg)
 		).then(a=>logger.info)
 // (0, page, img, 'https://id.toram.jp/', false, false)
-        
+        */
         logger.info(msg)
         if (!msg.isGroup)
         	return console.log('=====0=====')

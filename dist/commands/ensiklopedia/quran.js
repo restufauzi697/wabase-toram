@@ -3,7 +3,7 @@ import logger from '../../utils/logger.js';
 
 /*===============[0]==============*/
 export const command = {
-	command: 'q',
+	command: 'quran',
 	onlyOwner: false,
 	onlyPremium: false,
 	onlyGroup: false,
@@ -12,11 +12,11 @@ export const command = {
 	get help() {
 		return `usage: 
 - #List surah & translate
-- .q list
+- .quran list
 - #Read per-surah with page or per-ayat
-- .q [surat|no.] [ [no.ayat] | [page <no>] ]
+- .quran [surat|no.] [ [no.ayat] | [page <no>] ]
 - #Set translate
-- .q translate < language | translations_key >
+- .quran translate < language | translations_key >
 
 > QuranEnc`
 	},

@@ -34,7 +34,7 @@ async function fetch_translations(id) {
 }
 
 const reg_surah = /(\d+). ([^(]+?) \(([^)]+)\)/
-const surah = fs.readFileSync(join(__dirname	, 'surah.txt'), 'utf-8')
+const surah = fs.readFileSync(join(__dirname, 'surah.txt'), 'utf-8')
 const no_surah = {}
 const list_surah = []
 
