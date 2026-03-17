@@ -12,6 +12,7 @@ export default async function Xtall() {
 		const property = (prop)=> {
 			const { value1, value2, value3 } = prop
 			prop.value3 = en[value1] || value3
+			prop.value2 = en[value2] || value2
 		}
 		Crystal.List.forEach( (xtall)=> {
 			const { name, name1, name2, data } = xtall

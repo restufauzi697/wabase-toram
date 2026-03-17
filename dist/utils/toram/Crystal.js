@@ -66,8 +66,8 @@ export async function load () {
 	var a,b,c,d,e,f,g,
 	    A,B,C,D,E,F,G;
 	const type = [
-		["boss","定點王"],
-		["mini_boss","區域王"],
+		["boss","定點王"], ["boss"/*event*/,"定點"/*王*/],
+		["mini_boss","區域王"], ["mini_boss"/*event*/,"區域"/*王*/],
 		["mobs","小怪"],
 		["quest","任務"],
 		["smith","鐵匠鋪製作"],
@@ -92,10 +92,10 @@ export async function load () {
 				category = ['weapon', 'body', 'additional', 'special', 'normal'][B]
 				continue
 			} else if (a === 1) {
-				c = /活動王（(.+)）/.test(C)? ' event':''
-				C = RegExp.$1 || C
+				c = /活動王（(.+)）/.exec(C)
+				C = c?.[1] || C
 				bossCategory = type.find(([a,b]) => b == C)?.[0] || C
-				bossCategory+= c
+				bossCategory+= c ? ' event' : ''
 				continue
 			} else {
 				crystal = {

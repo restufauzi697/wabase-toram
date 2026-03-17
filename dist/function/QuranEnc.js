@@ -40,10 +40,10 @@ const list_surah = []
 
 surah.split('\n')
 	 . forEach(a=> {
-		if (!reg_surah.test(a))
-			return
-		no_surah[RegExp.$2.toLowerCase()] = no_surah[RegExp.$1] = RegExp.$1
-		list_surah[RegExp.$1] = RegExp.$2
+		a = reg_surah.exec(a)
+		if (!a) return
+		no_surah[a[2].toLowerCase()] = no_surah[a[1]] = a[1]
+		list_surah[a[1]] = a[2]
 	})
 
 !async function() {

@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { jidDecode } from 'baileys'
+import { jidDecode, delay } from 'baileys'
 import logger from '../../utils/logger.js'
 import addcmd from '../../utils/cmd_msg.js'
 
@@ -46,12 +46,12 @@ class TicTacToe {
 	}
 	
 	#winner(a, b) {
-		if ((~(a|b) & 511) === 0)
-			return 3
 		for (const c of this.#conditions) {
 			if ((b & c) === c) return 2
 			if ((a & c) === c) return 1
 		}
+		if ((~(a|b) & 511) === 0)
+			return 3
 		return 0
 	}
 	
@@ -100,10 +100,8 @@ class TicTacToe {
 			
 		if (win>0)
 			this.#turn = -1
-			
-		this.gameResult = win
 		
-		return ret || win || 0
+		return this.gameResult = ret || win || 0
 	}
 	
 	render(constum = ` #| 0 | 1 | 2 |
@@ -229,20 +227,25 @@ class TTT4WA extends TicTacToe {
 	
 	async render(bot, m) {
 		const board = super.render(this.board).replace(/-|X|O/g, a=>({'-':'⬜',X:'❌',O:'⭕'}[a]))
-		const ic = ['🟢', '🎉']
-		var turnA = '', turnB = ''
+		const ic = ['🟢', '🎉', '🔴'], res = this.gameResult
+		var turnA = '', turnB = '', diff = '', playerB = this.playerB
 		
-		if (this.gameResult < 1)
+		if (this.playerB == 'auto')
+			playerB = 'Machine 🕹️',
+			diff = this.difficulty,
+			diff = `\nSolo | Level: ${diff=='easy'?'Easy':diff=='hard'?'Hard':'Normal'}`
+		
+		if (res < 1)
 			if (this.nextPlayer == this.playerA)
-				turnA = ic[0]
+				turnA = ic[res<0?2:0]
 			else
-				turnB = ic[0]
-		else if (this.gameResult == 1)
+				turnB = ic[res<0?2:0]
+		else if (res == 1)
 			turnA = ic[1],
-			await m.reply({text: `Mantap. Selamat ${this.playerA}, kamu memang!!`, mentions: [m.sender]}, true, {quoted: bot.quoteContact(m)})
-		else if (this.gameResult == 2)
+			await m.reply({text: `Mantap. Selamat ${this.playerA}, kamu menang!!`, mentions: [m.sender]}, true, {quoted: bot.quoteContact(m)})
+		else if (res == 2)
 			turnB = ic[1],
-			await m.reply({text: this.playerB == 'auto' ? `Sayang sekali, ${this.playerA}, kamu harus kalah!!` : `Horeyy, Selamat ${this.playerB}, kamu memang!!`, mentions: [m.sender]}, true, {quoted: bot.quoteContact(m)})
+			await m.reply({text: this.playerB == 'auto' ? `Sayang sekali, ${this.playerA}, kamu harus kalah!!` : `Horeyy, Selamat ${this.playerB}, kamu menang!!`, mentions: [m.sender]}, true, {quoted: bot.quoteContact(m)})
 		
 		const reply = `*Tic Tac Toe*
 
@@ -252,9 +255,9 @@ Tips:
 - Siapa yg membuat posisi simetris akan menang.
 
 ${board}
-_____________________
+_____________________${diff}
 - ⭕ ${this.playerA} ${turnA}
-- ❌ ${this.playerB == 'auto' ? 'Machine 🕹️': this.playerB} ${turnB}`
+- ❌ ${playerB} ${turnB}`
 
 		const key = this.#lastKey
 		const now = Math.floor(Date.now() / 1000);
@@ -277,7 +280,7 @@ _____________________
 		// or create
 			this._createMsg(m, reply)
 
-		if (this.gameResult == 3)
+		if (res == 3)
 			await m.reply('Seri!! Tak ada satu pun.. yg menang.', true, {quoted: this.#lastMsg})
 	}
 }
@@ -346,13 +349,17 @@ async function  handle(bot, m) {
 		
 		if(!session[id]) {
 			if (/^(create|(mem)?buat|bikin)$/i.test(arg[0])) {
-				const {token} = session[id] = new TTT4WA(m)
-				
-				if(/(easy|mudah)|(normal|solo|sendiri)|(hard|sulit)/i.test(arg[1])) {
-					arg[1] = RegExp.$1? 'easy': RegExp.$3? 'hard' : 'normal'
-					session[id].startWithBot(bot, m, arg[1])
+				const {token} = session[id] = sesi = new TTT4WA(m)
+				var lvl
+				if(lvl = /(easy|mudah)|(normal|solo|sendiri)|(hard|sulit)/i.exec(arg[1])) {
+					lvl = lvl[1]? 'easy': lvl[3]? 'hard' : 'normal'
+					sesi.status = -1
+					await sesi._createMsg(m, 'Loading source...')
+					await delay(1500)
+					sesi.status = TTT4WA.STATUS_HELD
+					await sesi.startWithBot(bot, m, lvl)
 				} else {
-					await session[id]._createMsg(m, `Kamu membuat sesi baru. katakan pada teman mu untuk mengetik\n\`.ttt join ${token}\`\nagar ia bisa bergabung.\n\n*Inf:* Token berlaku untuk 5 menit.`)
+					await sesi._createMsg(m, `Kamu membuat sesi baru. katakan pada teman mu untuk mengetik\n\`.ttt join ${token}\`\nagar ia bisa bergabung.\n\n*Inf:* Token berlaku untuk 5 menit.`)
 				
 					session[token] = session[id],
 					session[token].id = setTimeout(async _=>{
@@ -444,65 +451,6 @@ function getBestMove(boardA, boardB, targetPlayer, difficulty = 'hard') {
             // Selalu optimal
             return bestMove;
     }
-}
-
-
-
-// Fungsi untuk mendapatkan langkah terbaik (mengembalikan posisi sel atau mask biner)
-function getBestMove2(boardA, boardB, targetPlayer) {
-    // Validasi input: pastikan pemain target valid dan game belum berakhir
-    const winPatterns = [0b111000000, 0b000111000, 0b000000111, 
-                         0b100100100, 0b010010010, 0b001001001, 
-                         0b100010001, 0b001010100];
-    
-    for (const pattern of winPatterns) {
-        if ((boardA & pattern) === pattern || (boardB & pattern) === pattern) {
-            return null; // Game sudah berakhir, tidak ada langkah lagi
-        }
-    }
-    if ((boardA | boardB) === 0b111111111) return null; // Papan penuh
-    
-    let bestScore;
-    let bestMask = null;
-    const emptyCells = [];
-    
-    // Cari semua sel kosong
-    for (let i = 0; i < 9; i++) {
-        const mask = 1 << (8 - i);
-        if ((boardA & mask) === 0 && (boardB & mask) === 0) {
-            emptyCells.push({ mask, position: i }); // Simpan mask dan posisi angka (0-8)
-        }
-    }
-    
-    if (targetPlayer === 'A') {
-        bestScore = -Infinity;
-        for (const cell of emptyCells) {
-            const score = minimax(boardA | cell.mask, boardB, 1, 'B');
-            if (score > bestScore) {
-                bestScore = score;
-                bestMask = cell;
-            }
-        }
-    } else if (targetPlayer === 'B') {
-        bestScore = Infinity;
-        for (const cell of emptyCells) {
-            const score = minimax(boardA, boardB | cell.mask, 1, 'A');
-            if (score < bestScore) {
-                bestScore = score;
-                bestMask = cell;
-            }
-        }
-    } else {
-        return null; // Pemain tidak valid
-    }
-    
-    // Mengembalikan objek dengan mask biner dan posisi sel (0 = kiri atas, 8 = kanan bawah)
-    return {
-        mask: bestMask.mask,
-        position: bestMask.position,
-        boardAfter: targetPlayer === 'A' ? (boardA | bestMask.mask) : boardA,
-        boardBAfter: targetPlayer === 'B' ? (boardB | bestMask.mask) : boardB
-    };
 }
 
 function minimax(boardA, boardB, turn, currentPlayer) {
