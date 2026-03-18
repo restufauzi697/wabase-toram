@@ -15,7 +15,7 @@ export const command = {
 		try {
 			let d
 			switch (true) {
-				case (jidDecode(m.senderPn)?.user == '62895410813800'):
+				case (jidDecode(m.senderPn)?.user == 'anonim'):
 					if (d = await _x_q_one(m.text.slice(3)))
 					await m.reply(d, true, {quoted: null})
 					break;
