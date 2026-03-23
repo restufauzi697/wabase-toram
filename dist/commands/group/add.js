@@ -1,5 +1,7 @@
-import { isLidUser, jidNormalizedUser } from 'baileys';
+import { isLidUser, delay, jidNormalizedUser } from 'baileys';
 import logger from '../../utils/logger.js'
+
+const ranNum = (a,b)=>Math.floor(a + Math.random() * (b-a))
 
 export const command = {
 	command: 'add',
@@ -12,7 +14,10 @@ export const command = {
 	handle: async (bot, m) => {
 		try{
 			//# Data anggota
-			const { participants } = await bot.groupMetadata(m.chat)
+			const { participants, restrict } = await bot.groupMetadata(m.chat)
+			
+			if (restrict)
+				logger.warn(m.chat+' [ restrict mode ]')
 			
 			//# Validasi admin
 			const me = jidNormalizedUser(bot.user.id)
@@ -21,25 +26,42 @@ export const command = {
 			if (!(isAdmin.length > 1))
 				return await m.reply(`Perintah ini hanya bisa dijalankan oleh admin group`)
 			
-			const kodenegara = 62 // default code negara
+			const kodenegara = 628 // default code negara
 			const p = participants.map(a => jidNormalizedUser(a.phoneNumber))
 			//# Target add member
-			const jid = Array.from(new Set([...m.text.matchAll(/@?[+]?([0-9]{5,16})/g)]))
-				 . map(a => jidNormalizedUser(a[1].replace(/^0/, kodenegara) + '@s.whatsapp.net'))
-				 . filter(target=> !p.includes(target))
 			
-			const target = (await bot.onWhatsApp(...jid))
-				 . filter( a => a.exists)
-				 . map( ({jid}) => jid)
+			const jid = Array.from(new Set(
+					m.text.split(/\s|,/)
+					 . map(a=>a.replace(/\D/g,'').replace(/^08/, kodenegara) + '@s.whatsapp.net')
+					 . filter(target=> target && !p.includes(target))
+				 ))
+			
+			const target = await bot.onWhatsApp(...jid)
 			
 			if (!target.length)
 				return await m.reply("nomot telp tidak valid")
 			
-			const res = await bot.groupParticipantsUpdate(m.chat, target, "add");
-			logger.info(res, 'add participant')
+			await m.reply({ react: { text: '🏷️', key: m.key } }, false)
+			for(const {exists, jid} of target) {
+				const res = await bot.groupParticipantsUpdate(m.chat, [jid], "add")
+				for (let x of res) {
+					if (x.status != '200')
+					if (x.status == '403')
+						await m.reply({ text: `Gagal menambahkan @${x.jid.split('@')[0]}, kirim undangan...`, mentions: [x.jid] })
+					else if (x.status == '408')
+						await m.reply({ text: `Tidak bisa menambahkan @${x.jid.split('@')[0]}, karena dia baru saja keluar, coba lagi nanti...`, mentions: [x.jid] })
+					else if (x.status == '409')
+						await m.reply({ text: `@${x.jid.split('@')[0]} sudah berada dalam grup.`, mentions: [x.jid] })
+					else 
+						await m.reply({ text: `Gagal menambahkan @${x.jid.split('@')[0]}`, mentions: [x.jid] }),
+						logger.warn(x, 'add participant')
+				}
+				await delay(ranNum(2000,5000))
+			}
 		} catch(e) {
-			logger.error(e, 'Add menber, Filed')
+			logger.error(e, 'Add menber, Failed')
 			m.reply(`Terjadi kesalahan, tidak bisa menambahkan member group.`);
 		}
+		await m.reply({ react: { text: '️', key: m.key } }, false)
 	},
 }

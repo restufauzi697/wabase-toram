@@ -18,7 +18,7 @@ import fs from 'fs'
 import { pathToFileURL } from 'url'
 import NodeCache from 'node-cache'
 
-import fetchJSON from './utils/fetchJSON.js'
+import { fetchJSON, fetchData } from './utils/fetchJSON.js'
 import question from './utils/question.js'
 import logger from './utils/logger.js'
 import consoleClear from 'console-clear'
@@ -250,8 +250,8 @@ async function start() {
 				else if (fs.existsSync(thumbnail))
 					thumbnail = fs.readFileSync(thumbnail)
 				else if (/^https?:\/\//.test(thumbnail)) {
-					thumbnailUrl = thumbnail
-					thumbnail = ''
+					// thumbnailUrl = thumbnail
+					thumbnail = await fetchData( thumbnail )
 					
 				}
             return await msg.reply ({
@@ -294,9 +294,10 @@ async function start() {
 			return //nope, me, not famouse >_0
 		try {
 			const group = await bot.groupMetadata(id)
-			const pp = await bot.profilePictureUrl(id, 'image').catch(e=>logger.warn(e))
+			const pp = await fetchData( await bot.profilePictureUrl(id, 'image').catch(e=> global.bot.thumb) )
 			var { subject, desc } = group
 			
+			if(group.isCommunity || group.isCommunityAnnounce) return
 			
 			let users = participants.length > 1? ' ':''
 			for (const {id, phoneNumber, admin} of participants) {
@@ -314,8 +315,8 @@ async function start() {
 						mediaType: 1,
 						previewType: 0,
 						showAdAttribution: false,
-						renderLargerThumbnail: pp && !/^(promote|demote)$/i.test(action),
-						thumbnailUrl: pp || global.bot.thumb,
+						renderLargerThumbnail: /^(add|remove)$/i.test(action),
+						thumbnail: pp,
 						//sourceUrl: global.bot.adsUrl
 					},
 				},

@@ -15,7 +15,7 @@ async function leveling(m,cmd) {
     if (global.devMode) console.log(`Status Code: ${response.status}`);
     
     const $ = cheerio.load(response.data)
-      let ilfp = $('.item-leveling')
+      let ilfp = $('.level-group')
       let reply = `╭─「 *List Leveling* 」
 │ • Level: ${lvl}
 │ • Rentang: ${lvl - gap} <-> ${lvl + gap} (±${gap})
@@ -23,15 +23,19 @@ async function leveling(m,cmd) {
 ╰────\n`;
       ilfp.each((i,o) => {
         o = $(o)
-        reply += `\n*${o.find('h3').text().trim().toUpperCase()}*\n\n`
-        o.find('.level-row').each((i,o) => {
+        reply += `\n*${o.find('h2').text().trim().toUpperCase()}*\n\n`
+        o.find('.level-entry').each((i,o) => {
           if(i>=5) return; //max yg ditampilkan 5
           o = $(o)
           reply += '> '+
-          o.find('.level-col-1').text().trim()+'\n'+
-          o.find('.level-col-2 p:first').text().trim()+' ('+
-          o.find('.level-col-2 p:last').text().trim()+')\n'+
-          o.find('.level-col-3 p:last').text().trim()+'\n\n'
+          o.find('.level-entry-level').text().trim()+'\n'+
+          o.find('.level-entry-main p:first').text().trim()+' ('+
+          o.find('.level-entry-main p:last').text().trim()+')\n'
+          o.find('.level-entry-exp p').each((i,o) => {
+              reply += '- '+$(o).text().trim()+'\n'
+          })
+          reply += '\n'
+          
         })
       })
       reply += '\n_sumber: coryn.club_'
