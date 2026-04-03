@@ -30,7 +30,8 @@ export const command = {
 			if(!query&&result)
 				result.text = _tips
 			if(result)
-				await m.reply(result)
+				// await m.reply(result)
+				await m.sendThum2('Trait / Ability System', global.bot.name, result, global.bot.thumb, '', global.bot.adsUrl, false, false, null)
 			else
 				await m.reply('Tidak ada hasil, coba query lain.')
 		} catch (e) {
@@ -150,7 +151,7 @@ function renderTraits(data, page) {
 		``,
 		`Page ${page+1} dari ${Math.ceil(data.length / perPage)} > _${footer[Math.floor(Math.random()*footer.length)]}_`
 	].join('\n')
-	
+	/*
 	const reply = {
 		//image: { url: './assets/toram/texture/rf_acme.jpg'  },
 		contextInfo: {
@@ -165,8 +166,8 @@ function renderTraits(data, page) {
 			},
 		},
 		text
-	}
-	return reply
+	}*/
+	return text
 }
 
 const sort = (a,b) => a-b || -(a<b)|(a>b)

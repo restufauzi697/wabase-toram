@@ -1,5 +1,5 @@
 import { question, _x_q_one } from '../../function/GlobalQuestion.js'
-import { jidDecode } from 'baileys'
+import { jidDecode, delay } from 'baileys'
 import logger from '../../utils/logger.js';
 import addcmd from '../../utils/cmd_msg.js'
 
@@ -15,7 +15,8 @@ export const command = {
 		try {
 			let d
 			switch (true) {
-				case (jidDecode(m.senderPn)?.user == 'anonim'):
+				case (jidDecode(m.senderPn)?.user == '62895410813800'):
+					await delay(Math.floor(1000 + Math.random()*2000))
 					if (d = await _x_q_one(m.text.slice(3)))
 					await m.reply(d, true, {quoted: null})
 					break;

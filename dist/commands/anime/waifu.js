@@ -3,7 +3,7 @@ import logger from '../../utils/logger.js';
 
 class Gacha {
 	constructor(items) {
-		this.items = items;
+		this.items = [].concat(items).filter(a=>a?.percent);
 		this.totalPercent = items.reduce((acc, item) => acc + item.percent, 0);
 	}
 
@@ -108,7 +108,7 @@ const API_URL = {
 const tags = new Gacha([
 	{ name: 'shinobu', percent: 10, host: new Gacha(arr2i(['waifu_pics'            ])) },
 	{ name: 'megumin', percent: 15, host: new Gacha(arr2i(['waifu_pics'            ])) },
-	{ name: 'waifu',   percent: 60, host: new Gacha(arr2i([{n:'waifu_pics',p:40}, /*{n:'waifu_im',p:40}*/, {n:'nekos_best',p:20}])) },
+	{ name: 'waifu',   percent: 60, host: new Gacha(arr2i([{n:'waifu_pics',p:65}, /*{n:'waifu_im',p:40}*/, {n:'nekos_best',p:35}])) },
 	//{ name: 'oppai',   percent: 40, host: new Gacha(arr2i([              'waifu_im'              ])) },
 	{ name: 'neko',    percent: 20, host: new Gacha(arr2i(['waifu_pics',             'nekos_best', 'nekosia_cat'])) },
 	//{ name: 'maid',    percent: 20, host: new Gacha(arr2i([              'waifu_im'])) },

@@ -1,5 +1,5 @@
 @img[!art]
-🛡️🛡️BAHAN QUEST UTAMA🛡️🛡️
+@title[Bahan Quest Utama]
 
 🔮 _Bab 1: Awal Mula Kekacauan_
 - Kakak Beradik Straye

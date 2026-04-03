@@ -15,8 +15,10 @@ global.bot = {
     splitArgs: ',',
     locale: 'id',
     timezone: 'Asia/Jakarta',
-    adsUrl: 'http://robz.bot/',
-    get thumb() { return `${repoAssets}/toram/texture/toram-${Math.floor(Math.random()*8)}.jpg`},
+    get adsUrl() {
+		return 'robz.bot/fet?q='+Date.now()
+	},
+    get thumb() { return `assets/toram/texture/toram-${Math.floor(Math.random()*14)}.jpg`},
     icon: `${repoAssets}/toram/texture/rf_acme.jpg`,
     banner: `${repoAssets}/toram/texture/yuki.jpg`,
     newsletterJid: '',

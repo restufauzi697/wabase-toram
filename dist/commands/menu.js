@@ -11,7 +11,8 @@ export const command = {
     handle: async (bot, m) => {
         //!menu[1].length && _ ( );
         //m.sendThum(global.bot.name, `${menu[m.isGroup|0].join('\n')}\n╚════════════════❍`, global.bot.thumb, global.bot.adsUrl, false, true);
-        m.sendThum(global.bot.name, Menu, global.bot.thumb, global.bot.adsUrl, false, true);
+        //m.sendThum(global.bot.name, Menu, global.bot.thumb, global.bot.adsUrl, false, true);
+        await m.sendThum2(global.bot.name, 'Menu', Menu, global.bot.thumb, '', 'robz.bot/vid?q='+Date.now(), false, true, null)
     },
 }
 
@@ -116,6 +117,7 @@ const Menu = `
 ║⧐ .coryn
 ║⧐ .xtall
 ║⧐ .trait
+║⧐ .uptas
 ║⧐ .guide
 ║⧐ .toram
 ╚════════════════❍

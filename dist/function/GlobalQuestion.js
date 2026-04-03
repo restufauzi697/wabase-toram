@@ -14,7 +14,7 @@ async function _x_q_one(q) {
 	
 	try {
 		const filePath = 'assets/games/source/vquest.txt'
-		const data = await fs.readFile(filePath, 'utf8')
+		const data = (await fs.readFile(filePath, 'utf8')) .replace(/```(.+?)```/gs, (_,a)=>a.replace(/\n/g, '\\n').replace(/:/g, '&x45').replace(/;/g, '&x43'))
 		const lines = data.split('\n')
 		
 		q = q.toLowerCase()
@@ -23,7 +23,7 @@ async function _x_q_one(q) {
 			let [k, r] = line.split(/\s*:\s*/)
 			k = k.split(/\s*;\s*/).map(toLowerCase)
 			if (k.includes(q))
-				return shake(r.split(/\s*;\s*/))
+				return shake(r.split(/\s*;\s*/)) .replace(/\\n/g, '\n').replace(/&x45/g, ':').replace(/&x43/g, ';')
 		}
 		
 		return question(q)

@@ -1,0 +1,215 @@
+@img[!art]
+@title[Daftar Bahan Perluasan Tas]
+
+▪️ *50-51*
+- Kulit Colon x1 (Colon; _Tanah Pembangunan_)
+
+▪️ *51-52*
+- Kulit Berkualitas x1 (Lavarca; _Dataran Rakau_)
+
+▪️ *52-53*
+-   `💰Spina x1.000`
+
+▪️ *53-54*
+- Kulit Minotaur x1 (Minotaur; _Kuil Runtuh: Area Terlarang_)
+- Pecahan Kristal Jingga x1 (Cobre; _Danau Icule_)
+
+▪️ *54-55*
+- Kulit Anjing Hutan x1 (Anjing Hutan; _Hutan Marbabo: Bagian Dalam_)
+- Lencana Goblin x1 (Boss Goblin; _Gua Ribisco: Bagian Dalam_)
+
+▪️ *55-56*
+-   `💰Spina x2.000`
+
+▪️ *56-57*
+- Bulu Mochelo x1 (Mochelo; _Lereng Merapi A3_)
+- Kain Linen x10 (Crow Killer; _Dusun Douce_)
+
+▪️ *57-58*
+- Bulu Naga Giok x1 (Forestia; _Tanah Kaos_)
+- Tanduk Berkualitas x10 (Bandot; _Tanah Tinggi Yorl_)
+
+▪️ *58-59*
+- Sabuk Bos Roga x1 (Boss Roga; _Gua Bawah Tanah Saham: Ujung_)
+- Kain Beludu x10 (Orc Petarung; _Gua Bawah Tanah Saham_)
+
+▪️ *59-60*
+-   `💰Spina x4.000`
+
+▪️ *60-61*
+- Cakar Beruang x2 (Violaccoon; _Padang Darkanon_)
+- Sheeting Fabric x20 (Cassy; _Makam Ratu Kuno: Area 2_)
+
+▪️ *61-62*
+- Rantai Kukuh x2 (Pendekar Bertopeng; _Tanah Tinggi Pertanian_)
+- Kain Polister x20 (Boneka Pengembara; _Kota Hilang_)
+
+▪️ *62-63*
+- Sisik Naga Sabana x2 (Naga Sabana Yelb; _Desa Albatif_)
+- Kulit Serigala Alien x20 (Serigala Luar; _Gerbang Dunia Lain: Area 1_)
+
+▪️ *63-64*
+-   `💰Spina x8.000`
+
+▪️ *64-65*
+- Jubah Sobek x2 (Goovua; _Gurun Akaku: Bukit_)
+- Kulit Tupai x20 (Rodentail; _Maia Diela_)
+
+▪️ *65-66*
+- Tanduk Elang Zamrud x2 (Elang Zamrud; _Teras Kerikil_)
+- Bulu Kambing x20 (Koza; _Jurang Dunkel_)
+
+▪️ *66-67*
+- Sayap Naga Senja x2 (Naga Senja; _Benteng Solfini: Atap_)
+- Bulu Halus x20 (Little Snow Boar; _Lembah Es Polde_)
+
+▪️ *67-68*
+-   `💰Spina x16.000`
+
+▪️ *68-69*
+- Rantai Penyucian x2 (Cerberus; _Mata Air Kelahiran: Puncak_)
+- Kain Goyah x20 (Jewel Eye; _Mata Air Kelahiran: Tengah_)
+
+▪️ *69-70*
+- Benang Aranea x2 (Aranea; _Taman Sublimasi: Pusat_)
+- Benang Laba-Laba Kecil x20 (Aramia; _Taman Sublimasi: Area 2_)
+
+▪️ *70-71*
+- Kain Dewi Tiruan x3 (Imitacia; _Istana Gelap: Aula Besar_)
+- Kain Apung x10 (Flying Executioner; _Buaian Prajurit_)
+- Tapak Lembut x20 (Bunny Summoner; _Sungai Kegelapan_)
+
+▪️ *71-72*
+- Surai Hewan Iblis x3 (Memecoleous; _Istana Gelap: Area2_)
+- Bantalan Tapak Keras x10 (Manticore; _Istana Gelap: Area1_)
+- Bulu Bayangan Hitam x20 (Shadow Fly; _Istana Gelap: Area1_)
+
+▪️ *72-73*
+-   `💰Spina 32.000`
+
+▪️ *73-74*
+- Bulu Tapir x3 (Tapir; _Graben Membara: Permukaan_)
+- Bulu Kaku x10 (Wooly; _Graben Membara: Permukaan_)
+- Minyak Anti Karat x20 (Ornis Demi Machina; _Garis Pertahanan Artileri Otomatis_)
+
+▪️ *74-75*
+- Kain Kuno x3 (Proto Leon; _Reruntuhan Singolaire: Lantai 3_)
+- Kulit Pohon Lunak x10 (Floral Bee; _Situs Simcracker_)
+- Rambut Potum Kotor x20 (Slum Potum; _Klaspe Kumuh_)
+
+▪️ *75-76*
+- Tulang Raksasa Merah x3 (Dusk Machina; _Pabrik Demi Machina Kecil: Area 2_)
+- Mantel Hitam Sobek x10 (Rugos Demi Machina; _Pabrik Demi Machina Kecil: Area 2_)
+- Rantai Putus x20 (Machina Penyiksa; _Pabrik Demi Machina Kecil: Area 2_)
+
+▪️ *76-77*
+- Sisik Chimera x3 (Mozto Machina; _Pabrik Demi Machina Besar: Bagian Terdalam_)
+- Benda Pendar Aneh x10 (Horn Machina; _Pabrik Demi Machina Besar_)
+- Tentakel Tangguh x20 (Ledon Machina; _Pabrik Demi Machina Besar_)
+
+▪️ *77-78*
+-   `💰Spina x64.000`
+
+▪️ *78-79*
+- Jubah Roh Hutan x3 (Lalvada; _Hutan Monster: Bagian Dalam_)
+- Taring Tanaman x10 (Nepenthe; _Hutan Monster_)
+- Kain Felt x20 (Naga Boneka; _Mansion Lufenas_)
+
+▪️ *79-80*
+- Aloi Lyark x3 (Gwaimol; _Penjara Cuervo: Atap_)
+- Baju Penjaga Robek x10 (Sipir Lyark; _Penjara Cuervo: Lantai 2_)
+- Kain Lembu x20 (Lyark Spesialis; _Laboratorium Brahe: Area 2_)
+
+▪️ *80-81*
+- Kain Bercahaya x4 (Seraph Machina: _Menara Penembus Bumi: Sisi Dalam_)
+- Kulit Sintetis Rusak x20 (Lyark Brawler: _Sekitar Alun-Alun Droma_)
+- Cawat Pengeksekusi x20 (Volo: _Sekitar Alun-Alun Droma Area 2_)
+
+▪️ *81-82*
+- Potongan Baju K. Kecil x4 (Venena: _Istana Ultimea: Takhta_)
+- Pecahan Zirah Keras x20 (High Tigris: _Istana Ultimea Gudang Demi Machina_)
+- Kulit Ular x20 (Ular Kolam: _Reservoir Copia_)
+
+▪️ *82-83*
+-   `💰Spina x100.000`
+
+▪️ *83-84*
+- Kulit Mama Fluck x4 (Mama Fluck: _Gua Pelupa_)
+- Daun Besar Colon x20 (Leedle Colon: _Dataran Rokoko_)
+- Bulu Garis Vertikal x20 (Rakun Tambun: _Hutan Curonne_)
+
+▪️ *84-85*
+- Kain Rohani Mardula x4 (Mardula: _Serambi Dewa Berkah_)
+- Kain Berkilau Misterius x20 (Malaikat Gelembung: _Koridor Heresi/Kuil Para Dewa/Serambi Dewa Pembangunan/Serambi Dewa Istimewa_)
+- Bulu Kelabu x20 (Haliabubo: _Reruntuhan G. Mithurna: Koridor Atas_)
+
+▪️ *85-86*
+- Mantel Carbuncle x4 (Carbuncle: _Serambi Dewa Pembangunan_)
+- Kain Rajut x20 (Malaikat Gelembung: _Koridor Heresi_)
+- Ekor Beruang Berkantong x20 (Oddy: _Kuil Para Dewa: Area 4/Serambi Dewa Pembangunan_)
+
+▪️ *86-87*
+- Bulu Raja Piton x4 (Raja Piton: _Pegunungan Elf: Kuil_)
+- Bulu Putih Lebat x20 (Bandot: _Taman Es &Salju_)
+- Bulu Abu Kaku x20 (Silveria: _Pegunungan Elf_)
+
+▪️ *87-88*
+- Ingot Kuno x4 (Golem Preman: _Kuil Naga Kegelapan: Tengah_)
+- Taring Serigala Es x20 (Corloup: _Pegunungan Elf_)
+- Kain Gelap x20 (Soul Reaper: _Kuil Naga Kegelapan_)
+
+▪️ *88-89*
+-   `💰Spina x200.000`
+
+▪️ *89-90*
+- Taring Tuscog x4 (Tuscog: _Jalan Eryldan: Sekitar Hutan Ein_)
+- Sutra Ulat x20 (Tikus Lumut: _Hutan Ein_)
+- Bulu Manusia Serigala x20 (Wolfret: _Jalan Eryldan_)
+
+▪️ *90-91*
+- Serpihan Kayu Kuzto x5 (Kuzto; _Distrik Labilans: Alun-Alun_)
+- Bulu Cerpelai x20 (Satwal; _Distrik Fabriska_)
+- Sabuk Pinggang Misterius x30 (Moculus; _Distrik Fractum: Area 1_)
+
+▪️ *91-92*
+- Kantong Kristal x5 (Nemopirania; _Distrik Racetacula: Area 1_)
+- Ekor Lembut x20 (Alpoca; _Distrik Labiland_)
+- Papula Kuat x30 (Toksinaria; _Distrik Racetacula: Area 1_)
+
+▪️ *92-93*
+- Sayap Repthon x5 (Repthon; _Zona Riset Delzton: Area Terdalam_)
+- Kancing Polong x20 (Colon Marquis; _Reruntuhan Mansion Lufenas Tua_)
+- Kain Perca Jas Panjang x30 (Gulingkar; _Zona Riset Delzton: Area 1_)
+
+▪️ *93-94*
+- Rambut Kaisar Siluman x5 (Venena Metacoenubia; _Neo Plastida_)
+- Kain Merah Sobek x20 (Potum Bandit Gurun; Gurun Pasir Geist: Area 1)
+- Kulit Karatan x30 (Jasman; _Reruntuhan Elban Urban_)
+
+▪️ *94-95*
+-   `💰Spina x300.000`
+
+▪️ *95-96*
+- Tulang Pisteus x5 (Pisteus; _Pesisir Ducia: Area Terdalam_)
+- Kain Phantom x20 (Flooray; _Dasar Tebing Lunagent_)
+- Bulu Berang-Berang Laut x30 (Lutris; _Pesisir Ducia: Area 3_)
+
+▪️ *96-97*
+- Sayap Arachnidemon x5 (Arachnidemon; _Lembah Arche: Area Terdalam_)
+- Belenggu Logam x20 (Besy; _Lembah Arche_)
+- Kulit Ular Aneh x30 (Coofer; _Reruntuhan Kota Rokoko_)
+
+▪️ *97-98*
+- Jangat Berlendir x5 (Datuk Nezim; _Lahan Basah Nezim_)
+- Kain Enty x20 (Enty; _Rimba Penyihir_)
+- Poros Kokoh x30 (Orang2an Sawah Seram; _Rimba Penyihir: Area 2_)
+
+▪️ *98-99*
+- Perca Gendam Geni x5 (Hexter; _Rimba Penyihir: Area Terdalam_)
+- Piring Kappa x20 (Kappadon; _Lahan Basah Nezim_)
+- Bulu Gagak x30 (Orang2an Sawah Seram; _Rimba Penyihir: Area 2_)
+
+▪️ *99-100*
+- Inti Latebra Menggeliat x5 (Trocostida; _Nov Diela: Area 1_)
+- Cairan Lekat x20 (Juvestida; _Nov Diela: Area 1_)
+- Kulit Pelik x30 (Mata Jahat; _Padang Morga: Area 1_)

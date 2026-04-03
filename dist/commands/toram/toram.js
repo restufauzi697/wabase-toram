@@ -23,6 +23,11 @@ const sortcut = [
 		command: "guide",
 		param: "<nama|nomor>",
 		description: 'Panduan Toram Online.',
+	},
+	{
+		command: "uptas",
+		param: "[slot|all]",
+		description: 'Cek bahan dan lokasi expansi tas koleksi.',
 	}
 ]
 
@@ -117,7 +122,7 @@ const action = {
 		if(buff)
 			await m.reply(text)
 		else
-			await m.sendThum("Toram Online", text, global.bot.banner, 'https://id.toram.jp/', false, false)
+			await m.sendThum2("Toram Online", global.bot.name, text, global.bot.banner, '', _.media, false, false, null)
 	},
 	async deletebuff(bot, m, [_a, _b]) {
 		var fn = ([b,a])=> a == _a
@@ -174,11 +179,11 @@ const action = {
 				await m.reply('Halaman tidak ditemukan')
 		}
 	},
-	leveling(bot, m, [page]) {
+	async leveling(bot, m, [page]) {
 		m.text = 'list leveling'
-		action.guide(bot, m)
+		await action.guide(bot, m)
 	},
-	async guide(bot, m, page) {
+	async guide(bot, m, page=[]) {
 		if(page[0] == 'list')
 			return await action.list(bot, m, [page[1]])
 		page = m.text.replace(/^.(toram )?guide/,'').toLowerCase().trim()
@@ -186,9 +191,10 @@ const action = {
 		if(!page)
 			return await m.reply('Panduan tidak ditemukan')
 		try {
-			var img, id = _.random()
+			var img, id = _.random(), title = global.bot.name
 			page = fs.readFileSync(page[1], 'utf8')
 			page = page.replace(/@img\[([^\]]+)\]/,($0,$1)=>(img = $1,''))
+			page = page.replace(/@title\[(.+?)\]/,($0,$1)=>(title = $1,''))
 			page = page.replace(/@splash(\[(\d+)\]){0,1}/g,($0,$1,$2)=>(_.tips[$2||id]))
 			page = page.trim()
 			
@@ -203,7 +209,7 @@ const action = {
 						img = _.thumb[id]
 					if(img == '!art' || !img)
 						img = global.bot.thumb
-					await m.sendThum("Toram Online", page, img, 'https://id.toram.jp/', false, false)
+					await m.sendThum2('Toram Online', title, page, img, '', _.media, false, false, null)
 				}
 			else
 				await m.reply(page)
@@ -212,6 +218,21 @@ const action = {
 		}
 		
 	},
+	async uptas(bot, m, [slot]) {
+		const name = 'bahan perluasan tas'
+		if (slot == 'all')
+			m.text = name,
+			await action.guide(bot, m)
+		else if (slot = parseInt(slot), slot > 50 && 101 > slot) {
+			const page = _.list.find(([page])=>name==page)
+			const content = fs.readFileSync(page[1], 'utf8')
+			const recipe = content.match(new RegExp(`(?<=▪️ \\*\\d+-${slot})\\*((\\n-.+)+)`))
+			await m.sendThum2('Toram Online', `Bahan Perluasan Tas: slot ${slot-1}-${slot}`, recipe?.[1], global.bot.thumb, '', _.media, false, false, null)
+		} else {
+			await m.reply('emm.. slot keberapa? 51 sampai 100 atau `all` saja biar aku list semua.')
+		}
+			
+	}
 }
 const sort = (a,b) => a-b || -(a<b)|(a>b)
 const T = (T) => lang[T] || T
@@ -225,7 +246,8 @@ ${_.tips[id]}
 Panduan untuk player toram online.
 Gunakan: ${command.help.replace('usage:','')}
 `.trim()
-	await m.sendThum("Toram Online", text, _.thumb[id]||global.bot.banner, 'https://id.toram.jp/', false, true)
+	await m.sendThum2('Toram Online', `guide for toram online`, text, _.thumb[id]||global.bot.banner, '', _.media, false, true, null)
+	//await m.sendThum("Toram Online", text, _.thumb[id]||global.bot.banner, 'https://id.toram.jp/', false, true)
 }
 
 function save() {
@@ -284,6 +306,9 @@ const _ = {
 	tips: JSON.parse(fs.readFileSync(path.join(assets,"guide/tips.list"))),
 	thumb: JSON.parse(fs.readFileSync(path.join(assets,"guide/tips.img.list"))),
 	buff: ["maxhp", "maxmp", "str", "dex", "int", "agi", "vit", "atk", "matk", "watk", "presist", "mresist", "aggro+", "aggro-", "ampr", "cr", "acc", "dodge", "def", "mdef", "drop_rate", "pbarier", "mbarier", "frac_barier", "dte_neutral", "dte_fire", "dte_water", "dte_earth", "dte_wind", "dte_light", "dte_dark", "rte_neutral", "rte_fire", "rte_water", "rte_earth", "rte_wind", "rte_light", "rte_dark"],
+	get media() {
+		return 'robz.bot/vid?q='+Date.now()
+	},
 	get list() {
 		const folderPath = path.join(assets,'guide'), files = fs
 		  .readdirSync(folderPath, { recursive: true })
