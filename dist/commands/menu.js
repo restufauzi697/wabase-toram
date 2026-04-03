@@ -115,6 +115,7 @@ const Menu = `
 ║⧐ .addbuff
 ║⧐ .deletebuff
 ║⧐ .coryn
+║⧐ .dye
 ║⧐ .xtall
 ║⧐ .trait
 ║⧐ .uptas
