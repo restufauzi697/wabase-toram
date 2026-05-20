@@ -16,7 +16,7 @@ global.bot = {
     locale: 'id',
     timezone: 'Asia/Jakarta',
     get adsUrl() {
-		return 'robz.bot/fet?q='+Date.now()
+		return 'https://github.com/robbyrz'
 	},
     get thumb() { return `assets/toram/texture/toram-${Math.floor(Math.random()*14)}.jpg`},
     icon: `${repoAssets}/toram/texture/rf_acme.jpg`,

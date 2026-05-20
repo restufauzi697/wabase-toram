@@ -11,6 +11,8 @@ import {
     jidNormalizedUser,
     isJidGroup,
     isJidStatusBroadcast,
+    prepareWAMessageMedia,
+    generateMessageID
 } from 'baileys'
 import pino from 'pino'
 import path from 'path'
@@ -78,6 +80,12 @@ async function start() {
             }
 
             logger.info('Berhasil terhubung ' + jidDecode(bot.user?.id)?.user)
+            const jid = setting.notifSubscriber
+            
+            if(isPnUser(jid)||isJidGroup(jid))
+            try {
+                await bot.sendMessage(jid, 'Berhasil terhubung!')
+            } catch(e){}
         }
     })
     bot.ev.on('creds.update', session.saveCreds)
@@ -185,15 +193,7 @@ async function start() {
         msg.reply = async (text, typing = true, ops) => {
             const jid = msg.chat
             
-            await bot.presenceSubscribe(jid)
-            await delay(500)
-            
-            if(typing) {
-                await bot.sendPresenceUpdate('composing', jid)
-                await delay(1000)
-            
-                await bot.sendPresenceUpdate('paused', jid)
-            }
+            await preSend(bot, jid, typing)
             
             const ret = !text ? null
              : await bot.sendMessage(
@@ -224,56 +224,12 @@ async function start() {
             )
             return ret
         }
-        msg.sendThum = async (title, text, thumbnailUrl, sourceUrl, AdAttribution=true, LargerThumbnail=true) => {
-            return await msg.reply ({
-	            contextInfo: {
-					externalAdReply: {
-						title: title,
-						body: null,
-						mediaType: 1,
-						previewType: 0,
-						showAdAttribution: AdAttribution,
-						renderLargerThumbnail: LargerThumbnail,
-						thumbnailUrl: thumbnailUrl,
-						sourceUrl: sourceUrl
-					},
-				},
-				text
-            }, true, { backgroundColor: '', ephemeralExpiration: 86400 })
-        }
-        
-        msg.sendThum2 = async (title, body=null, text, thumbnail, sourceUrl='', mediaUrl='', showAdAttribution=true, renderLargerThumbnail=true, quoted=msg, ops) => {
-			let thumbnailUrl = ''
-			if (thumbnail && !Buffer.isBuffer(thumbnail))
-				if (thumbnail instanceof ArrayBuffer)
-					thumbnail = thumbnail.toBuffer()
-				else if (fs.existsSync(thumbnail))
-					thumbnail = fs.readFileSync(thumbnail)
-				else if (/^https?:\/\//.test(thumbnail)) {
-					// thumbnailUrl = thumbnail
-					thumbnail = await fetchData( thumbnail )
-					
-				}
-            return await msg.reply ({
-	            contextInfo: {
-					mentionedJid: Array.from(new Set([msg.sender, ...bot.getMentions(text)])),
-					externalAdReply: {
-						title,
-						body,
-						mediaType: !thumbnail? 0: ( !mediaUrl||mediaUrl?.includes('robz.bot') )? 1:2,
-						previewType: 0,
-						showAdAttribution,
-						renderLargerThumbnail,
-						thumbnailUrl,
-						thumbnail,
-						//[? 'thumbnailUrl':'']: thumbnailUrl || thumbnail,
-						mediaUrl,
-						sourceUrl,
-					},
-				},
-				text
-            }, true, { backgroundColor: '', ephemeralExpiration: 86400, quoted, ...ops})
-        }
+
+		msg.sendThum = async (text, thumb, title, body, {mentions=Array.from(new Set([msg.sender, ...bot.getMentions(text)])), quoted=msg, adsUrl=global.bot.adsUrl, ...ops}={}) =>
+        	await sendThumb(bot, msg.chat, text, thumbnail, title, body, {mentions, quoted, adsUrl, ...ops})
+
+        msg.sendThum2 = async (title, body=null, text, thumbnail, sourceUrl='', mediaUrl='', showAdAttribution, renderLargerThumbnail, quoted=msg, ops) =>
+        	await sendThumb(bot, msg.chat, text, thumbnail, title, body, {mentions: Array.from(new Set([msg.sender, ...bot.getMentions(text)])), quoted, adsUrl: global.bot.adsUrl, ...ops})
 
         if (global.devMode) logger.info(msg)
 
@@ -304,25 +260,19 @@ async function start() {
 				users += users? '\n- ':''
 				users += '@'+jidDecode(id)?.user
 			}
-			await bot.sendPresenceUpdate('composing', id)
-			await delay(1000)
-			await bot.sendPresenceUpdate('paused', id)
-			await bot.sendMessage(id, {
-				contextInfo: {
-					externalAdReply: {
-						title: group.subject,
-						body: global.bot.name,
-						mediaType: 1,
-						previewType: 0,
-						showAdAttribution: false,
-						renderLargerThumbnail: /^(add|remove)$/i.test(action),
-						thumbnail: pp,
-						//sourceUrl: global.bot.adsUrl
-					},
-				},
-				text: greeting_word[action].replace('@users', users).replace('@subject', subject).replace('@desc', desc),
-				mentions: participants.map((x) => x.id)
-			})
+			
+			const title = group.subject
+			const body = global.bot.name
+			const text = greeting_word[action].replace('@users', users).replace('@subject', subject).replace('@desc', desc)
+			const mentions = participants.map((x) => x.id)
+			
+			if (/^(add|remove)$/i.test(action))
+				await sendThumb(bot, id, text, pp, title, body, {mentions, adsUrl: global.bot.adsUrl})
+			else
+				await bot.sendMessage(id, {
+					text,
+					mentions
+				})
 		} catch(e) {
 			logger.warn(e)
 			try {
@@ -383,3 +333,99 @@ async function start() {
 })()
     .then(start)
     .catch(console.error)
+
+async function sendThumb(conn, jid, text, thumb, title, body, {mentions=[], adsUrl='https://github.com', ...ops}={}) {
+	try {
+		
+		await preSend(conn, jid, true)
+		
+		thumb = await prepareThumb(conn, thumb)
+		
+		const messageId = generateMessageID()
+		
+		const previewText = adsUrl+'\n' + text;
+		
+		const content = {
+			extendedTextMessage: {
+				text: previewText,
+				matchedText: adsUrl,
+				title: title || 'Preview',
+				description: body,
+				previewType: 0,
+				jpegThumbnail: thumb.jpegThumbnail?.toString('base64') ?? '',
+				thumbnailDirectPath: thumb.directPath,
+				thumbnailSha256: thumb.fileSha256?.toString('base64') ?? '',
+				thumbnailEncSha256: thumb.fileEncSha256?.toString('base64') ?? '',
+				mediaKey: thumb.mediaKey?.toString('base64') ?? '',
+				mediaKeyTimestamp: thumb.mediaKeyTimestamp,
+				thumbnailHeight: thumb.height,
+				thumbnailWidth: thumb.width,
+				inviteLinkGroupTypeV2: 0,
+				contextInfo: {
+					mentionedJid: [...mentions]
+				},
+			},
+		};
+	
+		await conn.relayMessage(jid, content, {messageId, ...ops});
+		
+		return wrapperMsg(jid, conn.user, messageId, content)
+	} catch (error) {
+		logger.error(error, 'Failed T_T');
+	}
+}
+
+// hati-hati, tidak ada handle error
+async function prepareThumb(conn, image) {
+	
+	if (!Buffer.isBuffer(image))
+		if (image instanceof ArrayBuffer)
+			image = image.toBuffer()
+		if (/^https?:\/\//.test(image) || fs.existsSync(image))
+			image = { url: image }
+	
+	const media = await prepareWAMessageMedia(
+		{ image }, // Image buffer Or you can also use a direct URL: image: { url: "https://your-image-link.jpeg" } 
+		{
+			upload: conn.waUploadToServer,
+			mediaTypeOverride: 'thumbnail-link',
+		}
+	);
+
+	const { imageMessage: thumb } = media;
+	return thumb
+}
+
+async function preSend(bot, jid, typing) {
+	await bot.presenceSubscribe(jid)
+    await delay(500)
+    
+    if(typing) {
+        await bot.sendPresenceUpdate('composing', jid)
+        await delay(1000)
+    
+        await bot.sendPresenceUpdate('paused', jid)
+    }
+}
+
+function wrapperMsg(jid, user={}, messageId, message) {
+	const {phoneNumber, lid} = user
+	const key = {
+		remoteJid: jid,
+		remoteJidAlt: phoneNumber ?? '',
+		fromMe: true,
+		id: messageId,
+		participant: lid ?? '',
+		participantAlt: phoneNumber ?? '',
+		addressingMode: "lid"
+	}
+	
+	if (isJidGroup(jid)) 
+		delete key.remoteJidAlt
+	else {
+		key.participant = ''
+		delete key.participantAlt
+	}
+	
+	return { key, message }
+}

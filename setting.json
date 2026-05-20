@@ -2,5 +2,7 @@
     "anticall": false,
     "antilink": false,
     "seed_khodam": 685279,
-    "timezone": "Asia/Jakarta"
+    "autoread": false,
+    "timezone": "Asia/Jakarta",
+    "notifSubscriber": null
 }

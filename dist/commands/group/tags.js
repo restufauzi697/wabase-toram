@@ -2,10 +2,8 @@ import { generateWAMessageFromContent, delay, getContentType } from "baileys";
 
 export const command = {
 	command: 'tags',
-	onlyOwner: false,
-	onlyPremium: false,
 	onlyGroup: true,
-	tag: 'Administratif',
+	tag: '00Administratif',
     description: 'Hide tag.',
     help: 'usage: `.tags <text...>`\natau `.tags` dan kutip pesan yang disorot.',
 	handle: async (bot, m) => {

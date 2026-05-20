@@ -1,8 +1,11 @@
+import { handle, help } from '../../plugin/game/ular_tangga.js'
+import addcmd from '../../utils/cmd_msg.js'
+
 export const command = {
-	command: 'utartangga',
-	tag: 'Game & Fun',
+	command: 'ulartangga',
+	tag: '03Game & Fun',
 	description: 'Bermain bersama teman, permainan ular tangga yang seru.',
-	help: 'usage: `.utartangga`',
+	get help() { return help() },
 	handle: async (bot, m) => {
 		var name, text = '',
 			thumb = `./assets/toram/texture/toram-${Math.floor(Math.random()*8)}.jpg`,
@@ -25,4 +28,15 @@ export const command = {
 			logger.warn(e)
 		}
 	},
+	handle,
+	visible: false // still under development
 }
+
+addcmd(
+	'ut',
+	command.handle,
+	{
+		...command,
+		visible: false
+	}
+)

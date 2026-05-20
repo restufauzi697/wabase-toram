@@ -3,11 +3,12 @@ import { jidDecode } from 'baileys';
 import logger from '../../utils/logger.js';
 
 export const command = {
+	index: 1,
 	command: 'waifu-random',
 	onlyOwner: false,
 	onlyPremium: false,
 	onlyGroup: false,
-	tag: 'Anime',
+	tag: '02Anime',
 	description: 'waifu apa ini?.',
 	get help() {
 		return 'usage:'
@@ -74,7 +75,7 @@ export const command = {
 }
 
 const API_URL = {
-	 waifu_pics: 'https://api.waifu.pics',
+	 //waifu_pics: 'https://api.waifu.pics',
 	  n_sfw_com: 'https://api.n-sfw.com',
 	//   waifu_im: 'https://api.waifu.im',
 	 nekos_best: 'https://nekos.best/api/v2',

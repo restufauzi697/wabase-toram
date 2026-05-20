@@ -1,7 +1,8 @@
 import { downloadContentFromMessage, getContentType } from 'baileys'
-import * as fs from 'fs'
-import * as path from 'path'
-import * as  crypto from 'crypto'
+import os from 'os'
+import fs from 'fs'
+import path from 'path'
+import crypto from 'crypto'
 import ffmpeg from 'fluent-ffmpeg'
 import webp from 'node-webpmux'
 import logger from '../../utils/logger.js'
@@ -30,9 +31,10 @@ async function addExif(webpSticker, packname, author, categories = [], extra = {
 	return await img.save(null)
 }
 
-async function image2webp(media) { 
-	const tmpFileOut = path.join('./tmp', `${crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`)
-	const tmpFileIn = path.join('./tmp', `${crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.jpeg`)
+async function image2webp(media) {
+	const tempDir = os.tmpdir()
+	const tmpFileOut = path.join(tempDir, `${crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`)
+	const tmpFileIn = path.join(tempDir, `${crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.jpeg`)
 	fs.writeFileSync(tmpFileIn, media)
 	await new Promise((resolve, reject) => {
 		ffmpeg(tmpFileIn)
@@ -51,8 +53,9 @@ async function image2webp(media) {
 }
 
 async function video2webp(media, fps = 15) { 
-	const tmpFileOut = path.join('./tmp', `${crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`)
-	const tmpFileIn = path.join('./tmp', `${crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.mp4`)
+	const tempDir = os.tmpdir()
+	const tmpFileOut = path.join(tempDir, `${crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`)
+	const tmpFileIn = path.join(tempDir, `${crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.mp4`)
 	fs.writeFileSync(tmpFileIn, media)
 	await new Promise((resolve, reject) => {
 		ffmpeg(tmpFileIn)
@@ -79,7 +82,7 @@ async function video2webp(media, fps = 15) {
 
 const command = {
 	command: 'stiker',
-	tag: 'Tools',
+	tag: 'Utilitas',
 	description: 'Buat stiker dari gambar atau video',
 	get help() {
 		return 'usage: `.stiker` dengan media atau kutip pesan media.'

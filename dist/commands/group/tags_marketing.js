@@ -6,7 +6,7 @@ export const command = {
 	onlyOwner: true,
 	onlyGroup: true,
 	visible: false,
-	tag: '_Toram Market_',
+	tag: 'Toram Market',
     description: 'Tandai grup sebagai grup pasar.',
     help: 'usage: `.mark_market [Yes/No]` default: `Yes`\ngrup akan dibolehkan menggunakan cmd dari *_Toram Market._*',
 	handle: async (bot, m) => {
@@ -28,7 +28,9 @@ addcmd(
 	'sell',
 	handle,
 	{
-		tag: '_Toram Online_',
+		visible: true,
+		onlyGroup: true,
+		tag: 'Toram Market',
 		description: 'Tags @all untuk promosi marketing.',
 		help: 'usage: `.sell <text...>`\natau `.sell` dan kutip pesan yang disorot.'
 	}
@@ -38,7 +40,9 @@ addcmd(
 	'buy',
 	handle,
 	{
-		tag: '_Toram Online_',
+		visible: true,
+		onlyGroup: true,
+		tag: 'Toram Market',
 		description: 'Tags @all untuk promosi marketing.',
 		help: 'usage: `.buy <text...>`\natau `.buy` dan kutip pesan yang disorot.'
 	}

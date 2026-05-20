@@ -3,45 +3,49 @@ export const command = {
     onlyOwner: false,
     onlyPremium: false,
     onlyGroup: false,
+    visible: true,
+    index: 0,
     tag: `Menu ${global.bot.name}`,
     description: 'Menampilkan semua perintah.',
     get help() {
         return 'usage: `.menu`'
     },
     handle: async (bot, m) => {
-        //!menu[1].length && _ ( );
+        !menu.length && menu.splice(0,0,..._ ( ));
         //m.sendThum(global.bot.name, `${menu[m.isGroup|0].join('\n')}\n╚════════════════❍`, global.bot.thumb, global.bot.adsUrl, false, true);
         //m.sendThum(global.bot.name, Menu, global.bot.thumb, global.bot.adsUrl, false, true);
-        await m.sendThum2(global.bot.name, 'Menu', Menu, global.bot.thumb, '', 'robz.bot/vid?q='+Date.now(), false, true, null)
+        // await m.sendThum2(global.bot.name, 'Menu', Menu, global.bot.thumb, '', 'robz.bot/vid?q='+Date.now(), false, true, null)
+        await m.sendThum2(global.bot.name, 'Menu', menu[m.isGroup|0], global.bot.thumb, '', 'robz.bot/vid?q='+Date.now(), false, true, null)
     },
 }
 
-const _ = ⁿ =>
+const _=ⁿ=>
 	global.bot.commands
-		 .filter(a => a.visible !== false)
-		 .sort((a,b) => _.a(a.command, b.command) )
-		 .sort((a,b) => _.a(a.tag, b.tag) )
-		 .map(a => {
-			if (ⁿ != a.tag) {
-				if(`\n╔══ 「 ${ⁿ} 」` == menu[0].slice(-1)[0])
-					menu[0].pop()
-				
-				menu[0].push(`╚════════════════❍\n`)
-				menu[1].push(`╚════════════════❍\n`)
-				menu[0].push(`\n╔══ 「 ${a.tag} 」`)
-				menu[1].push(`\n╔══ 「 ${a.tag} 」`)
-				
-				ⁿ = a.tag
-			}
+		 .filter(a=>a.visible!==!1)
+		 .sort((a,b)=>_.a(a.command,b.command))
+		 .sort((a,b)=>_.a(a.index||0,b.index||0))
+		 .sort((a,b)=>_.a(a.tag,b.tag))
+		 .reduce((menu,a)=>(
+			(menu[1][_]!=a.tag) && (
+				menu[1].at(-1)==_.b||menu[1][_]&&menu[1].push(_.b),
+				menu[1].push(`╔══${a.tag[0]==''?'『':'❨'} ${a.tag.replace(/?\d{2}?/,'')} ${a.tag[0]==''?'』':'❩'}`),
+				menu[1][_]=a.tag
+			),
 			
-			menu[1].push(`║⧐ .${a.command}`)
-			
-			if (!a.onlyGroup)
-				menu[0].push(`║⧐ .${a.command}`)
-		})
-	_.a = (a,b) => a-b || -(a<b)|(a>b)
-const menu = [[],[]]
+			a.onlyGroup || (menu[0][_]!=a.tag) && (
+				menu[0].at(-1)==_.b||menu[0][_]&&menu[0].push(_.b),
+				menu[0].push(`╔══${a.tag[0]==''?'『':'❨'} ${a.tag.replace(/?\d{2}?/,'')} ${a.tag[0]==''?'』':'❩'}`),
+				menu[0][_]=a.tag
+			),
 
+			menu[1].push(`║⧐ ${'.'+a.command}`),
+			a.onlyGroup || menu[0].push(`║⧐.${a.command}`),
+			menu
+		 ), [[],[]])
+		 .map(a=>a.push(_.b)&&a.join`\n`.trim())
+	_.a=(a,b)=>a<b?-1:a>b?1:0
+	_.b=`╚════════════════❍\n`
+const menu = []
 
 
 template =>
@@ -96,6 +100,7 @@ const Menu = `
 ╔══❨ Game & Fun ❩
 ║⧐ .khodam
 ║⧐ .bomb
+║⧐ .minesweeper
 ║⧐ .tebakgambar
 ║⧐ .tictactoe
 ╚════════════════❍
@@ -116,9 +121,10 @@ const Menu = `
 ║⧐ .deletebuff
 ║⧐ .coryn
 ║⧐ .dye
-║⧐ .xtall
+║⧐ .mq
 ║⧐ .trait
 ║⧐ .uptas
+║⧐ .xtall
 ║⧐ .guide
 ║⧐ .toram
 ╚════════════════❍

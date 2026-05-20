@@ -31,7 +31,7 @@ const unreach = [1942, 2137, 2138, 2139, 2140]
 
 export const command = {
 	command: 'tebakgambar',
-	tag: 'Game & Fun',
+	tag: '03Game & Fun',
 	description: 'Aku punya tebak-tebakan untuk kamu, bisakah kamu menjawabnya?.',
 	help: 'usage: `.tebakgambar [@tag ...]`',
 	handle: async (bot, m) => {
@@ -114,6 +114,7 @@ export const command = {
 					'','*_#kuistebakgambar_*'
 				].join('\n')
 			}, true, {
+				backgroundColor: '',
 				ephemeralExpiration: 86400,
 				quoted: bot.quoteContact(m)
 			})),
@@ -139,7 +140,8 @@ addcmd(
 	'tg',
 	command.handle,
 	{
-		...command
+		...command,
+		visible: false
 	}
 )
 

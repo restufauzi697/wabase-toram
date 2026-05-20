@@ -2,8 +2,6 @@ import yts from 'yt-search'
 
 export const command = {
 	command: 'yts',
-	onlyOwner: false,
-	onlyGroup: false,
 	tag: 'Utilitas',
 	description: 'Pencarian Youtube',
 	help: 'usage: .yts <query>',

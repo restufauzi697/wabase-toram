@@ -11,10 +11,7 @@ const allData = readData().map(
 
 export const command = {
 	command: 'trait',
-	onlyOwner: false,
-	onlyPremium: false,
-	onlyGroup: false,
-	tag: '_Toram Online_',
+	tag: 'Toram Online',
 	description: 'Informasi ability',
 	get help() {
 		return `usage: .trait <query> [page:N]`
@@ -25,10 +22,10 @@ export const command = {
 				return await m.reply('Sebentar ya.. tunggu saya siap.')
 			
 			const query = m.text.replace(/^\S*\b/g, '').toLowerCase().trim()||''
-			const result = search(query)
+			var result = search(query)
 			
 			if(!query&&result)
-				result.text = _tips
+				result = _tips
 			if(result)
 				// await m.reply(result)
 				await m.sendThum2('Trait / Ability System', global.bot.name, result, global.bot.thumb, '', global.bot.adsUrl, false, false, null)
@@ -116,7 +113,7 @@ function renderTraits(data, page) {
 	if (!data.length)
 		return
 	
-	const perPage = 10
+	const perPage = 20
 	const start = page * perPage | 0
 	const dataMap = data
 		 . sort(({tier:a},{tier:b})=>sort(a,b))

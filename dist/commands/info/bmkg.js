@@ -2,10 +2,7 @@ import moment from "moment-timezone"; moment.locale("id");
 
 export const command = {
 	command: 'bmkg',
-	onlyOwner: false,
-	onlyPremium: false,
-	onlyGroup: false,
-	tag: '_Informasi_',
+	tag: 'Informasi',
 	description: 'info gempa dan cuaca dari BMKG.',
 	get help() {
 		return 'usage: `.bmkg <info> [arg...]`\n'

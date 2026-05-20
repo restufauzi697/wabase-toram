@@ -10,7 +10,7 @@ const tips = `
 export const command = {
 	command: 'setwelcome',
 	onlyGroup: true,
-	tag: 'Administratif',
+	tag: '00Administratif',
     description: 'Ubah kata sambutan untuk anggota baru.',
     help: 'usage: `.setwelcome <default | text...>'+tips,
 	handle
@@ -20,8 +20,7 @@ addcmd(
 	'setgoodbye',
 	handle,
 	{
-		onlyGroup: true,
-		tag: 'Administratif',
+		...command,
 		description: 'Set ucapan selamat tinggal kepada anggota yang pergi.',
 		help: 'usage: `.setgoodbye <default | text...>'+tips
 	}

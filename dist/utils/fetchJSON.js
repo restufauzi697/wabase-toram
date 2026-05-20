@@ -18,7 +18,7 @@ async function fetchData(url) {
     const response = await axios.get(url, { responseType: 'arraybuffer' });
     return Buffer.from(response.data, 'binary');
   } catch (error) {
-    console.error(`Error fetching image: ${error}`);
+    console.error(`Error fetching data: ${error}`);
     return null;
   }
 }

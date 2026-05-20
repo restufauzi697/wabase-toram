@@ -2,27 +2,40 @@ import fs from 'fs'
 import path from 'path'
 import logger from '../../utils/logger.js'
 import addcmd from '../../utils/cmd_msg.js'
+import { DICT_STAT_TORAM, Dictionary } from '../../lib/Dictionary.js'
 
 const sortcut = [
 	{
 		command: "addbuff",
 		param: "<stat> <kode> <lvl>",
 		description: 'Menambah kode buff.',
+		options: {
+			index: -1
+		},
 	},
 	{
 		command: "buff",
 		param: "[stat]",
 		description: 'List kode buff.',
+		options: {
+			index: -2
+		},
 	},
 	{
 		command: "deletebuff",
 		param: "<kode> [stat]",
 		description: 'Hapus kode buff.',
+		options: {
+			index: -1
+		},
 	},
 	{
 		command: "guide",
 		param: "<nama|nomor>",
 		description: 'Panduan Toram Online.',
+		options: {
+			index: 1
+		},
 	},
 	{
 		command: "uptas",
@@ -32,11 +45,9 @@ const sortcut = [
 ]
 
 const commandModule = {
+	index: 1,
 	command: 'toram',
-	onlyOwner: false,
-	onlyPremium: false,
-	onlyGroup: false,
-	tag: '_Toram Online_',
+	tag: 'Toram Online',
 	description: 'Guide dan info Toram Online.',
 	get help() {
 		return `usage: .toram <action> [arg...]
@@ -62,7 +73,7 @@ contoh:
 	sortcut
 }
 
-sortcut.map(({command,param, description}) => {
+sortcut.map(({command,param, description, options}) => {
 	addcmd(
 		command,
 		async (bot, m) => {
@@ -70,9 +81,10 @@ sortcut.map(({command,param, description}) => {
 			await action[command]?.(bot, m, arg)
 		},
 		{
-			tag: '_Toram Online_',
+			tag: 'Toram Online',
 			description,
-			help: `usage: ${command} ${param}`
+			help: `usage: ${command} ${param}`,
+			...options
 		}
 	)
 });
@@ -80,64 +92,95 @@ sortcut.map(({command,param, description}) => {
 export const command = commandModule
 
 const action = {
-	async addbuff(bot, m, [stat,code,lvl]) {
-		
-		const axist = toram.Buff.filter(([stat,_code])=> _code == code)
-		
-		if (axist.length > 1) {
-			await m.reply(`Kode ${code} terdaftar memasak buff _${axist.map(([stat, lvl])=>stat+'_ lvl '+lvl).join(' dan _')}. Hapus salah satu untuk mengubah.`)
-		
-		} else if (/^\d{7}$/.test(code) && (lvl<11&&0<lvl) && lang_stat_buff[stat]) {
-			if(axist[0]?.[0] == stat)
-				axist[0][2] = lvl
-			else
-				toram.Buff.push([stat,code,lvl])
-				toram.Buff.sort(([,,a],[,,b])=>-sort(a,b))
-				toram.Buff.sort(([a],[b])=>sort(_.buff[a],_.buff[b]))
-			save()
-			
-			await m.reply('Buff ditambahkan!')
-		} else await m.reply('Gagal menambahkan buff')
-	},
-	async buff(bot, m, [buff]) {
-		let list = toram.Buff, title
-		var text = '*ᴋᴏᴅᴇ ʙᴜꜰꜰ ᴛᴏʀᴀᴍ ᴏɴʟɪɴᴇ*\n'
-		
-		if(buff)
-			if(buff=='list')
-				return await action.list(bot, m, ['buff'])
-			else
-				list = list.filter(([a])=>a==buff)
-		
-		if(list.length)
-			list.forEach ( ([stat,code,lvl])=> {
-				if (title != stat) {
-					text += `\n*${T(stat)}*\n`
-					title = stat
-				}
-				text += `${code} ${stat.replace(/_/g,' ')} Lv ${lvl}\n`
-			})
-		else
-			text += '\n--empty--'
-		if(buff)
-			await m.reply(text)
-		else
-			await m.sendThum2("Toram Online", global.bot.name, text, global.bot.banner, '', _.media, false, false, null)
-	},
-	async deletebuff(bot, m, [_a, _b]) {
-		var fn = ([b,a])=> a == _a
-		if (_b)
-			fn = ([b,a])=> a == _a && b == _b
-		var index = toram.Buff.findIndex(fn)
-		if (index < 0)
-			await m.reply('Gagal menghapus buff')
-		else while (index >= 0) {
-			toram.Buff.splice(index, 1)
-			await m.reply(`Buffland ${_a} ${_b||''} telah dihapus`)
-			
-			index = toram.Buff.findIndex(fn)
+	async addbuff(bot, m, [stat, code, lvl]) {
+		// Koreksi stat input
+		const statId = getStatId(stat);
+		if (!statId) {
+			const suggestions = statDictionary.search(stat).suggestions;
+			const hint = suggestions.length ? ` Mungkin maksudmu: ${suggestions.map(s => s.istilah).join(', ')}` : '';
+			return await m.reply(`Stat "${stat}" tidak dikenali.${hint}`);
 		}
-		save()
+
+		const exists = toram.Buff.filter(([s, c]) => c == code);
+		if (exists.length > 1) {
+			await m.reply(`Kode ${code} terdaftar untuk buff ${exists.map(([s, , l]) => `${s} Lv ${l}`).join(' dan ')}. Hapus salah satu untuk mengubah.`);
+		} else if (/^\d{7}$/.test(code) && (lvl < 11 && lvl > 0)) {
+			const existingSameStat = toram.Buff.find(([s, c]) => s === statId && c === code);
+			if (existingSameStat) {
+				existingSameStat[2] = lvl;
+			} else {
+				toram.Buff.push([statId, code, lvl]);
+				toram.Buff.sort(([, , a], [, , b]) => b - a);
+				toram.Buff.sort(([a], [b]) => _.buff[a] - _.buff[b]);
+			}
+			save();
+			await m.reply(`Buff ${statId} (${lang_stat_buff[statId]}) kode ${code} level ${lvl} ditambahkan!`);
+		} else {
+			await m.reply('Gagal menambahkan buff. Pastikan kode 7 digit dan level 1-10.');
+		}
+	},
+
+	async buff(bot, m, [buffInput]) {
+		let list = toram.Buff;
+		let title;
+		let text = '*ᴋᴏᴅᴇ ʙᴜꜰꜰ ᴛᴏʀᴀᴍ ᴏɴʟɪɴᴇ*\n';
+
+		if (buffInput) {
+			if (buffInput === 'list') {
+				return await action.list(bot, m, ['buff']);
+			}
+			const statId = getStatId(buffInput);
+			if (!statId) {
+				const suggestions = statDictionary.search(buffInput).suggestions;
+				const hint = suggestions.length ? ` Mungkin maksudmu: ${suggestions.map(s => s.istilah).join(', ')}` : '';
+				return await m.reply(`Stat "${buffInput}" tidak dikenali.${hint}`);
+			}
+			list = list.filter(([s]) => s === statId);
+		}
+
+		if (list.length) {
+			list.forEach(([stat, code, lvl]) => {
+				if (title !== stat) {
+					text += `\n*${lang_stat_buff[stat] || stat}*\n`;
+					title = stat;
+				}
+				text += `${code} ${stat} Lv ${lvl}\n`;
+			});
+		} else {
+			text += '\n--empty--';
+		}
+
+		if (buffInput) {
+			await m.reply(text);
+		} else {
+			await m.sendThum2("Toram Online", global.bot.name, text, global.bot.banner, '', _.media, false, false, null);
+		}
+	},
+
+	async deletebuff(bot, m, [code, statInput]) {
+		let filterFn = ([, c]) => c === code;
+		if (statInput) {
+			const statId = getStatId(statInput);
+			if (!statId) {
+				const suggestions = statDictionary.search(statInput).suggestions;
+				const hint = suggestions.length ? ` Mungkin maksudmu: ${suggestions.map(s => s.istilah).join(', ')}` : '';
+				return await m.reply(`Stat "${statInput}" tidak dikenali.${hint}`);
+			}
+			filterFn = ([s, c]) => s === statId && c === code;
+		}
+
+		let index = toram.Buff.findIndex(filterFn);
+		if (index < 0) {
+			await m.reply(`Buff dengan kode ${code}${statInput ? ` dan stat ${statInput}` : ''} tidak ditemukan.`);
+		} else {
+			while (index >= 0) {
+				const [stat, , lvl] = toram.Buff[index];
+				toram.Buff.splice(index, 1);
+				await m.reply(`Buff ${stat} (${lang_stat_buff[stat]}) kode ${code} level ${lvl} telah dihapus.`);
+				index = toram.Buff.findIndex(filterFn);
+			}
+			save();
+		}
 	},
 	async list(bot, m, [page]) {
 		switch(true) {
@@ -191,9 +234,9 @@ const action = {
 		if(!page)
 			return await m.reply('Panduan tidak ditemukan')
 		try {
-			var img, id = _.random(), title = global.bot.name
+			var img, id = _.random(), title = global.bot.name, largImg = false
 			page = fs.readFileSync(page[1], 'utf8')
-			page = page.replace(/@img\[([^\]]+)\]/,($0,$1)=>(img = $1,''))
+			page = page.replace(/@img\[(big:)?([^\]]+)\]/,($0,$1,$2)=>(img = $2, largImg = !!$1,''))
 			page = page.replace(/@title\[(.+?)\]/,($0,$1)=>(title = $1,''))
 			page = page.replace(/@splash(\[(\d+)\]){0,1}/g,($0,$1,$2)=>(_.tips[$2||id]))
 			page = page.trim()
@@ -209,7 +252,7 @@ const action = {
 						img = _.thumb[id]
 					if(img == '!art' || !img)
 						img = global.bot.thumb
-					await m.sendThum2('Toram Online', title, page, img, '', _.media, false, false, null)
+					await m.sendThum2('Toram Online', title, page, img, '', _.media, false, largImg, null)
 				}
 			else
 				await m.reply(page)
@@ -252,6 +295,13 @@ Gunakan: ${command.help.replace('usage:','')}
 
 function save() {
 	global.database.save('toram')
+}
+
+// Helper untuk mendapatkan stat_id dari input user
+function getStatId(input) {
+    if (!input) return null;
+    const result = statDictionary.search(input);
+    return result.match || null;
 }
 
 const lang_stat_buff = {
@@ -323,5 +373,14 @@ const _ = {
 		}).list
 	},
 }
+
+// Instance dictionary untuk koreksi stat
+const statDictionary = new Dictionary(DICT_STAT_TORAM, {
+    threshold: 0.7,
+    autoMatchScore: 0.85,
+    maxSuggestions: 3,
+    separator: /[,;]+/,
+    strictMode: false
+});
 
 _.buff.forEach((a,i)=>(_.buff[a]=i))

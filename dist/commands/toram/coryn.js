@@ -1,71 +1,76 @@
 import exec from "../../utils/coryn/tools.js";
-import logger from '../../utils/logger.js'
+import logger from '../../utils/logger.js';
+import Dictionary from '../../lib/Dictionary.js';
+import { DICT_EQUIP_STAT } from '../../lib/Constants.js';
+import { CommandParser } from '../../lib/utils/CommandParser.js';
 
-export const command = {
-	command: 'coryn',
-	onlyOwner: false,
-	onlyPremium: false,
-	onlyGroup: false,
-	tag: '_Toram Online_',
-	description: 'Tools untuk player Toram Online.',
-	get help() {
-		return `usage: .coryn <tool> argument...
-tools:
-- leveling [level] [gap] [XPGain]
-- search [nama | kategori] [show <number>] [page <halaman>] stats <stat> [>|<|=] <value> ...
+const statDict = new Dictionary(DICT_EQUIP_STAT, {
+    threshold: 0.7,
+    autoMatchScore: 0.85,
+    maxSuggestions: 3
+});
 
-contoh:
-.coryn leveling 76 9`
-	},
-	handle: async (bot, m) => {
-		const cmd = simulateCommandLineArgs(String(m.arguments[0]).toLowerCase())
-		const tool = alias[cmd[0]]
-		
-		await m.reply({ react: { text: '⏳', key: m.key } }, false)
-		try {
-			if(exec[tool])
-				await exec[tool](m, cmd.slice(1), bot)
-			else
-				await m.reply(command.help)
-		} catch(e) {
-			
-		}
-		await m.reply({ react: { text: '', key: m.key } }, false)
-	},
-}
+const commandParser = new CommandParser(statDict, ['search', 'equip']);
 
-const alias = {}
-
-{
-	[
-	  ["leveling", "lvl,level,lv,lvling"],
-	  ["crysta", "xtall", "crystal"],
-	  ["equip", "eq"],
-	  ["search", "cri,fnd,cari,find,temukan"],
-	].map(([A, B]) => {
-		alias [A] = A
-		B.split(',').map(B=>(
-			alias [B] = A
-		))
-	})
+const toolAlias = {
+    leveling: ['leveling', 'lvl', 'level', 'lv', 'lvling'],
+    crysta: ['crysta', 'xtall', 'crystal'],
+    equip: ['equip', 'eq'],
+    search: ['search', 'cri', 'fnd', 'cari', 'find', 'temukan']
 };
 
-function simulateCommandLineArgs(commandLineString) {
-	commandLineString = commandLineString.trim();
+const aliasMap = Object.fromEntries(
+    Object.entries(toolAlias).flatMap(([tool, aliases]) =>
+        aliases.map(a => [a.toLowerCase(), tool])
+    )
+);
 
-	const regex = /"([^"]*)"|'([^']*)'|(\S+)/g;
-	const args = [];
-	let match;
+const getTool = input => aliasMap[input.toLowerCase()] || null;
 
-	while ((match = regex.exec(commandLineString)) !== null) {
-		if (match[1]) {
-			args.push(match[1]); // Tanda kutip ganda
-		} else if (match[2]) {
-			args.push(match[2]); // Tanda kutip tunggal
-		} else {
-			args.push(match[3]); // Argumen tanpa tanda kutip
-		}
-	}
+export const command = {
+    command: 'coryn',
+    tag: 'Toram Online',
+    description: 'Tools untuk player Toram Online.',
+    get help() {
+        return `usage: .coryn <tool> argument...
+tools:
+- leveling <level> [gap] [XPGain]
+- search [nama] [page <halaman>] [limit <number>] [sort <stat>:<asc|desc>] [stats <stat> <operator> <value> ...]
 
-	return args;
-}
+contoh:
+.coryn leveling 76 9
+.coryn search sword show 5 page 2 stats atk > 100`;
+    },
+    handle: async (bot, m) => {
+        const raw = String(m.arguments[0] || '').trim();
+        if (!raw) return m.reply(command.help);
+        
+        const parts = raw.split(/\s+/);
+        const toolName = parts[0].toLowerCase();
+        const tool = getTool(toolName);
+        
+        if (!tool) return m.reply(`Tool tidak dikenal. Gunakan: ${Object.keys(toolAlias).join(', ')}`);
+        
+        const args = parts.slice(1);
+        
+        await m.reply({ react: { text: '⏳', key: m.key } }, false);
+        try {
+            if (/search|equip/.test(tool)) {
+                const parsed = commandParser.parse(`${tool} ${args.join(' ')}`);
+                if (!parsed) {
+                    return m.reply('Format search salah. Contoh: .coryn search sword stats atk > 100 show 5 page 2');
+                }
+                await exec.search(m, parsed);
+            } else if (tool === 'leveling') {
+                await exec.leveling(m, args);
+            } else {
+                // untuk crysta, equip nanti
+                await m.reply(`Tool ${tool} belum diimplementasikan.`);
+            }
+        } catch(e) {
+            logger.error(e);
+            await m.reply(`Error: ${e.message}`);
+        }
+        await m.reply({ react: { text: '', key: m.key } }, false);
+    }
+};

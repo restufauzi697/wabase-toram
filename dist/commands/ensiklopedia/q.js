@@ -5,8 +5,9 @@ import addcmd from '../../utils/cmd_msg.js'
 
 /*===============[0]==============*/
 export const command = {
+	visible: false,
 	command: 'q',
-	tag: 'Ensiklopedia',
+	tag: '01Ensiklopedia',
 	description: "Kamu akan tahu setelah mengetahuinya.",
 	get help() {
 		return `kamu bisa gunakan \`.q <arg...>\` untuk memulai`
@@ -15,7 +16,7 @@ export const command = {
 		try {
 			let d
 			switch (true) {
-				case (jidDecode(m.senderPn)?.user == '62895410813800'):
+				case (jidDecode(m.senderPn)?.user == 'anonim'):
 					await delay(Math.floor(1000 + Math.random()*2000))
 					if (d = await _x_q_one(m.text.slice(3)))
 					await m.reply(d, true, {quoted: null})
@@ -36,7 +37,8 @@ addcmd(
 	{
 		...command,
 		description: "Random quotes penyemngat hari mu.",
-		help: 'usage: `.quotes`'
+		help: 'usage: `.quotes`',
+		visible: true
 	}
 )
 
@@ -56,6 +58,7 @@ addcmd(
 	{
 		...command,
 		description: "Ragam fakta unik penambah wawasan.",
-		help: 'usage: `.fakta`'
+		help: 'usage: `.fakta`',
+		visible: true
 	}
 )

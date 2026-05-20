@@ -7,7 +7,7 @@ export const command = {
 	onlyOwner: false,
 	onlyPremium: false,
 	onlyGroup: false,
-	tag: 'Anime',
+	tag: '02Anime',
 	description: 'kimi wa kakkoii.. honto!!.',
 	get help() {
 		return 'usage:'

@@ -19,8 +19,9 @@ class LCG {
 }
 
 export const command = {
+	index: -2,
 	command: 'khodam',
-	tag: 'Game & Fun',
+	tag: '03Game & Fun',
 	description: 'Cek khodam lewat no.tlp atau kamu bisa sebut nama kamu biar jelas :).',
 	help: 'usage: `.khodam [Nama Lengkap]`',
 	handle: async (bot, m) => {

@@ -3,7 +3,7 @@ export const command = {
 	onlyOwner: false,
 	onlyPremium: false,
 	onlyGroup: false,
-	tag: `Menu ${global.bot.name}`,
+	tag: `Menu ${global.bot.name}`,
 	description: '',
 	get help() {
 		return 'usage: `.help <command>`\n\n`.menu` Menampilkan semua perintah.'

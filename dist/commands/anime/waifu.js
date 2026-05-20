@@ -40,7 +40,7 @@ export const command = {
 	onlyOwner: false,
 	onlyPremium: false,
 	onlyGroup: false,
-	tag: 'Anime',
+	tag: '02Anime',
 	description: 'waifu siapa ini?.',
 	get help() {
 		return 'usage:'
@@ -97,7 +97,7 @@ export const command = {
 }
 
 const API_URL = {
-	 waifu_pics: 'https://api.waifu.pics',
+	// waifu_pics: 'https://api.waifu.pics',
 	//  n_sfw_com: 'https://api.n-sfw.com',
 	//   waifu_im: 'https://api.waifu.im',
 	 nekos_best: 'https://nekos.best/api/v2',
@@ -106,11 +106,11 @@ const API_URL = {
 }
 
 const tags = new Gacha([
-	{ name: 'shinobu', percent: 10, host: new Gacha(arr2i(['waifu_pics'            ])) },
-	{ name: 'megumin', percent: 15, host: new Gacha(arr2i(['waifu_pics'            ])) },
-	{ name: 'waifu',   percent: 60, host: new Gacha(arr2i([{n:'waifu_pics',p:65}, /*{n:'waifu_im',p:40}*/, {n:'nekos_best',p:35}])) },
+	{ name: 'shinobu', percent: 10, host: new Gacha(arr2i(['nekos_best'            ])) },
+	{ name: 'megumin', percent: 15, host: new Gacha(arr2i(['nekosia_cat'            ])) },
+	{ name: 'waifu',   percent: 60, host: new Gacha(arr2i([{n:'pic_re',p:65}, /*{n:'waifu_im',p:40}*/, {n:'nekos_best',p:35}])) },
 	//{ name: 'oppai',   percent: 40, host: new Gacha(arr2i([              'waifu_im'              ])) },
-	{ name: 'neko',    percent: 20, host: new Gacha(arr2i(['waifu_pics',             'nekos_best', 'nekosia_cat'])) },
+	{ name: 'neko',    percent: 20, host: new Gacha(arr2i([/*'waifu_pics'*/,             'nekos_best', 'nekosia_cat'])) },
 	//{ name: 'maid',    percent: 20, host: new Gacha(arr2i([              'waifu_im'])) },
 	{ name: 'kitsune', percent: 20, host: new Gacha(arr2i([                          'nekos_best'])) },
 	{ name: 'art',     percent: 10, host: new Gacha(arr2i(['pic_re'])) },

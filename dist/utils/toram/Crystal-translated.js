@@ -20,7 +20,6 @@ export default async function Xtall() {
 			xtall.name = en[name2] || name
 			xtall.name1 = en[name2] || name1
 			for(let [key,val] of Object.entries(data)) {
-				if (key == 'stats') continue
 				val.forEach(property)
 			}
 		} )

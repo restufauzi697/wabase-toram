@@ -7,7 +7,8 @@ export const command = {
 	onlyOwner: false,
 	onlyPremium: false,
 	onlyGroup: false,
-	tag: 'Ensiklopedia',
+	visible: false,
+	tag: '01Ensiklopedia',
 	description: "Ensiklopedia Al-Qur'an.",
 	get help() {
 		return `usage: 

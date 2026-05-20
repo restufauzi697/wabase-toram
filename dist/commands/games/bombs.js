@@ -32,7 +32,7 @@ lvl.normal = lvl.medium
 
 export const command = {
 	command: 'bomb',
-	tag: 'Game & Fun',
+	tag: '03Game & Fun',
 	description: 'Permainan membuka kotak dan menghindari BOMB!!!',
 	get help(){
 		return [

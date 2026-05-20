@@ -3,9 +3,10 @@ import logger from '../../utils/logger.js'
 import addcmd from '../../utils/cmd_msg.js'
 
 export const command = {
+	index: -2,
 	command: 'kick',
 	onlyGroup: true,
-	tag: 'Administratif',
+	tag: '00Administratif',
 	description: 'Kick member group.',
 	help: help('kick'),
 	handle: async (bot, m) => {
@@ -22,7 +23,8 @@ addcmd(
 	{
 		...command,
 		description: 'Promote admin group.',
-		help: help('promote')
+		help: help('promote'),
+		index: -1
 	}
 )
 
@@ -34,7 +36,8 @@ addcmd(
 	{
 		...command,
 		description: 'Demote admin group.',
-		help: help('demote')
+		help: help('demote'),
+		index: -1
 	}
 )
 

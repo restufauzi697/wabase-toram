@@ -294,7 +294,7 @@ function _id(chat, sender) {
 export const command = {
 	onlyGroup: true,
 	command: 'tictactoe',
-	tag: 'Game & Fun',
+	tag: '03Game & Fun',
 	description: 'Bermain TicTacToe bersama teman mu.',
 	get help(){
 		return [
@@ -323,7 +323,8 @@ addcmd(
 	'ttt',
 	command.handle,
 	{
-		...command
+		...command,
+		visible: false
 	}
 )
 

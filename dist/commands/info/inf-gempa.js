@@ -2,10 +2,7 @@ import {command as bmkg} from './bmkg.js'
 
 export const command = {
 	command: 'inf-gempa',
-	onlyOwner: false,
-	onlyPremium: false,
-	onlyGroup: false,
-	tag: '_Informasi_',
+	tag: 'Informasi',
 	description: '`S` info gempa terbaru dari BMKG.',
 	get help() {
 		return 'usage: .inf-gempa [terkini?]'

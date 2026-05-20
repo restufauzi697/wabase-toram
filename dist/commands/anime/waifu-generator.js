@@ -1,9 +1,10 @@
 export const command = {
+	index: 2,
     command: 'waifu-ai',
     onlyOwner: false,
     onlyPremium: false,
     onlyGroup: false,
-    tag: 'Anime',
+    tag: '02Anime',
     description: 'gak yakin ini waifu kamu.',
     get help() {
         return 'usage: `.nowaifu [ai]`\nGambar anime random dari galery AI.'
