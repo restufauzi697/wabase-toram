@@ -2,7 +2,8 @@ import fs from 'fs'
 import path from 'path'
 
 const pkg = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), 'package.json'), 'utf-8'))
-const repoAssets = "https://raw.githubusercontent.com/restufauzi697/wabase-toram/refs/heads/main/assets"
+const repoAssets = "assets"
+	// "https://raw.githubusercontent.com/restufauzi697/wabase-toram/refs/heads/main/assets"
 	// "https://raw.githubusercontent.com/restufauzi697/wabase-toram/7ad88cf9b40d8e4bfc900cc3a753699f0dd03775/assets"
 
 global.devMode = process.argv.some(arg => arg.includes('-d') || arg.includes('--dev'))
@@ -37,7 +38,7 @@ global.group = {
 
 global.owner = {
     name: 'RobzBot',
-    number: '',
+    number: '62895410813800',
 }
 
 global.database = {

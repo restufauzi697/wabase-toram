@@ -1,6 +1,6 @@
 {
 	"name": "wabase-toram",
-	"version": "1.7.3",
+	"version": "1.7.4",
 	"main": "dist/index.js",
 	"type": "module",
 	"scripts": {
@@ -13,7 +13,7 @@
 	"keywords": [],
 	"author": "Rz",
 	"license": "MIT",
-	"description": "Script Base WhatsApp dengan informasi toram online",
+	"description": "Build bot wa dengan alat dan fitur toram",
 	"devDependencies": {
 		"javascript-obfuscator": "^4.2.2",
 		"nodemon": "^3.1.14",

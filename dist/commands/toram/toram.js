@@ -377,7 +377,7 @@ const _ = {
 // Instance dictionary untuk koreksi stat
 const statDictionary = new Dictionary(DICT_STAT_TORAM, {
     threshold: 0.7,
-    autoMatchScore: 0.85,
+    autoMatchScore: 0.9,
     maxSuggestions: 3,
     separator: /[,;]+/,
     strictMode: false

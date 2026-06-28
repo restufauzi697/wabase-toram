@@ -3,8 +3,8 @@ import logger from '../utils/logger.js'
 import { get, save, remove } from '../utils/session/db.js'
 
 const chat_handler = {}
-const RHYTHMPOM = 'RHYTHMPOM'
-const THM = new Date('2026-05-08T19:59:59+07:00') .getTime()
+// const RHYTHMPOM = 'RHYTHMPOM'
+// const THM = new Date('2026-05-08T19:59:59+07:00') .getTime()
 
 async function messagesUpsert(bot, m) {
 	
@@ -38,7 +38,7 @@ async function messagesUpsert(bot, m) {
 				(r > 2 || r < 8) && await m.reply({text:`_"${m.text}"???_\n coba \`.menu\` kak`, mentions:[m.sender]}, true, null)
 			}
 		}
-		/*[COSTUME-EVENT]*/
+		/*[COSTUME-EVENT]* /
 		else if (/^#RHYTHMPOM\b/i.test(m.text)) {
 			const pom = await get(RHYTHMPOM) || []
 			const [,,,,,,ign]=/(reg(ist(er|e?rasi))?|(men)?daftar(kan)?|ikut|join)\s+(.+)/i.exec(m.text) || []

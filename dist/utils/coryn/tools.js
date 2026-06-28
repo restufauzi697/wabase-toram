@@ -1,6 +1,6 @@
 import axios from "axios";
 import * as cheerio from 'cheerio';
-import search_item from "./search.js";
+// import search_item from "./search.js";
 import logger from '../logger.js'
 
 ///////-Tools Coryn-///////
@@ -82,5 +82,5 @@ async function search(m, parsed) {
 
 export default {
 	leveling,
-	search//(m,arg){return m.reply('Fitur ini sedang dalam proses perawatan.')}
+	search(m){return m.reply('Fitur dialihkan ke `.eq`. lihat cara menggunakan di `.help eq`')}//(m,arg){return m.reply('Fitur ini sedang dalam proses perawatan.')}
 };

@@ -119,7 +119,7 @@ async function start() {
             ?.phoneNumber || ''
             : '' // aku menyerah...
             
-        msg.isOwner = jidDecode(msg.sender)?.user === global.owner.number
+        msg.isOwner = jidDecode(msg.senderPn)?.user === global.owner.number
         msg.isPremium = !!global.database.premium.find(prem => prem == jidDecode(msg.sender)?.user)
         msg.type = getContentType(msg.message)
         msg.body =
@@ -226,10 +226,10 @@ async function start() {
         }
 
 		msg.sendThum = async (text, thumb, title, body, {mentions=Array.from(new Set([msg.sender, ...bot.getMentions(text)])), quoted=msg, adsUrl=global.bot.adsUrl, ...ops}={}) =>
-        	await sendThumb(bot, msg.chat, text, thumbnail, title, body, {mentions, quoted, adsUrl, ...ops})
+        	await sendThumb(bot, msg.chat, text, thumb, title, body, {mentions, quoted, adsUrl, ...ops})
 
-        msg.sendThum2 = async (title, body=null, text, thumbnail, sourceUrl='', mediaUrl='', showAdAttribution, renderLargerThumbnail, quoted=msg, ops) =>
-        	await sendThumb(bot, msg.chat, text, thumbnail, title, body, {mentions: Array.from(new Set([msg.sender, ...bot.getMentions(text)])), quoted, adsUrl: global.bot.adsUrl, ...ops})
+        msg.sendThum2 = async (title, body=null, text, thumb, sourceUrl='', mediaUrl='', showAdAttribution, renderLargerThumbnail, quoted=msg, ops) =>
+        	await sendThumb(bot, msg.chat, text, thumb, title, body, {mentions: Array.from(new Set([msg.sender, ...bot.getMentions(text)])), quoted, adsUrl: global.bot.adsUrl, ...ops})
 
         if (global.devMode) logger.info(msg)
 

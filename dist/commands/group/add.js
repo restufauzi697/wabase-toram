@@ -63,7 +63,7 @@ export const command = {
 			logger.error(e, 'Add menber, Failed')
 			m.reply(`Terjadi kesalahan, tidak bisa menambahkan member group.`);
 		}
-		await m.reply({ react: { text: '️', key: m.key } }, false)
+		await m.reply({ react: { text: '', key: m.key } }, false)
 	}
 }
 

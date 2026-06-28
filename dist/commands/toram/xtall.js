@@ -6,9 +6,9 @@ import logger from '../../utils/logger.js';
 // Inisialisasi dictionary untuk koreksi stat
 const statDict = new Dictionary(DICT_EQUIP_STAT, {
 	separator: /[,;|]+/,
-	threshold: 0.7,
-    autoMatchScore: 0.85,
-    maxSuggestions: 3
+	threshold: 0.65,
+	autoMatchScore: 0.95,
+	maxSuggestions: 5
 });
 
 // Parser khusus untuk xtall (command '.xtall')
