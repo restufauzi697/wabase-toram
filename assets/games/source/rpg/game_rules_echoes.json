@@ -1,0 +1,263 @@
+{
+  "_comment": "Railroad of Echoes - dengan Action Registry middleware",
+  "game_info": {
+    "name": "Railroad of Echoes",
+    "version": "2.0",
+    "description": "Kamu kondektur kereta malam. Bantu hantu sebelum fajar."
+  },
+  "start_node": "start",
+  "start_location": "gerbong_penumpang",
+  "game_specific": {
+    "time_limit": {
+      "enabled": true,
+      "initial_minutes": 60,
+      "cost_per_action": 5,
+      "cost_combat": 10
+    },
+    "sanity": {
+      "enabled": true,
+      "initial": 100,
+      "gain_on_success": 5,
+      "loss_on_fail": 5
+    },
+    "echo_power": {
+      "enabled": true,
+      "initial": 5
+    },
+    "dosa": { "enabled": false }
+  },
+  "player_stats": {
+    "base": {
+      "kekuatan": 3,
+      "kecerdasan": 6,
+      "keberanian": 5,
+      "kecepatan": 4,
+      "karisma": 5,
+      "kesehatan": 100,
+      "sanity": 100,
+      "echo_power": 5
+    },
+    "max": {
+      "kekuatan": 10,
+      "kecerdasan": 10,
+      "keberanian": 10,
+      "kecepatan": 10,
+      "karisma": 10,
+      "kesehatan": 100,
+      "sanity": 100,
+      "echo_power": 10
+    }
+  },
+  "items": [
+    { "id": "lampu_lantern", "name": "Lampu Minyak Tua", "type": "tool", "description": "Menerangi kegelapan." },
+    { "id": "jarum_jahit", "name": "Jarum Jahit Perak", "type": "tool", "description": "Memperbaiki boneka." },
+    { "id": "medali_kehormatan", "name": "Medali Kehormatan", "type": "quest", "description": "Medali prajurit." },
+    { "id": "teh_herbal", "name": "Teh Herbal", "type": "consumable", "effect": "heal_sanity 30", "description": "Pulihkan 30 sanity." }
+  ],
+  "locations": {
+    "gerbong_penumpang": {
+      "name": "Gerbong Penumpang",
+      "description": "Gerbong utama yang sunyi.",
+      "connections": ["gerbong_3", "gerbong_7", "lokomotif"]
+    },
+    "gerbong_3": {
+      "name": "Gerbong 3 - The Lover",
+      "description": "Gerbong mewah. Seorang wanita dengan boneka robek.",
+      "connections": ["gerbong_penumpang"]
+    },
+    "gerbong_7": {
+      "name": "Gerbong 7 - The Soldier",
+      "description": "Gerbong kotor. Prajurit berdiri tegap.",
+      "connections": ["gerbong_penumpang"]
+    },
+    "lokomotif": {
+      "name": "Lokomotif",
+      "description": "Ruang mesin. Kondektur tua memegang tuas.",
+      "connections": ["gerbong_penumpang"]
+    }
+  },
+  "npcs": [
+    {
+      "id": "lover_ghost",
+      "name": "Hantu Wanita (The Lover)",
+      "location": "gerbong_3",
+      "dialog": "Jahit bonekaku.",
+      "hostile": false,
+      "stats": { "kesehatan": 50, "kekuatan": 2, "kecepatan": 5, "defense": 0 }
+    },
+    {
+      "id": "soldier_ghost",
+      "name": "Hantu Prajurit (The Soldier)",
+      "location": "gerbong_7",
+      "dialog": "Ambil medali.",
+      "hostile": false,
+      "stats": { "kesehatan": 70, "kekuatan": 5, "kecepatan": 3, "defense": 2 }
+    },
+    {
+      "id": "conductor_ghost",
+      "name": "Kondektur Hantu",
+      "location": "lokomotif",
+      "dialog": "Gantikan aku.",
+      "hostile": true,
+      "stats": { "kesehatan": 90, "kekuatan": 7, "kecepatan": 6, "defense": 3 }
+    }
+  ],
+  "skill_checks": {
+    "echo_listening": { "base_stat": "echo_power" },
+    "menyamar": { "base_stat": "karisma" }
+  },
+  "combat_rules": {
+    "damage_formula": "attacker_strength + weapon_damage - defender_defense",
+    "hit_chance_base": 0.7,
+    "critical_chance": 0.1
+  },
+  "story_nodes": [
+    {
+      "id": "start",
+      "text": "Kamu terbangun di kereta. Jam 01.00. Kertas: 'Bantu mereka sebelum fajar.'",
+      "options": [
+        { "text": "Gerbong 3 (Lover)", "action": "move_location", "target": "gerbong_3", "next_node": "lover_meet" },
+        { "text": "Gerbong 7 (Soldier)", "action": "move_location", "target": "gerbong_7", "next_node": "soldier_meet" },
+        { "text": "Lokomotif", "action": "move_location", "target": "lokomotif", "next_node": "conductor_meet" }
+      ]
+    },
+    {
+      "id": "lover_meet",
+      "text": "Lila: 'Tolong jahit bonekaku. Cari jarum perak di bagasi.'",
+      "options": [
+        { "text": "Echo Listening (DC 12)", "action": "skill_check", "skill": "echo_listening", "difficulty": 12, "next_node_success": "lover_echo_success", "next_node_fail": "lover_echo_fail" },
+        { "text": "Cari jarum", "action": "special", "special_type": "find_needle", "next_node": "lover_needle" },
+        { "text": "Tinggalkan", "action": "move_location", "target": "gerbong_penumpang", "next_node": "start" }
+      ]
+    },
+    {
+      "id": "lover_echo_success",
+      "text": "Kamu dengar ingatan Lila. Dia tersenyum dan lenyap.",
+      "options": [
+        { "text": "Lanjut", "action": "move_location", "target": "gerbong_penumpang", "next_node": "start" }
+      ]
+    },
+    {
+      "id": "lover_echo_fail",
+      "text": "Gagal. Lila sedih.",
+      "options": [
+        { "text": "Coba lagi (DC 15)", "action": "skill_check", "skill": "echo_listening", "difficulty": 15, "next_node_success": "lover_echo_success", "next_node_fail": "lover_combat" }
+      ]
+    },
+    {
+      "id": "lover_combat",
+      "text": "Lila marah dan menyerang!",
+      "options": [
+        { "text": "Lawan", "action": "combat", "target": "lover_ghost", "next_node_on_win": "lover_combat_win", "next_node_on_lose": "game_over" }
+      ]
+    },
+    {
+      "id": "lover_combat_win",
+      "text": "Kamu kalahkan Lila, dia pergi tanpa damai.",
+      "options": [
+        { "text": "Lanjut", "action": "move_location", "target": "gerbong_penumpang", "next_node": "start" }
+      ]
+    },
+    {
+      "id": "lover_needle",
+      "text": "Kamu temukan jarum dan jahit boneka. Lila lenyap dengan tenang.",
+      "options": [
+        { "text": "Lanjut", "action": "move_location", "target": "gerbong_penumpang", "next_node": "start" }
+      ]
+    },
+    {
+      "id": "soldier_meet",
+      "text": "Hendra: 'Ambil medali kehormatanku di lokomotif.'",
+      "options": [
+        { "text": "Echo Listening (DC 14)", "action": "skill_check", "skill": "echo_listening", "difficulty": 14, "next_node_success": "soldier_echo_success", "next_node_fail": "soldier_echo_fail" },
+        { "text": "Cari medali", "action": "special", "special_type": "find_medal", "next_node": "soldier_medal" },
+        { "text": "Tinggalkan", "action": "move_location", "target": "gerbong_penumpang", "next_node": "start" }
+      ]
+    },
+    {
+      "id": "soldier_echo_success",
+      "text": "Kamu dengar kebenaran: Hendra bukan pengecut. Dia pergi damai.",
+      "options": [
+        { "text": "Lanjut", "action": "move_location", "target": "gerbong_penumpang", "next_node": "start" }
+      ]
+    },
+    {
+      "id": "soldier_echo_fail",
+      "text": "Gagal. Hendra sakit hati.",
+      "options": [
+        { "text": "Coba lagi (DC 16)", "action": "skill_check", "skill": "echo_listening", "difficulty": 16, "next_node_success": "soldier_echo_success", "next_node_fail": "soldier_combat" }
+      ]
+    },
+    {
+      "id": "soldier_combat",
+      "text": "Hendra menyerang dengan bayonet.",
+      "options": [
+        { "text": "Lawan", "action": "combat", "target": "soldier_ghost", "next_node_on_win": "soldier_combat_win", "next_node_on_lose": "game_over" }
+      ]
+    },
+    {
+      "id": "soldier_combat_win",
+      "text": "Kamu kalahkan Hendra, dia pergi marah.",
+      "options": [
+        { "text": "Lanjut", "action": "move_location", "target": "gerbong_penumpang", "next_node": "start" }
+      ]
+    },
+    {
+      "id": "soldier_medal",
+      "text": "Kamu ambil medali, berikan ke Hendra. Dia tenang dan lenyap.",
+      "options": [
+        { "text": "Lanjut", "action": "move_location", "target": "gerbong_penumpang", "next_node": "start" }
+      ]
+    },
+    {
+      "id": "conductor_meet",
+      "text": "Kondektur tua: 'Gantikan aku, atau hancur.'",
+      "options": [
+        { "text": "Echo Listening (DC 18)", "action": "skill_check", "skill": "echo_listening", "difficulty": 18, "next_node_success": "conductor_echo_success", "next_node_fail": "conductor_fight" },
+        { "text": "Tawarkan diri gantikan", "action": "special", "special_type": "bad_ending", "next_node": "bad_ending" },
+        { "text": "Lawan", "action": "combat", "target": "conductor_ghost", "next_node_on_win": "final_win", "next_node_on_lose": "game_over" }
+      ]
+    },
+    {
+      "id": "conductor_echo_success",
+      "text": "Kau dengar kesedihannya. Dia lepaskan tuas. Fajar tiba. AKHIR BAIK.",
+      "options": []
+    },
+    {
+      "id": "conductor_fight",
+      "text": "Echo gagal. Kondektur menyerang!",
+      "options": [
+        { "text": "Lawan", "action": "combat", "target": "conductor_ghost", "next_node_on_win": "final_win", "next_node_on_lose": "game_over" }
+      ]
+    },
+    {
+      "id": "final_win",
+      "text": "Kamu kalahkan kondektur. Kereta berhenti. Fajar menyingsing. AKHIR BAIK.",
+      "options": []
+    },
+    {
+      "id": "bad_ending",
+      "text": "Kamu jadi kondektur abadi. GAME OVER.",
+      "options": []
+    },
+    {
+      "id": "game_over",
+      "text": "Kegelapan menyelimuti. GAME OVER.",
+      "options": []
+    }
+  ],
+  "middleware": {
+    "beforeAction": [
+      { "type": "checkSanity", "threshold": 20, "cancelMsg": "Sanity terlalu rendah, kamu pingsan." }
+    ],
+    "afterAction": [
+      { "type": "modifyStats", "sanity": 2 },
+      { "type": "appendText", "text": "\n[Suara bisikan di kejauhan]" }
+    ],
+    "specialHandlers": {
+      "find_needle": { "type": "giveItem", "item": "jarum_jahit", "statMod": { "sanity": 5, "echo_power": 1 }, "message": "🧵 Kamu menemukan jarum jahit perak." },
+      "find_medal": { "type": "giveItem", "item": "medali_kehormatan", "statMod": { "kekuatan": 1 }, "message": "🎖️ Kamu menemukan medali kehormatan." },
+      "bad_ending": { "type": "jumpToNode", "node": "bad_ending", "message": "💀" }
+    }
+  }
+}

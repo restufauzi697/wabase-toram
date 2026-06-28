@@ -1,0 +1,319 @@
+{
+  "_comment": "Neo-Tokyo 2099 - Cyberpunk dengan sistem faksi dan reputasi",
+  "game_info": {
+    "name": "Neo-Tokyo 2099: Sistem Reboot",
+    "version": "1.0",
+    "description": "Tahun 2099, Neo-Tokyo dikuasai tiga faksi: Korporasi Arasaka, Perlawanan Bawah Tanah, dan Birokrasi Pemerintah. Kau adalah hacker bayaran yang punya akses ke AI kuno. Pilih jalurmu, bentuk masa depan kota."
+  },
+  "start_node": "start",
+  "start_location": "cyber_alley",
+  "game_specific": {
+    "time_limit": { "enabled": true, "initial_minutes": 72, "cost_per_action": 2, "cost_combat": 5 },
+    "sanity": { "enabled": true, "initial": 60, "gain_on_success": 5, "loss_on_fail": 10 },
+    "echo_power": { "enabled": true, "initial": 3 }
+  },
+  "player_stats": {
+    "base": {
+      "kekuatan": 3,
+      "kecerdasan": 8,
+      "keberanian": 5,
+      "kecepatan": 6,
+      "karisma": 4,
+      "kesehatan": 80,
+      "sanity": 60,
+      "cyber_skill": 7,
+      "reputasi_arasaka": 0,
+      "reputasi_perlawanan": 0,
+      "reputasi_birokrasi": 0,
+      "koneksi": 2,
+      "kekayaan": 500
+    },
+    "max": {
+      "kekuatan": 10,
+      "kecerdasan": 10,
+      "keberanian": 10,
+      "kecepatan": 10,
+      "karisma": 10,
+      "kesehatan": 100,
+      "sanity": 100,
+      "cyber_skill": 15,
+      "reputasi_arasaka": 100,
+      "reputasi_perlawanan": 100,
+      "reputasi_birokrasi": 100,
+      "koneksi": 10,
+      "kekayaan": 5000
+    }
+  },
+  "items": [
+    { "id": "cyberdeck_a1", "name": "Cyberdeck A-1", "type": "tool", "description": "Menambah cyber_skill +2 saat digunakan." },
+    { "id": "neural_implant", "name": "Neural Implant", "type": "consumable", "effect": "heal_sanity 20", "description": "Stabilkan saraf." },
+    { "id": "senjata_plasma", "name": "Pistol Plasma", "type": "weapon", "damage": 10, "description": "Senjata energi mematikan." },
+    { "id": "kode_akses", "name": "Kode Akses Menara", "type": "key_item", "description": "Membuka pintu rahasia Arasaka." },
+    { "id": "data_chip", "name": "Data Chip Bukti", "type": "key_item", "description": "Berisi rekaman korupsi birokrat." },
+    { "id": "cloak_device", "name": "Cloak Device", "type": "armor", "defense": 3, "description": "Membuat hampir tak terlihat." }
+  ],
+  "locations": {
+    "cyber_alley": {
+      "name": "Cyber Alley",
+      "description": "Gang neon dengan pedagang ilegal, hacker, dan preman cyborg. Udara berasap dan ramai suara drum & bass."
+    },
+    "arasaka_tower": {
+      "name": "Arasaka Tower",
+      "description": "Gedung pencakar langit kaca gelap, dijaga drone dan tentara swasta. Simbol kekuasaan absolut korporasi."
+    },
+    "underground_hq": {
+      "name": "Markas Perlawanan",
+      "description": "Ruang bawah tanah bekas stasiun kereta, dindingnya penuh grafiti protes. Para pemberontak merencanakan serangan."
+    },
+    "gov_center": {
+      "name": "Pusat Birokrasi",
+      "description": "Gedung pemerintahan yang megah tapi korup. Banyak politisi bermuka dua. Di dalam ada server pusat data warga."
+    },
+    "black_market": {
+      "name": "Pasar Gelap",
+      "description": "Tempat jual beli organ, senjata ilegal, dan data curian. Penjualnya berbahaya tapi barangnya berkualitas."
+    },
+    "neural_clinic": {
+      "name": "Klinik Neural",
+      "description": "Tempat modifikasi otak dan penyembuhan trauma. Tapi ada rahasia: pasien dijadikan budak cyber."
+    }
+  },
+  "npcs": [
+    {
+      "id": "riko",
+      "name": "Riko (Peretas Perlawanan)",
+      "location": "underground_hq",
+      "dialog": "Kami butuh kode akses menara Arasaka. Bantu kami, dan kami akan lindungi keluargamu.",
+      "hostile": false,
+      "stats": { "kesehatan": 60, "kekuatan": 2, "kecepatan": 5 }
+    },
+    {
+      "id": "oni",
+      "name": "Oni (Pembunuh Bayaran Arasaka)",
+      "location": "arasaka_tower",
+      "hostile": true,
+      "stats": { "kesehatan": 90, "kekuatan": 8, "kecepatan": 7, "defense": 4 }
+    },
+    {
+      "id": "birokrat_tanaka",
+      "name": "Birokrat Tanaka",
+      "location": "gov_center",
+      "dialog": "Aku bisa naikkan reputasimu di pemerintahan... jika kau 'bantu' aku melenyapkan lawan politik.",
+      "hostile": false,
+      "stats": { "kesehatan": 40, "kekuatan": 1, "kecepatan": 2 }
+    },
+    {
+      "id": "pedagang_bel",
+      "name": "Pedagang Ilegal",
+      "location": "black_market",
+      "dialog": "Butuh senjata atau chip? Bayar atau kerja untukku.",
+      "hostile": false,
+      "stats": { "kesehatan": 70, "kekuatan": 4, "kecepatan": 4 }
+    }
+  ],
+  "skill_checks": {
+    "hacking": { "base_stat": "cyber_skill" },
+    "negosiasi": { "base_stat": "karisma" },
+    "intimidasi": { "base_stat": "keberanian" },
+    "stealth": { "base_stat": "kecepatan" },
+    "analisis": { "base_stat": "kecerdasan" }
+  },
+  "combat_rules": {},
+  "story_nodes": [
+    {
+      "id": "start",
+      "text": "Neo-Tokyo, 2099. Kau duduk di kedai kopi gelap. Ponselmu bergetar: tiga pesanan dari tiga faksi. Siapa yang akan kau bantu? Waktu terus berjalan (72 jam).",
+      "options": [
+        { "text": "Bantu Perlawanan (Riko)", "action": "move_location", "target": "underground_hq", "next_node": "resistance_start" },
+        { "text": "Bantu Arasaka (Oni)", "action": "move_location", "target": "arasaka_tower", "next_node": "corpo_start" },
+        { "text": "Bantu Birokrasi (Tanaka)", "action": "move_location", "target": "gov_center", "next_node": "gov_start" },
+        { "text": "Pergi ke pasar gelap dulu", "action": "move_location", "target": "black_market", "next_node": "market_node" }
+      ]
+    },
+    {
+      "id": "resistance_start",
+      "text": "Riko menyambutmu: 'Hacker, kami butuh kode akses menara Arasaka. Masuk lewat saluran bawah tanah. Jika berhasil, kota ini akan bebas. Jika gagal... jangan sampai tertangkap.'",
+      "options": [
+        { "text": "Menyusup ke Arasaka Tower", "action": "skill_check", "skill": "stealth", "difficulty": 16, "next_node_success": "infiltration_win", "next_node_fail": "infiltration_fail" },
+        { "text": "Cari bantuan di pasar gelap", "action": "move_location", "target": "black_market", "next_node": "market_node" },
+        { "text": "Tolak bantuan, pilih faksi lain", "action": "move_location", "target": "arasaka_tower", "next_node": "corpo_start" }
+      ]
+    },
+    {
+      "id": "infiltration_win",
+      "text": "Kau menyusup ke menara, mengalahkan beberapa drone. Di server pusat, kau dapat kode akses dan data kejahatan Arasaka. Reputasi Perlawanan +20, Reputasi Arasaka -30.",
+      "options": [
+        { "text": "Kembali ke Riko dengan kode", "action": "move_location", "target": "underground_hq", "next_node": "resistance_win" },
+        { "text": "Jual data ke birokrasi", "action": "move_location", "target": "gov_center", "next_node": "sell_data" }
+      ]
+    },
+    {
+      "id": "infiltration_fail",
+      "text": "Kau tertangkap drone. Oni, pembunuh bayaran, menyiksamu. Kau kehilangan 20 HP dan 15 Sanity. Namun Riko berhasil menyelamatkanmu.",
+      "options": [
+        { "text": "Coba lagi dengan bantuan Riko", "action": "skill_check", "skill": "hacking", "difficulty": 18, "next_node_success": "infiltration_win", "next_node_fail": "game_over_arrested" }
+      ]
+    },
+    {
+      "id": "resistance_win",
+      "text": "Riko menggunakan kode untuk mematikan sistem pertahanan Arasaka. Perlawanan menyerbu menara. Arasaka tumbang. Neo-Tokyo merdeka, tapi korporasi lain mulai bergerak. Kau menjadi pahlawan bawah tanah. Sanity +20, Reputasi Perlawanan +50. Waktu tersisa 40 jam.",
+      "options": [
+        { "text": "Lanjut ke babak final: hadapi sisa korporasi", "action": "special", "special_type": "final_resistance", "next_node": "ending_1" }
+      ]
+    },
+    {
+      "id": "corpo_start",
+      "text": "Oni duduk di kursi mewah: 'Aku tahu kau hacker andal. Bantu kami lacak markas Perlawanan. Bayaran besar, atau kau mati. Pilih.'",
+      "options": [
+        { "text": "Terima misi Arasaka", "action": "skill_check", "skill": "hacking", "difficulty": 14, "next_node_success": "corpo_mission_win", "next_node_fail": "corpo_fail" },
+        { "text": "Tolak dan kabur", "action": "skill_check", "skill": "stealth", "difficulty": 17, "next_node_success": "escape_corpo", "next_node_fail": "game_over_killed" }
+      ]
+    },
+    {
+      "id": "corpo_mission_win",
+      "text": "Kau lacak markas Perlawanan. Oni memberimu 2000 kredit. Reputasi Arasaka +30, Reputasi Perlawanan -40. Sanity -5 (merasa bersalah).",
+      "options": [
+        { "text": "Ikuti serangan Arasaka ke markas", "action": "combat", "target": "riko", "next_node_on_win": "corpo_ending_bad", "next_node_on_lose": "game_over" },
+        { "text": "Beri tahu Riko secara diam-diam", "action": "skill_check", "skill": "stealth", "difficulty": 19, "next_node_success": "double_agent", "next_node_fail": "corpo_ending_bad" }
+      ]
+    },
+    {
+      "id": "double_agent",
+      "text": "Kau peringatkan Riko. Perlawanan pindah tempat. Arasaka gagal total, Oni tewas. Kau jadi mata-mata ganda. Reputasi Perlawanan +30, Reputasi Arasaka -50. Sanity +10.",
+      "options": [
+        { "text": "Lanjut ke akhir sebagai mata-mata", "action": "special", "special_type": "ending_double_agent", "next_node": "ending_3" }
+      ]
+    },
+    {
+      "id": "corpo_fail",
+      "text": "Gagal melacak. Oni marah dan memotong satu jarimu. Kekuatan -1, Sanity -15.",
+      "options": [
+        { "text": "Kabur ke klinik neural", "action": "move_location", "target": "neural_clinic", "next_node": "clinic_node" }
+      ]
+    },
+    {
+      "id": "clinic_node",
+      "text": "Di klinik, dokter menawarkan implant murah. Tapi ada syarat: kau harus menjadi 'subjek uji'.",
+      "options": [
+        { "text": "Terima implant", "action": "special", "special_type": "implant", "next_node": "implant_ending" },
+        { "text": "Tolak dan kabur", "action": "move_location", "target": "cyber_alley", "next_node": "start" }
+      ]
+    },
+    {
+      "id": "gov_start",
+      "text": "Tanaka tersenyum licik: 'Kau akan kusuruh membunuh lawan politikku, seorang jurnalis. Hadiah 500 kredit. Atau kau bisa membantuku mengatur pemilu curang.'",
+      "options": [
+        { "text": "Setuju bunuh jurnalis", "action": "special", "special_type": "kill_journalist", "next_node": "gov_ending_killer" },
+        { "text": "Tolak dan rekam percakapannya", "action": "skill_check", "skill": "stealth", "difficulty": 16, "next_node_success": "expose_tanaka", "next_node_fail": "gov_fail" }
+      ]
+    },
+    {
+      "id": "expose_tanaka",
+      "text": "Kau rekam Tanaka dan sebarkan ke media. Dia ditangkap. Reputasi Birokrasi -40, Reputasi Perlawanan +20. Kau menjadi pahlawan anti-korupsi.",
+      "options": [
+        { "text": "Lanjut ke akhir pahlawan", "action": "special", "special_type": "ending_hero", "next_node": "ending_2" }
+      ]
+    },
+    {
+      "id": "gov_fail",
+      "text": "Tanaka tahu kau merekam. Dia suruh preman menghajarmu. HP -30, Sanity -20. Kau kabur ke cyber alley.",
+      "options": [
+        { "text": "Cari bantuan Perlawanan", "action": "move_location", "target": "underground_hq", "next_node": "resistance_start" }
+      ]
+    },
+    {
+      "id": "market_node",
+      "text": "Di pasar gelap, pedagang menawarkan barang: Cyberdeck A-1 (300 kredit), Neural Implant (200), Pistol Plasma (500). Atau kau bisa kerjakan misi kecil untuknya.",
+      "options": [
+        { "text": "Beli Cyberdeck", "action": "special", "special_type": "beli_cyberdeck", "next_node": "market_after" },
+        { "text": "Beli Pistol", "action": "special", "special_type": "beli_pistol", "next_node": "market_after" },
+        { "text": "Terima misi: curi data dari klinik neural", "action": "move_location", "target": "neural_clinic", "next_node": "clinic_mission" }
+      ]
+    },
+    {
+      "id": "clinic_mission",
+      "text": "Di klinik, kau curi data pasien. Ternyata klinik melakukan eksperimen otak ilegal. Kau bisa lapor polisi atau jual data ke pedagang.",
+      "options": [
+        { "text": "Jual data ke pedagang (dapat 400 kredit)", "action": "special", "special_type": "sell_data_market", "next_node": "ending_blackmarket" },
+        { "text": "Lapor ke Perlawanan (tingkatkan reputasi)", "action": "move_location", "target": "underground_hq", "next_node": "resistance_start" }
+      ]
+    },
+    {
+      "id": "market_after",
+      "text": "Kau kembali ke cyber alley dengan barang baru. Sekarang pilih faksi.",
+      "options": [
+        { "text": "Perlawanan", "action": "move_location", "target": "underground_hq", "next_node": "resistance_start" },
+        { "text": "Arasaka", "action": "move_location", "target": "arasaka_tower", "next_node": "corpo_start" },
+        { "text": "Birokrasi", "action": "move_location", "target": "gov_center", "next_node": "gov_start" }
+      ]
+    },
+    {
+      "id": "implant_ending",
+      "text": "Implant membuatmu kehilangan kendali. Kau menjadi budak cyber klinik. **Ending: Kehilangan Jati Diri**",
+      "options": []
+    },
+    {
+      "id": "game_over_arrested",
+      "text": "Kau ditangkap Arasaka dan diubah menjadi cyborg tanpa ingatan. GAME OVER.",
+      "options": []
+    },
+    {
+      "id": "game_over_killed",
+      "text": "Kau tewas dalam misi. GAME OVER.",
+      "options": []
+    },
+    {
+      "id": "ending_1",
+      "text": "Perlawanan menang, tapi Neo-Tokyo jatuh ke dalam anarki. Kau diasingkan ke zona radiasi. Sanity akhir: {sanity}, Dosa: {dosa}, Reputasi Perlawanan: {reputasi_perlawanan}. **Ending: Pahlawan Pengasingan**",
+      "options": []
+    },
+    {
+      "id": "ending_2",
+      "text": "Kau ungkap korupsi birokrasi dan menjadi wali kota baru. Kota berubah lebih baik. **Ending: Pemimpin Bersih**",
+      "options": []
+    },
+    {
+      "id": "ending_3",
+      "text": "Sebagai mata-mata, kau bermain di dua sisi. Pada akhirnya kedua faksi hancur. Kau membangun kerajaan sendiri. **Ending: Dalang Bayangan**",
+      "options": []
+    },
+    {
+      "id": "corpo_ending_bad",
+      "text": "Arasaka menghancurkan Perlawanan. Kau jadi eksekutif kaya tapi dibenci rakyat. **Ending: Serigala Berdasi**",
+      "options": []
+    },
+    {
+      "id": "gov_ending_killer",
+      "text": "Kau bunuh jurnalis. Tanaka menaikkan pangkatmu. Tapi hati nuranimu mati. Dosa +40, Sanity -50. **Ending: Algojo Birokrasi**",
+      "options": []
+    },
+    {
+      "id": "ending_blackmarket",
+      "text": "Kau menjadi raja pasar gelap. Kaya raya tapi terus diburu. **Ending: Raja Ilegal**",
+      "options": []
+    },
+    {
+      "id": "escape_corpo",
+      "text": "Kau kabur dari Arasaka dan bersembunyi di bawah tanah. Hidup sebagai buronan. **Ending: Buronan Abadi**",
+      "options": []
+    }
+  ],
+  "middleware": {
+    "beforeAction": [
+      { "type": "checkSanity", "threshold": 15, "cancelMsg": "Sanity-mu nol. Kau menjadi gila dan mati di jalanan. GAME OVER." }
+    ],
+    "afterAction": [
+      { "type": "appendText", "text": "\n[Waktu tersisa: {timeLeft} jam]" }
+    ],
+    "specialHandlers": {
+      "beli_cyberdeck": { "type": "giveItem", "item": "cyberdeck_a1", "statMod": { "kekayaan": -300, "cyber_skill": 2 }, "message": "Kamu membeli Cyberdeck. +2 Cyber Skill." },
+      "beli_pistol": { "type": "giveItem", "item": "senjata_plasma", "statMod": { "kekayaan": -500 }, "message": "Pistol plasma siap digunakan." },
+      "sell_data_market": { "type": "modifyStats", "kekayaan": 400, "dosa": 10 },
+      "implant": { "type": "modifyStats", "sanity": -30, "kesehatan": 20, "dosa": 15 },
+      "kill_journalist": { "type": "modifyStats", "dosa": 30, "sanity": -20, "reputasi_birokrasi": 20 },
+      "final_resistance": { "type": "modifyStats", "reputasi_perlawanan": 50, "sanity": 10 },
+      "ending_double_agent": { "type": "modifyStats", "reputasi_perlawanan": 30, "reputasi_arasaka": -30, "sanity": 15 },
+      "ending_hero": { "type": "modifyStats", "reputasi_birokrasi": -20, "reputasi_perlawanan": 30, "sanity": 25 }
+    }
+  }
+}

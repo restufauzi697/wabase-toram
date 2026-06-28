@@ -1,0 +1,18 @@
+[
+	{
+		"title": "Melawan Korupsi: The Last Stand",
+		"src": "./assets/games/source/rpg/game_rules_corruption.json"
+	},
+	{
+		"title": "Neo-Tokyo 2099: Sistem Reboot",
+		"src": "./assets/games/source/rpg/game_rules_neotokyo.json"
+	},
+	{
+		"title": "Railroad of Echoes",
+		"src": "./assets/games/source/rpg/game_rules_echoes.json"
+	},
+	{
+		"title": "The God Game",
+		"src": "./assets/games/source/rpg/game_rules_god.json"
+	}
+]

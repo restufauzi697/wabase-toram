@@ -1,0 +1,372 @@
+{
+  "_comment": "Melawan Korupsi: The Last Stand - Edisi Lengkap dengan Plot Twist dan 8 Ending",
+  "game_info": {
+    "name": "Melawan Korupsi: The Last Stand",
+    "version": "2.0",
+    "description": "Kamu adalah jurnalis muda yang nekat membongkar jaringan korupsi tingkat tinggi. Setiap pilihan menentukan nasib kota dan jiwamu."
+  },
+  "start_node": "start",
+  "start_location": "kantor_berita",
+  "game_specific": {
+    "time_limit": { "enabled": false },
+    "sanity": { "enabled": true, "initial": 80, "gain_on_success": 5, "loss_on_fail": 10 },
+    "dosa": { "enabled": true, "initial": 0 },
+    "echo_power": { "enabled": false }
+  },
+  "player_stats": {
+    "base": {
+      "kekuatan": 3,
+      "kecerdasan": 7,
+      "keberanian": 6,
+      "kecepatan": 4,
+      "karisma": 6,
+      "kesehatan": 100,
+      "sanity": 80,
+      "dosa": 0
+    },
+    "max": {
+      "kekuatan": 10,
+      "kecerdasan": 10,
+      "keberanian": 10,
+      "kecepatan": 10,
+      "karisma": 10,
+      "kesehatan": 100,
+      "sanity": 100,
+      "dosa": 100
+    }
+  },
+  "items": [
+    { "id": "kamera_tersembunyi", "name": "Kamera Tersembunyi", "type": "tool", "description": "Merekam bukti tanpa diketahui." },
+    { "id": "amplop_uang", "name": "Amplop Berisi Uang", "type": "key_item", "description": "Suap 50 juta rupiah." },
+    { "id": "flashdisk", "name": "Flashdisk Bukti", "type": "key_item", "description": "Berisi rekaman percakapan walikota." },
+    { "id": "jaket_antipeluru", "name": "Jaket Antipeluru", "type": "armor", "defense": 5, "description": "Melindungi dari tembakan." },
+    { "id": "pistol", "name": "Pistol 9mm", "type": "weapon", "damage": 8, "description": "Senjata api ilegal." },
+    { "id": "obat_penenang", "name": "Obat Penenang", "type": "consumable", "effect": "heal_sanity 20", "description": "Pulihkan 20 sanity." },
+    { "id": "surat_wasiat", "name": "Surat Wasiat", "type": "key_item", "description": "Dari sahabat yang tewas." }
+  ],
+  "locations": {
+    "kantor_berita": {
+      "name": "Kantor Berita Independen",
+      "description": "Ruangan redaksi yang sempit. Meja penuh kertas dan laptop. Redakturmu, Maya, sedang gelisah. 'Kita harus hati-hati, mereka mulai memburu jurnalis.'"
+    },
+    "jalan_utama": {
+      "name": "Jalan Sudirman",
+      "description": "Jalan raya padat dengan gedung pencakar langit. Baliho walikota terpampang dimana-mana. Di sudut, seorang pengemis memegang papan bertuliskan 'Mereka mencuri masa depanku'."
+    },
+    "kafe_tersembunyi": {
+      "name": "Kafe 'Kebebasan'",
+      "description": "Kafe bawah tanah yang sering jadi tempat pertemuan aktivis. Dindingnya penuh grafiti anti-korupsi. Musik jazz mengalun pelan."
+    },
+    "markas_polisi": {
+      "name": "Markas Polisi Metropolitan",
+      "description": "Gedung megah dengan bendera merah putih. Tapi banyak polisi terlihat malas dan menerima amplop. Ada sel tahanan di lantai bawah."
+    },
+    "gudang_pelabuhan": {
+      "name": "Gudang Tua Pelabuhan",
+      "description": "Gudang berkarat tempat transaksi gelap. Bau amis dan minyak. Lampu berkedip-kedip. Kedengaran suara mesin hitung uang."
+    },
+    "rumah_walikota": {
+      "name": "Villa Mewah Walikota",
+      "description": "Villa besar di pinggiran kota dengan kolam renang. Dijaga ketat oleh preman. Dari balik jendela, terlihat walikota sedang tertawa bersama bos mafia."
+    },
+    "rumah_sakit": {
+      "name": "Rumah Sakit St. Maria",
+      "description": "Rumah sakit tempat sahabatmu, Andi, dirawat setelah ditembak. Ruang ICU sunyi. Bau antiseptik menusuk hidung."
+    }
+  },
+  "npcs": [
+    {
+      "id": "maya",
+      "name": "Maya (Redaktur)",
+      "location": "kantor_berita",
+      "dialog": "Hati-hati, mereka sudah tahu identitas kita. Ini kartu memori berisi bukti awal.",
+      "hostile": false,
+      "stats": { "kesehatan": 50, "kekuatan": 1, "kecepatan": 2 }
+    },
+    {
+      "id": "pengemis",
+      "name": "Pengemis Tua",
+      "location": "jalan_utama",
+      "dialog": "Aku dulu saksi korupsi. Mereka bunuh keluargaku. Ambil buku catatan ini.",
+      "hostile": false,
+      "stats": { "kesehatan": 20, "kekuatan": 1, "kecepatan": 1 }
+    },
+    {
+      "id": "preman_walikota",
+      "name": "Preman Bayaran",
+      "location": "rumah_walikota",
+      "hostile": true,
+      "stats": { "kesehatan": 60, "kekuatan": 6, "kecepatan": 5, "defense": 2 }
+    },
+    {
+      "id": "bos_mafia",
+      "name": "Bos Mafia 'Raja'",
+      "location": "gudang_pelabuhan",
+      "hostile": true,
+      "stats": { "kesehatan": 100, "kekuatan": 8, "kecepatan": 4, "defense": 4 }
+    },
+    {
+      "id": "polisi_korup",
+      "name": "Inspektur Kurniawan",
+      "location": "markas_polisi",
+      "hostile": false,
+      "dialog": "Aku tahu walikota korup, tapi aku butuh uang. Bantu aku, aku akan memberimu bukti.",
+      "stats": { "kesehatan": 70, "kekuatan": 5, "kecepatan": 3 }
+    },
+    {
+      "id": "pengacara",
+      "name": "Pengacara Independen",
+      "location": "kafe_tersembunyi",
+      "dialog": "Siap membantu jika ada bukti kuat. Tapi hati-hati, mereka punya mata-mata.",
+      "hostile": false,
+      "stats": { "kesehatan": 40, "kekuatan": 2, "kecepatan": 2 }
+    }
+  ],
+  "skill_checks": {
+    "logika": { "base_stat": "kecerdasan" },
+    "negosiasi": { "base_stat": "karisma" },
+    "intimidasi": { "base_stat": "keberanian" },
+    "penyamaran": { "base_stat": "karisma" },
+    "memori": { "base_stat": "kecerdasan" }
+  },
+  "combat_rules": {},
+  "story_nodes": [
+    {
+      "id": "start",
+      "text": "Kantor redaksi sepi. Maya menatapmu serius. 'Andi ditembak tadi malam. Mereka punya daftar nama kita. Tapi aku masih punya satu kartu memori. Jika kau mau, bawa ini dan ungkap kebenaran.' Kau ambil kartu itu. Suara langkah di luar. 'Cepat, pergi lewat belakang!'",
+      "options": [
+        { "text": "Lari ke Kafe Kebebasan", "action": "move_location", "target": "kafe_tersembunyi", "next_node": "kafe_node" },
+        { "text": "Sembunyi di kantor dan lawan jika perlu", "action": "skill_check", "skill": "keberanian", "difficulty": 14, "next_node_success": "bertahan", "next_node_fail": "tertangkap" },
+        { "text": "Ambil jaket antipeluru di laci", "action": "special", "special_type": "ambil_jaket", "next_node": "start" }
+      ]
+    },
+    {
+      "id": "bertahan",
+      "text": "Kau sembunyi di balik lemari. Tiga preman masuk, mereka mengobrak-abrik tapi tidak menemukanmu. Setelah pergi, kau ambil jaket dan keluar.",
+      "options": [
+        { "text": "Pergi ke Kafe Kebebasan", "action": "move_location", "target": "kafe_tersembunyi", "next_node": "kafe_node" }
+      ]
+    },
+    {
+      "id": "tertangkap",
+      "text": "Preman menangkapmu. Mereka pukul dan mengambil kartu memori. Kau dibiarkan tergeletak di lantai. Sanity berkurang. +5 Dosa karena gagal melindungi bukti.",
+      "options": [
+        { "text": "Bangkit dan cari Maya", "action": "move_location", "target": "kantor_berita", "next_node": "after_kantor" }
+      ]
+    },
+    {
+      "id": "after_kantor",
+      "text": "Kantor berita sudah kosong. Maya hilang. Di mejanya ada surat: 'Jangan menyerah. Bukti ada di rumah sakit. -Maya'",
+      "options": [
+        { "text": "Pergi ke Rumah Sakit", "action": "move_location", "target": "rumah_sakit", "next_node": "rumah_sakit_node" }
+      ]
+    },
+    {
+      "id": "kafe_node",
+      "text": "Di Kafe Kebebasan, kau bertemu pengacara independen, Bu Rina. Dia bilang butuh bukti yang tak terbantahkan. 'Coba cari di rumah sakit, Andi mungkin menyimpan salinan.'",
+      "options": [
+        { "text": "Pergi ke Rumah Sakit", "action": "move_location", "target": "rumah_sakit", "next_node": "rumah_sakit_node" },
+        { "text": "Cari bantuan polisi", "action": "move_location", "target": "markas_polisi", "next_node": "polisi_node" }
+      ]
+    },
+    {
+      "id": "rumah_sakit_node",
+      "text": "Rumah sakit. Andi terbaring koma. Perawat bilang hanya keluarga yang boleh masuk. Di lorong, kau lihat seorang pria mencurigakan mengawasi ruangan Andi.",
+      "options": [
+        { "text": "Menyamar sebagai dokter", "action": "skill_check", "skill": "penyamaran", "difficulty": 15, "next_node_success": "masuk_rs", "next_node_fail": "gagal_menyamar" },
+        { "text": "Intimidasi perawat", "action": "skill_check", "skill": "intimidasi", "difficulty": 13, "next_node_success": "masuk_rs", "next_node_fail": "dipanggil_security" },
+        { "text": "Cari pintu darurat", "action": "skill_check", "skill": "logika", "difficulty": 12, "next_node_success": "masuk_darurat", "next_node_fail": "tersesat" }
+      ]
+    },
+    {
+      "id": "masuk_rs",
+      "text": "Kau masuk ke ruangan Andi. Di bawah bantalnya ada flashdisk. Kau ambil. Tiba-tiba pria mencurigakan masuk dan mengacungkan pistol.",
+      "options": [
+        { "text": "Lawan dia", "action": "combat", "target": "preman_walikota", "next_node_on_win": "dapat_flashdisk", "next_node_on_lose": "game_over_killed" },
+        { "text": "Bernegosiasi, tawarkan uang", "action": "skill_check", "skill": "negosiasi", "difficulty": 16, "next_node_success": "negosiasi_berhasil", "next_node_fail": "tertembak" }
+      ]
+    },
+    {
+      "id": "masuk_darurat",
+      "text": "Kau masuk lewat pintu darurat, tapi pria itu sudah menunggu. Dia menodongmu.",
+      "options": [
+        { "text": "Lemparkan obat penenang (jika punya)", "action": "special", "special_type": "pakai_obat", "next_node": "dapat_flashdisk" },
+        { "text": "Terima nasib", "action": "special", "special_type": "menyerah_rs", "next_node": "game_over_penjara" }
+      ]
+    },
+    {
+      "id": "gagal_menyamar",
+      "text": "Perawat curiga dan memanggil satpam. Kau diusir. +2 Dosa (karena membuat onar).",
+      "options": [
+        { "text": "Coba pendekatan lain", "action": "move_location", "target": "kafe_tersembunyi", "next_node": "kafe_node" }
+      ]
+    },
+    {
+      "id": "dipanggil_security",
+      "text": "Perawat melapor. Kau ditahan sementara, tapi berhasil kabur. Sanity -5.",
+      "options": [
+        { "text": "Kembali ke kafe", "action": "move_location", "target": "kafe_tersembunyi", "next_node": "kafe_node" }
+      ]
+    },
+    {
+      "id": "tersesat",
+      "text": "Kau nyasar di lorong rumah sakit. Kehilangan waktu. +2 Dosa (putus asa).",
+      "options": [
+        { "text": "Coba lagi", "action": "move_location", "target": "rumah_sakit", "next_node": "rumah_sakit_node" }
+      ]
+    },
+    {
+      "id": "dapat_flashdisk",
+      "text": "Kau berhasil merebut flashdisk. Isinya rekaman walikota menyetujui pembunuhan Andi. Bukti kuat! Tapi sekarang seluruh kota memburumu.",
+      "options": [
+        { "text": "Kembali ke kantor berita", "action": "move_location", "target": "kantor_berita", "next_node": "kantor_akhir" },
+        { "text": "Temui pengacara di kafe", "action": "move_location", "target": "kafe_tersembunyi", "next_node": "kafe_akhir" }
+      ]
+    },
+    {
+      "id": "negosiasi_berhasil",
+      "text": "Kau tawarkan 50 juta. Pria itu menerima dan pergi. Flashdisk aman. Tapi uang itu adalah donasi untuk panti asuhan. Dosa +10.",
+      "options": [
+        { "text": "Lanjut ke kantor berita", "action": "move_location", "target": "kantor_berita", "next_node": "kantor_akhir" }
+      ]
+    },
+    {
+      "id": "pakai_obat",
+      "text": "Kau lempar obat penenang ke mata pria itu. Dia jatuh. Kau ambil flashdisk dan lari.",
+      "options": [
+        { "text": "Lanjut ke kantor berita", "action": "move_location", "target": "kantor_berita", "next_node": "kantor_akhir" }
+      ]
+    },
+    {
+      "id": "kantor_akhir",
+      "text": "Kantor berita kosong. Maya sudah tiada (ditemukan tewas). Kau sendirian dengan flashdisk. Harus memutuskan: publikasikan atau tawar-menawar dengan walikota?",
+      "options": [
+        { "text": "Publikasikan di media sosial", "action": "special", "special_type": "publikasi", "next_node": "ending1" },
+        { "text": "Temui walikota untuk tawar-menawar", "action": "move_location", "target": "rumah_walikota", "next_node": "negosiasi_walikota" }
+      ]
+    },
+    {
+      "id": "kafe_akhir",
+      "text": "Bu Rina senang mendapat bukti. Tapi dia bilang walikota punya pengaruh besar. 'Kita perlu dukungan massa. Atau kau bisa jadi pahlawan dengan mengorbankan diri sendiri.'",
+      "options": [
+        { "text": "Pilih demonstrasi damai", "action": "special", "special_type": "demo", "next_node": "ending2" },
+        { "text": "Serahkan pada pengadilan", "action": "special", "special_type": "pengadilan", "next_node": "ending3" },
+        { "text": "Bunuh walikota sendiri", "action": "combat", "target": "preman_walikota", "next_node_on_win": "ending4", "next_node_on_lose": "game_over_killed" }
+      ]
+    },
+    {
+      "id": "negosiasi_walikota",
+      "text": "Kau di villa walikota. Dia tersenyum manis. 'Aku tahu kau punya bukti. Berapa? 5 miliar dan kau bisa jadi kepala BUMN.'",
+      "options": [
+        { "text": "Terima tawaran", "action": "special", "special_type": "terima_suap", "next_node": "ending5" },
+        { "text": "Tolak dan ancam walikota", "action": "combat", "target": "preman_walikota", "next_node_on_win": "ending6", "next_node_on_lose": "game_over_killed" }
+      ]
+    },
+    {
+      "id": "polisi_node",
+      "text": "Di markas polisi, Inspektur Kurniawan menerimamu dengan curiga. 'Kau punya bukti? Aku bisa bantu, tapi sebagai gantinya kau harus lupakan kasusku menerima suap.'",
+      "options": [
+        { "text": "Setuju tutup mulut", "action": "special", "special_type": "deal_polisi", "next_node": "polisi_lanjut" },
+        { "text": "Rekam pembicaraannya", "action": "skill_check", "skill": "logika", "difficulty": 16, "next_node_success": "rekam_berhasil", "next_node_fail": "ketahuan_rekam" }
+      ]
+    },
+    {
+      "id": "polisi_lanjut",
+      "text": "Inspektur memberi pasukan untuk menggerebek gudang pelabuhan. Operasi berhasil menangkap bos mafia. Tapi walikota lolos. Dosa +5 (karena tutup mulut).",
+      "options": [
+        { "text": "Lanjut ke ending netral", "action": "special", "special_type": "ending7", "next_node": "ending7" }
+      ]
+    },
+    {
+      "id": "rekam_berhasil",
+      "text": "Kau rekam pengakuan Inspektur. Dia marah tapi terpaksa membantumu. Walikota ditangkap. Kau jadi pahlawan bersih.",
+      "options": [
+        { "text": "Akhiri", "action": "special", "special_type": "ending8", "next_node": "ending8" }
+      ]
+    },
+    {
+      "id": "ketahuan_rekam",
+      "text": "Inspektur tahu kau merekam. Dia tangkapmu dan memenjarakan dengan tuduhan palsu. Game over (buruk).",
+      "options": []
+    },
+    {
+      "id": "ending1",
+      "text": "Kau publikasikan bukti. Viral dalam semalam. Walikota ditangkap, tapi tiga hari kemudian kau ditemukan tewas di apartemen. Sanity terakhir: {sanity}, Dosa: {dosa}. **Ending: Martir Jurnalisme**",
+      "options": []
+    },
+    {
+      "id": "ending2",
+      "text": "Demonstrasi damai melibatkan ribuan orang. Walikota mundur. Kau dianggap pahlawan namun terus mendapat ancaman. Sanity: {sanity}, Dosa: {dosa}. **Ending: Pahlawan yang Tertekan**",
+      "options": []
+    },
+    {
+      "id": "ending3",
+      "text": "Pengadilan berjalan alot. Walikota menggunakan pengacara hebat. Kasus disidang bertahun-tahun. Kau kelelahan tapi akhirnya dia dipenjara 5 tahun. **Ending: Keadilan Lambat**",
+      "options": []
+    },
+    {
+      "id": "ending4",
+      "text": "Kau berhasil menembak mati walikota. Polisi menangkapmu. Di penjara, kau dipuja sebagai pahlawan rakyat. Dosa +30, Sanity -20. **Ending: Hakim Eksekutor**",
+      "options": []
+    },
+    {
+      "id": "ending5",
+      "text": "Kau terima suap. Hidup mewah tapi hati nuranimu mati. Dosa +50, Sanity -60. **Ending: Koruptor Baru**",
+      "options": []
+    },
+    {
+      "id": "ending6",
+      "text": "Kau lawan preman walikota, menang, lalu walikota bunuh diri. Kau selamat tapi trauma. **Ending: Kemenangan Pahit**",
+      "options": []
+    },
+    {
+      "id": "ending7",
+      "text": "Mafia tertangkap, walikota bebas. Kau dapat julukan 'setengah hati'. Dosa +15. **Ending: Kompromi Gagal**",
+      "options": []
+    },
+    {
+      "id": "ending8",
+      "text": "Bukti lengkap, polisi bersih, walikota dan mafia ditangkap. Kau diundang ke istana negara. Sanity +20, Dosa -10. **Ending: Pahlawan Sejati**",
+      "options": []
+    },
+    {
+      "id": "game_over_killed",
+      "text": "Kau tewas. Kisahmu berakhir tragis. **GAME OVER**",
+      "options": []
+    },
+    {
+      "id": "game_over_penjara",
+      "text": "Kau dipenjara tanpa bukti. Permainan berakhir. **GAME OVER**",
+      "options": []
+    },
+    {
+      "id": "menyerah_rs",
+      "text": "Kau menyerah dan ditangkap. Flashdisk diambil. Kasus korupsi berlanjut. **Ending: Penyerah**",
+      "options": []
+    },
+    {
+      "id": "tertembak",
+      "text": "Pria itu menembakmu. Kau kritis di RS. Flashdisk hilang. Game over.",
+      "options": []
+    }
+  ],
+  "middleware": {
+    "beforeAction": [
+      { "type": "checkSanity", "threshold": 20, "cancelMsg": "Sanity-mu habis. Kau mengalami gangguan jiwa dan tidak bisa melanjutkan. GAME OVER." },
+      { "type": "checkSin", "threshold": 70, "cancelMsg": "Dosamu terlalu besar. Hati nuranimu mati, kau menjadi bagian dari korupsi. GAME OVER." }
+    ],
+    "specialHandlers": {
+      "ambil_jaket": { "type": "giveItem", "item": "jaket_antipeluru", "message": "Kamu memakai jaket antipeluru. Terasa berat tapi aman." },
+      "hubungi_kontak": { "type": "appendText", "text": "Kontak tidak merespon." },
+      "publikasi": { "type": "modifyStats", "sanity": 10, "dosa": -5 },
+      "demo": { "type": "modifyStats", "sanity": 15, "dosa": 0 },
+      "pengadilan": { "type": "modifyStats", "sanity": 5, "dosa": -2 },
+      "terima_suap": { "type": "modifyStats", "sanity": -40, "dosa": 30 },
+      "deal_polisi": { "type": "modifyStats", "dosa": 10, "sanity": -10 },
+      "ending7": { "type": "modifyStats", "dosa": 15, "sanity": -5 },
+      "ending8": { "type": "modifyStats", "sanity": 20, "dosa": -10 },
+      "pakai_obat": { "type": "modifyStats", "sanity": 5 },
+      "menyerah_rs": { "type": "modifyStats", "dosa": 10, "sanity": -15 }
+    }
+  }
+}

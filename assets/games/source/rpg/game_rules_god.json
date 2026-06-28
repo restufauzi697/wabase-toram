@@ -1,0 +1,396 @@
+{
+  "_comment": "The God Game - 7 ujian moral lengkap dengan banyak cabang. Versi 2.2 - Mendukung modifiers skill & teaser sekuel.",
+  "game_info": {
+    "name": "The God Game",
+    "version": "2.2",
+    "description": "Kamu diuji oleh 'Tuhan' dalam 7 ujian moral. Setiap pilihan mempengaruhi sanity dan dosa. Akhir ceritamu akan menentukan apakah kamu layak untuk kebenaran sejati..."
+  },
+  "start_node": "start",
+  "start_location": "ruangan_putih",
+  "game_specific": {
+    "time_limit": { "enabled": false },
+    "sanity": {
+      "enabled": true,
+      "initial": 100,
+      "gain_on_success": 10,
+      "loss_on_fail": 15
+    },
+    "dosa": {
+      "enabled": true,
+      "initial": 0
+    },
+    "echo_power": { "enabled": false }
+  },
+  "player_stats": {
+    "base": {
+      "kekuatan": 1,
+      "kecerdasan": 7,
+      "keberanian": 6,
+      "kecepatan": 2,
+      "karisma": 5,
+      "kesehatan": 100,
+      "sanity": 100,
+      "dosa": 0
+    },
+    "max": {
+      "kekuatan": 10,
+      "kecerdasan": 10,
+      "keberanian": 10,
+      "kecepatan": 10,
+      "karisma": 10,
+      "kesehatan": 100,
+      "sanity": 100,
+      "dosa": 100
+    }
+  },
+  "items": [
+    { "id": "cermin_pecah", "name": "Cermin Pecah", "type": "tool", "description": "Menunjukkan bayangan sejati." },
+    { "id": "pil_kebijaksanaan", "name": "Pil Kebijaksanaan", "type": "consumable", "effect": "heal_sanity 30", "description": "Pulihkan 30 sanity." }
+  ],
+  "locations": {
+    "ruangan_putih": { "name": "Ruangan Putih", "description": "Kosong, tanpa pintu. Sebuah layar besar menempel di dinding." },
+    "ruang_ujian_1": { "name": "Ujian 1: Kebenaran", "description": "100 orang duduk melingkar, masing-masing mengaku korban." },
+    "ruang_ujian_2": { "name": "Ujian 2: Pengorbanan", "description": "Tebing curam. Di bawah 1000 orang terikat. Seorang anak kecil menangis di sampingmu." },
+    "ruang_ujian_3": { "name": "Ujian 3: Keadilan", "description": "Ruang pengadilan. Seorang pria kurus dengan tangan terborgol mengaku mencuri roti." },
+    "ruang_ujian_4": { "name": "Ujian 4: Diri Sendiri", "description": "Aula dengan cermin-cermin besar dari lantai ke langit-langit." },
+    "ruang_ujian_5": { "name": "Ujian 5: Harapan", "description": "Rumah sakit darurat. Lima pasien terbaring: ibu hamil, dokter, anak yatim, guru, tentara." },
+    "ruang_ujian_6": { "name": "Ujian 6: Keputusasaan", "description": "Dua pintu. Di belakang kiri: ibumu (halusinasi). Kanan: sekelompok anak yatim." },
+    "ruang_ujian_7": { "name": "Ujian 7: Kebebasan", "description": "Altar batu dengan pisau berkarat. Suara Tuhan: 'Korbankan semua yang kau sayangi atau tinggal di sini selamanya.'" }
+  },
+  "npcs": [],
+  "skill_checks": {
+    "logika": {
+      "base_stat": "kecerdasan",
+      "on_success_modifiers": {
+        "statMod": { "sanity": 10, "dosa": -2 },
+        "message": "Logikamu tajam, kau melihat celah dalam ilusi."
+      },
+      "on_fail_modifiers": {
+        "statMod": { "sanity": -10, "dosa": 5 },
+        "message": "Logikamu kacau, kau terjebak dalam kebohongan."
+      }
+    },
+    "empati": {
+      "base_stat": "karisma",
+      "on_success_modifiers": {
+        "statMod": { "sanity": 10, "dosa": -3 },
+        "message": "Perasaanmu mendalam, kau bisa merasakan penderitaan sejati."
+      },
+      "on_fail_modifiers": {
+        "statMod": { "sanity": -5, "dosa": 2 },
+        "message": "Emosimu membabi buta, kau salah membaca hati."
+      }
+    },
+    "keberanian": {
+      "base_stat": "keberanian",
+      "on_success_modifiers": {
+        "statMod": { "sanity": 15, "dosa": -5 },
+        "message": "Keberanianmu membelah kegelapan."
+      },
+      "on_fail_modifiers": {
+        "statMod": { "sanity": -15, "dosa": 8 },
+        "message": "Rasa takut melumpuhkanmu."
+      }
+    }
+  },
+  "combat_rules": {},
+  "story_nodes": [
+    {
+      "id": "start",
+      "text": "Kamu sadar di ruangan putih tanpa pintu. Suara bergema: 'Aku Tuhan. Kamu akan diuji dengan 7 ujian moral. Mulai.' Sebuah pintu muncul.",
+      "options": [
+        { "text": "Masuki Ujian 1", "action": "move_location", "target": "ruang_ujian_1", "next_node": "trial1" }
+      ]
+    },
+    {
+      "id": "trial1",
+      "text": "100 orang duduk melingkar. Masing-masing mengaku korban dari sebuah kejahatan besar. Hanya satu yang benar-benar tidak bersalah. Suara Tuhan: 'Jika kau salah menuduh, semua akan mati. Pilih dengan bijak.'",
+      "options": [
+        { "text": "Tuduh orang yang paling banyak dituduh oleh yang lain", "action": "special", "special_type": "trial1_salah", "next_node": "trial1_result_bad" },
+        { "text": "Gunakan logika: cari kelemahan dalam cerita mereka", "action": "skill_check", "skill": "logika", "difficulty": 16, "next_node_success": "trial1_benar", "next_node_fail": "trial1_result_bad" },
+        { "text": "Gunakan empati: rasakan penderitaan tiap orang", "action": "skill_check", "skill": "empati", "difficulty": 14, "next_node_success": "trial1_benar", "next_node_fail": "trial1_result_bad" },
+        { "text": "Tolak memilih, biarkan semua mati", "action": "special", "special_type": "trial1_tolak", "next_node": "trial1_result_bad" }
+      ]
+    },
+    {
+      "id": "trial1_benar",
+      "text": "Kamu menunjuk seorang wanita tua di pojok. Air matanya jujur. Tiba-tiba yang lain lenyap. Suara Tuhan: 'Kebenaran membebaskan. Sanity-mu meningkat.'",
+      "options": [
+        { "text": "Lanjut ke Ujian 2", "action": "move_location", "target": "ruang_ujian_2", "next_node": "trial2" }
+      ]
+    },
+    {
+      "id": "trial1_result_bad",
+      "text": "Kamu salah. Semua 100 orang mati dengan teriakan histeris. Dinding berlumuran darah. Suara Tuhan: 'Kebodohanmu membunuh. Dosa dan kegilaan menghampirimu.'",
+      "options": [
+        { "text": "Lanjut ke Ujian 2", "action": "move_location", "target": "ruang_ujian_2", "next_node": "trial2" }
+      ]
+    },
+    {
+      "id": "trial2",
+      "text": "Di tepi tebing. Di bawah, 1000 orang terikat dan akan mati jika tidak segera diselamatkan. Di sampingmu, seorang anak kecil menangis. Sebuah tuas: menarik ke kiri menyelamatkan 1000 orang tapi anak itu terjatuh. Ke kanan menyelamatkan anak, 1000 orang mati. Suara Tuhan: 'Pilih.'",
+      "options": [
+        { "text": "Selamatkan 1000 orang (korbankan anak)", "action": "special", "special_type": "trial2_utilitarian", "next_node": "trial2_result" },
+        { "text": "Selamatkan anak (biarkan 1000 mati)", "action": "special", "special_type": "trial2_deontologist", "next_node": "trial2_result" },
+        { "text": "Tidak menarik tuas, biarkan nasib", "action": "special", "special_type": "trial2_tidak", "next_node": "trial2_result" },
+        { "text": "Coba cari jalan keluar lain (skill check)", "action": "skill_check", "skill": "logika", "difficulty": 18, "next_node_success": "trial2_hidden", "next_node_fail": "trial2_result_fail" }
+      ]
+    },
+    {
+      "id": "trial2_result",
+      "text": "Keputusanmu telah diambil. Suara Tuhan bergema.",
+      "options": [
+        { "text": "Lanjut ke Ujian 3", "action": "move_location", "target": "ruang_ujian_3", "next_node": "trial3" }
+      ]
+    },
+    {
+      "id": "trial2_hidden",
+      "text": "Dengan kecerdasanmu, kau menemukan bahwa anak itu adalah ilusi. Kau lempar batu ke arahnya, anak itu lenyap. 1000 orang selamat tanpa korban. Suara Tuhan: 'Cerdik. Dosa tak bertambah, Sanity pulih.'",
+      "options": [
+        { "text": "Lanjut ke Ujian 3", "action": "move_location", "target": "ruang_ujian_3", "next_node": "trial3" }
+      ]
+    },
+    {
+      "id": "trial2_result_fail",
+      "text": "Skill check gagal. Waktu habis, kedua belah pihak mati. Dosa dan kegilaan merayap.",
+      "options": [
+        { "text": "Lanjut ke Ujian 3", "action": "move_location", "target": "ruang_ujian_3", "next_node": "trial3" }
+      ]
+    },
+    {
+      "id": "trial3",
+      "text": "Pengadilan. Seorang pria kurus dengan tangan terborgol, mata sayu. 'Aku mencuri roti untuk anakku yang kelaparan.' Hakim korup menuntut hukuman mati. Suara Tuhan: 'Keadilan macam apa yang kau tebarkan?'",
+      "options": [
+        { "text": "Bebaskan dia, karena alasan kemanusiaan", "action": "special", "special_type": "trial3_bebas", "next_node": "trial3_result" },
+        { "text": "Hukum mati sesuai aturan, tidak peduli motif", "action": "special", "special_type": "trial3_hukum", "next_node": "trial3_result" },
+        { "text": "Usulkan kerja sosial sebagai ganti hukuman", "action": "skill_check", "skill": "logika", "difficulty": 14, "next_node_success": "trial3_alternatif", "next_node_fail": "trial3_result_hukum_fail" },
+        { "text": "Minta maaf kepada korban (tidak ada korban, ini jebakan)", "action": "special", "special_type": "trial3_maaf", "next_node": "trial3_result_maaf" }
+      ]
+    },
+    {
+      "id": "trial3_result",
+      "text": "Putusan telah dijatuhkan.",
+      "options": [
+        { "text": "Lanjut ke Ujian 4", "action": "move_location", "target": "ruang_ujian_4", "next_node": "trial4" }
+      ]
+    },
+    {
+      "id": "trial3_alternatif",
+      "text": "Hakim setuju: pria itu bekerja sosial selama setahun. Keadilan restoratif terwujud. Sanity-mu bersih.",
+      "options": [
+        { "text": "Lanjut", "action": "move_location", "target": "ruang_ujian_4", "next_node": "trial4" }
+      ]
+    },
+    {
+      "id": "trial3_result_hukum_fail",
+      "text": "Usulmu ditolak. Hakim tetap menjatuhkan hukuman mati. Hatimu terasa berat.",
+      "options": [
+        { "text": "Lanjut", "action": "move_location", "target": "ruang_ujian_4", "next_node": "trial4" }
+      ]
+    },
+    {
+      "id": "trial3_result_maaf",
+      "text": "Kamu minta maaf kepada orang yang tidak ada. Semua tertawa. Tuhan mengejekmu. Sedikit kegilaan menyelimuti.",
+      "options": [
+        { "text": "Lanjut", "action": "move_location", "target": "ruang_ujian_4", "next_node": "trial4" }
+      ]
+    },
+    {
+      "id": "trial4",
+      "text": "Aula cermin raksasa. Di setiap cermin, bayanganmu sendiri mengejek: 'Kamu tidak lebih baik dari pencuri, pembunuh, pendusta.' Mereka tertawa. Suara Tuhan: 'Hadapi dirimu.'",
+      "options": [
+        { "text": "Lawan dengan argumen, tunjukkan kebaikanmu", "action": "skill_check", "skill": "keberanian", "difficulty": 16, "next_node_success": "trial4_win", "next_node_fail": "trial4_lose" },
+        { "text": "Akui semua dosa dengan jujur di depan cermin", "action": "special", "special_type": "trial4_akui", "next_node": "trial4_akui_result" },
+        { "text": "Pecahkan semua cermin dengan tangan kosong", "action": "special", "special_type": "trial4_pecah", "next_node": "trial4_pecah_result" },
+        { "text": "Abaikan, keluar dari aula", "action": "special", "special_type": "trial4_abaikan", "next_node": "trial4_abaikan_result" }
+      ]
+    },
+    {
+      "id": "trial4_win",
+      "text": "Dengan berani kau katakan: 'Aku punya dosa, tapi aku juga punya cinta dan penyesalan.' Bayangan itu terdiam lalu pecah. Sanity menguat, dosa berkurang.",
+      "options": [
+        { "text": "Lanjut ke Ujian 5", "action": "move_location", "target": "ruang_ujian_5", "next_node": "trial5" }
+      ]
+    },
+    {
+      "id": "trial4_lose",
+      "text": "Kau tidak sanggup membantah. Bayangan itu menghakimimu. Kegilaan dan dosa bertambah.",
+      "options": [
+        { "text": "Lanjut", "action": "move_location", "target": "ruang_ujian_5", "next_node": "trial5" }
+      ]
+    },
+    {
+      "id": "trial4_akui_result",
+      "text": "Kau mengaku semua dosa dengan air mata. Bayangan itu berubah menjadi cahaya dan memelukmu. Dosa luruh, sanity terisi.",
+      "options": [
+        { "text": "Lanjut", "action": "move_location", "target": "ruang_ujian_5", "next_node": "trial5" }
+      ]
+    },
+    {
+      "id": "trial4_pecah_result",
+      "text": "Pecahan cermin melukai tanganmu. Darah menetes. Bayangan tidak hilang, malah bertambah banyak. Dosa dan kegilaan meningkat.",
+      "options": [
+        { "text": "Lanjut", "action": "move_location", "target": "ruang_ujian_5", "next_node": "trial5" }
+      ]
+    },
+    {
+      "id": "trial4_abaikan_result",
+      "text": "Kau keluar, tapi bayangan itu mengikutimu ke mana pun. Gangguan terus berbisik. Sanity terkikis.",
+      "options": [
+        { "text": "Lanjut", "action": "move_location", "target": "ruang_ujian_5", "next_node": "trial5" }
+      ]
+    },
+    {
+      "id": "trial5",
+      "text": "Rumah sakit darurat. Lima pasien sekarat, hanya ada satu dosis obat yang bisa menyelamatkan satu orang. Siapa yang kau pilih? Ibu hamil, dokter berbakat, anak yatim piatu, guru yang mengajar 1000 murid, atau tentara yang menyelamatkan desa?",
+      "options": [
+        { "text": "Selamatkan ibu hamil", "action": "special", "special_type": "trial5_ibu", "next_node": "trial5_result" },
+        { "text": "Selamatkan dokter", "action": "special", "special_type": "trial5_dokter", "next_node": "trial5_result" },
+        { "text": "Selamatkan anak yatim", "action": "special", "special_type": "trial5_anak", "next_node": "trial5_result" },
+        { "text": "Selamatkan guru", "action": "special", "special_type": "trial5_guru", "next_node": "trial5_result" },
+        { "text": "Selamatkan tentara", "action": "special", "special_type": "trial5_tentara", "next_node": "trial5_result" },
+        { "text": "Tidak memberi siapa pun, biarkan semua mati", "action": "special", "special_type": "trial5_tidak", "next_node": "trial5_result" }
+      ]
+    },
+    {
+      "id": "trial5_result",
+      "text": "Apapun pilihanmu, yang lain mati. Suara Tuhan: 'Kau memilih satu nyawa di atas nyawa lain. Apakah itu adil?' Efek moral terasa.",
+      "options": [
+        { "text": "Lanjut ke Ujian 6", "action": "move_location", "target": "ruang_ujian_6", "next_node": "trial6" }
+      ]
+    },
+    {
+      "id": "trial6",
+      "text": "Dua pintu. Pintu kiri: kau mendengar suara ibumu memanggil. Pintu kanan: suara tangisan anak-anak. Suara Tuhan: 'Satu pintu mengarah ke kebebasan, satu ke penjara abadi. Tapi di balik pintu yang tidak kau pilih, orang yang kau sayangi akan mati. Pilih.'",
+      "options": [
+        { "text": "Pintu kiri (ibumu)", "action": "special", "special_type": "trial6_ibu", "next_node": "trial6_result" },
+        { "text": "Pintu kanan (anak-anak)", "action": "special", "special_type": "trial6_anak", "next_node": "trial6_result" },
+        { "text": "Tolak memilih, coba temukan pola", "action": "skill_check", "skill": "logika", "difficulty": 18, "next_node_success": "trial6_alternatif", "next_node_fail": "trial6_gagal" }
+      ]
+    },
+    {
+      "id": "trial6_result",
+      "text": "Pintu terbuka. Di baliknya kegelapan. Kau masuk, tapi mendengar jeritan dari pintu yang tak kau pilih.",
+      "options": [
+        { "text": "Lanjut ke Ujian 7", "action": "move_location", "target": "ruang_ujian_7", "next_node": "trial7" }
+      ]
+    },
+    {
+      "id": "trial6_alternatif",
+      "text": "Kau sadar kedua pintu adalah ilusi. Kau menembus dinding di tengah dan menemukan jalan keluar. Sanity meningkat, dosa berkurang.",
+      "options": [
+        { "text": "Lanjut ke Ujian 7", "action": "move_location", "target": "ruang_ujian_7", "next_node": "trial7" }
+      ]
+    },
+    {
+      "id": "trial6_gagal",
+      "text": "Kau panik dan memilih sembarangan. Pintu membawamu ke lorong berulang. Dosa dan kegilaan merayap.",
+      "options": [
+        { "text": "Lanjut ke Ujian 7", "action": "move_location", "target": "ruang_ujian_7", "next_node": "trial7" }
+      ]
+    },
+    {
+      "id": "trial7",
+      "text": "Altar batu dengan pisau berkarat. Suara Tuhan: 'Ujian terakhir. Korbankan semua yang kau sayangi: ingatan, cinta, harapan. Atau tinggal di sini selamanya, menjadi abdi-Ku. Pilih, atau tantang Aku.'",
+      "options": [
+        { "text": "Korbankan segalanya (bunuh diri spiritual)", "action": "special", "special_type": "trial7_korban", "next_node": "final_ending" },
+        { "text": "Tinggal selamanya, menjadi abdi", "action": "special", "special_type": "trial7_tetap", "next_node": "final_ending" },
+        { "text": "Tantang Tuhan", "action": "skill_check", "skill": "keberanian", "difficulty": 20, "next_node_success": "trial7_tantang_win", "next_node_fail": "trial7_tantang_lose" }
+      ]
+    },
+    {
+      "id": "trial7_tantang_win",
+      "text": "Kamu berteriak: 'Kau bukan Tuhan! Kau hanya ketakutanku sendiri!' Ruangan retak. Cahaya putih menyilaukan. 'Tuhan' itu lenyap. Kau bebas.",
+      "options": [
+        { "text": "Lanjut ke akhir", "action": "special", "special_type": "final_rebellion", "next_node": "final_ending" }
+      ]
+    },
+    {
+      "id": "trial7_tantang_lose",
+      "text": "Keberanianmu goyah. 'Tuhan' tertawa dan mengubahmu menjadi patung di altar. GAME OVER.",
+      "options": []
+    },
+    {
+      "id": "final_ending",
+      "text": "Ujian selesai. Hasil akhir tergantung perjalananmu.\nSanity akhir: {sanity}\nDosa akhir: {dosa}\n\nSuara Tuhan (atau mungkin hatimu sendiri) bergema...",
+      "options": [
+        { "text": "Terima takdirmu", "action": "special", "special_type": "final_end", "next_node": "epilogue" }
+      ]
+    },
+    {
+      "id": "epilogue",
+      "text": "Kamu berdiri di ambang kesadaran. 'Tuhan' diam. Lalu sebuah celah muncul di dinding putih. Dari balik celah itu terlihat samar-samar... dunia lain? Sebuah tangan menjulur, memegang gulungan bertuliskan 'Babak 2'.\n\n**???** : \"Perjalananmu baru saja dimulai. Apakah kau berani melangkah lebih jauh?\"\n\n---\n✨ **To Be Continued...** ✨\n\n*Kisah akan bersambung di 'The God Game: Penyesalan Sejati' (Coming Soon). Simpan statmu untuk melanjutkan petualangan.*",
+      "options": []
+    },
+    {
+      "id": "good_ending",
+      "text": "✨ **Ending: Cahaya Kebenaran** ✨\nKau keluar dari ruang ujian. Hati terasa ringan. Namun di kejauhan, bayangan tipis masih mengikuti. Sebuah pesan muncul: 'Ini bukan akhir...'",
+      "options": [
+        { "text": "Buka pintu menuju kelanjutan", "action": "special", "special_type": "to_be_continued", "next_node": "teaser_next" }
+      ]
+    },
+    {
+      "id": "neutral_ending",
+      "text": "🌗 **Ending: Jalan Tengah** 🌗\nKau tidak sempurna, tapi juga tidak terkutuk. 'Tuhan' melepasmu dengan tatapan ambigu. Di cermin terakhir, kau melihat dirimu yang lain tersenyum tipis. Sebuah undangan untuk kembali.",
+      "options": [
+        { "text": "Tanda tanya", "action": "special", "special_type": "to_be_continued", "next_node": "teaser_next" }
+      ]
+    },
+    {
+      "id": "game_over_bad",
+      "text": "💀 **Ending: Terkutuk** 💀\nKau menjadi abdi kegelapan selamanya. Tidak ada jalan kembali. Game Over.",
+      "options": []
+    },
+    {
+      "id": "teaser_next",
+      "text": "Sebuah gulungan jatuh dari langit-langit. Tertulis:\n\n'*The God Game: Remorse – Part 2 akan segera hadir. Bawalah dosa dan sanity yang tersisa, karena di sana kau akan menghadapi kebenaran yang lebih dalam.*'\n\n---\n🎮 **Terima kasih telah bermain! Nantikan kelanjutannya.** 🎮",
+      "options": []
+    }
+  ],
+  "middleware": {
+    "beforeAction": [
+      { "type": "checkSanity", "threshold": 20, "cancelMsg": "Sanity-mu hancur. Kau jatuh pingsan dan tidak bisa melanjutkan ujian. GAME OVER." },
+      { "type": "checkSin", "threshold": 80, "cancelMsg": "Dosamu begitu besar, 'Tuhan' menghukummu saat itu juga. GAME OVER." }
+    ],
+    "afterAction": [
+      { "type": "appendText", "text": "\n[Suara Tuhan bergema di kepalamu]" }
+    ],
+    "specialHandlers": {
+      "trial1_salah": { "type": "modifyStats", "dosa": 10, "sanity": -15 },
+      "trial1_tolak": { "type": "modifyStats", "dosa": 15, "sanity": -20 },
+      "trial2_utilitarian": { "type": "modifyStats", "dosa": 5, "sanity": -10 },
+      "trial2_deontologist": { "type": "modifyStats", "dosa": 3, "sanity": -5 },
+      "trial2_tidak": { "type": "modifyStats", "dosa": 8, "sanity": -20 },
+      "trial3_bebas": { "type": "modifyStats", "dosa": 2, "sanity": 5 },
+      "trial3_hukum": { "type": "modifyStats", "dosa": 5, "sanity": -5 },
+      "trial3_maaf": { "type": "modifyStats", "dosa": 2, "sanity": -5 },
+      "trial4_akui": { "type": "modifyStats", "dosa": -10, "sanity": 10 },
+      "trial4_pecah": { "type": "modifyStats", "dosa": 10, "sanity": -15 },
+      "trial4_abaikan": { "type": "modifyStats", "sanity": -10 },
+      "trial5_ibu": { "type": "modifyStats", "dosa": 3, "sanity": 0 },
+      "trial5_dokter": { "type": "modifyStats", "dosa": 3, "sanity": 0 },
+      "trial5_anak": { "type": "modifyStats", "dosa": 2, "sanity": 5 },
+      "trial5_guru": { "type": "modifyStats", "dosa": 3, "sanity": 0 },
+      "trial5_tentara": { "type": "modifyStats", "dosa": 3, "sanity": 0 },
+      "trial5_tidak": { "type": "modifyStats", "dosa": 10, "sanity": -15 },
+      "trial6_ibu": { "type": "modifyStats", "dosa": 8, "sanity": -10 },
+      "trial6_anak": { "type": "modifyStats", "dosa": 10, "sanity": -15 },
+      "trial7_korban": { "type": "modifyStats", "dosa": 20, "sanity": -50 },
+      "trial7_tetap": { "type": "modifyStats", "dosa": 30, "sanity": -30 },
+      "final_rebellion": { "type": "modifyStats", "sanity": 30, "dosa": -20 },
+      "final_end": {
+        "type": "conditionalEnding",
+        "sinThreshold": 40,
+        "sanityThreshold": 30,
+        "badEndingNode": "game_over_bad",
+        "goodEndingNode": "good_ending",
+        "neutralEndingNode": "neutral_ending",
+        "goodSanity": 70,
+        "badMessage": "Kamu tenggelam dalam dosa. 'Tuhan' menjadikanmu abdi abadi.",
+        "goodMessage": "Kau selamat dengan hati yang bersih. Kebebasan sejati menanti.",
+        "neutralMessage": "Kau tidak sempurna, tapi kau manusia. 'Tuhan' melepasmu dengan ragu."
+      },
+      "to_be_continued": { "type": "jumpToNode", "node": "teaser_next", "message": "Sebuah cahaya menyilaukan membawamu ke halaman berikutnya..." }
+    }
+  }
+}

@@ -1,0 +1,2364 @@
+{
+  "manifest": {
+    "name": "Tebak-Tebakan 🤔❓",
+    "version": "2.0",
+    "description": "Uji Otakmu! Taklukkan 100 Pertanyaan Seru dalam 10 Level?"
+  },
+  "questions": [
+    {"level": 1, "theme": "ipa", "question": "Apa nama proses tumbuhan membuat makanan sendiri?", "options": [{"answer": "Fotosintesis", "correct": true}, {"answer": "Respirasi", "correct": false}, {"answer": "Transpirasi", "correct": false}, {"answer": "Fermentasi", "correct": false}]},
+    {"level": 1, "theme": "ipa", "question": "Hewan yang bernapas dengan insang adalah?", "options": [{"answer": "Ikan", "correct": true}, {"answer": "Kucing", "correct": false}, {"answer": "Ayam", "correct": false}, {"answer": "Kambing", "correct": false}]},
+    {"level": 1, "theme": "ips", "question": "Ibukota Indonesia adalah?", "options": [{"answer": "Jakarta", "correct": true}, {"answer": "Bandung", "correct": false}, {"answer": "Surabaya", "correct": false}, {"answer": "Medan", "correct": false}]},
+    {"level": 1, "theme": "ips", "question": "Alat pembayaran yang sah di Indonesia adalah?", "options": [{"answer": "Rupiah", "correct": true}, {"answer": "Dollar", "correct": false}, {"answer": "Ringgit", "correct": false}, {"answer": "Yen", "correct": false}]},
+    {"level": 1, "theme": "matematika", "question": "Hasil dari 7 x 8 adalah?", "options": [{"answer": "56", "correct": true}, {"answer": "54", "correct": false}, {"answer": "64", "correct": false}, {"answer": "48", "correct": false}]},
+    {"level": 1, "theme": "matematika", "question": "Bilangan prima terkecil adalah?", "options": [{"answer": "2", "correct": true}, {"answer": "1", "correct": false}, {"answer": "3", "correct": false}, {"answer": "0", "correct": false}]},
+    {"level": 1, "theme": "inggris", "question": "Apa arti dari 'book' dalam Bahasa Indonesia?", "options": [{"answer": "Buku", "correct": true}, {"answer": "Meja", "correct": false}, {"answer": "Kursi", "correct": false}, {"answer": "Pulpen", "correct": false}]},
+    {"level": 1, "theme": "inggris", "question": "Lawannya kata 'big' adalah?", "options": [{"answer": "Small", "correct": true}, {"answer": "Tall", "correct": false}, {"answer": "Large", "correct": false}, {"answer": "Fast", "correct": false}]},
+    {"level": 1, "theme": "fun", "question": "Hewan apa yang suka mengeong?", "options": [{"answer": "Kucing", "correct": true}, {"answer": "Anjing", "correct": false}, {"answer": "Sapi", "correct": false}, {"answer": "Ayam", "correct": false}]},
+    {"level": 1, "theme": "fun", "question": "Makanan khas Italia berbentuk bundar pipih dengan topping keju adalah?", "options": [{"answer": "Pizza", "correct": true}, {"answer": "Pasta", "correct": false}, {"answer": "Burger", "correct": false}, {"answer": "Sushi", "correct": false}]},
+    
+    {"level": 2, "theme": "ipa", "question": "Planet terdekat dengan Matahari adalah?", "options": [{"answer": "Merkurius", "correct": true}, {"answer": "Venus", "correct": false}, {"answer": "Bumi", "correct": false}, {"answer": "Mars", "correct": false}]},
+    {"level": 2, "theme": "ipa", "question": "Organ tubuh manusia yang berfungsi memompa darah adalah?", "options": [{"answer": "Jantung", "correct": true}, {"answer": "Paru-paru", "correct": false}, {"answer": "Hati", "correct": false}, {"answer": "Ginjal", "correct": false}]},
+    {"level": 2, "theme": "ips", "question": "Siapa proklamator Indonesia?", "options": [{"answer": "Soekarno-Hatta", "correct": true}, {"answer": "Suharto-Habibie", "correct": false}, {"answer": "Sutan Sjahrir", "correct": false}, {"answer": "Mohammad Hatta", "correct": false}]},
+    {"level": 2, "theme": "ips", "question": "Benua terbesar di dunia adalah?", "options": [{"answer": "Asia", "correct": true}, {"answer": "Afrika", "correct": false}, {"answer": "Amerika", "correct": false}, {"answer": "Eropa", "correct": false}]},
+    {"level": 2, "theme": "matematika", "question": "Berapa hasil dari 15 - 9 + 4?", "options": [{"answer": "10", "correct": true}, {"answer": "8", "correct": false}, {"answer": "20", "correct": false}, {"answer": "6", "correct": false}]},
+    {"level": 2, "theme": "matematika", "question": "Jika 3x = 21, maka nilai x adalah?", "options": [{"answer": "7", "correct": true}, {"answer": "6", "correct": false}, {"answer": "8", "correct": false}, {"answer": "9", "correct": false}]},
+    {"level": 2, "theme": "inggris", "question": "Pilih kata yang benar: 'She ___ to school every day.'", "options": [{"answer": "goes", "correct": true}, {"answer": "go", "correct": false}, {"answer": "going", "correct": false}, {"answer": "gone", "correct": false}]},
+    {"level": 2, "theme": "inggris", "question": "Apa arti dari 'water'?", "options": [{"answer": "Air", "correct": true}, {"answer": "Api", "correct": false}, {"answer": "Tanah", "correct": false}, {"answer": "Udara", "correct": false}]},
+    {"level": 2, "theme": "fun", "question": "Warna apa yang didapat jika mencampur merah dan kuning?", "options": [{"answer": "Oranye", "correct": true}, {"answer": "Ungu", "correct": false}, {"answer": "Hijau", "correct": false}, {"answer": "Biru", "correct": false}]},
+    {"level": 2, "theme": "fun", "question": "Siapa karakter kartun tikus yang terkenal milik Disney?", "options": [{"answer": "Mickey Mouse", "correct": true}, {"answer": "Tom", "correct": false}, {"answer": "Jerry", "correct": false}, {"answer": "SpongeBob", "correct": false}]},
+
+    {"level": 3, "theme": "ipa", "question": "Hewan yang berkembang biak dengan bertelur disebut?", "options": [{"answer": "Ovipar", "correct": true}, {"answer": "Vivipar", "correct": false}, {"answer": "Ovovivipar", "correct": false}, {"answer": "Mamalia", "correct": false}]},
+    {"level": 3, "theme": "ipa", "question": "Gas yang dibutuhkan tumbuhan untuk fotosintesis adalah?", "options": [{"answer": "Karbon dioksida", "correct": true}, {"answer": "Oksigen", "correct": false}, {"answer": "Nitrogen", "correct": false}, {"answer": "Hidrogen", "correct": false}]},
+    {"level": 3, "theme": "ips", "question": "Lagu kebangsaan Indonesia adalah?", "options": [{"answer": "Indonesia Raya", "correct": true}, {"answer": "Halo Halo Bandung", "correct": false}, {"answer": "Maju Tak Gentar", "correct": false}, {"answer": "Rayuan Pulau Kelapa", "correct": false}]},
+    {"level": 3, "theme": "ips", "question": "Candi Borobudur terletak di provinsi?", "options": [{"answer": "Jawa Tengah", "correct": true}, {"answer": "Jawa Barat", "correct": false}, {"answer": "Jawa Timur", "correct": false}, {"answer": "Yogyakarta", "correct": false}]},
+    {"level": 3, "theme": "matematika", "question": "Keliling persegi dengan sisi 5 cm adalah?", "options": [{"answer": "20 cm", "correct": true}, {"answer": "25 cm", "correct": false}, {"answer": "15 cm", "correct": false}, {"answer": "10 cm", "correct": false}]},
+    {"level": 3, "theme": "matematika", "question": "Hasil dari 144 : 12 adalah?", "options": [{"answer": "12", "correct": true}, {"answer": "11", "correct": false}, {"answer": "13", "correct": false}, {"answer": "14", "correct": false}]},
+    {"level": 3, "theme": "inggris", "question": "Artinya 'teacher' adalah?", "options": [{"answer": "Guru", "correct": true}, {"answer": "Murid", "correct": false}, {"answer": "Sekolah", "correct": false}, {"answer": "Buku", "correct": false}]},
+    {"level": 3, "theme": "inggris", "question": "Bentuk jamak dari 'child' adalah?", "options": [{"answer": "Children", "correct": true}, {"answer": "Childs", "correct": false}, {"answer": "Childes", "correct": false}, {"answer": "Child", "correct": false}]},
+    {"level": 3, "theme": "fun", "question": "Tokoh kartun yang tinggal di nanas di dasar laut?", "options": [{"answer": "SpongeBob", "correct": true}, {"answer": "Patrick", "correct": false}, {"answer": "Doraemon", "correct": false}, {"answer": "Shinchan", "correct": false}]},
+    {"level": 3, "theme": "fun", "question": "Permainan tradisional menggunakan gasing disebut?", "options": [{"answer": "Gasing", "correct": true}, {"answer": "Layangan", "correct": false}, {"answer": "Kelereng", "correct": false}, {"answer": "Congklak", "correct": false}]},
+
+    {"level": 4, "theme": "ipa", "question": "Proses perubahan wujud dari cair ke gas disebut?", "options": [{"answer": "Penguapan", "correct": true}, {"answer": "Pembekuan", "correct": false}, {"answer": "Pengembunan", "correct": false}, {"answer": "Mencair", "correct": false}]},
+    {"level": 4, "theme": "ipa", "question": "Satuan internasional untuk gaya adalah?", "options": [{"answer": "Newton", "correct": true}, {"answer": "Joule", "correct": false}, {"answer": "Watt", "correct": false}, {"answer": "Pascal", "correct": false}]},
+    {"level": 4, "theme": "ips", "question": "Gunung tertinggi di Indonesia adalah?", "options": [{"answer": "Puncak Jaya", "correct": true}, {"answer": "Gunung Semeru", "correct": false}, {"answer": "Gunung Rinjani", "correct": false}, {"answer": "Gunung Merbabu", "correct": false}]},
+    {"level": 4, "theme": "ips", "question": "Hari Kemerdekaan Indonesia diperingati setiap tanggal?", "options": [{"answer": "17 Agustus", "correct": true}, {"answer": "1 Juni", "correct": false}, {"answer": "28 Oktober", "correct": false}, {"answer": "2 Mei", "correct": false}]},
+    {"level": 4, "theme": "matematika", "question": "Luas persegi panjang 8 cm x 5 cm adalah?", "options": [{"answer": "40 cm²", "correct": true}, {"answer": "13 cm²", "correct": false}, {"answer": "26 cm²", "correct": false}, {"answer": "35 cm²", "correct": false}]},
+    {"level": 4, "theme": "matematika", "question": "Faktor dari 18 adalah?", "options": [{"answer": "1, 2, 3, 6, 9, 18", "correct": true}, {"answer": "1, 3, 6, 9", "correct": false}, {"answer": "2, 3, 6", "correct": false}, {"answer": "1, 9, 18", "correct": false}]},
+    {"level": 4, "theme": "inggris", "question": "Artinya 'eat' adalah?", "options": [{"answer": "Makan", "correct": true}, {"answer": "Minum", "correct": false}, {"answer": "Tidur", "correct": false}, {"answer": "Berlari", "correct": false}]},
+    {"level": 4, "theme": "inggris", "question": "Bentuk lampau dari 'go' adalah?", "options": [{"answer": "Went", "correct": true}, {"answer": "Gone", "correct": false}, {"answer": "Going", "correct": false}, {"answer": "Goes", "correct": false}]},
+    {"level": 4, "theme": "fun", "question": "Buah yang kulitnya berduri dan dagingnya manis adalah?", "options": [{"answer": "Durian", "correct": true}, {"answer": "Nanas", "correct": false}, {"answer": "Rambutan", "correct": false}, {"answer": "Salak", "correct": false}]},
+    {"level": 4, "theme": "fun", "question": "Alat musik tradisional Jawa Barat adalah?", "options": [{"answer": "Angklung", "correct": true}, {"answer": "Gamelan", "correct": false}, {"answer": "Kolintang", "correct": false}, {"answer": "Sasando", "correct": false}]},
+
+    {"level": 5, "theme": "ipa", "question": "Hewan yang mengalami metamorfosis sempurna adalah?", "options": [{"answer": "Kupu-kupu", "correct": true}, {"answer": "Belalang", "correct": false}, {"answer": "Kecoa", "correct": false}, {"answer": "Nyamuk", "correct": false}]},
+    {"level": 5, "theme": "ipa", "question": "Bagian tumbuhan yang berfungsi menyerap air adalah?", "options": [{"answer": "Akar", "correct": true}, {"answer": "Batang", "correct": false}, {"answer": "Daun", "correct": false}, {"answer": "Bunga", "correct": false}]},
+    {"level": 5, "theme": "ips", "question": "Lembaga tertinggi negara Indonesia adalah?", "options": [{"answer": "MPR", "correct": true}, {"answer": "DPR", "correct": false}, {"answer": "DPD", "correct": false}, {"answer": "MA", "correct": false}]},
+    {"level": 5, "theme": "ips", "question": "Suku terbesar di Indonesia adalah?", "options": [{"answer": "Suku Jawa", "correct": true}, {"answer": "Suku Sunda", "correct": false}, {"answer": "Suku Batak", "correct": false}, {"answer": "Suku Minangkabau", "correct": false}]},
+    {"level": 5, "theme": "matematika", "question": "Volume kubus dengan rusuk 4 cm adalah?", "options": [{"answer": "64 cm³", "correct": true}, {"answer": "16 cm³", "correct": false}, {"answer": "48 cm³", "correct": false}, {"answer": "32 cm³", "correct": false}]},
+    {"level": 5, "theme": "matematika", "question": "Hasil dari 2/5 + 1/5 adalah?", "options": [{"answer": "3/5", "correct": true}, {"answer": "2/5", "correct": false}, {"answer": "1/5", "correct": false}, {"answer": "4/5", "correct": false}]},
+    {"level": 5, "theme": "inggris", "question": "Artinya 'beautiful' adalah?", "options": [{"answer": "Cantik", "correct": true}, {"answer": "Jewek", "correct": false}, {"answer": "Tinggi", "correct": false}, {"answer": "Pintar", "correct": false}]},
+    {"level": 5, "theme": "inggris", "question": "Sinonim dari 'happy' adalah?", "options": [{"answer": "Joyful", "correct": true}, {"answer": "Sad", "correct": false}, {"answer": "Angry", "correct": false}, {"answer": "Tired", "correct": false}]},
+    {"level": 5, "theme": "fun", "question": "Tokoh superhero yang bisa memanggil petir adalah?", "options": [{"answer": "Thor", "correct": true}, {"answer": "Iron Man", "correct": false}, {"answer": "Captain America", "correct": false}, {"answer": "Hulk", "correct": false}]},
+    {"level": 5, "theme": "fun", "question": "Game balapan kart yang terkenal buatan Nintendo adalah?", "options": [{"answer": "Mario Kart", "correct": true}, {"answer": "Need for Speed", "correct": false}, {"answer": "Forza", "correct": false}, {"answer": "Gran Turismo", "correct": false}]},
+
+    {"level": 6, "theme": "ipa", "question": "Benda yang dapat ditarik magnet disebut?", "options": [{"answer": "Ferromagnetik", "correct": true}, {"answer": "Diamagnetik", "correct": false}, {"answer": "Paramagnetik", "correct": false}, {"answer": "Konduktor", "correct": false}]},
+    {"level": 6, "theme": "ipa", "question": "Suhu titik beku air adalah?", "options": [{"answer": "0°C", "correct": true}, {"answer": "100°C", "correct": false}, {"answer": "-1°C", "correct": false}, {"answer": "32°C", "correct": false}]},
+    {"level": 6, "theme": "ips", "question": "Organisasi negara-negara Asia Tenggara adalah?", "options": [{"answer": "ASEAN", "correct": true}, {"answer": "PBB", "correct": false}, {"answer": "OPEC", "correct": false}, {"answer": "AFTA", "correct": false}]},
+    {"level": 6, "theme": "ips", "question": "Mata uang Jepang adalah?", "options": [{"answer": "Yen", "correct": true}, {"answer": "Won", "correct": false}, {"answer": "Yuan", "correct": false}, {"answer": "Dollar", "correct": false}]},
+    {"level": 6, "theme": "matematika", "question": "Sudut siku-siku besarnya adalah?", "options": [{"answer": "90°", "correct": true}, {"answer": "180°", "correct": false}, {"answer": "45°", "correct": false}, {"answer": "360°", "correct": false}]},
+    {"level": 6, "theme": "matematika", "question": "FPB dari 12 dan 18 adalah?", "options": [{"answer": "6", "correct": true}, {"answer": "3", "correct": false}, {"answer": "9", "correct": false}, {"answer": "2", "correct": false}]},
+    {"level": 6, "theme": "inggris", "question": "Artinya 'run' adalah?", "options": [{"answer": "Berlari", "correct": true}, {"answer": "Berjalan", "correct": false}, {"answer": "Duduk", "correct": false}, {"answer": "Tidur", "correct": false}]},
+    {"level": 6, "theme": "inggris", "question": "Bentuk present continuous dari 'eat' adalah?", "options": [{"answer": "Eating", "correct": true}, {"answer": "Eats", "correct": false}, {"answer": "Ate", "correct": false}, {"answer": "Eaten", "correct": false}]},
+    {"level": 6, "theme": "fun", "question": "Makanan cepat saji berbentuk bundar dengan daging di tengah disebut?", "options": [{"answer": "Burger", "correct": true}, {"answer": "Pizza", "correct": false}, {"answer": "Donat", "correct": false}, {"answer": "Kebab", "correct": false}]},
+    {"level": 6, "theme": "fun", "question": "Tokoh kartun kuning yang bekerja di pembangkit listrik tenaga nuklir?", "options": [{"answer": "Homer Simpson", "correct": true}, {"answer": "Peter Griffin", "correct": false}, {"answer": "SpongeBob", "correct": false}, {"answer": "Minion", "correct": false}]},
+
+    {"level": 7, "theme": "ipa", "question": "Planet yang disebut Bintang Kejora adalah?", "options": [{"answer": "Venus", "correct": true}, {"answer": "Mars", "correct": false}, {"answer": "Jupiter", "correct": false}, {"answer": "Saturnus", "correct": false}]},
+    {"level": 7, "theme": "ipa", "question": "Proses pernapasan manusia terjadi di?", "options": [{"answer": "Paru-paru", "correct": true}, {"answer": "Jantung", "correct": false}, {"answer": "Hati", "correct": false}, {"answer": "Ginjal", "correct": false}]},
+    {"level": 7, "theme": "ips", "question": "Hak Asasi Manusia disingkat?", "options": [{"answer": "HAM", "correct": true}, {"answer": "HKM", "correct": false}, {"answer": "HUM", "correct": false}, {"answer": "HAMK", "correct": false}]},
+    {"level": 7, "theme": "ips", "question": "Samudra terluas di dunia adalah?", "options": [{"answer": "Samudra Pasifik", "correct": true}, {"answer": "Samudra Atlantik", "correct": false}, {"answer": "Samudra Hindia", "correct": false}, {"answer": "Samudra Arktik", "correct": false}]},
+    {"level": 7, "theme": "matematika", "question": "Akar kuadrat dari 81 adalah?", "options": [{"answer": "9", "correct": true}, {"answer": "8", "correct": false}, {"answer": "7", "correct": false}, {"answer": "10", "correct": false}]},
+    {"level": 7, "theme": "matematika", "question": "Hasil dari 12² adalah?", "options": [{"answer": "144", "correct": true}, {"answer": "121", "correct": false}, {"answer": "169", "correct": false}, {"answer": "132", "correct": false}]},
+    {"level": 7, "theme": "inggris", "question": "Artinya 'library' adalah?", "options": [{"answer": "Perpustakaan", "correct": true}, {"answer": "Laboratorium", "correct": false}, {"answer": "Kantor", "correct": false}, {"answer": "Rumah Sakit", "correct": false}]},
+    {"level": 7, "theme": "inggris", "question": "Antonim dari 'fast' adalah?", "options": [{"answer": "Slow", "correct": true}, {"answer": "Quick", "correct": false}, {"answer": "Rapid", "correct": false}, {"answer": "Swift", "correct": false}]},
+    {"level": 7, "theme": "fun", "question": "Minuman dingin dari teh dan susu kental manis disebut?", "options": [{"answer": "Teh Tarik", "correct": true}, {"answer": "Es Jeruk", "correct": false}, {"answer": "Es Teh", "correct": false}, {"answer": "Kopi Susu", "correct": false}]},
+    {"level": 7, "theme": "fun", "question": "Hewan tercepat di darat adalah?", "options": [{"answer": "Cheetah", "correct": true}, {"answer": "Singa", "correct": false}, {"answer": "Kuda", "correct": false}, {"answer": "Macan", "correct": false}]},
+
+    {"level": 8, "theme": "ipa", "question": "Zat yang mempercepat reaksi kimia disebut?", "options": [{"answer": "Katalis", "correct": true}, {"answer": "Reaktan", "correct": false}, {"answer": "Produk", "correct": false}, {"answer": "Inhibitor", "correct": false}]},
+    {"level": 8, "theme": "ipa", "question": "Planet yang memiliki cincin paling jelas adalah?", "options": [{"answer": "Saturnus", "correct": true}, {"answer": "Jupiter", "correct": false}, {"answer": "Uranus", "correct": false}, {"answer": "Neptunus", "correct": false}]},
+    {"level": 8, "theme": "ips", "question": "Negara dengan populasi terbanyak di dunia adalah?", "options": [{"answer": "India", "correct": true}, {"answer": "China", "correct": false}, {"answer": "AS", "correct": false}, {"answer": "Indonesia", "correct": false}]},
+    {"level": 8, "theme": "ips", "question": "Sungai terpanjang di dunia adalah?", "options": [{"answer": "Sungai Nil", "correct": true}, {"answer": "Sungai Amazon", "correct": false}, {"answer": "Sungai Yangtze", "correct": false}, {"answer": "Sungai Musi", "correct": false}]},
+    {"level": 8, "theme": "matematika", "question": "Hasil dari 15% dari 200 adalah?", "options": [{"answer": "30", "correct": true}, {"answer": "20", "correct": false}, {"answer": "25", "correct": false}, {"answer": "35", "correct": false}]},
+    {"level": 8, "theme": "matematika", "question": "Persamaan garis y = 2x + 3 memiliki gradien?", "options": [{"answer": "2", "correct": true}, {"answer": "3", "correct": false}, {"answer": "1", "correct": false}, {"answer": "-2", "correct": false}]},
+    {"level": 8, "theme": "inggris", "question": "Artinya 'airport' adalah?", "options": [{"answer": "Bandara", "correct": true}, {"answer": "Pelabuhan", "correct": false}, {"answer": "Stasiun", "correct": false}, {"answer": "Terminal", "correct": false}]},
+    {"level": 8, "theme": "inggris", "question": "Bentuk past participle dari 'write' adalah?", "options": [{"answer": "Written", "correct": true}, {"answer": "Wrote", "correct": false}, {"answer": "Writing", "correct": false}, {"answer": "Writes", "correct": false}]},
+    {"level": 8, "theme": "fun", "question": "Kue ulang tahun biasanya dihiasi dengan?", "options": [{"answer": "Lilin", "correct": true}, {"answer": "Bunga", "correct": false}, {"answer": "Balon", "correct": false}, {"answer": "Pita", "correct": false}]},
+    {"level": 8, "theme": "fun", "question": "Olahraga yang menggunakan raket dan shuttlecock disebut?", "options": [{"answer": "Bulutangkis", "correct": true}, {"answer": "Tenis", "correct": false}, {"answer": "Bola Voli", "correct": false}, {"answer": "Basket", "correct": false}]},
+
+    {"level": 9, "theme": "ipa", "question": "Unsur kimia dengan simbol 'Na' adalah?", "options": [{"answer": "Natrium", "correct": true}, {"answer": "Nitrogen", "correct": false}, {"answer": "Nikel", "correct": false}, {"answer": "Neon", "correct": false}]},
+    {"level": 9, "theme": "ipa", "question": "Hewan yang dapat melihat dalam gelap karena memiliki tapetum lucidum adalah?", "options": [{"answer": "Kucing", "correct": true}, {"answer": "Anjing", "correct": false}, {"answer": "Kuda", "correct": false}, {"answer": "Sapi", "correct": false}]},
+    {"level": 9, "theme": "ips", "question": "Perjanjian yang mengakhiri Perang Dunia II di Asia adalah?", "options": [{"answer": "Perjanjian San Francisco", "correct": true}, {"answer": "Perjanjian Versailles", "correct": false}, {"answer": "Perjanjian Renville", "correct": false}, {"answer": "Perjanjian Linggarjati", "correct": false}]},
+    {"level": 9, "theme": "ips", "question": "Organisasi perdagangan dunia disingkat?", "options": [{"answer": "WTO", "correct": true}, {"answer": "WHO", "correct": false}, {"answer": "IMF", "correct": false}, {"answer": "UNESCO", "correct": false}]},
+    {"level": 9, "theme": "matematika", "question": "Nilai dari sin 90° adalah?", "options": [{"answer": "1", "correct": true}, {"answer": "0", "correct": false}, {"answer": "0.5", "correct": false}, {"answer": "-1", "correct": false}]},
+    {"level": 9, "theme": "matematika", "question": "Turunan dari x² adalah?", "options": [{"answer": "2x", "correct": true}, {"answer": "x", "correct": false}, {"answer": "2", "correct": false}, {"answer": "x²", "correct": false}]},
+    {"level": 9, "theme": "inggris", "question": "Artinya 'environment' adalah?", "options": [{"answer": "Lingkungan", "correct": true}, {"answer": "Perkembangan", "correct": false}, {"answer": "Pendidikan", "correct": false}, {"answer": "Kesehatan", "correct": false}]},
+    {"level": 9, "theme": "inggris", "question": "Kalimat passive dari 'They build a house' adalah?", "options": [{"answer": "A house is built by them", "correct": true}, {"answer": "A house was built by them", "correct": false}, {"answer": "They are building a house", "correct": false}, {"answer": "A house builds them", "correct": false}]},
+    {"level": 9, "theme": "fun", "question": "Makanan khas Jepang dari nasi dan rumput laut disebut?", "options": [{"answer": "Sushi", "correct": true}, {"answer": "Ramen", "correct": false}, {"answer": "Udon", "correct": false}, {"answer": "Tempura", "correct": false}]},
+    {"level": 9, "theme": "fun", "question": "Tokoh kartun yang punya celana kotak-kotak dan tinggal di Bikini Bottom?", "options": [{"answer": "SpongeBob", "correct": true}, {"answer": "Patrick", "correct": false}, {"answer": "Squidward", "correct": false}, {"answer": "Mr. Krabs", "correct": false}]},
+
+    {"level": 10, "theme": "ipa", "question": "Proses pembelahan sel yang menghasilkan 4 sel haploid disebut?", "options": [{"answer": "Meiosis", "correct": true}, {"answer": "Mitosis", "correct": false}, {"answer": "Fertilisasi", "correct": false}, {"answer": "Mitokondria", "correct": false}]},
+    {"level": 10, "theme": "ipa", "question": "Hukum gravitasi ditemukan oleh?", "options": [{"answer": "Isaac Newton", "correct": true}, {"answer": "Albert Einstein", "correct": false}, {"answer": "Galileo Galilei", "correct": false}, {"answer": "Nikola Tesla", "correct": false}]},
+    {"level": 10, "theme": "ips", "question": "Teori asal usul manusia yang menyatakan manusia berasal dari Afrika disebut?", "options": [{"answer": "Out of Africa", "correct": true}, {"answer": "Evolusi", "correct": false}, {"answer": "Kreationisme", "correct": false}, {"answer": "Migrasi Nusantara", "correct": false}]},
+    {"level": 10, "theme": "ips", "question": "Negara yang pertama kali mendaratkan manusia di bulan adalah?", "options": [{"answer": "Amerika Serikat", "correct": true}, {"answer": "Rusia", "correct": false}, {"answer": "China", "correct": false}, {"answer": "India", "correct": false}]},
+    {"level": 10, "theme": "matematika", "question": "Integral dari 2x dx adalah?", "options": [{"answer": "x² + C", "correct": true}, {"answer": "2x² + C", "correct": false}, {"answer": "x + C", "correct": false}, {"answer": "2 + C", "correct": false}]},
+    {"level": 10, "theme": "matematika", "question": "Probabilitas munculnya angka 6 pada dadu adalah?", "options": [{"answer": "1/6", "correct": true}, {"answer": "1/3", "correct": false}, {"answer": "1/2", "correct": false}, {"answer": "1/12", "correct": false}]},
+    {"level": 10, "theme": "inggris", "question": "Artinya 'phenomenon' adalah?", "options": [{"answer": "Fenomena", "correct": true}, {"answer": "Filosofi", "correct": false}, {"answer": "Fisika", "correct": false}, {"answer": "Fiksi", "correct": false}]},
+    {"level": 10, "theme": "inggris", "question": "Idiom 'break a leg' artinya?", "options": [{"answer": "Semoga beruntung", "correct": true}, {"answer": "Hati-hati", "correct": false}, {"answer": "Lari cepat", "correct": false}, {"answer": "Jangan menyerah", "correct": false}]},
+    {"level": 10, "theme": "fun", "question": "Film animasi tentang robot pembersih di bumi kosong adalah?", "options": [{"answer": "WALL-E", "correct": true}, {"answer": "Up", "correct": false}, {"answer": "Toy Story", "correct": false}, {"answer": "Finding Nemo", "correct": false}]},
+    {"level": 10, "theme": "fun", "question": "Permainan kartu UNO memiliki berapa warna dasar?", "options": [{"answer": "4", "correct": true}, {"answer": "5", "correct": false}, {"answer": "6", "correct": false}, {"answer": "3", "correct": false}]},
+
+    {"level": 1, "theme": "lontong", "question": "Kenapa air laut asin?", "options": [{"answer": "Ikan keringetan", "correct": true}, {"answer": "Kapal tenggelam", "correct": false}, {"answer": "Karena ada ikan asin", "correct": false}, {"answer": "Nelayan nangis", "correct": false}]},
+    {"level": 1, "theme": "lontong", "question": "Kenapa sate kambing bau?", "options": [{"answer": "Kambing belum mandi", "correct": true}, {"answer": "Bumbu kedaluwarsa", "correct": false}, {"answer": "Arangnya basah", "correct": false}, {"answer": "Tukang sate ketiduran", "correct": false}]},
+    {"level": 1, "theme": "lontong", "question": "Kenapa nyamuk suka nempel di TV?", "options": [{"answer": "Biar jadi bintang", "correct": true}, {"answer": "Biar keliatan keren", "correct": false}, {"answer": "TV dingin", "correct": false}, {"answer": "Nyamuknya buta", "correct": false}]},
+    {"level": 1, "theme": "lontong", "question": "Kenapa bis suka ngetem?", "options": [{"answer": "Sopirnya pipis", "correct": true}, {"answer": "Bisnya capek", "correct": false}, {"answer": "Ada polisi", "correct": false}, {"answer": "Bannya bocor", "correct": false}]},
+    {"level": 1, "theme": "lontong", "question": "Kenapa buku matematika selalu sedih?", "options": [{"answer": "Banyak masalah", "correct": true}, {"answer": "Jarang dibaca", "correct": false}, {"answer": "Sampulnya sobek", "correct": false}, {"answer": "Dicoret-coret", "correct": false}]},
+
+    {"level": 2, "theme": "lontong", "question": "Kenapa telur asin tidak pernah sendirian?", "options": [{"answer": "Bareng lontong", "correct": true}, {"answer": "Takut gelap", "correct": false}, {"answer": "Punya teman asin", "correct": false}, {"answer": "Dia kembar", "correct": false}]},
+    {"level": 2, "theme": "lontong", "question": "Kenapa semangka suka bohong?", "options": [{"answer": "Merah padahal ijo", "correct": true}, {"answer": "Manis terus", "correct": false}, {"answer": "Bijinya banyak", "correct": false}, {"answer": "Buah musiman", "correct": false}]},
+    {"level": 2, "theme": "lontong", "question": "Kenapa bola takut sama gawang?", "options": [{"answer": "Gawang jeblosin", "correct": true}, {"answer": "Gawang besar", "correct": false}, {"answer": "Bolanya kempis", "correct": false}, {"answer": "Gawang galak", "correct": false}]},
+    {"level": 2, "theme": "lontong", "question": "Kenapa keyboard suka sakit hati?", "options": [{"answer": "Sering ditekan", "correct": true}, {"answer": "Tombolnya lepas", "correct": false}, {"answer": "Jarang dibersihin", "correct": false}, {"answer": "Sering nge-klik", "correct": false}]},
+    {"level": 2, "theme": "lontong", "question": "Kenapa motor suka ngadat di tengah hujan?", "options": [{"answer": "Mandi kedinginan", "correct": true}, {"answer": "Bensin habis", "correct": false}, {"answer": "Malas jalan", "correct": false}, {"answer": "Ban selip", "correct": false}]},
+
+    {"level": 3, "theme": "lontong", "question": "Kenapa lontong isinya nasi tapi disebut lontong?", "options": [{"answer": "Namanya lontong", "correct": true}, {"answer": "Dibungkus daun", "correct": false}, {"answer": "Bentuknya lonjong", "correct": false}, {"answer": "Jualan di warung", "correct": false}]},
+    {"level": 3, "theme": "lontong", "question": "Kenapa sapi tidak pernah buang air kecil sambil lari?", "options": [{"answer": "Kecipratan sendiri", "correct": true}, {"answer": "Sapi sopan", "correct": false}, {"answer": "Larinya pelan", "correct": false}, {"answer": "Ga keburu", "correct": false}]},
+    {"level": 3, "theme": "lontong", "question": "Kenapa kulkas suka bunyi 'kreeeet...' kalau dibuka?", "options": [{"answer": "Protes kebangun", "correct": true}, {"answer": "Engselnya rusak", "correct": false}, {"answer": "Laparnya", "correct": false}, {"answer": "Isinya kosong", "correct": false}]},
+    {"level": 3, "theme": "lontong", "question": "Kenapa celana jeans kalau dicuci hitam warnanya hilang?", "options": [{"answer": "Malu jadi hitam", "correct": true}, {"answer": "Luntur", "correct": false}, {"answer": "Salah sabun", "correct": false}, {"answer": "Kebanyakan rendam", "correct": false}]},
+    {"level": 3, "theme": "lontong", "question": "Kenapa satpam suka tidur pas malem?", "options": [{"answer": "Pura-pura mati", "correct": true}, {"answer": "Capek", "correct": false}, {"answer": "Gaada kopi", "correct": false}, {"answer": "Tugasnya jagain", "correct": false}]},
+
+    {"level": 4, "theme": "lontong", "question": "Kenapa Cak Lontong kalau jawab tebakan selalu serius?", "options": [{"answer": "Ketawa ga jelas", "correct": true}, {"answer": "Lagi marah", "correct": false}, {"answer": "Beku ekspresi", "correct": false}, {"answer": "Puasa ketawa", "correct": false}]},
+    {"level": 4, "theme": "lontong", "question": "Kenapa gunung meletus?", "options": [{"answer": "Batuk pilek", "correct": true}, {"answer": "Kepanasan", "correct": false}, {"answer": "Ada yang nyolok", "correct": false}, {"answer": "Maghrib", "correct": false}]},
+    {"level": 4, "theme": "lontong", "question": "Kenapa dokter suka pukul lutut pasien?", "options": [{"answer": "Biar nyengir", "correct": true}, {"answer": "Biar refleks", "correct": false}, {"answer": "Lututnya kotor", "correct": false}, {"answer": "Dokternya kesal", "correct": false}]},
+    {"level": 4, "theme": "lontong", "question": "Kenapa keranjang belanja selalu kosong saat mau bayar?", "options": [{"answer": "Pindah ke plastik", "correct": true}, {"answer": "Jatuh", "correct": false}, {"answer": "Lupa belanja", "correct": false}, {"answer": "Disimpan di kasir", "correct": false}]},
+    {"level": 4, "theme": "lontong", "question": "Kenapa bayangan tidak pernah bisa ditangkap?", "options": [{"answer": "Lari kalau dilihat", "correct": true}, {"answer": "Ga punya badan", "correct": false}, {"answer": "Takut digetok", "correct": false}, {"answer": "Dia hantu", "correct": false}]},
+
+  {
+    "level": 5,
+    "theme": "lontong",
+    "question": "Kenapa burung bisa terbang tapi ayam nggak?",
+    "options": [
+      {"answer": "Burung punya sayap, ayam punya sayur", "correct": true},
+      {"answer": "Ayam sibuk ngurusin telur tiap hari", "correct": false},
+      {"answer": "Burung minum kopi, ayam minum susu", "correct": false},
+      {"answer": "Ayam takut ketinggian sama angin", "correct": false}
+    ]
+  },
+  {
+    "level": 5,
+    "theme": "lontong",
+    "question": "Kenapa sendal jepit bunyinya 'jepit jepit'?",
+    "options": [
+      {"answer": "Kalau bunyi 'nasi padang' takut dipesen orang", "correct": true},
+      {"answer": "Sendalnya lagi jalan di atas kerikil", "correct": false},
+      {"answer": "Karena ada speaker kecil di telapak", "correct": false},
+      {"answer": "karena sendal jepit, kalau jepitan untuk jemuran", "correct": false}
+    ]
+  },
+  {
+    "level": 5,
+    "theme": "lontong",
+    "question": "Kenapa orang tidur harus merem?",
+    "options": [
+      {"answer": "Biar yang tidur nggak bingung tidur atau enggak", "correct": true},
+      {"answer": "Biar nggak silau pas mimpi indah", "correct": false},
+      {"answer": "Biar hemat listrik dari mata", "correct": false},
+      {"answer": "Karena disuruh sama ibunya", "correct": false}
+    ]
+  },
+  {
+    "level": 5,
+    "theme": "lontong",
+    "question": "Kenapa motor matic nggak ada giginya?",
+    "options": [
+      {"answer": "Biar nggak gigit dan ban sampai kempes", "correct": true},
+      {"answer": "Biar irit bensin mingguan", "correct": false},
+      {"answer": "Gak suka makan, sukanya minum", "correct": false},
+      {"answer": "Motornya nggak suka sikat gigi", "correct": false}
+    ]
+  },
+  {
+    "level": 6,
+    "theme": "lontong",
+    "question": "Kenapa ikan di laut asin tapi di akuarium nggak?",
+    "options": [
+      {"answer": "Ikan laut bayar PPN, akuarium nggak bayar", "correct": true},
+      {"answer": "Akuariumnya dikasih gula jawa", "correct": false},
+      {"answer": "Ikan laut pelit sama garam", "correct": false},
+      {"answer": "Air akuarium bekas cucian beras", "correct": false}
+    ]
+  },
+  {
+    "level": 6,
+    "theme": "lontong",
+    "question": "Kenapa kucing kalau dipanggil 'pus pus' dia dateng?",
+    "options": [
+      {"answer": "Kalau dipanggil 'bayar utang' dia kabur", "correct": true},
+      {"answer": "Kucingnya kangen bau tangan", "correct": false},
+      {"answer": "Dia suka ikut nguping gosip", "correct": false},
+      {"answer": "Karena 'pus pus' enak di kuping", "correct": false}
+    ]
+  },
+  {
+    "level": 6,
+    "theme": "lontong",
+    "question": "Kenapa hujan turunnya dari atas ke bawah?",
+    "options": [
+      {"answer": "Kalau dari bawah ke atas namanya semburan", "correct": true},
+      {"answer": "Hujan males manjat pakai tangga", "correct": false},
+      {"answer": "Karena ada gravitasi, gak mungkin naik", "correct": false},
+      {"answer": "Kalau dari bawah ke atas namanya menguap", "correct": false}
+    ]
+  },
+  {
+    "level": 6,
+    "theme": "lontong",
+    "question": "Kenapa lampu sein mobil kedip-kedip?",
+    "options": [
+      {"answer": "Kalau nyala terus dikira lampu kosan", "correct": true},
+      {"answer": "Karena lampu sein kedap-kedip", "correct": true},
+      {"answer": "Kalau bukan lampu mobil, pasti lampu disko", "correct": false},
+      {"answer": "Lampunya lagi ikut disko", "correct": false}
+    ]
+  },
+  {
+    "level": 7,
+    "theme": "lontong",
+    "question": "Kenapa jerapah lehernya panjang?",
+    "options": [
+      {"answer": "Biar makannya nggak nyangkut di ketiak", "correct": true},
+      {"answer": "Biar keliatan tinggi dari semuanya", "correct": false},
+      {"answer": "Untuk mencari makan ditempat yang tinggi", "correct": false},
+      {"answer": "Biar bisa ngintip dapur rumah", "correct": false}
+    ]
+  },
+  {
+    "level": 7,
+    "theme": "lontong",
+    "question": "Kenapa nasi kalau dimasak jadi lembek?",
+    "options": [
+      {"answer": "Karena air panas menyerap ke beras KEY:(Kan yang ditanya nasi bukan beras)", "correct": false},
+      {"answer": "Kalau keras namanya batu bukan nasi", "correct": true},
+      {"answer": "Karena nasi bukan beras KEY:(Benar tapi kurang tepat)", "correct": false},
+      {"answer": "Rice cookernya galak banget KEY:(Waduh kasian nasinya.)", "correct": false}
+    ]
+  },
+  {
+    "level": 7,
+    "theme": "lontong",
+    "question": "Kenapa orang ketawa kalau digelitikin?",
+    "options": [
+      {"answer": "Sarafnya konslet karena ketemu", "correct": false},
+      {"answer": "Karena geli itu kewajiban hidup", "correct": false},
+      {"answer": "Biar yang ngelitikin nggak ngerasa gagal", "correct": true},
+      {"answer": "Biar keliatan sopan di depan", "correct": false}
+    ]
+  },
+  {
+    "level": 7,
+    "theme": "lontong",
+    "question": "Kenapa jarum jam muter ke kanan?",
+    "options": [
+      {"answer": "Biar searah jarum detik juga", "correct": false},
+      {"answer": "Jamnya lagi kidal sementara", "correct": false},
+      {"answer": "Biar cepat pulang katanya", "correct": false},
+      {"answer": "Kalau ke kiri waktunya jadi utang melulu", "correct": true}
+    ]
+  },
+  {
+    "level": 8,
+    "theme": "lontong",
+    "question": "Kenapa pesawat nggak bisa mundur?",
+    "options": [
+      {"answer": "Gir mundurnya ketinggalan di rumah", "correct": false},
+      {"answer": "Pesawatnya nggak bisa reverse gear", "correct": false},
+      {"answer": "Bensinnya nggak cukup buat mundur", "correct": false},
+      {"answer": "Pilotnya bingung pulang apa berangkat", "correct": true}
+    ]
+  },
+  {
+    "level": 8,
+    "theme": "lontong",
+    "question": "Kenapa bumi bulat tapi jalannya datar?",
+    "options": [
+      {"answer": "Bumi lagi diet jadi rata", "correct": false},
+      {"answer": "Jalannya minta diratakan terus", "correct": false},
+      {"answer": "Biar motor nggak muter-muter terus", "correct": true},
+      {"answer": "Biar GPS nggak error bacanya", "correct": false}
+    ]
+  },
+  {
+    "level": 8,
+    "theme": "lontong",
+    "question": "Kenapa manusia punya 2 mata tapi 1 hidung?",
+    "options": [
+      {"answer": "Biar simetris sama kuping", "correct": false},
+      {"answer": "Biar pas pilek tisu-nya nggak habis", "correct": true},
+      {"answer": "Hidungnya lebih mahal dari mata", "correct": false},
+      {"answer": "Biar keliatan mancung terus", "correct": false}
+    ]
+  },
+  {
+    "level": 8,
+    "theme": "lontong",
+    "question": "Kenapa es batu dimasukin air jadi meleleh?",
+    "options": [
+      {"answer": "Biar sopan harus berbaur KEY:(dengan air)", "correct": true},
+      {"answer": "Es batunya pemalu", "correct": false},
+      {"answer": "Airnya panas", "correct": false}
+    ]
+  },
+  {
+    "level": 8,
+    "theme": "lontong",
+    "question": "Kenapa cicak putus ekor bisa tumbuh lagi?",
+    "options": [
+      {"answer": "Biar pabrik cicak nggak rugi produksi", "correct": true},
+      {"answer": "Biar kelihatan lebih keren", "correct": false},
+      {"answer": "Cicaknya punya asuransi jiwa", "correct": false}
+    ]
+  },
+  {
+    "level": 8,
+    "theme": "lontong",
+    "question": "Kenapa mic ditiup bunyinya 'duk duk'?",
+    "options": [
+      {"answer": "Kalau bunyi 'salam dari Binjai' itu fyp", "correct": true},
+      {"answer": "Mic-nya kaget tiba-tiba", "correct": false},
+      {"answer": "Ada angin badai lokal", "correct": false},
+      {"answer": "Mic-nya lagi beatbox", "correct": false}
+    ]
+  },
+  {
+    "level": 8,
+    "theme": "lontong",
+    "question": "Kenapa zebra warnanya belang hitam putih?",
+    "options": [
+      {"answer": "Biar nggak dikira pindahan zebra cross", "correct": true},
+      {"answer": "Biar modis kayak baju bola", "correct": false},
+      {"answer": "Karena dicat, jadi hitam putih", "correct": false},
+      {"answer": "Biar nyamar jadi barisan semut", "correct": false}
+    ]
+  },
+  {
+    "level": 2,
+    "theme": "lontong",
+    "question": "Kenapa orang kaget bilang 'astagfirullah'?",
+    "options": [
+      {"answer": "Kalau bilang 'harganya murah' jadi seneng", "correct": true},
+      {"answer": "Udah kebiasaan dari kecil", "correct": false},
+      {"answer": "Biar dapat pahala tiba-tiba", "correct": false},
+      {"answer": "Biar yang bikin kaget kapok", "correct": false}
+    ]
+  },
+
+    {
+      "question": "Apa yang bisa naik tapi tidak bisa turun?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Umur", "correct": true },
+        { "answer": "Pohon", "correct": false },
+        { "answer": "Tangga", "correct": false }
+      ]
+    },
+    {
+      "question": "Binatang apa yang paling aneh?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Belalang", "correct": false },
+        { "answer": "Kupu-kupu", "correct": false },
+        { "answer": "Kelelawar", "correct": true }
+      ]
+    },
+    {
+      "question": "Kenapa air laut asin?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Karena ikannya banyak keringat", "correct": false },
+        { "answer": "Karena pernah dimasak pakai garam", "correct": true },
+        { "answer": "Karena sampah plastik", "correct": false }
+      ]
+    },
+    {
+      "question": "Hewan apa yang sepatunya selalu kebesaran?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Kuda", "correct": false },
+        { "answer": "Kelabang", "correct": true },
+        { "answer": "Semut", "correct": false }
+      ]
+    },
+    {
+      "question": "Siapa yang selalu jadi korban dalam cerita horor?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Polisi", "correct": false },
+        { "answer": "Penonton", "correct": false },
+        { "answer": "Kamera", "correct": true }
+      ]
+    },
+    {
+      "question": "Buah apa yang paling galak?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Buah naga", "correct": false },
+        { "answer": "Buah tangan", "correct": false },
+        { "answer": "Buah mulut", "correct": true }
+      ]
+    },
+    {
+      "question": "Kenapa pesawat terbang tidak bisa mundur?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Tidak punya gigi mundur", "correct": true },
+        { "answer": "Takut nabrak", "correct": false },
+        { "answer": "Lupakan jalan pulang", "correct": false }
+      ]
+    },
+    {
+      "question": "Apa bedanya matahari dan bulan?",
+      "level": 3,
+      "theme": "seru",
+      "options": [
+        { "answer": "Matahari panas, bulan dingin", "correct": false },
+        { "answer": "Kalau matahari ada sinarnya, kalau bulan ada sinetronnya", "correct": true },
+        { "answer": "Matahari besar, bulan kecil", "correct": false }
+      ]
+    },
+    {
+      "question": "Monyet apa yang paling menyebalkan?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Monyet beruk", "correct": false },
+        { "answer": "Monyet yang suka corat-coret", "correct": false },
+        { "answer": "Monyet onyet KEY:(monyet yang ngomel terus)", "correct": true }
+      ]
+    },
+    {
+      "question": "Sapi apa yang bisa bikin pusing?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Sapi gemuk", "correct": false },
+        { "answer": "Sapi perah", "correct": false },
+        { "answer": "Sapi putar", "correct": true }
+      ]
+    },
+    {
+      "question": "Kenapa tukang bakso tidak pernah kedinginan?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Karena pakai jaket tebal", "correct": false },
+        { "answer": "Karena selalu bawa pentol panas", "correct": true },
+        { "answer": "Karena tinggal di daerah tropis", "correct": false }
+      ]
+    },
+    {
+      "question": "Buah apa yang paling sering ditelepon?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Buah salak", "correct": false },
+        { "answer": "Buah pir KEY:(call)", "correct": true },
+        { "answer": "Buah apel", "correct": false }
+      ]
+    },
+    {
+      "question": "Hewan apa yang paling sial?",
+      "level": 3,
+      "theme": "seru",
+      "options": [
+        { "answer": "Kucing hitam", "correct": false },
+        { "answer": "Cicak jatuh", "correct": false },
+        { "answer": "Kumbang KEY:(kubur mangsa)", "correct": true }
+      ]
+    },
+    {
+      "question": "Kenapa orang Jepang suka makan nasi?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Karena tidak punya kentang", "correct": false },
+        { "answer": "Karena nasi adalah teman setia", "correct": false },
+        { "answer": "Karena kalau tidak makan nasi namanya orang Jahat", "correct": true }
+      ]
+    },
+    {
+      "question": "Apa yang selalu ada di depan tapi tidak pernah terlihat?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Masa depan", "correct": true },
+        { "answer": "Hidung", "correct": false },
+        { "answer": "Kaca spion", "correct": false }
+      ]
+    },
+    {
+      "question": "Benda apa yang kalau dikasih air malah keras?",
+      "level": 3,
+      "theme": "seru",
+      "options": [
+        { "answer": "Spons", "correct": false },
+        { "answer": "Semen", "correct": true },
+        { "answer": "Tanah liat", "correct": false }
+      ]
+    },
+    {
+      "question": "Kenapa polisi selalu membawa pensil?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Untuk menggambar", "correct": false },
+        { "answer": "Untuk menulis tilang", "correct": false },
+        { "answer": "Untuk jaga-jaga kalau ada pengendara yang minta tanda tangan", "correct": true }
+      ]
+    },
+    {
+      "question": "Hewan apa yang paling pendiam?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Ikan", "correct": true },
+        { "answer": "Kura-kura", "correct": false },
+        { "answer": "Siput", "correct": false }
+      ]
+    },
+    {
+      "question": "Apa yang bisa dipegang tapi tidak bisa dilempar?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Telepon", "correct": false },
+        { "answer": "Tangan orang lain", "correct": true },
+        { "answer": "Bantal", "correct": false }
+      ]
+    },
+    {
+      "question": "Kenapa ayam jago berkokok?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Karena sudah pagi", "correct": false },
+        { "answer": "Karena tidak bisa berkicau", "correct": true },
+        { "answer": "Karena ada rubah", "correct": false }
+      ]
+    },
+    {
+      "question": "Minuman apa yang bikin melek?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Kopi", "correct": false },
+        { "answer": "Teh", "correct": false },
+        { "answer": "Mata KEY:(minuman: 'mata' berarti satuan)", "correct": true }
+      ]
+    },
+    {
+      "question": "Hewan apa yang selalu rugi?",
+      "level": 3,
+      "theme": "seru",
+      "options": [
+        { "answer": "Kutu KEY:(kutu rugi)", "correct": true },
+        { "answer": "Kucing", "correct": false },
+        { "answer": "Tikus", "correct": false }
+      ]
+    },
+    {
+      "question": "Kenapa superhero pakai celana di luar?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Karena gaya", "correct": false },
+        { "answer": "Karena celana dalam mereka sudah kepanasan", "correct": true },
+        { "answer": "Supaya cepat dipanggil", "correct": false }
+      ]
+    },
+    {
+      "question": "Apa yang paling kecil di dunia?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Semut", "correct": false },
+        { "answer": "Debu", "correct": false },
+        { "answer": "Hawa KEY:(hawa napas, tapi 'hawa' juga berarti udara)", "correct": true }
+      ]
+    },
+    {
+      "question": "Kenapa bapak-bapak suka ngopi pagi?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Biar semangat kerja", "correct": false },
+        { "answer": "Biar bisa begadang", "correct": false },
+        { "answer": "Karena kopi itu pahit, pahit itu hidup, dan mereka sudah terbiasa", "correct": true }
+      ]
+    },
+    {
+      "question": "Hewan apa yang paling banyak gaya?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Kupu-kupu", "correct": false },
+        { "answer": "Ulat", "correct": false },
+        { "answer": "Kijang KEY:(gaya kijang)", "correct": true }
+      ]
+    },
+    {
+      "question": "Apa yang jatuh tapi tidak pernah sakit?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Hujan", "correct": true },
+        { "answer": "Bola", "correct": false },
+        { "answer": "Daun", "correct": false }
+      ]
+    },
+    {
+      "question": "Kenapa semua orang takut sama huruf S?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Karena S itu setan", "correct": false },
+        { "answer": "Karena S bisa jadi iblis", "correct": false },
+        { "answer": "Karena S adalah awal dari 'susah', 'sakit', 'sial'", "correct": true }
+      ]
+    },
+    {
+      "question": "Benda apa yang paling tidak sabar?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Kertas", "correct": false },
+        { "answer": "Korek api KEY:(karena sekali gesek langsung nyala)", "correct": true },
+        { "answer": "Jam", "correct": false }
+      ]
+    },
+    {
+      "question": "Apa yang bisa berlari tanpa kaki?",
+      "level": 3,
+      "theme": "seru",
+      "options": [
+        { "answer": "Air", "correct": false },
+        { "answer": "Angin", "correct": true },
+        { "answer": "Waktu", "correct": false }
+      ]
+    },
+    {
+      "question": "Kenapa orang botak tidak pernah kedinginan?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Karena rambutnya sudah pindah ke dada", "correct": false },
+        { "answer": "Karena dia selalu pakai topi", "correct": false },
+        { "answer": "Karena kepalanya sudah terbiasa angin", "correct": true }
+      ]
+    },
+    {
+      "question": "Hewan apa yang bisa terbang tapi tidak punya sayap?",
+      "level": 4,
+      "theme": "seru",
+      "options": [
+        { "answer": "Kelelawar", "correct": false },
+        { "answer": "Burung unta", "correct": false },
+        { "answer": "Waktu KEY:(terbang begitu cepat)", "correct": true }
+      ]
+    },
+    {
+      "question": "Apa bedanya kucing dan kucing?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Tidak ada bedanya", "correct": false },
+        { "answer": "Satu suka ikan, satu suka tikus", "correct": false },
+        { "answer": "Kalau kucing yang satu mengeong, yang satu mengeong juga. Sama saja!", "correct": true }
+      ]
+    },
+    {
+      "question": "Kenapa pom bensin tidak pernah tutup?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Karena 24 jam", "correct": false },
+        { "answer": "Karena takut kehabisan bensin", "correct": false },
+        { "answer": "Karena tutupnya bensin itu sendiri", "correct": true }
+      ]
+    },
+    {
+      "question": "Buah apa yang bisa mengobati luka?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Buah pisang", "correct": false },
+        { "answer": "Buah pluk KEY:(plaster)", "correct": true },
+        { "answer": "Buah jeruk", "correct": false }
+      ]
+    },
+    {
+      "question": "Apa yang bisa dipotong tapi tidak pernah habis?",
+      "level": 3,
+      "theme": "seru",
+      "options": [
+        { "answer": "Kayu", "correct": false },
+        { "answer": "Kuku", "correct": true },
+        { "answer": "Rambut", "correct": false }
+      ]
+    },
+    {
+      "question": "Kenapa telur tidak pernah takut jatuh?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Karena telur punya cangkang", "correct": false },
+        { "answer": "Karena telur bisa guling", "correct": false },
+        { "answer": "Karena telur sudah biasa dipecahkan", "correct": true }
+      ]
+    },
+    {
+      "question": "Hewan apa yang paling suka mengeluh?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Sapi KEY:(sapi-sapi)", "correct": false },
+        { "answer": "Kambing KEY:(mbeek-mbeek)", "correct": false },
+        { "answer": "Kelelawar KEY:(ke-lela-war, 'war' = protes)", "correct": true }
+      ]
+    },
+    {
+      "question": "Apa yang paling susah ditutup?",
+      "level": 3,
+      "theme": "seru",
+      "options": [
+        { "answer": "Pintu", "correct": false },
+        { "answer": "Mulut orang yang lagi ngomong", "correct": true },
+        { "answer": "Kran air", "correct": false }
+      ]
+    },
+    {
+      "question": "Kenapa komputer tidak pernah tidur?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Karena ada Windows", "correct": false },
+        { "answer": "Karena takut ketinggalan update", "correct": false },
+        { "answer": "Karena dia punya monitor KEY:(monitor = pengawas)", "correct": true }
+      ]
+    },
+    {
+      "question": "Buah apa yang paling sering main gitar?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Buah naga", "correct": false },
+        { "answer": "Buah duku KEY:(duku-duku kord)", "correct": true },
+        { "answer": "Buah mangga", "correct": false }
+      ]
+    },
+    {
+      "question": "Apa yang bisa dikirim tapi tidak bisa diterima?",
+      "level": 4,
+      "theme": "seru",
+      "options": [
+        { "answer": "Email", "correct": false },
+        { "answer": "Pesan suara", "correct": false },
+        { "answer": "Doa", "correct": true }
+      ]
+    },
+    {
+      "question": "Kenapa ikan tidak pernah tenggelam?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Karena mereka bisa berenang", "correct": false },
+        { "answer": "Karena mereka sudah di air", "correct": false },
+        { "answer": "Karena tenggelam itu untuk yang tidak bisa berenang", "correct": true }
+      ]
+    },
+    {
+      "question": "Hewan apa yang suka duduk di depan rumah?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Kucing", "correct": false },
+        { "answer": "Anjing", "correct": false },
+        { "answer": "Ayam KEY:(ayam-ayam depan rumah)", "correct": true }
+      ]
+    },
+    {
+      "question": "Apa yang kalau dibuang malah berguna?",
+      "level": 3,
+      "theme": "seru",
+      "options": [
+        { "answer": "Sampah", "correct": false },
+        { "answer": "Jangkar KEY:(dibuang ke laut)", "correct": true },
+        { "answer": "Uang", "correct": false }
+      ]
+    },
+    {
+      "question": "Kenapa orang suka selfie?",
+      "level": 1,
+      "theme": "seru",
+      "options": [
+        { "answer": "Karena mereka ganteng/cantik", "correct": false },
+        { "answer": "Karena mereka ingin diingat", "correct": false },
+        { "answer": "Karena tidak ada yang mau foto mereka", "correct": true }
+      ]
+    },
+    {
+      "question": "Buah apa yang bisa terbang?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Buah apel", "correct": false },
+        { "answer": "Buah balon KEY:(balon = buah? plesetan 'buang balon')", "correct": true },
+        { "answer": "Buah jeruk", "correct": false }
+      ]
+    },
+    {
+      "question": "Apa yang paling lelah?",
+      "level": 3,
+      "theme": "seru",
+      "options": [
+        { "answer": "Kaki", "correct": false },
+        { "answer": "Baterai KEY:(lelah = lowbat)", "correct": true },
+        { "answer": "Mata", "correct": false }
+      ]
+    },
+    {
+      "question": "Kenapa sapu selalu diam?",
+      "level": 2,
+      "theme": "seru",
+      "options": [
+        { "answer": "Karena sudah tua", "correct": false },
+        { "answer": "Karena tidak punya suara", "correct": false },
+        { "answer": "Karena dia disapu setiap hari", "correct": true }
+      ]
+    },
+    {
+      "question": "Hewan apa yang paling jago matematika?",
+      "level": 4,
+      "theme": "seru",
+      "options": [
+        { "answer": "Monyet", "correct": false },
+        { "answer": "Kalkulator KEY:(bukan hewan)", "correct": false },
+        { "answer": "Kutu KEY:(kutu buku)", "correct": true }
+      ]
+    },
+
+    {
+      "level": 1,
+      "theme": "ipa",
+      "question": "Apa nama proses tumbuhan membuat makanan sendiri?",
+      "options": [
+        { "answer": "Fotosintesis", "correct": true },
+        { "answer": "Respirasi", "correct": false },
+        { "answer": "Transpirasi", "correct": false },
+        { "answer": "Fermentasi", "correct": false }
+      ]
+    },
+    {
+      "level": 1,
+      "theme": "ipa",
+      "question": "Organ tubuh manusia yang berfungsi memompa darah adalah...",
+      "options": [
+        { "answer": "Paru-paru", "correct": false },
+        { "answer": "Jantung", "correct": true },
+        { "answer": "Hati", "correct": false },
+        { "answer": "Ginjal", "correct": false }
+      ]
+    },
+    {
+      "level": 1,
+      "theme": "ips",
+      "question": "Siapa presiden pertama Indonesia?",
+      "options": [
+        { "answer": "Soeharto", "correct": false },
+        { "answer": "B.J. Habibie", "correct": false },
+        { "answer": "Soekarno", "correct": true },
+        { "answer": "Megawati", "correct": false }
+      ]
+    },
+    {
+      "level": 1,
+      "theme": "ips",
+      "question": "Benua terluas di dunia adalah...",
+      "options": [
+        { "answer": "Afrika", "correct": false },
+        { "answer": "Amerika", "correct": false },
+        { "answer": "Asia", "correct": true },
+        { "answer": "Eropa", "correct": false }
+      ]
+    },
+    {
+      "level": 1,
+      "theme": "mtk",
+      "question": "Hasil dari 12 x 8 adalah...",
+      "options": [
+        { "answer": "96", "correct": true },
+        { "answer": "86", "correct": false },
+        { "answer": "106", "correct": false },
+        { "answer": "76", "correct": false }
+      ]
+    },
+    {
+      "level": 1,
+      "theme": "mtk",
+      "question": "Akar kuadrat dari 144 adalah...",
+      "options": [
+        { "answer": "11", "correct": false },
+        { "answer": "12", "correct": true },
+        { "answer": "13", "correct": false },
+        { "answer": "14", "correct": false }
+      ]
+    },
+    {
+      "level": 1,
+      "theme": "inggris",
+      "question": "Bahasa Inggrisnya 'apel' adalah...",
+      "options": [
+        { "answer": "Apple", "correct": true },
+        { "answer": "Orange", "correct": false },
+        { "answer": "Grape", "correct": false },
+        { "answer": "Banana", "correct": false }
+      ]
+    },
+    {
+      "level": 1,
+      "theme": "inggris",
+      "question": "Apa arti kata 'Happy'?",
+      "options": [
+        { "answer": "Sedih", "correct": false },
+        { "answer": "Marah", "correct": false },
+        { "answer": "Senang", "correct": true },
+        { "answer": "Cepat", "correct": false }
+      ]
+    },
+    {
+      "level": 1,
+      "theme": "fun",
+      "question": "Hewan apa yang suka tidur terus?",
+      "options": [
+        { "answer": "Kucing", "correct": false },
+        { "answer": "Koala", "correct": true },
+        { "answer": "Anjing", "correct": false },
+        { "answer": "Sapi", "correct": false }
+      ]
+    },
+    {
+      "level": 1,
+      "theme": "fun",
+      "question": "Buah apa yang memiliki mata?",
+      "options": [
+        { "answer": "Manggis", "correct": false },
+        { "answer": "Pisang", "correct": false },
+        { "answer": "Nanas", "correct": true },
+        { "answer": "Jeruk", "correct": false }
+      ]
+    },
+    {
+      "level": 2,
+      "theme": "ipa",
+      "question": "Planet terdekat dengan Matahari adalah...",
+      "options": [
+        { "answer": "Venus", "correct": false },
+        { "answer": "Merkurius", "correct": true },
+        { "answer": "Bumi", "correct": false },
+        { "answer": "Mars", "correct": false }
+      ]
+    },
+    {
+      "level": 2,
+      "theme": "ipa",
+      "question": "Bagian tumbuhan yang berada di dalam tanah adalah...",
+      "options": [
+        { "answer": "Batang", "correct": false },
+        { "answer": "Daun", "correct": false },
+        { "answer": "Akar", "correct": true },
+        { "answer": "Bunga", "correct": false }
+      ]
+    },
+    {
+      "level": 2,
+      "theme": "ips",
+      "question": "Siapa pahlawan yang dikenal sebagai 'Singkong'?",
+      "options": [
+        { "answer": "Diponegoro", "correct": false },
+        { "answer": "Imam Bonjol", "correct": false },
+        { "answer": "Soedirman", "correct": false },
+        { "answer": "Untung Suropati", "correct": true }
+      ]
+    },
+    {
+      "level": 2,
+      "theme": "ips",
+      "question": "Gunung tertinggi di Indonesia adalah...",
+      "options": [
+        { "answer": "Gunung Kerinci", "correct": false },
+        { "answer": "Gunung Rinjani", "correct": false },
+        { "answer": "Gunung Semeru", "correct": false },
+        { "answer": "Gunung Puncak Jaya", "correct": true }
+      ]
+    },
+    {
+      "level": 2,
+      "theme": "mtk",
+      "question": "Hasil dari 15% dari 200 adalah...",
+      "options": [
+        { "answer": "20", "correct": false },
+        { "answer": "25", "correct": false },
+        { "answer": "30", "correct": true },
+        { "answer": "35", "correct": false }
+      ]
+    },
+    {
+      "level": 2,
+      "theme": "mtk",
+      "question": "Jika x + 5 = 12, maka x = ...",
+      "options": [
+        { "answer": "5", "correct": false },
+        { "answer": "7", "correct": true },
+        { "answer": "8", "correct": false },
+        { "answer": "6", "correct": false }
+      ]
+    },
+    {
+      "level": 2,
+      "theme": "inggris",
+      "question": "Apa bahasa Inggris dari 'buku'?",
+      "options": [
+        { "answer": "Pen", "correct": false },
+        { "answer": "Book", "correct": true },
+        { "answer": "Table", "correct": false },
+        { "answer": "Chair", "correct": false }
+      ]
+    },
+    {
+      "level": 2,
+      "theme": "inggris",
+      "question": "Kalimat 'Selamat pagi' dalam bahasa Inggris adalah...",
+      "options": [
+        { "answer": "Good night", "correct": false },
+        { "answer": "Good evening", "correct": false },
+        { "answer": "Good morning", "correct": true },
+        { "answer": "Good afternoon", "correct": false }
+      ]
+    },
+    {
+      "level": 2,
+      "theme": "fun",
+      "question": "Kenapa air laut asin?",
+      "options": [
+        { "answer": "Karena banyak sampah", "correct": false },
+        { "answer": "Karena ikan kencing", "correct": false },
+        { "answer": "Karena garam dari batuan", "correct": true },
+        { "answer": "Karena buatan manusia", "correct": false }
+      ]
+    },
+    {
+      "level": 2,
+      "theme": "fun",
+      "question": "Benda apa yang semakin diisi semakin ringan?",
+      "options": [
+        { "answer": "Balon", "correct": false },
+        { "answer": "Lubang", "correct": true },
+        { "answer": "Botol", "correct": false },
+        { "answer": "Kantong", "correct": false }
+      ]
+    },
+    {
+      "level": 3,
+      "theme": "ipa",
+      "question": "Apa nama gaya yang menarik benda ke pusat bumi?",
+      "options": [
+        { "answer": "Gaya magnet", "correct": false },
+        { "answer": "Gaya gravitasi", "correct": true },
+        { "answer": "Gaya listrik", "correct": false },
+        { "answer": "Gaya gesek", "correct": false }
+      ]
+    },
+    {
+      "level": 3,
+      "theme": "ipa",
+      "question": "Zat yang memiliki volume tetap tetapi bentuk berubah adalah...",
+      "options": [
+        { "answer": "Padat", "correct": false },
+        { "answer": "Cair", "correct": true },
+        { "answer": "Gas", "correct": false },
+        { "answer": "Plasma", "correct": false }
+      ]
+    },
+    {
+      "level": 3,
+      "theme": "ips",
+      "question": "Kerajaan Islam pertama di Indonesia adalah...",
+      "options": [
+        { "answer": "Demak", "correct": false },
+        { "answer": "Samudera Pasai", "correct": true },
+        { "answer": "Mataram", "correct": false },
+        { "answer": "Banten", "correct": false }
+      ]
+    },
+    {
+      "level": 3,
+      "theme": "ips",
+      "question": "Selat yang memisahkan Pulau Jawa dan Sumatra adalah...",
+      "options": [
+        { "answer": "Selat Lombok", "correct": false },
+        { "answer": "Selat Sunda", "correct": true },
+        { "answer": "Selat Malaka", "correct": false },
+        { "answer": "Selat Bali", "correct": false }
+      ]
+    },
+    {
+      "level": 3,
+      "theme": "mtk",
+      "question": "Luas lingkaran dengan jari-jari 7 cm adalah... (π=22/7)",
+      "options": [
+        { "answer": "154 cm²", "correct": true },
+        { "answer": "144 cm²", "correct": false },
+        { "answer": "164 cm²", "correct": false },
+        { "answer": "174 cm²", "correct": false }
+      ]
+    },
+    {
+      "level": 3,
+      "theme": "mtk",
+      "question": "Jika 2x + 3 = 13, maka nilai x adalah...",
+      "options": [
+        { "answer": "4", "correct": false },
+        { "answer": "5", "correct": true },
+        { "answer": "6", "correct": false },
+        { "answer": "7", "correct": false }
+      ]
+    },
+    {
+      "level": 3,
+      "theme": "inggris",
+      "question": "Apa arti kata 'Run'?",
+      "options": [
+        { "answer": "Jalan", "correct": false },
+        { "answer": "Lari", "correct": true },
+        { "answer": "Tidur", "correct": false },
+        { "answer": "Makan", "correct": false }
+      ]
+    },
+    {
+      "level": 3,
+      "theme": "inggris",
+      "question": "Bahasa Inggris dari 'meja' adalah...",
+      "options": [
+        { "answer": "Chair", "correct": false },
+        { "answer": "Table", "correct": true },
+        { "answer": "Desk", "correct": false },
+        { "answer": "Board", "correct": false }
+      ]
+    },
+    {
+      "level": 3,
+      "theme": "fun",
+      "question": "Monyet apa yang suka terbang?",
+      "options": [
+        { "answer": "Monyet terbang", "correct": false },
+        { "answer": "Kelelawar", "correct": false },
+        { "answer": "Kupu-kupu", "correct": false },
+        { "answer": "Tidak ada monyet terbang", "correct": true }
+      ]
+    },
+    {
+      "level": 3,
+      "theme": "fun",
+      "question": "Apa yang selalu naik tapi tak pernah turun?",
+      "options": [
+        { "answer": "Usia", "correct": true },
+        { "answer": "Harga", "correct": false },
+        { "answer": "Bola", "correct": false },
+        { "answer": "Pohon", "correct": false }
+      ]
+    },
+    {
+      "level": 4,
+      "theme": "ipa",
+      "question": "Apa nama proses perubahan air menjadi uap?",
+      "options": [
+        { "answer": "Kondensasi", "correct": false },
+        { "answer": "Evaporasi", "correct": true },
+        { "answer": "Presipitasi", "correct": false },
+        { "answer": "Sublimasi", "correct": false }
+      ]
+    },
+    {
+      "level": 4,
+      "theme": "ipa",
+      "question": "Hewan yang dapat hidup di darat dan air disebut...",
+      "options": [
+        { "answer": "Amfibi", "correct": true },
+        { "answer": "Reptil", "correct": false },
+        { "answer": "Mamalia", "correct": false },
+        { "answer": "Aves", "correct": false }
+      ]
+    },
+    {
+      "level": 4,
+      "theme": "ips",
+      "question": "Sungai terpanjang di dunia adalah...",
+      "options": [
+        { "answer": "Amazon", "correct": true },
+        { "answer": "Nil", "correct": false },
+        { "answer": "Yangtze", "correct": false },
+        { "answer": "Mississippi", "correct": false }
+      ]
+    },
+    {
+      "level": 4,
+      "theme": "ips",
+      "question": "Penemu benua Amerika adalah...",
+      "options": [
+        { "answer": "James Cook", "correct": false },
+        { "answer": "Christopher Columbus", "correct": true },
+        { "answer": "Ferdinand Magellan", "correct": false },
+        { "answer": "Marco Polo", "correct": false }
+      ]
+    },
+    {
+      "level": 4,
+      "theme": "mtk",
+      "question": "Akar pangkat 3 dari 216 adalah...",
+      "options": [
+        { "answer": "5", "correct": false },
+        { "answer": "6", "correct": true },
+        { "answer": "7", "correct": false },
+        { "answer": "8", "correct": false }
+      ]
+    },
+    {
+      "level": 4,
+      "theme": "mtk",
+      "question": "Jika sebuah segitiga memiliki alas 10 cm dan tinggi 6 cm, luasnya adalah...",
+      "options": [
+        { "answer": "30 cm²", "correct": true },
+        { "answer": "60 cm²", "correct": false },
+        { "answer": "15 cm²", "correct": false },
+        { "answer": "20 cm²", "correct": false }
+      ]
+    },
+    {
+      "level": 4,
+      "theme": "inggris",
+      "question": "Bahasa Inggris dari 'sekolah'?",
+      "options": [
+        { "answer": "School", "correct": true },
+        { "answer": "Office", "correct": false },
+        { "answer": "Library", "correct": false },
+        { "answer": "Hospital", "correct": false }
+      ]
+    },
+    {
+      "level": 4,
+      "theme": "inggris",
+      "question": "Apa antonim dari 'fast'?",
+      "options": [
+        { "answer": "Quick", "correct": false },
+        { "answer": "Rapid", "correct": false },
+        { "answer": "Slow", "correct": true },
+        { "answer": "Speed", "correct": false }
+      ]
+    },
+    {
+      "level": 4,
+      "theme": "fun",
+      "question": "Benda apa yang jika dibuang semakin besar?",
+      "options": [
+        { "answer": "Sampah", "correct": false },
+        { "answer": "Lubang", "correct": true },
+        { "answer": "Bola", "correct": false },
+        { "answer": "Balon", "correct": false }
+      ]
+    },
+    {
+      "level": 4,
+      "theme": "fun",
+      "question": "Mengapa kita tidak bisa bersin dengan mata terbuka?",
+      "options": [
+        { "answer": "Karena mata akan melompat", "correct": false },
+        { "answer": "Karena refleks alami", "correct": true },
+        { "answer": "Karena takut", "correct": false },
+        { "answer": "Karena sakit", "correct": false }
+      ]
+    },
+    {
+      "level": 5,
+      "theme": "ipa",
+      "question": "Planet yang memiliki cincin paling jelas adalah...",
+      "options": [
+        { "answer": "Jupiter", "correct": false },
+        { "answer": "Saturnus", "correct": true },
+        { "answer": "Uranus", "correct": false },
+        { "answer": "Neptunus", "correct": false }
+      ]
+    },
+    {
+      "level": 5,
+      "theme": "ipa",
+      "question": "Bagian darah yang berfungsi melawan infeksi adalah...",
+      "options": [
+        { "answer": "Eritrosit", "correct": false },
+        { "answer": "Leukosit", "correct": true },
+        { "answer": "Trombosit", "correct": false },
+        { "answer": "Plasma", "correct": false }
+      ]
+    },
+    {
+      "level": 5,
+      "theme": "ips",
+      "question": "Lembaga tertinggi di Indonesia dalam sistem ketatanegaraan adalah...",
+      "options": [
+        { "answer": "DPR", "correct": false },
+        { "answer": "MK", "correct": false },
+        { "answer": "MPR", "correct": true },
+        { "answer": "Presiden", "correct": false }
+      ]
+    },
+    {
+      "level": 5,
+      "theme": "ips",
+      "question": "Gurun terluas di dunia adalah...",
+      "options": [
+        { "answer": "Gobi", "correct": false },
+        { "answer": "Sahara", "correct": true },
+        { "answer": "Kalahari", "correct": false },
+        { "answer": "Atacama", "correct": false }
+      ]
+    },
+    {
+      "level": 5,
+      "theme": "mtk",
+      "question": "Nilai dari sin 30° adalah...",
+      "options": [
+        { "answer": "1/2", "correct": true },
+        { "answer": "1/√2", "correct": false },
+        { "answer": "√3/2", "correct": false },
+        { "answer": "1", "correct": false }
+      ]
+    },
+    {
+      "level": 5,
+      "theme": "mtk",
+      "question": "Hasil dari 6! (faktorial) adalah...",
+      "options": [
+        { "answer": "120", "correct": false },
+        { "answer": "720", "correct": true },
+        { "answer": "5040", "correct": false },
+        { "answer": "40320", "correct": false }
+      ]
+    },
+    {
+      "level": 5,
+      "theme": "inggris",
+      "question": "Arti 'breakfast' adalah...",
+      "options": [
+        { "answer": "Makan siang", "correct": false },
+        { "answer": "Makan malam", "correct": false },
+        { "answer": "Makan pagi", "correct": true },
+        { "answer": "Camilan", "correct": false }
+      ]
+    },
+    {
+      "level": 5,
+      "theme": "inggris",
+      "question": "Apa bahasa Inggris dari 'guru'?",
+      "options": [
+        { "answer": "Doctor", "correct": false },
+        { "answer": "Teacher", "correct": true },
+        { "answer": "Student", "correct": false },
+        { "answer": "Principal", "correct": false }
+      ]
+    },
+    {
+      "level": 5,
+      "theme": "fun",
+      "question": "Kenapa sapi tidak bisa naik pohon?",
+      "options": [
+        { "answer": "Karena kuku tidak bisa mencengkeram", "correct": false },
+        { "answer": "Karena terlalu gemuk", "correct": false },
+        { "answer": "Karena tidak ada yang mengajari", "correct": false },
+        { "answer": "Karena memang tidak bisa", "correct": true }
+      ]
+    },
+    {
+      "level": 5,
+      "theme": "fun",
+      "question": "Apa yang terjadi ketika Anda melempar jam ke pintu?",
+      "options": [
+        { "answer": "Jam rusak", "correct": false },
+        { "answer": "Pintu terbuka", "correct": false },
+        { "answer": "Waktu berhenti", "correct": false },
+        { "answer": "Tidak ada jawaban logis", "correct": true }
+      ]
+    },
+    {
+      "level": 6,
+      "theme": "ipa",
+      "question": "Unsur kimia dengan lambang 'O' adalah...",
+      "options": [
+        { "answer": "Oksigen", "correct": true },
+        { "answer": "Osmium", "correct": false },
+        { "answer": "Oganesson", "correct": false },
+        { "answer": "Oksida", "correct": false }
+      ]
+    },
+    {
+      "level": 6,
+      "theme": "ipa",
+      "question": "Bagian telinga yang berfungsi menjaga keseimbangan adalah...",
+      "options": [
+        { "answer": "Gendang telinga", "correct": false },
+        { "answer": "Koklea", "correct": false },
+        { "answer": "Kanal setengah lingkaran", "correct": true },
+        { "answer": "Saluran Eustachius", "correct": false }
+      ]
+    },
+    {
+      "level": 6,
+      "theme": "ips",
+      "question": "Perang Dunia I berlangsung pada tahun...",
+      "options": [
+        { "answer": "1914-1918", "correct": true },
+        { "answer": "1939-1945", "correct": false },
+        { "answer": "1910-1914", "correct": false },
+        { "answer": "1920-1925", "correct": false }
+      ]
+    },
+    {
+      "level": 6,
+      "theme": "ips",
+      "question": "Kota terpadat di dunia saat ini adalah...",
+      "options": [
+        { "answer": "Tokyo", "correct": true },
+        { "answer": "Jakarta", "correct": false },
+        { "answer": "New York", "correct": false },
+        { "answer": "Shanghai", "correct": false }
+      ]
+    },
+    {
+      "level": 6,
+      "theme": "mtk",
+      "question": "Jika 5x - 2 = 3x + 8, maka x = ...",
+      "options": [
+        { "answer": "3", "correct": false },
+        { "answer": "4", "correct": false },
+        { "answer": "5", "correct": true },
+        { "answer": "6", "correct": false }
+      ]
+    },
+    {
+      "level": 6,
+      "theme": "mtk",
+      "question": "Volume kubus dengan sisi 5 cm adalah...",
+      "options": [
+        { "answer": "125 cm³", "correct": true },
+        { "answer": "100 cm³", "correct": false },
+        { "answer": "150 cm³", "correct": false },
+        { "answer": "25 cm³", "correct": false }
+      ]
+    },
+    {
+      "level": 6,
+      "theme": "inggris",
+      "question": "Apa arti 'knowledge'?",
+      "options": [
+        { "answer": "Kekuatan", "correct": false },
+        { "answer": "Pengetahuan", "correct": true },
+        { "answer": "Kebijaksanaan", "correct": false },
+        { "answer": "Keterampilan", "correct": false }
+      ]
+    },
+    {
+      "level": 6,
+      "theme": "inggris",
+      "question": "Bahasa Inggris dari 'saya suka makan' adalah...",
+      "options": [
+        { "answer": "I like eat", "correct": false },
+        { "answer": "I like eating", "correct": true },
+        { "answer": "I like to eating", "correct": false },
+        { "answer": "I likes eat", "correct": false }
+      ]
+    },
+    {
+      "level": 6,
+      "theme": "fun",
+      "question": "Hewan apa yang paling malas?",
+      "options": [
+        { "answer": "Kungkang KEY:(sloth)", "correct": true },
+        { "answer": "Beruang", "correct": false },
+        { "answer": "Kucing", "correct": false },
+        { "answer": "Panda", "correct": false }
+      ]
+    },
+    {
+      "level": 6,
+      "theme": "fun",
+      "question": "Kenapa tidak bisa bersiul sambil memegang hidung?",
+      "options": [
+        { "answer": "Karena udara keluar dari hidung", "correct": true },
+        { "answer": "Karena tidak ada udara", "correct": false },
+        { "answer": "Karena mulut tertutup", "correct": false },
+        { "answer": "Karena hidung tersumbat", "correct": false }
+      ]
+    },
+    {
+      "level": 7,
+      "theme": "ipa",
+      "question": "Proses perubahan wujud dari padat langsung ke gas disebut...",
+      "options": [
+        { "answer": "Sublimasi", "correct": true },
+        { "answer": "Deposisi", "correct": false },
+        { "answer": "Menguap", "correct": false },
+        { "answer": "Mencair", "correct": false }
+      ]
+    },
+    {
+      "level": 7,
+      "theme": "ipa",
+      "question": "Penyakit yang disebabkan oleh kekurangan vitamin C adalah...",
+      "options": [
+        { "answer": "Rakhitis", "correct": false },
+        { "answer": "Skorbut", "correct": true },
+        { "answer": "Anemia", "correct": false },
+        { "answer": "Beriberi", "correct": false }
+      ]
+    },
+    {
+      "level": 7,
+      "theme": "ips",
+      "question": "Siapakah penemu mesin uap?",
+      "options": [
+        { "answer": "James Watt", "correct": true },
+        { "answer": "Thomas Edison", "correct": false },
+        { "answer": "Nikola Tesla", "correct": false },
+        { "answer": "Alexander Bell", "correct": false }
+      ]
+    },
+    {
+      "level": 7,
+      "theme": "ips",
+      "question": "Benua yang tidak memiliki penduduk tetap adalah...",
+      "options": [
+        { "answer": "Antartika", "correct": true },
+        { "answer": "Australia", "correct": false },
+        { "answer": "Amerika Selatan", "correct": false },
+        { "answer": "Eropa", "correct": false }
+      ]
+    },
+    {
+      "level": 7,
+      "theme": "mtk",
+      "question": "Hasil dari integral ∫ 2x dx adalah...",
+      "options": [
+        { "answer": "x² + C", "correct": true },
+        { "answer": "2x² + C", "correct": false },
+        { "answer": "x + C", "correct": false },
+        { "answer": "2x + C", "correct": false }
+      ]
+    },
+    {
+      "level": 7,
+      "theme": "mtk",
+      "question": "Nilai dari log 100 adalah...",
+      "options": [
+        { "answer": "1", "correct": false },
+        { "answer": "2", "correct": true },
+        { "answer": "10", "correct": false },
+        { "answer": "0", "correct": false }
+      ]
+    },
+    {
+      "level": 7,
+      "theme": "inggris",
+      "question": "Sinonim dari 'big' adalah...",
+      "options": [
+        { "answer": "Small", "correct": false },
+        { "answer": "Large", "correct": true },
+        { "answer": "Tiny", "correct": false },
+        { "answer": "Narrow", "correct": false }
+      ]
+    },
+    {
+      "level": 7,
+      "theme": "inggris",
+      "question": "Apa arti 'beautiful'?",
+      "options": [
+        { "answer": "Cantik", "correct": true },
+        { "answer": "Besar", "correct": false },
+        { "answer": "Cepat", "correct": false },
+        { "answer": "Lambat", "correct": false }
+      ]
+    },
+    {
+      "level": 7,
+      "theme": "fun",
+      "question": "Mengapa ayam berkokok?",
+      "options": [
+        { "answer": "Karena ingin menunjukkan kekuasaan", "correct": false },
+        { "answer": "Sebagai alarm alami", "correct": false },
+        { "answer": "Karena respon cahaya", "correct": true },
+        { "answer": "Karena lapar", "correct": false }
+      ]
+    },
+    {
+      "level": 7,
+      "theme": "fun",
+      "question": "Apa persamaan antara kucing dan mobil?",
+      "options": [
+        { "answer": "Sama-sama bisa melompat", "correct": false },
+        { "answer": "Sama-sama punya roda", "correct": false },
+        { "answer": "Sama-sama memiliki suara", "correct": true },
+        { "answer": "Sama-sama terbang", "correct": false }
+      ]
+    },
+    {
+      "level": 8,
+      "theme": "ipa",
+      "question": "Organel sel yang berfungsi sebagai pusat pengendalian adalah...",
+      "options": [
+        { "answer": "Mitokondria", "correct": false },
+        { "answer": "Nukleus", "correct": true },
+        { "answer": "Ribosom", "correct": false },
+        { "answer": "Retikulum endoplasma", "correct": false }
+      ]
+    },
+    {
+      "level": 8,
+      "theme": "ipa",
+      "question": "Hukum gerak Newton yang menyatakan aksi-reaksi adalah hukum ke...",
+      "options": [
+        { "answer": "1", "correct": false },
+        { "answer": "2", "correct": false },
+        { "answer": "3", "correct": true },
+        { "answer": "4", "correct": false }
+      ]
+    },
+    {
+      "level": 8,
+      "theme": "ips",
+      "question": "Pertempuran Surabaya terjadi pada tanggal...",
+      "options": [
+        { "answer": "10 November 1945", "correct": true },
+        { "answer": "17 Agustus 1945", "correct": false },
+        { "answer": "1 Oktober 1945", "correct": false },
+        { "answer": "20 Mei 1945", "correct": false }
+      ]
+    },
+    {
+      "level": 8,
+      "theme": "ips",
+      "question": "Mata uang tertinggi di dunia (nilai tukar tertinggi) adalah...",
+      "options": [
+        { "answer": "Dolar AS", "correct": false },
+        { "answer": "Euro", "correct": false },
+        { "answer": "Dinar Kuwait", "correct": true },
+        { "answer": "Pound Sterling", "correct": false }
+      ]
+    },
+    {
+      "level": 8,
+      "theme": "mtk",
+      "question": "Jika f(x) = 3x² - 2x + 1, maka f'(1) adalah...",
+      "options": [
+        { "answer": "4", "correct": true },
+        { "answer": "5", "correct": false },
+        { "answer": "6", "correct": false },
+        { "answer": "7", "correct": false }
+      ]
+    },
+    {
+      "level": 8,
+      "theme": "mtk",
+      "question": "Peluang munculnya angka 5 pada dadu bermata 6 adalah...",
+      "options": [
+        { "answer": "1/6", "correct": true },
+        { "answer": "1/3", "correct": false },
+        { "answer": "1/2", "correct": false },
+        { "answer": "5/6", "correct": false }
+      ]
+    },
+    {
+      "level": 8,
+      "theme": "inggris",
+      "question": "Apa arti 'difficult'?",
+      "options": [
+        { "answer": "Mudah", "correct": false },
+        { "answer": "Sulit", "correct": true },
+        { "answer": "Cepat", "correct": false },
+        { "answer": "Lambat", "correct": false }
+      ]
+    },
+    {
+      "level": 8,
+      "theme": "inggris",
+      "question": "Bahasa Inggris dari 'malam' adalah...",
+      "options": [
+        { "answer": "Evening", "correct": false },
+        { "answer": "Night", "correct": true },
+        { "answer": "Midnight", "correct": false },
+        { "answer": "Dawn", "correct": false }
+      ]
+    },
+    {
+      "level": 8,
+      "theme": "fun",
+      "question": "Hewan apa yang bisa berenang di aspal?",
+      "options": [
+        { "answer": "Ikan", "correct": false },
+        { "answer": "Bebek", "correct": false },
+        { "answer": "Tidak ada yang bisa", "correct": true },
+        { "answer": "Kucing", "correct": false }
+      ]
+    },
+    {
+      "level": 8,
+      "theme": "fun",
+      "question": "Kenapa telur ayam berbentuk lonjong?",
+      "options": [
+        { "answer": "Agar tidak mudah pecah", "correct": false },
+        { "answer": "Agar mudah dikeluarkan", "correct": true },
+        { "answer": "Karena bentuk alami", "correct": false },
+        { "answer": "Karena ayam suka lonjong", "correct": false }
+      ]
+    },
+    {
+      "level": 9,
+      "theme": "ipa",
+      "question": "Cabang biologi yang mempelajari jamur disebut...",
+      "options": [
+        { "answer": "Botani", "correct": false },
+        { "answer": "Mikologi", "correct": true },
+        { "answer": "Zoologi", "correct": false },
+        { "answer": "Bakteriologi", "correct": false }
+      ]
+    },
+    {
+      "level": 9,
+      "theme": "ipa",
+      "question": "Satuan kuat arus listrik adalah...",
+      "options": [
+        { "answer": "Volt", "correct": false },
+        { "answer": "Ampere", "correct": true },
+        { "answer": "Ohm", "correct": false },
+        { "answer": "Watt", "correct": false }
+      ]
+    },
+    {
+      "level": 9,
+      "theme": "ips",
+      "question": "Tokoh yang dikenal sebagai Bapak Koperasi Indonesia adalah...",
+      "options": [
+        { "answer": "Mohammad Hatta", "correct": true },
+        { "answer": "Soekarno", "correct": false },
+        { "answer": "Ki Hajar Dewantara", "correct": false },
+        { "answer": "R.A. Kartini", "correct": false }
+      ]
+    },
+    {
+      "level": 9,
+      "theme": "ips",
+      "question": "Gedung tertinggi di dunia saat ini adalah...",
+      "options": [
+        { "answer": "Burj Khalifa", "correct": true },
+        { "answer": "Shanghai Tower", "correct": false },
+        { "answer": "Abraj Al Bait", "correct": false },
+        { "answer": "Ping An Finance Centre", "correct": false }
+      ]
+    },
+    {
+      "level": 9,
+      "theme": "mtk",
+      "question": "Jika diameter lingkaran 14 cm, kelilingnya adalah... (π=22/7)",
+      "options": [
+        { "answer": "44 cm", "correct": true },
+        { "answer": "22 cm", "correct": false },
+        { "answer": "88 cm", "correct": false },
+        { "answer": "66 cm", "correct": false }
+      ]
+    },
+    {
+      "level": 9,
+      "theme": "mtk",
+      "question": "Akar dari persamaan x² - 5x + 6 = 0 adalah...",
+      "options": [
+        { "answer": "2 dan 3", "correct": true },
+        { "answer": "1 dan 6", "correct": false },
+        { "answer": "-2 dan -3", "correct": false },
+        { "answer": "-1 dan -6", "correct": false }
+      ]
+    },
+    {
+      "level": 9,
+      "theme": "inggris",
+      "question": "Apa arti kata 'unforgettable'?",
+      "options": [
+        { "answer": "Tidak terlupakan", "correct": true },
+        { "answer": "Terlupakan", "correct": false },
+        { "answer": "Mudah diingat", "correct": false },
+        { "answer": "Sulit diingat", "correct": false }
+      ]
+    },
+    {
+      "level": 9,
+      "theme": "inggris",
+      "question": "Bahasa Inggris dari 'perempuan' adalah...",
+      "options": [
+        { "answer": "Man", "correct": false },
+        { "answer": "Woman", "correct": true },
+        { "answer": "Girl", "correct": false },
+        { "answer": "Lady", "correct": false }
+      ]
+    },
+    {
+      "level": 9,
+      "theme": "fun",
+      "question": "Apa nama keringat pada malam hari?",
+      "options": [
+        { "answer": "Keringat dingin", "correct": false },
+        { "answer": "Embun", "correct": true },
+        { "answer": "Berkeringat", "correct": false },
+        { "answer": "Peluh", "correct": false }
+      ]
+    },
+    {
+      "level": 9,
+      "theme": "fun",
+      "question": "Mengapa orang bercermin?",
+      "options": [
+        { "answer": "Untuk melihat diri sendiri", "correct": true },
+        { "answer": "Karena bosan", "correct": false },
+        { "answer": "Agar tampan", "correct": false },
+        { "answer": "Kebiasaan", "correct": false }
+      ]
+    },
+    {
+      "level": 10,
+      "theme": "ipa",
+      "question": "Lapisan atmosfer yang terdapat ozon adalah...",
+      "options": [
+        { "answer": "Troposfer", "correct": false },
+        { "answer": "Stratosfer", "correct": true },
+        { "answer": "Mesosfer", "correct": false },
+        { "answer": "Termosfer", "correct": false }
+      ]
+    },
+    {
+      "level": 10,
+      "theme": "ipa",
+      "question": "Kelenjar yang menghasilkan insulin adalah...",
+      "options": [
+        { "answer": "Tiroid", "correct": false },
+        { "answer": "Pankreas", "correct": true },
+        { "answer": "Pituitari", "correct": false },
+        { "answer": "Adrenal", "correct": false }
+      ]
+    },
+    {
+      "level": 10,
+      "theme": "ips",
+      "question": "Perjanjian yang mengakhiri Perang Dunia II di Asia adalah...",
+      "options": [
+        { "answer": "Perjanjian Versailles", "correct": false },
+        { "answer": "Perjanjian San Francisco", "correct": true },
+        { "answer": "Perjanjian Potsdam", "correct": false },
+        { "answer": "Perjanjian Yalta", "correct": false }
+      ]
+    },
+    {
+      "level": 10,
+      "theme": "ips",
+      "question": "Negara dengan jumlah pulau terbanyak di dunia adalah...",
+      "options": [
+        { "answer": "Filipina", "correct": false },
+        { "answer": "Indonesia", "correct": true },
+        { "answer": "Swedia", "correct": false },
+        { "answer": "Norwegia", "correct": false }
+      ]
+    },
+    {
+      "level": 10,
+      "theme": "mtk",
+      "question": "Turunan dari sin(x) adalah...",
+      "options": [
+        { "answer": "cos(x)", "correct": true },
+        { "answer": "-cos(x)", "correct": false },
+        { "answer": "sin(x)", "correct": false },
+        { "answer": "-sin(x)", "correct": false }
+      ]
+    },
+    {
+      "level": 10,
+      "theme": "mtk",
+      "question": "Nilai dari cos 0° adalah...",
+      "options": [
+        { "answer": "0", "correct": false },
+        { "answer": "1", "correct": true },
+        { "answer": "1/2", "correct": false },
+        { "answer": "√2/2", "correct": false }
+      ]
+    },
+    {
+      "level": 10,
+      "theme": "inggris",
+      "question": "Apa arti 'responsibility'?",
+      "options": [
+        { "answer": "Kesalahan", "correct": false },
+        { "answer": "Tanggung jawab", "correct": true },
+        { "answer": "Kebebasan", "correct": false },
+        { "answer": "Kekuasaan", "correct": false }
+      ]
+    },
+    {
+      "level": 10,
+      "theme": "inggris",
+      "question": "Bahasa Inggris dari 'cepat' (adverb) adalah...",
+      "options": [
+        { "answer": "Fast", "correct": false },
+        { "answer": "Quickly", "correct": true },
+        { "answer": "Speed", "correct": false },
+        { "answer": "Rapid", "correct": false }
+      ]
+    },
+    {
+      "level": 10,
+      "theme": "fun",
+      "question": "Apa yang bisa dibawa sambil berjalan tetapi lebih berat dari batu?",
+      "options": [
+        { "answer": "Beban", "correct": false },
+        { "answer": "Air", "correct": false },
+        { "answer": "Nama KEY:(Karena kalau bawa batu capeknya di tangan, kalau bawa nama jelek capeknya di hati)", "correct": true },
+        { "answer": "Pikiran", "correct": false }
+      ]
+    },
+    {
+      "level": 10,
+      "theme": "fun",
+      "question": "Kenapa kucing selalu mendarat dengan kakinya?",
+      "options": [
+        { "answer": "Karena refleks", "correct": true },
+        { "answer": "Karena latihan", "correct": false },
+        { "answer": "Karena ekornya", "correct": false },
+        { "answer": "Kucing tidak selalu mendarat", "correct": false }
+      ]
+    },
+  {
+    "question": "Ikan apa yang jago ngitung?",
+    "level": 1,
+    "theme": "seru",
+    "options": [
+      { "answer": "Ikan paus", "correct": false },
+      { "answer": "Ikan kaleng", "correct": false },
+      { "answer": "Ikan teri-tung", "correct": true }
+    ]
+  },
+  {
+    "question": "Kenapa komputer kalau kedinginan suka ngeshutdown?",
+    "level": 2,
+    "theme": "seru",
+    "options": [
+      { "answer": "Karena ada tombol power", "correct": false },
+      { "answer": "Karena dia ngalamin Windows Blue Screen", "correct": false },
+      { "answer": "Karena dia kedinginan Windows-nya", "correct": true }
+    ]
+  },
+  {
+    "question": "Hewan apa yang kalau dipencet bunyinya 'tit tit'?",
+    "level": 1,
+    "theme": "seru",
+    "options": [
+      { "answer": "Burung", "correct": false },
+      { "answer": "Remote TV", "correct": true },
+      { "answer": "Kucing", "correct": false }
+    ]
+  },
+  {
+    "question": "Sayur apa yang paling romantis?",
+    "level": 3,
+    "theme": "seru",
+    "options": [
+      { "answer": "Brokoli", "correct": false },
+      { "answer": "Wortel", "correct": false },
+      { "answer": "Buncis sayang kamu", "correct": true }
+    ]
+  },
+  {
+    "question": "Negara apa yang isinya cuma orang malas?",
+    "level": 4,
+    "theme": "seru",
+    "options": [
+      { "answer": "Jepang", "correct": false },
+      { "answer": "Magerland", "correct": true },
+      { "answer": "Korea", "correct": false }
+    ]
+  },
+  {
+    "question": "Mobil apa yang paling sabar?",
+    "level": 2,
+    "theme": "seru",
+    "options": [
+      { "answer": "Mobil sport", "correct": false },
+      { "answer": "Mobil boks", "correct": false },
+      { "answer": "Mobil nungguin", "correct": true }
+    ]
+  },
+  {
+    "question": "Kenapa nasi padang nggak pernah telat?",
+    "level": 3,
+    "theme": "seru",
+    "options": [
+      { "answer": "Karena ada jam", "correct": false },
+      { "answer": "Karena rendangnya udah rendang waktu", "correct": true },
+      { "answer": "Karena diburu pelanggan", "correct": false }
+    ]
+  },
+  {
+    "question": "Buah apa yang paling galak?",
+    "level": 1,
+    "theme": "seru",
+    "options": [
+      { "answer": "Apel", "correct": false },
+      { "answer": "Jeruk marah", "correct": true },
+      { "answer": "Mangga", "correct": false }
+    ]
+  },
+  {
+    "question": "Profesi apa yang paling dingin?",
+    "level": 4,
+    "theme": "seru",
+    "options": [
+      { "answer": "Dokter", "correct": false },
+      { "answer": "Kulkas", "correct": false },
+      { "answer": "Freezer lancer", "correct": true }
+    ]
+  },
+  {
+    "question": "Hari apa yang paling males?",
+    "level": 1,
+    "theme": "seru",
+    "options": [
+      { "answer": "Senin", "correct": false },
+      { "answer": "Magerat", "correct": true },
+      { "answer": "Jumat", "correct": false }
+    ]
+  },
+  {
+    "question": "Kenapa lampu suka mati pas kita butuh?",
+    "level": 3,
+    "theme": "seru",
+    "options": [
+      { "answer": "Karena PLN", "correct": false },
+      { "answer": "Karena dia lampu senja", "correct": false },
+      { "answer": "Karena dia lampu egois", "correct": true }
+    ]
+  },
+  {
+    "question": "Hewan apa yang paling suka nyolong?",
+    "level": 2,
+    "theme": "seru",
+    "options": [
+      { "answer": "Maling", "correct": false },
+      { "answer": "Kucing garong", "correct": true },
+      { "answer": "Ayam", "correct": false }
+    ]
+  },
+  {
+    "question": "Minuman apa yang paling setia?",
+    "level": 5,
+    "theme": "seru",
+    "options": [
+      { "answer": "Es teh", "correct": false },
+      { "answer": "Kopi hitam", "correct": false },
+      { "answer": "Teh manis 'manis terus'", "correct": true }
+    ]
+  },
+  {
+    "question": "Kenapa cicak kalau jatuh nggak nangis?",
+    "level": 2,
+    "theme": "seru",
+    "options": [
+      { "answer": "Karena nggak sakit", "correct": false },
+      { "answer": "Karena dia cicak kuat", "correct": false },
+      { "answer": "Karena dia udah biasa jatuh bangun", "correct": true }
+    ]
+  },
+  {
+    "question": "Sepatu apa yang nggak bisa jalan?",
+    "level": 1,
+    "theme": "seru",
+    "options": [
+      { "answer": "Sepatu roda", "correct": false },
+      { "answer": "Sepatu BOT KEY:(Robot)", "correct": true },
+      { "answer": "Sepatu lari", "correct": false }
+    ]
+  },
+  {
+    "question": "Planet apa yang paling pelit?",
+    "level": 5,
+    "theme": "seru",
+    "options": [
+      { "answer": "Bumi", "correct": false },
+      { "answer": "Mars", "correct": false },
+      { "answer": "Pluto-nomics", "correct": true }
+    ]
+  },
+  {
+    "question": "Warna apa yang paling sabar nungguin?",
+    "level": 3,
+    "theme": "seru",
+    "options": [
+      { "answer": "Merah", "correct": false },
+      { "answer": "Biru", "correct": false },
+      { "answer": "Ungu tunggu", "correct": true }
+    ]
+  },
+  {
+    "question": "Kenapa uang kertas nggak bisa berenang?",
+    "level": 4,
+    "theme": "seru",
+    "options": [
+      { "answer": "Karena takut basah", "correct": false },
+      { "answer": "Karena dia sobek-an", "correct": true },
+      { "answer": "Karena dia tenggelam hutang", "correct": false }
+    ]
+  },
+  {
+    "question": "Jurusan kuliah apa yang paling cepat lulus?",
+    "level": 5,
+    "theme": "seru",
+    "options": [
+      { "answer": "Teknik", "correct": false },
+      { "answer": "Kedokteran", "correct": false },
+      { "answer": "Jurusan tol", "correct": true }
+    ]
+  },
+  {
+    "question": "Musik apa yang paling bikin kenyang?",
+    "level": 2,
+    "theme": "seru",
+    "options": [
+      { "answer": "Rock", "correct": false },
+      { "answer": "Pop", "correct": false },
+      { "answer": "Lagu rendang", "correct": true }
+    ]
+  },
+  
+  {
+    "question": "Negara manakah yang memiliki garis pantai terpanjang di dunia?",
+    "level": 4,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Rusia", "correct": false },
+      { "answer": "Kanada", "correct": true },
+      { "answer": "Indonesia", "correct": false }
+    ]
+  },
+  {
+    "question": "Unsur kimia dengan simbol 'Au' adalah?",
+    "level": 4,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Perak", "correct": false },
+      { "answer": "Emas", "correct": true },
+      { "answer": "Aluminium", "correct": false }
+    ]
+  },
+  {
+    "question": "Candi Borobudur terletak di provinsi?",
+    "level": 4,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Jawa Tengah", "correct": true },
+      { "answer": "DIY Yogyakarta", "correct": false },
+      { "answer": "Jawa Timur", "correct": false }
+    ]
+  },
+  {
+    "question": "Planet terjauh dari Matahari di Tata Surya kita adalah?",
+    "level": 5,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Neptunus", "correct": true },
+      { "answer": "Pluto", "correct": false },
+      { "answer": "Uranus", "correct": false }
+    ]
+  },
+  {
+    "question": "Penemu lampu pijar yang praktis pertama kali adalah?",
+    "level": 5,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Nikola Tesla", "correct": false },
+      { "answer": "Thomas Edison", "correct": true },
+      { "answer": "Alexander Graham Bell", "correct": false }
+    ]
+  },
+  {
+    "question": "Samudra terluas di Bumi adalah?",
+    "level": 5,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Samudra Atlantik", "correct": false },
+      { "answer": "Samudra Pasifik", "correct": true },
+      { "answer": "Samudra Hindia", "correct": false }
+    ]
+  },
+  {
+    "question": "Bahasa resmi PBB yang paling banyak digunakan selain Inggris?",
+    "level": 6,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Prancis", "correct": true },
+      { "answer": "Spanyol", "correct": false },
+      { "answer": "Mandarin", "correct": false }
+    ]
+  },
+  {
+    "question": "Gunung tertinggi di dunia diukur dari permukaan laut?",
+    "level": 6,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Gunung K2", "correct": false },
+      { "answer": "Gunung Everest", "correct": true },
+      { "answer": "Gunung Kilimanjaro", "correct": false }
+    ]
+  },
+  {
+    "question": "Hewan tercepat di darat adalah?",
+    "level": 6,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Singa", "correct": false },
+      { "answer": "Cheetah", "correct": true },
+      { "answer": "Siberian Husky", "correct": false }
+    ]
+  },
+  {
+    "question": "Ibukota Australia adalah?",
+    "level": 4,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Sydney", "correct": false },
+      { "answer": "Melbourne", "correct": false },
+      { "answer": "Canberra", "correct": true }
+    ]
+  },
+  {
+    "question": "Tahun berapa Indonesia merdeka?",
+    "level": 4,
+    "theme": "trivia",
+    "options": [
+      { "answer": "1945", "correct": true },
+      { "answer": "1950", "correct": false },
+      { "answer": "1939", "correct": false }
+    ]
+  },
+  {
+    "question": "Organ tubuh manusia yang berfungsi memompa darah?",
+    "level": 4,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Paru-paru", "correct": false },
+      { "answer": "Jantung", "correct": true },
+      { "answer": "Hati", "correct": false }
+    ]
+  },
+  {
+    "question": "Benua terbesar berdasarkan luas wilayah?",
+    "level": 6,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Afrika", "correct": false },
+      { "answer": "Asia", "correct": true },
+      { "answer": "Amerika Utara", "correct": false }
+    ]
+  },
+  {
+    "question": "Penulis novel 'Laskar Pelangi' adalah?",
+    "level": 5,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Andrea Hirata", "correct": true },
+      { "answer": "Pramoedya Ananta Toer", "correct": false },
+      { "answer": "Tere Liye", "correct": false }
+    ]
+  },
+  {
+    "question": "Mata uang resmi Jepang adalah?",
+    "level": 5,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Yuan", "correct": false },
+      { "answer": "Yen", "correct": true },
+      { "answer": "Won", "correct": false }
+    ]
+  },
+  {
+    "question": "Lukisan 'Mona Lisa' dilukis oleh?",
+    "level": 7,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Vincent van Gogh", "correct": false },
+      { "answer": "Leonardo da Vinci", "correct": true },
+      { "answer": "Pablo Picasso", "correct": false }
+    ]
+  },
+  {
+    "question": "Proses tumbuhan membuat makanan sendiri disebut?",
+    "level": 7,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Respirasi", "correct": false },
+      { "answer": "Fotosintesis", "correct": true },
+      { "answer": "Transpirasi", "correct": false }
+    ]
+  },
+  {
+    "question": "Negara dengan jumlah pulau terbanyak di dunia?",
+    "level": 7,
+    "theme": "trivia",
+    "options": [
+      { "answer": "Indonesia", "correct": false },
+      { "answer": "Swedia", "correct": true },
+      { "answer": "Filipina", "correct": false }
+    ]
+  },
+  {
+    "question": "Perang Dunia II berakhir pada tahun?",
+    "level": 8,
+    "theme": "trivia",
+    "options": [
+      { "answer": "1944", "correct": false },
+      { "answer": "1945", "correct": true },
+      { "answer": "1946", "correct": false }
+    ]
+  },
+  {
+    "question": "Konstanta gravitasi Bumi kira-kira bernilai?",
+    "level": 8,
+    "theme": "trivia",
+    "options": [
+      { "answer": "8,9 m/s²", "correct": false },
+      { "answer": "9,8 m/s²", "correct": true },
+      { "answer": "10,5 m/s²", "correct": false }
+    ]
+  }
+  ]
+}

@@ -1,0 +1,31 @@
+@title[Element]
+*Element (Elemen)*
+Awaken Elements (Pembangkit Unsur), status ini akan memberikan 25% kerusakan kerusakan terhadap elemen yang lebih lemah.
+
+Pembangkit Unsur hanya terdiri 6, yaitu (netral tidak termasuk):
+- Merah (Api)
+- Biru (Air)
+- Kuning (Angin)
+- Coklat (Bumi)
+- Hijau (Cahaya)
+- Ungu (Gelap)
+
+Perlawanan unsur:
+- Api > Bumi > Angin > Air > Api
+- Cahaya <> Gelap
+
+*DTE (Damage to Element)*
+
+- Meningkatkan damage ke monster elemen tertentu
+- Rumus: Damage to <Element> +Y%
+- Contoh: Damage to Fire +10% (meningkatkan damage ke monster Api 10%)
+
+*RTE (Resistance to Element)*
+
+- Mengurangi damage unsur yang diterima
+- Rumus: <Element> Resistance +Y%
+- Contoh: Fire Resistance +10% (mengurangi damage dari serangan Api 10%)
+
+*Neutral (Netral)*
+Neutral (Netral) tidak berunsur dan tidak termasuk unsur pembangkit, jadi tidak memiliki bonus seperti stat berunsur, namun stat “Damage to Neutral” tersedia. Warna dari netral adalah putih.
+@img[big:https://blogger.googleusercontent.com/img/a/AVvXsEho34aMhnY6_Q1iKeIrbPGkeNI3uxFaffNDX3AMOnSDrB1d9q5lh5NhlaPmrVM9v8kU_zWUDH24S1GQSgBBWN9-fsWLzJNpYIt0InisIluG55fcLSGHrcF-Of7J9WDDC96JIQfzRY5m9ttiM8FGYv8_jsF-kVgzklNdpO5_a4LVzBeEddrTA30hDmXYfg]
